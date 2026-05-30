@@ -1,0 +1,302 @@
+﻿@font-face {
+    font-family: 'Canela Text Trial';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Canela Text Trial'), url('../s/86518/CanelaText-Regular-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Text Trial';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Canela Text Trial'), url('../s/86518/CanelaText-RegularNo2-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Text Trial';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Canela Text Trial'), url('../s/86518/CanelaText-RegularItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Text Trial';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Canela Text Trial'), url('../s/86518/CanelaText-RegularNo2Italic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Text Trial';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Canela Text Trial'), url('../s/86518/CanelaText-Thin-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Text Trial';
+    font-style: italic;
+    font-weight: 100;
+    src: local('Canela Text Trial'), url('../s/86518/CanelaText-ThinItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Text Trial';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Canela Text Trial'), url('../s/86518/CanelaText-Light-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Text Trial';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Canela Text Trial'), url('../s/86518/CanelaText-LightItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Text Trial';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Canela Text Trial'), url('../s/86518/CanelaText-Medium-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Text Trial';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Canela Text Trial'), url('../s/86518/CanelaText-MediumItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Text Trial';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Canela Text Trial'), url('../s/86518/CanelaText-Bold-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Text Trial';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Canela Text Trial'), url('../s/86518/CanelaText-BoldItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Text Trial';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Canela Text Trial'), url('../s/86518/CanelaText-Black-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Text Trial';
+    font-style: italic;
+    font-weight: 900;
+    src: local('Canela Text Trial'), url('../s/86518/CanelaText-BlackItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Canela Trial'), url('../s/86518/Canela-Regular-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Condensed Trial';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Canela Condensed Trial'), url('../s/86518/CanelaCondensed-Regular-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Deck Trial';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Canela Deck Trial'), url('../s/86518/CanelaDeck-Regular-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Trial';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Canela Trial'), url('../s/86518/Canela-RegularItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Condensed Trial';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Canela Condensed Trial'), url('../s/86518/CanelaCondensed-RegularItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Deck Trial';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Canela Deck Trial'), url('../s/86518/CanelaDeck-RegularItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Canela Trial'), url('../s/86518/Canela-Thin-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Condensed Trial';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Canela Condensed Trial'), url('../s/86518/CanelaCondensed-Thin-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Deck Trial';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Canela Deck Trial'), url('../s/86518/CanelaDeck-Thin-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Trial';
+    font-style: italic;
+    font-weight: 100;
+    src: local('Canela Trial'), url('../s/86518/Canela-ThinItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Condensed Trial';
+    font-style: italic;
+    font-weight: 100;
+    src: local('Canela Condensed Trial'), url('../s/86518/CanelaCondensed-ThinItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Deck Trial';
+    font-style: italic;
+    font-weight: 100;
+    src: local('Canela Deck Trial'), url('../s/86518/CanelaDeck-ThinItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Canela Trial'), url('../s/86518/Canela-Light-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Condensed Trial';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Canela Condensed Trial'), url('../s/86518/CanelaCondensed-Light-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Deck Trial';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Canela Deck Trial'), url('../s/86518/CanelaDeck-Light-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Trial';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Canela Trial'), url('../s/86518/Canela-LightItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Condensed Trial';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Canela Condensed Trial'), url('../s/86518/CanelaCondensed-LightItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Deck Trial';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Canela Deck Trial'), url('../s/86518/CanelaDeck-LightItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Canela Trial'), url('../s/86518/Canela-Medium-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Condensed Trial';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Canela Condensed Trial'), url('../s/86518/CanelaCondensed-Medium-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Deck Trial';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Canela Deck Trial'), url('../s/86518/CanelaDeck-Medium-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Trial';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Canela Trial'), url('../s/86518/Canela-MediumItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Condensed Trial';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Canela Condensed Trial'), url('../s/86518/CanelaCondensed-MediumItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Deck Trial';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Canela Deck Trial'), url('../s/86518/CanelaDeck-MediumItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Canela Trial'), url('../s/86518/Canela-Bold-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Condensed Trial';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Canela Condensed Trial'), url('../s/86518/CanelaCondensed-Bold-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Deck Trial';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Canela Deck Trial'), url('../s/86518/CanelaDeck-Bold-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Trial';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Canela Trial'), url('../s/86518/Canela-BoldItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Condensed Trial';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Canela Condensed Trial'), url('../s/86518/CanelaCondensed-BoldItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Deck Trial';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Canela Deck Trial'), url('../s/86518/CanelaDeck-BoldItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Canela Trial'), url('../s/86518/Canela-Black-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Condensed Trial';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Canela Condensed Trial'), url('../s/86518/CanelaCondensed-Black-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Deck Trial';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Canela Deck Trial'), url('../s/86518/CanelaDeck-Black-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Trial';
+    font-style: italic;
+    font-weight: 900;
+    src: local('Canela Trial'), url('../s/86518/Canela-BlackItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Condensed Trial';
+    font-style: italic;
+    font-weight: 900;
+    src: local('Canela Condensed Trial'), url('../s/86518/CanelaCondensed-BlackItalic-Trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Canela Deck Trial';
+    font-style: italic;
+    font-weight: 900;
+    src: local('Canela Deck Trial'), url('../s/86518/CanelaDeck-BlackItalic-Trial.woff') format('woff');
+}
+
+

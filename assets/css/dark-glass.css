@@ -1,0 +1,311 @@
+:root {
+  --dark-page-bg: #02030a;
+  --dark-page-bg-soft: #070914;
+  --dark-surface: rgba(3, 5, 14, .88);
+  --dark-surface-strong: rgba(7, 9, 20, .94);
+  --dark-border: rgba(255, 255, 255, .13);
+  --dark-border-strong: rgba(142, 63, 209, .34);
+  --dark-text: #f6f3ff;
+  --dark-text-soft: rgba(246, 243, 255, .76);
+  --dark-text-muted: rgba(246, 243, 255, .58);
+  --dark-shadow: 0 24px 70px rgba(0, 0, 0, .34);
+}
+
+html {
+  background: var(--dark-page-bg);
+}
+
+body.info-pages {
+  color: var(--dark-text);
+  background:
+    radial-gradient(circle at 16% 8%, rgba(var(--primary-rgb), .2), transparent 24rem),
+    radial-gradient(circle at 86% 18%, rgba(var(--secondary-rgb), .12), transparent 23rem),
+    linear-gradient(135deg, #02030a 0%, #070914 48%, #010208 100%) !important;
+}
+
+body.info-pages::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .03) 1px, transparent 1px);
+  background-size: 58px 58px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, .36));
+}
+
+body.info-pages,
+body.info-pages .bg-white,
+body.info-pages .bg-light,
+body.info-pages .bg-light-primary,
+body.info-pages .masaqy-stats-section,
+body.info-pages .about-page-flow,
+body.info-pages .about-section,
+body.info-pages .work-method-section,
+body.info-pages .masaqy-about-section,
+body.info-pages .ai-core-section,
+body.info-pages .about-future-section {
+  background-color: transparent !important;
+}
+
+body.info-pages .work-method-section,
+body.info-pages .masaqy-about-section,
+body.info-pages .masaqy-stats-section,
+body.info-pages .ai-core-section,
+body.info-pages .about-section,
+body.info-pages .about-future-section {
+  background:
+    radial-gradient(circle at 12% 16%, rgba(var(--accent-rgb), .1), transparent 30rem),
+    radial-gradient(circle at 88% 22%, rgba(var(--secondary-rgb), .08), transparent 27rem),
+    linear-gradient(180deg, rgba(2, 3, 10, .96), rgba(5, 7, 16, .98)) !important;
+}
+
+body.info-pages .header-shell,
+body.info-pages .nav-panel-offcanvas,
+body.info-pages .modal-content,
+body.info-pages .card,
+body.info-pages .about-card,
+body.info-pages .about-info-card,
+body.info-pages .about-content-panel,
+body.info-pages .about-leadership-visual,
+body.info-pages .about-story-shell,
+body.info-pages .about-capability-card,
+body.info-pages .about-philosophy-card,
+body.info-pages .about-feature-panel,
+body.info-pages .about-icon-card,
+body.info-pages .about-why-card,
+body.info-pages .about-vision2030-shell,
+body.info-pages .about-future-card,
+body.info-pages .about-quote-card,
+body.info-pages .about-values-panel,
+body.info-pages .about-why-panel,
+body.info-pages .method-shell,
+body.info-pages .method-step,
+body.info-pages .masaqy-about-shell,
+body.info-pages .masaqy-mini-card,
+body.info-pages .masaqy-stats-shell,
+body.info-pages .masaqy-stat-card,
+body.info-pages .ai-core-shell,
+body.info-pages .facility-card-advanced,
+body.info-pages .widgetscard,
+body.info-pages .masaqy-partnership-card,
+body.info-pages .footer-neo-card,
+body.info-pages .dropdown-item,
+body.info-pages .form-control,
+body.info-pages .form-select {
+  border: 1px solid var(--dark-border) !important;
+  background:
+    linear-gradient(145deg, rgba(10, 12, 26, .96), rgba(2, 3, 10, .9)) !important;
+  box-shadow: var(--dark-shadow) !important;
+  backdrop-filter: blur(22px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(22px) saturate(140%) !important;
+}
+
+body.info-pages .header-creative {
+  background: linear-gradient(180deg, rgba(2, 3, 10, .98), rgba(2, 3, 10, .72)) !important;
+}
+
+body.info-pages .navbar-collapse.show,
+body.info-pages .navbar-collapse.collapsing {
+  border: 1px solid var(--dark-border);
+  border-radius: 20px;
+  background: rgba(2, 3, 10, .98);
+  box-shadow: var(--dark-shadow);
+}
+
+body.info-pages .nav-link-modern,
+body.info-pages .navbar-toggler,
+body.info-pages .offcanvas-title,
+body.info-pages .dropdown-item,
+body.info-pages .item-title,
+body.info-pages .modal-title,
+body.info-pages label {
+  color: var(--dark-text) !important;
+}
+
+body.info-pages h1,
+body.info-pages h2,
+body.info-pages h3,
+body.info-pages h4,
+body.info-pages h5,
+body.info-pages h6,
+body.info-pages .about-hero-heading,
+body.info-pages .about-section-title,
+body.info-pages .demos-card-title,
+body.info-pages .masaqy-mini-card h3,
+body.info-pages .masaqy-stat-card h3,
+body.info-pages .about-capability-card h3,
+body.info-pages .about-philosophy-card h3,
+body.info-pages .about-icon-card h3,
+body.info-pages .about-why-card h3,
+body.info-pages .about-future-card h3,
+body.info-pages .facility-card-advanced h3,
+body.info-pages .card-title {
+  color: var(--dark-text) !important;
+}
+
+body.info-pages p,
+body.info-pages li,
+body.info-pages small,
+body.info-pages span,
+body.info-pages .text-dark,
+body.info-pages .card-text,
+body.info-pages .about-hero-copy,
+body.info-pages .about-section-copy,
+body.info-pages .about-rich-text p,
+body.info-pages .about-story-text p,
+body.info-pages .about-panel-copy,
+body.info-pages .about-philosophy-card p,
+body.info-pages .about-icon-card p,
+body.info-pages .about-why-card p,
+body.info-pages .masaqy-mini-card p,
+body.info-pages .masaqy-stat-card p,
+body.info-pages .demos-card-subtitle,
+body.info-pages .item-desc {
+  color: var(--dark-text-soft) !important;
+}
+
+body.info-pages .opacity-75,
+body.info-pages .text-muted {
+  opacity: 1 !important;
+  color: var(--dark-text-muted) !important;
+}
+
+body.info-pages .flow-kicker,
+body.info-pages .about-section-kicker,
+body.info-pages .method-number,
+body.info-pages .about-market-note {
+  border-color: var(--dark-border-strong) !important;
+  color: #d9c6ff !important;
+  background: rgba(142, 63, 209, .16) !important;
+}
+
+body.info-pages .about-leader-photo,
+body.info-pages .about-capability-card i,
+body.info-pages .about-icon-card i,
+body.info-pages .about-future-card i,
+body.info-pages .masaqy-mini-icon,
+body.info-pages .masaqy-stat-icon,
+body.info-pages .method-node::before,
+body.info-pages .method-node::after {
+  color: #e4d3ff !important;
+  border-color: rgba(142, 63, 209, .28) !important;
+  background: rgba(142, 63, 209, .18) !important;
+}
+
+body.info-pages .about-leader-frame,
+body.info-pages .about-vision-card,
+body.info-pages .about-vision2030-shell,
+body.info-pages .masaqy-partnership-card {
+  border-color: rgba(255, 255, 255, .18) !important;
+  background:
+    linear-gradient(135deg, rgba(8, 9, 20, .78), rgba(90, 24, 154, .5)),
+    url("../images/hero-saudi-bg.jpeg") center / cover !important;
+}
+
+body.info-pages .btn-close {
+  filter: invert(1) grayscale(1);
+}
+
+body.info-pages .modal-header,
+body.info-pages .modal-footer,
+body.info-pages .border-top,
+body.info-pages .border-bottom {
+  border-color: var(--dark-border) !important;
+}
+
+body.info-pages .modal-footer {
+  background: rgba(255, 255, 255, .06) !important;
+}
+
+body.info-pages .form-control,
+body.info-pages .form-select {
+  color: var(--dark-text) !important;
+}
+
+body.info-pages .form-control::placeholder {
+  color: rgba(246, 243, 255, .48) !important;
+}
+
+body.info-pages .form-select option {
+  color: #111827;
+}
+
+body.info-pages .card-body,
+body.info-pages .modal-header,
+body.info-pages .modal-body,
+body.info-pages .modal-footer,
+body.info-pages .offcanvas-header,
+body.info-pages .offcanvas-body,
+body.info-pages .card-content,
+body.info-pages .method-node::before,
+body.info-pages .method-number,
+body.info-pages .about-section-kicker,
+body.info-pages .flow-kicker,
+body.info-pages .about-quote-card,
+body.info-pages .about-market-note,
+body.info-pages .about-list-item,
+body.info-pages .about-values-panel,
+body.info-pages .about-why-panel,
+body.info-pages .about-vision-card .about-section-kicker,
+body.info-pages [class*="bg-light"],
+body.info-pages [class*="bg-white"] {
+  background-color: rgba(2, 3, 10, .92) !important;
+}
+
+body.info-pages .text-white,
+body.info-pages .text-dark,
+body.info-pages .text-body,
+body.info-pages .text-black,
+body.info-pages .text-secondary,
+body.info-pages .text-primary {
+  color: var(--dark-text) !important;
+}
+
+body.info-pages .btn-secondary,
+body.info-pages .btn-light,
+body.info-pages .btn-outline-secondary {
+  border-color: rgba(255, 255, 255, .2) !important;
+  color: var(--dark-text) !important;
+  background: rgba(255, 255, 255, .08) !important;
+}
+
+body.info-pages .nav-link-modern:hover,
+body.info-pages .nav-link-modern.active,
+body.info-pages a:hover,
+body.info-pages .about-quote-card,
+body.info-pages .demos-card-subtitle,
+body.info-pages .masaqy-footer-tagline {
+  color: #cdb2ff !important;
+}
+
+body.info-pages .method-step:hover,
+body.info-pages .masaqy-mini-card:hover,
+body.info-pages .masaqy-stat-card:hover,
+body.info-pages .about-capability-card:hover,
+body.info-pages .about-philosophy-card:hover,
+body.info-pages .about-feature-panel:hover,
+body.info-pages .about-icon-card:hover,
+body.info-pages .about-why-card:hover,
+body.info-pages .about-future-card:hover,
+body.info-pages .facility-card-advanced:hover,
+body.info-pages .widgetscard:hover {
+  border-color: rgba(142, 63, 209, .46) !important;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, .42), 0 0 32px rgba(142, 63, 209, .2) !important;
+}
+
+body.info-pages .method-step::before,
+body.info-pages .masaqy-mini-card::before,
+body.info-pages .masaqy-stat-card::before,
+body.info-pages .about-feature-panel::before,
+body.info-pages .about-icon-card::before,
+body.info-pages .about-why-card::before,
+body.info-pages .about-future-card::before {
+  background: linear-gradient(115deg, transparent 18%, rgba(255, 255, 255, .18) 42%, transparent 66%) !important;
+}
+
+body.info-pages img {
+  filter: saturate(1.04) contrast(1.02);
+}

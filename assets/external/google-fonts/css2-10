@@ -1,0 +1,7 @@
+﻿@font-face {
+  font-family: 'Gochi Hand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/gochihand/v25/hES06XlsOjtJsgCkx1PkTo4.ttf) format('truetype');
+}

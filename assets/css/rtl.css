@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap");
+
+:root {
+  --arabic-font: "Tajawal", "Cairo", "Noto Kufi Arabic", "Noto Sans Arabic", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+
+html[dir="rtl"] {
+  direction: rtl;
+}
+
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+  font-family: var(--arabic-font);
+  letter-spacing: 0;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6,
+html[dir="rtl"] .btn,
+html[dir="rtl"] .nav-link,
+html[dir="rtl"] .logo-text,
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select {
+  font-family: var(--arabic-font);
+  letter-spacing: 0;
+}
+
+html[dir="rtl"] .text-start {
+  text-align: right !important;
+}
+
+html[dir="rtl"] .text-end {
+  text-align: left !important;
+}
+
+html[dir="rtl"] .ms-auto {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+html[dir="rtl"] .me-2 {
+  margin-right: 0 !important;
+  margin-left: .5rem !important;
+}
+
+html[dir="rtl"] .ms-1 {
+  margin-left: 0 !important;
+  margin-right: .25rem !important;
+}
+
+html[dir="rtl"] .pe-3 {
+  padding-right: 0 !important;
+  padding-left: 1rem !important;
+}
+
+html[dir="rtl"] .header-shell,
+html[dir="rtl"] .navbar-nav,
+html[dir="rtl"] .flow-actions,
+html[dir="rtl"] .footer-neo-actions,
+html[dir="rtl"] .pricing-features li,
+html[dir="rtl"] .feature-card-item,
+html[dir="rtl"] .stack-ref-card,
+html[dir="rtl"] .dropdown-item,
+html[dir="rtl"] .form-check {
+  direction: rtl;
+}
+
+html[dir="rtl"] .navbar-brand,
+html[dir="rtl"] .btn,
+html[dir="rtl"] .orbit-node,
+html[dir="rtl"] .widgetscard,
+html[dir="rtl"] .footer-neo-top {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .dropdown-item .item-arrow,
+html[dir="rtl"] .btn .bi-arrow-right,
+html[dir="rtl"] .footer-neo-btn .bi-arrow-up-right {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .offcanvas.offcanvas-end {
+  right: auto;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+html[dir="rtl"] .offcanvas.offcanvas-end.show {
+  transform: none;
+}
+
+html[dir="rtl"] .modal-header .btn-close {
+  margin: 0 auto 0 0;
+}
+
+html[dir="rtl"] .form-check {
+  padding-left: 0;
+  padding-right: 1.5em;
+}
+
+html[dir="rtl"] .form-check .form-check-input {
+  float: right;
+  margin-left: .5rem;
+  margin-right: -1.5em;
+}
+
+html[dir="rtl"] .flow-title,
+html[dir="rtl"] .display-3,
+html[dir="rtl"] .display-4,
+html[dir="rtl"] .display-6 {
+  line-height: 1.25;
+}
+
+html[dir="rtl"] .left-sticky,
+html[dir="rtl"] .feature-sticky,
+html[dir="rtl"] .stack-ref-copy,
+html[dir="rtl"] .card-content,
+html[dir="rtl"] .why-content,
+html[dir="rtl"] .pricing-card-creative,
+html[dir="rtl"] .footer-neo-content {
+  text-align: right;
+}
+
+html[dir="rtl"] .flow-intro,
+html[dir="rtl"] .section-header,
+html[dir="rtl"] .footer-neo-content.text-center,
+html[dir="rtl"] .contact-cta .text-center {
+  text-align: center !important;
+}
+
+html[dir="rtl"] .ticker-track {
+  animation: flowTickerRunRtl 45s linear infinite !important;
+  transform: translate3d(-50%, 0, 0);
+}
+
+html[dir="rtl"] .flow-ticker {
+  direction: ltr;
+}
+
+html[dir="rtl"] .ticker-track span {
+  direction: rtl;
+}
+
+@keyframes flowTickerRunRtl {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+html[dir="rtl"] .card-watermark {
+  right: auto;
+  left: 1rem;
+}
+
+html[dir="rtl"] .price-value {
+  direction: ltr;
+  display: inline-flex;
+}

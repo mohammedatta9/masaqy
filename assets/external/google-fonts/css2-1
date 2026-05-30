@@ -1,0 +1,7 @@
+﻿@font-face {
+  font-family: 'Bree Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/breeserif/v18/4UaHrEJCrhhnVA3DgluAx60.ttf) format('truetype');
+}

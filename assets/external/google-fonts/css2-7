@@ -1,0 +1,7 @@
+﻿@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/poiretone/v18/UqyVK80NJXN4zfRgbdfbk5k.ttf) format('truetype');
+}
