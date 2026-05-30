@@ -155,6 +155,20 @@ table,
   border-color: rgba(90, 24, 154, .16) !important;
 }
 
+.flow-hero .orbit-node {
+  border-color: rgba(90, 24, 154, .18) !important;
+  color: #5A189A !important;
+  background: linear-gradient(135deg, rgba(90, 24, 154, .08), rgba(142, 63, 209, .06)) !important;
+  box-shadow: 0 14px 30px rgba(90, 24, 154, .1) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.flow-hero .orbit-node i,
+.flow-hero .orbit-node span {
+  color: #5A189A !important;
+}
+
 .flow-hero .orbit-ring.ring-a {
   border-color: rgba(90, 24, 154, .38) !important;
   box-shadow: 0 0 0 1px rgba(142, 63, 209, .07), 0 0 30px rgba(90, 24, 154, .18) !important;
@@ -182,6 +196,13 @@ table,
 .pricing-card-creative:hover {
   border-color: rgba(142, 63, 209, .35) !important;
   box-shadow: 0 18px 45px rgba(90, 24, 154, .14) !important;
+}
+
+.flow-hero .orbit-node:hover {
+  border-color: rgba(142, 63, 209, .3) !important;
+  color: #5A189A !important;
+  background: linear-gradient(135deg, rgba(90, 24, 154, .12), rgba(142, 63, 209, .09)) !important;
+  box-shadow: 0 18px 38px rgba(142, 63, 209, .14) !important;
 }
 
 .stack-ref-icon,
