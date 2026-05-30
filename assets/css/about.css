@@ -2,6 +2,167 @@
   min-height: 100vh;
 }
 
+.services-page-flow .services-hero {
+  min-height: 68vh;
+}
+
+.services-page-flow .services-intro-section {
+  padding-top: clamp(3rem, 6vw, 5rem);
+}
+
+.services-page-flow .services-leader-frame {
+  background:
+    linear-gradient(135deg, rgba(17, 24, 39, .7), rgba(90, 24, 154, .46)),
+    url("../images/hero-saudi-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.services-orbit-card {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: .45rem;
+  width: min(82%, 320px);
+  padding: 1.4rem;
+  border: 1px solid rgba(255, 255, 255, .28);
+  border-radius: 22px;
+  color: #fff;
+  background: rgba(255, 255, 255, .12);
+  box-shadow: 0 24px 70px rgba(17, 24, 39, .25);
+  text-align: center;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.services-orbit-card span {
+  color: rgba(255, 255, 255, .76);
+  font-size: .82rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.services-orbit-card strong {
+  font-size: clamp(1.25rem, 2vw, 1.8rem);
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.services-check-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .8rem;
+  margin-top: 1.6rem;
+}
+
+.services-check-grid span {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  min-height: 58px;
+  padding: .85rem 1rem;
+  border: 1px solid rgba(90, 24, 154, .12);
+  border-radius: 16px;
+  color: rgba(17, 24, 39, .78);
+  background: rgba(255, 255, 255, .62);
+  font-size: .95rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.services-check-grid i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  color: #fff;
+  background: linear-gradient(135deg, #5A189A, #4EA8DE);
+  flex: 0 0 auto;
+}
+
+.services-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-top: clamp(2.2rem, 4vw, 3.5rem);
+}
+
+.service-feature-card {
+  position: relative;
+  min-height: 280px;
+  padding: 1.5rem;
+  border: 1px solid rgba(90, 24, 154, .12);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, .72);
+  box-shadow: 0 22px 62px rgba(90, 24, 154, .09);
+  overflow: hidden;
+  transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.service-feature-card::before {
+  content: "";
+  position: absolute;
+  inset-inline-end: -64px;
+  top: -72px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(78, 168, 222, .22), transparent 70%);
+}
+
+.service-feature-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(90, 24, 154, .24);
+  box-shadow: 0 30px 78px rgba(90, 24, 154, .14);
+}
+
+.service-feature-card > i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 1.3rem;
+  border-radius: 18px;
+  color: #fff;
+  background: linear-gradient(135deg, #5A189A, #4EA8DE);
+  box-shadow: 0 16px 32px rgba(90, 24, 154, .2);
+  font-size: 1.35rem;
+}
+
+.service-feature-card span {
+  position: absolute;
+  inset-inline-end: 1.4rem;
+  top: 1.35rem;
+  color: rgba(90, 24, 154, .14);
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.service-feature-card h3 {
+  position: relative;
+  margin: 0 0 .8rem;
+  color: #111827;
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.service-feature-card p {
+  position: relative;
+  margin: 0;
+  color: rgba(17, 24, 39, .68);
+  font-size: .98rem;
+  font-weight: 620;
+  line-height: 1.85;
+}
+
 .about-hero {
   display: flex;
   align-items: center;
@@ -793,7 +954,8 @@
 
   .about-capability-grid,
   .about-philosophy-grid,
-  .about-future-grid {
+  .about-future-grid,
+  .services-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -827,7 +989,9 @@
   .about-philosophy-grid,
   .about-vision2030-grid,
   .about-future-grid,
-  .about-mission-list {
+  .about-mission-list,
+  .services-card-grid,
+  .services-check-grid {
     grid-template-columns: 1fr;
   }
 
@@ -847,6 +1011,12 @@
   .about-why-card,
   .about-vision2030-shell,
   .about-future-card {
+    border-radius: 20px;
+  }
+
+  .service-feature-card {
+    min-height: auto;
+    padding: 1.25rem;
     border-radius: 20px;
   }
 
