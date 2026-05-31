@@ -232,44 +232,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // 	});
   // }
   // Initialize Demos & Lenis logic
-  const systemTabs = document.querySelectorAll(".systems-tab");
-  const systemsPanel = document.querySelector(".systems-panel");
-  const systemsPanelImage = document.getElementById("systemsPanelImage");
-  const systemsPanelKicker = document.getElementById("systemsPanelKicker");
-  const systemsPanelTitle = document.getElementById("systemsPanelTitle");
-  const systemsPanelDesc = document.getElementById("systemsPanelDesc");
-  const systemsPanelBtn = document.getElementById("systemsPanelBtn");
-  if (systemTabs.length && systemsPanel) {
-    const activateSystemTab = (tab) => {
-      if (!tab || tab.classList.contains("is-active")) return;
-      systemTabs.forEach((item) => {
-        const isActive = item === tab;
-        item.classList.toggle("is-active", isActive);
-        item.setAttribute("aria-selected", isActive ? "true" : "false");
-      });
-      systemsPanel.classList.add("is-changing");
-      window.setTimeout(() => {
-        const title = tab.getAttribute("data-title") || "";
-        const subtitle = tab.getAttribute("data-subtitle") || "";
-        const desc = tab.getAttribute("data-desc") || "";
-        const img = tab.getAttribute("data-img") || "";
-        const link = tab.getAttribute("data-link") || "#";
-        if (systemsPanelImage) {
-          systemsPanelImage.src = img;
-          systemsPanelImage.alt = title;
-        }
-        if (systemsPanelKicker) systemsPanelKicker.textContent = title;
-        if (systemsPanelTitle) systemsPanelTitle.textContent = subtitle;
-        if (systemsPanelDesc) systemsPanelDesc.textContent = desc;
-        if (systemsPanelBtn) systemsPanelBtn.setAttribute("href", link);
-        systemsPanel.classList.remove("is-changing");
-      }, 180);
-    };
-    systemTabs.forEach((tab) => {
-      tab.addEventListener("click", () => activateSystemTab(tab));
-    });
-  }
-
   const initDemos = () => {
     const demosLabel = document.getElementById("demoLabel");
     const demosTitle = document.getElementById("demoTitle");
