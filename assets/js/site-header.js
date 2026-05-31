@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const header = document.getElementById("mainNavbar");
   const headerShell = header ? header.querySelector(".header-shell") : null;
   const navLinks = document.querySelectorAll(".nav-link-modern");
-  const sectionAnchors = Array.from(navLinks).map((link) => link.getAttribute("href")).filter((href) => href && href.startsWith("#") && href.length > 1 && !href.startsWith("#offcanvas"));
+  const sectionAnchors = Array.from(navLinks).map((link) => link.getAttribute("href")).filter((href) => href && href.startsWith("#") && href.length > 1);
   const sections = sectionAnchors.map((href) => document.querySelector(href)).filter(Boolean);
   const progressBar = document.querySelector(".scroll-progress-bar");
   const navbarCollapse = document.getElementById("prenavbar");
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
       navLinks.forEach((link) => {
         const href = link.getAttribute("href");
         if (!href) return;
-        const isSectionLink = href.startsWith("#") && href.length > 1 && !href.startsWith("#offcanvas");
+        const isSectionLink = href.startsWith("#") && href.length > 1;
         if (isSectionLink) {
           const sectionId = href.substring(1);
           link.classList.toggle("active", current === sectionId);
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const anchor = event.target.closest('a[href^="#"]');
     if (!anchor) return;
     const href = anchor.getAttribute("href");
-    if (!href || href === "#" || href.length < 2 || href.startsWith("#offcanvas")) return;
+    if (!href || href === "#" || href.length < 2) return;
     const target = document.querySelector(href);
     if (!target) return;
     event.preventDefault();
@@ -122,23 +122,6 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         }
       });
-    });
-  });
-  // Handle trigger state and scroll priority
-  document.querySelectorAll(".offcanvas-nav-trigger").forEach((trigger) => {
-    const targetId = trigger.getAttribute("href");
-    if (!targetId || !targetId.startsWith("#")) return;
-    const offcanvasEl = document.querySelector(targetId);
-    if (!offcanvasEl) return;
-    offcanvasEl.addEventListener("show.bs.offcanvas", () => {
-      trigger.classList.add("is-open");
-      document.body.classList.add("offcanvas-priority-scroll");
-      if (window.lenis) window.lenis.stop();
-    });
-    offcanvasEl.addEventListener("hidden.bs.offcanvas", () => {
-      trigger.classList.remove("is-open");
-      document.body.classList.remove("offcanvas-priority-scroll");
-      if (window.lenis) window.lenis.start();
     });
   });
   if (header && headerShell) {

@@ -35,9 +35,7 @@
           </a>
           <div class="mobile-actions d-flex align-items-center gap-2 d-lg-none">
             <a class="btn btn-mobile-cta magnetic-btn" href="#consultationModal"
-              title="&#1591;&#1604;&#1576; &#1575;&#1587;&#1578;&#1588;&#1575;&#1585;&#1607;"
-              aria-label="&#1591;&#1604;&#1576; &#1575;&#1587;&#1578;&#1588;&#1575;&#1585;&#1607;"
-              data-bs-toggle="modal" data-bs-target="#consultationModal">
+              title="طلب استشارة" aria-label="طلب استشارة" data-bs-toggle="modal" data-bs-target="#consultationModal">
               <i class="bi bi-chat-dots"></i>
             </a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prenavbar"
@@ -60,7 +58,7 @@
                 </a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link nav-link-modern dropdown-toggle active" href="services.html" id="servicesDropdown"
+                <a class="nav-link nav-link-modern dropdown-toggle" href="services.html" id="servicesDropdown"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="link-text">الخدمات</span>
                   <i class="bi bi-chevron-down ms-1 opacity-75 small"></i>
@@ -72,26 +70,28 @@
                   <li><a class="dropdown-item" href="index.html#masaqy-ecosystem">أكاديمية مساقي</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-modern offcanvas-nav-trigger" href="#offcanvasDomain" role="button"
-                  data-bs-toggle="offcanvas" aria-controls="offcanvasDomain">
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-link-modern dropdown-toggle" href="index.html#systems" id="systemsDropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="link-text">الأنظمة</span>
-                  <i class="bi bi-chevron-right ms-1 opacity-75 small"></i>
+                  <i class="bi bi-chevron-down ms-1 opacity-75 small"></i>
                 </a>
+                <ul class="dropdown-menu nav-services-dropdown" aria-labelledby="systemsDropdown">
+                  <li><a class="dropdown-item" href="index.html#systems">CRM الذكي</a></li>
+                  <li><a class="dropdown-item" href="index.html#systems">ERP الذكي</a></li>
+                  <li><a class="dropdown-item" href="index.html#systems">Automation Systems</a></li>
+                  <li><a class="dropdown-item" href="index.html#systems">AI Dashboards</a></li>
+                  <li><a class="dropdown-item" href="index.html#systems">AI Decision Systems</a></li>
+                </ul>
               </li>
-              <li class="nav-item index-page-only">
-                <a class="nav-link nav-link-modern" href="#ai-core">
-                  <span class="link-text">AI Core</span>
-                </a>
-              </li>
-              <li class="nav-item index-page-only">
-                <a class="nav-link nav-link-modern" href="#sectors">
-                  <span class="link-text">القطاعات</span>
-                </a>
-              </li>
-               <li class="nav-item index-page-only">
+              <li class="nav-item">
                 <a class="nav-link nav-link-modern" href="#">
-                  <span class="link-text"> English</span>
+                  <span class="link-text">أعمالنا</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-modern" href="#">
+                  <span class="link-text">English</span>
                 </a>
               </li>
               <li class="nav-item d-none d-lg-block ms-xl-3">
@@ -107,140 +107,6 @@
         </div>
       </div>
     </nav>
-    <div class="offcanvas offcanvas-end nav-panel-offcanvas" tabindex="-1" id="offcanvasDomain" role="dialog"
-      aria-labelledby="offcanvasDomainLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasDomainLabel">الأنظمة الذكية</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق"></button>
-      </div>
-      <div class="offcanvas-body" data-lenis-prevent="">
-        <div class="nav-panel-links">
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-kanban"></i>
-            <span class="item-copy">
-              <span class="item-title">CRM الذكي</span>
-              <span class="item-desc">إدارة علاقات العملاء بذكاء وتحليلات دقيقة</span>
-            </span>
-            <i class="bi bi-chevron-right item-arrow"></i>
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-diagram-3"></i>
-            <span class="item-copy">
-              <span class="item-title">ERP الذكي</span>
-              <span class="item-desc">تخطيط موارد المؤسسة وربط العمليات في نظام واحد</span>
-            </span>
-            <i class="bi bi-chevron-right item-arrow"></i>
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-gear-wide-connected"></i>
-            <span class="item-copy">
-              <span class="item-title">Automation Systems</span>
-              <span class="item-desc">أتمتة workflows والمهام المتكررة بكفاءة أعلى</span>
-            </span>
-            <i class="bi bi-chevron-right item-arrow"></i>
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-speedometer2"></i>
-            <span class="item-copy">
-              <span class="item-title">AI Dashboards</span>
-              <span class="item-desc">لوحات مؤشرات ذكية تعرض البيانات المهمة لحظيًا</span>
-            </span>
-            <i class="bi bi-chevron-right item-arrow"></i>
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-cpu"></i>
-            <span class="item-copy">
-              <span class="item-title">AI Decision Systems</span>
-              <span class="item-desc">أنظمة تساعد على اتخاذ قرارات أسرع وأكثر دقة</span>
-            </span>
-            <i class="bi bi-chevron-right item-arrow"></i>
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-chat-square-dots"></i>
-            <span class="item-copy">
-              <span class="item-title">Unified Communication</span>
-              <span class="item-desc">توحيد قنوات التواصل داخل تجربة عمل واحدة</span>
-            </span>
-            <i class="bi bi-chevron-right item-arrow"></i>
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-pencil-square"></i>
-            <span class="item-copy">
-              <span class="item-title">AI Content Tools</span>
-              <span class="item-desc">أدوات ذكية لإنتاج وتنظيم وتحسين المحتوى</span>
-            </span>
-            <i class="bi bi-chevron-right item-arrow"></i>
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-cloud-check"></i>
-            <span class="item-copy">
-              <span class="item-title">SaaS Systems</span>
-              <span class="item-desc">منصات SaaS قابلة للتوسع وإدارة الاشتراكات</span>
-            </span>
-            <i class="bi bi-chevron-right item-arrow"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="offcanvas offcanvas-end nav-panel-offcanvas" tabindex="-1" id="offcanvasWidgets" role="dialog"
-      aria-labelledby="offcanvasWidgetsLabel">
-      <div class="offcanvas-header">
-        <h2 class="offcanvas-title h5" id="offcanvasWidgetsLabel">الخدمات</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق"></button>
-      </div>
-      <div class="offcanvas-body" data-lenis-prevent="">
-        <div class="nav-panel-links">
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-database"></i>
-            <span class="item-copy">
-              <span class="item-title">محركات البيانات</span>
-              <span class="item-desc">بناء مصادر بيانات مترابطة وجاهزة للتحليل والتشغيل</span>
-            </span>
-            <i class="bi bi-chevron-right item-arrow"></i>
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-bar-chart-line"></i>
-            <span class="item-copy">
-              <span class="item-title">التحليلات</span>
-              <span class="item-desc">تحويل البيانات إلى مؤشرات واضحة قابلة للتنفيذ</span>
-            </span>
-            <i class="bi bi-chevron-right item-arrow"></i>
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-graph-up-arrow"></i>
-            <span class="item-copy">
-              <span class="item-title">التنبؤ</span>
-              <span class="item-desc">نماذج توقع تساعدك على قراءة الاتجاهات قبل حدوثها</span>
-            </span>
-            <i class="bi bi-chevron-right item-arrow"></i>
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-gear-wide-connected"></i>
-            <span class="item-copy">
-              <span class="item-title">الأتمتة</span>
-              <span class="item-desc">أتمتة العمليات اليومية وتقليل العمل اليدوي المتكرر</span>
-            </span>
-            <i class="bi bi-chevron-right item-arrow"></i>
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-cpu"></i>
-            <span class="item-copy">
-              <span class="item-title">الذكاء التشغيلي</span>
-              <span class="item-desc">رؤية فورية لأداء العمليات ومواطن التحسين</span>
-            </span>
-            <i class="bi bi-chevron-right item-arrow"></i>
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-diagram-3"></i>
-            <span class="item-copy">
-              <span class="item-title">تكامل الأنظمة</span>
-              <span class="item-desc">ربط الأدوات والأنظمة ضمن تدفق عمل موحد</span>
-            </span>
-            <i class="bi bi-chevron-right item-arrow"></i>
-          </a>
-        </div>
-      </div>
-    </div>
   </header>
   <script src="assets/js/site-header.js"></script>
 
@@ -485,8 +351,7 @@
         </div>
       </div>
     </section>
-
-  <section class="masaqy-partnership-cta margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated">
+    <section class="masaqy-partnership-cta margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated">
       <div class="container-fluid px-3 px-md-5">
         <div class="masaqy-partnership-card reveal-on-scroll" data-reveal-order="1">
           <div class="row align-items-center g-4 g-xl-5">
@@ -496,7 +361,6 @@
                 دعوة للشراكة
               </span>
               <h2 class="masaqy-partnership-title mb-3">حوّل الذكاء الاصطناعي من فكرة إلى أثر مؤسسي قابل للقياس.</h2>
-               
             </div>
             <div class="col-lg-4">
               <div class="masaqy-partnership-visual">
@@ -556,23 +420,23 @@
               <div class="col-xl col-lg-4 col-md-6">
                 <h2 class="masaqy-footer-title h6">الأنظمة الذكية</h2>
                 <ul class="masaqy-footer-links">
-                  <li><a href="#">Smart CRM</a></li>
-                  <li><a href="#">Smart ERP</a></li>
-                  <li><a href="#">Automation Systems</a></li>
-                  <li><a href="#">AI Dashboards</a></li>
-                  <li><a href="#">AI Decision Systems</a></li>
-                  <li><a href="#">SaaS Platforms</a></li>
-                  <li><a href="#">Unified Communication</a></li>
+                  <li><a href="index.html#systems">Smart CRM</a></li>
+                  <li><a href="index.html#systems">Smart ERP</a></li>
+                  <li><a href="index.html#systems">Automation Systems</a></li>
+                  <li><a href="index.html#systems">AI Dashboards</a></li>
+                  <li><a href="index.html#systems">AI Decision Systems</a></li>
+                  <li><a href="index.html#systems">SaaS Platforms</a></li>
+                  <li><a href="index.html#systems">Unified Communication</a></li>
                 </ul>
               </div>
               <div class="col-xl col-lg-4 col-md-6">
                 <h2 class="masaqy-footer-title h6">روابط سريعة</h2>
                 <ul class="masaqy-footer-links">
                   <li><a href="index.html">الرئيسية</a></li>
-                  <li><a href="#about">من نحن</a></li>
+                  <li><a href="about.html">من نحن</a></li>
                   <li><a href="services.html#services-list">الخدمات</a></li>
-                  <li><a href="#systems">الأنظمة</a></li>
-                  <li><a href="#sectors">القطاعات</a></li>
+                  <li><a href="index.html#systems">الأنظمة</a></li>
+                  <li><a href="index.html#sectors">القطاعات</a></li>
                   <li><a href="#">المدونة</a></li>
                   <li><a href="#consultationModal" data-bs-toggle="modal" data-bs-target="#consultationModal">تواصل معنا</a></li>
                 </ul>
@@ -595,7 +459,7 @@
                 <span>© 2026 MASAQY. All Rights Reserved.</span>
               </div>
               <div class="d-flex align-items-center gap-3">
-                 <a href="#" class="footer-neo-top" aria-label="العودة للأعلى">
+                <a href="#" class="footer-neo-top" aria-label="العودة للأعلى">
                   <span>الأعلى</span>
                   <i class="bi bi-arrow-up"></i>
                 </a>
