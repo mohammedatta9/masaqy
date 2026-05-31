@@ -1262,6 +1262,244 @@
   }
 }
 
+.masaqy-services-creative {
+  margin-top: 1.5rem;
+  align-items: stretch;
+}
+
+.masaqy-services-creative > [class*="col-"] {
+  display: flex;
+}
+
+.masaqy-service-card {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.masaqy-service-card .card-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+  border: 1px solid rgba(var(--primary-rgb), .12);
+  border-radius: 28px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, .94), rgba(255, 255, 255, .72)),
+    radial-gradient(circle at 10% 10%, rgba(var(--accent-rgb), .12), transparent 34%);
+  box-shadow: 0 22px 58px rgba(var(--primary-rgb), .1);
+  transition: transform .35s cubic-bezier(.22, 1, .36, 1), box-shadow .35s ease, border-color .35s ease;
+  overflow: hidden;
+}
+
+.masaqy-service-card:hover .card-inner {
+  transform: translateY(-10px);
+  border-color: rgba(var(--accent-rgb), .3);
+  box-shadow: 0 30px 76px rgba(var(--primary-rgb), .16);
+}
+
+.masaqy-service-card .card-number {
+  position: absolute;
+  top: 1rem;
+  left: 1.15rem;
+  z-index: 2;
+  color: rgba(var(--primary-rgb), .12);
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  font-weight: 950;
+  line-height: 1;
+}
+
+.masaqy-service-card .why-icon-box {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 1.15rem;
+  border-radius: 20px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  box-shadow: 0 14px 34px rgba(var(--accent-rgb), .3);
+}
+
+.masaqy-service-card .why-icon-box i {
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.masaqy-service-card .icon-ring {
+  position: absolute;
+  inset: -8px;
+  border: 1px solid rgba(var(--accent-rgb), .22);
+  border-radius: 24px;
+  animation: aiCorePulse 4.5s ease-in-out infinite;
+}
+
+.masaqy-service-card .why-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.masaqy-service-card h3 {
+  margin-bottom: 1rem;
+  color: #111827;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.masaqy-service-card .service-block {
+  margin-bottom: .8rem;
+  padding: .85rem .95rem;
+  border: 1px solid rgba(var(--primary-rgb), .08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .58);
+}
+
+.masaqy-service-card .service-block span {
+  display: inline-flex;
+  margin-bottom: .35rem;
+  color: var(--accent-color);
+  font-size: .78rem;
+  font-weight: 900;
+}
+
+.masaqy-service-card p {
+  margin: 0;
+  color: rgba(17, 24, 39, .72);
+  font-size: .92rem;
+  line-height: 1.75;
+}
+
+.masaqy-service-card .service-checks {
+  display: grid;
+  gap: .55rem;
+  margin: .25rem 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.masaqy-service-card .service-checks li {
+  display: flex;
+  align-items: flex-start;
+  gap: .5rem;
+  color: rgba(17, 24, 39, .78);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+.masaqy-service-card .service-checks i {
+  margin-top: .2rem;
+  color: var(--accent-color);
+  font-size: 1rem;
+  flex: 0 0 auto;
+}
+
+.masaqy-service-card .service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin-top: auto;
+  margin-bottom: 1.15rem;
+}
+
+.masaqy-service-card .service-tags span {
+  padding: .38rem .7rem;
+  border: 1px solid rgba(var(--accent-rgb), .18);
+  border-radius: 999px;
+  color: var(--primary-color);
+  background: rgba(var(--accent-rgb), .08);
+  font-size: .76rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.masaqy-service-card .masaqy-service-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .42rem;
+  align-self: flex-start;
+  max-width: 100%;
+  min-height: 40px;
+  padding: .58rem .85rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  text-align: center;
+  font-size: .88rem;
+}
+
+.masaqy-service-card .masaqy-service-btn .btn-icon {
+  order: -1;
+  transition: transform .3s ease;
+}
+
+.masaqy-service-card .masaqy-service-btn:hover .btn-icon {
+  transform: translateX(4px);
+}
+
+.masaqy-service-card .card-shape {
+  position: absolute;
+  right: -34px;
+  bottom: -38px;
+  width: 138px;
+  height: 138px;
+  border-radius: 34px;
+  background: linear-gradient(135deg, rgba(var(--primary-rgb), .1), rgba(var(--accent-rgb), .18));
+  transform: rotate(18deg);
+}
+
+.masaqy-service-card.theme-s .why-icon-box {
+  background: linear-gradient(135deg, #14b8a6, var(--primary-color));
+}
+
+.masaqy-service-card.theme-t .why-icon-box {
+  background: linear-gradient(135deg, #f59e0b, var(--accent-color));
+}
+
+.masaqy-service-card.theme-q .why-icon-box {
+  background: linear-gradient(135deg, #6366f1, var(--primary-color));
+}
+
+.masaqy-service-card.theme-r .why-icon-box {
+  background: linear-gradient(135deg, #06b6d4, var(--accent-color));
+}
+
+.masaqy-service-card.theme-u .why-icon-box {
+  background: linear-gradient(135deg, #22c55e, var(--primary-color));
+}
+
+@media (max-width: 767.98px) {
+  .masaqy-service-card .card-inner {
+    border-radius: 22px;
+  }
+
+  .masaqy-service-card {
+    border-radius: 22px;
+  }
+
+  .masaqy-service-card .why-icon-box {
+    width: 54px;
+    height: 54px;
+    border-radius: 18px;
+  }
+
+  .masaqy-service-card h3 {
+    font-size: 1.12rem;
+  }
+
+  .masaqy-service-card p,
+  .masaqy-service-card .service-checks li {
+    font-size: .86rem;
+  }
+}
+
 .sectors-directory-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
