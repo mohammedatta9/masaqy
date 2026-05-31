@@ -904,6 +904,41 @@
   min-height: 230px;
 }
 
+.nav-link-modern.dropdown-toggle::after {
+  display: none;
+}
+
+.nav-services-dropdown {
+  min-width: 230px;
+  padding: .65rem;
+  border: 1px solid rgba(var(--primary-rgb), .12);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .96);
+  box-shadow: 0 22px 58px rgba(var(--primary-rgb), .22), 0 8px 22px rgba(0, 0, 0, .08);
+  text-align: center;
+}
+
+.nav-services-dropdown .dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: .6rem .85rem;
+  border-radius: 12px;
+  color: #111827;
+  font-weight: 750;
+  text-decoration: none;
+  text-align: center;
+  transition: color .25s ease, background .25s ease, transform .25s ease;
+}
+
+.nav-services-dropdown .dropdown-item:hover,
+.nav-services-dropdown .dropdown-item:focus {
+ color: #5A189A !important;
+background: linear-gradient(135deg, rgba(90, 24, 154, .08), rgba(142, 63, 209, .06)) !important;
+  transform: translateY(-2px);
+}
+
 @media (max-width: 575.98px) {
   .masaqy-stats-shell {
     border-radius: 24px;
@@ -1806,3 +1841,5 @@
 .masaqy-footer-powered i {
   color: var(--accent-color);
 }
+
+

@@ -4,6 +4,8 @@
   --accent-color: #8E3FD1;
   --site-font-family: var(--arabic-font, var(--bs-body-font-family));
   --primary-rgb: 90, 24, 154;
+  --primary-soft-color: rgba(90, 24, 154, .08);
+  --primary-soft-gradient: linear-gradient(135deg, rgba(90, 24, 154, .08), rgba(142, 63, 209, .06));
   --secondary-rgb: 78, 168, 222;
   --accent-rgb: 142, 63, 209;
   --bs-primary: #5A189A;
