@@ -166,3 +166,14 @@ html[dir="rtl"] .price-value {
   direction: ltr;
   display: inline-flex;
 }
+
+html[dir="rtl"] .floating-contact-actions {
+  right: auto;
+  left: clamp(16px, 2vw, 28px);
+}
+
+@media (max-width: 575.98px) {
+  html[dir="rtl"] .floating-contact-actions {
+    left: 14px;
+  }
+}
