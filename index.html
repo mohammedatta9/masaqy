@@ -268,8 +268,7 @@
                       <span>الحوكمة الذكية</span>
                       <span>تحسين العمليات</span>
                     </div>
-                    <a class="btn btn-cta-glow masaqy-service-btn" href="#consultationModal" data-bs-toggle="modal"
-                      data-bs-target="#consultationModal">
+                    <a class="btn btn-cta-glow masaqy-service-btn" href="services.html#service-request">
                       <span class="btn-text">ابدأ رحلة التحول</span>
                       <i class="bi bi-arrow-left btn-icon"></i>
                     </a>
@@ -308,8 +307,7 @@
                       <span>التحليلات التنبؤية</span>
                       <span>تكامل الأنظمة</span>
                     </div>
-                    <a class="btn btn-cta-glow masaqy-service-btn" href="#consultationModal" data-bs-toggle="modal"
-                      data-bs-target="#consultationModal">
+                    <a class="btn btn-cta-glow masaqy-service-btn" href="services.html#service-request">
                       <span class="btn-text">ابنِ نظامك الذكي</span>
                       <i class="bi bi-arrow-left btn-icon"></i>
                     </a>
@@ -348,8 +346,7 @@
                       <span>الإعلانات الذكية</span>
                       <span>تحسين محركات البحث</span>
                     </div>
-                    <a class="btn btn-cta-glow masaqy-service-btn" href="#consultationModal" data-bs-toggle="modal"
-                      data-bs-target="#consultationModal">
+                    <a class="btn btn-cta-glow masaqy-service-btn" href="services.html#service-request">
                       <span class="btn-text">ابدأ النمو الذكي</span>
                       <i class="bi bi-arrow-left btn-icon"></i>
                     </a>
@@ -388,8 +385,7 @@
                       <span>التطبيقات العملية</span>
                       <span>البرامج الاحترافية</span>
                     </div>
-                    <a class="btn btn-cta-glow masaqy-service-btn" href="#consultationModal" data-bs-toggle="modal"
-                      data-bs-target="#consultationModal">
+                    <a class="btn btn-cta-glow masaqy-service-btn" href="services.html#service-request">
                       <span class="btn-text">ابدأ التعلم الآن</span>
                       <i class="bi bi-arrow-left btn-icon"></i>
                     </a>
@@ -428,8 +424,7 @@
                       <span>الأتمتة الذكية</span>
                       <span>محركات التوصية</span>
                     </div>
-                    <a class="btn btn-cta-glow masaqy-service-btn" href="#consultationModal" data-bs-toggle="modal"
-                      data-bs-target="#consultationModal">
+                    <a class="btn btn-cta-glow masaqy-service-btn" href="services.html#service-request">
                       <span class="btn-text">اطلب نظامك المخصص</span>
                       <i class="bi bi-arrow-left btn-icon"></i>
                     </a>
@@ -468,8 +463,7 @@
                       <span>الأنظمة الإدارية</span>
                       <span>المتاجر الذكية</span>
                     </div>
-                    <a class="btn btn-cta-glow masaqy-service-btn" href="#consultationModal" data-bs-toggle="modal"
-                      data-bs-target="#consultationModal">
+                    <a class="btn btn-cta-glow masaqy-service-btn" href="services.html#service-request">
                       <span class="btn-text">ابدأ مشروعك التقني</span>
                       <i class="bi bi-arrow-left btn-icon"></i>
                     </a>
@@ -1108,6 +1102,26 @@
       </div>
     </div>
   </div>
+  <script>
+    document.querySelectorAll('.masaqy-service-card .card-inner').forEach((card) => {
+      card.setAttribute('role', 'link');
+      card.setAttribute('tabindex', '0');
+      card.style.cursor = 'pointer';
+
+      card.addEventListener('click', (event) => {
+        if (event.target.closest('a, button')) return;
+        window.location.href = 'services.html';
+      });
+
+      card.addEventListener('keydown', (event) => {
+        if (event.target.closest('a, button')) return;
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+
+        event.preventDefault();
+        window.location.href = 'services.html';
+      });
+    });
+  </script>
   <script src="vendor/gsap/3.12.5/gsap.min.js"></script>
   <script src="vendor/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="assets/bundles/lenis.min.js"></script>

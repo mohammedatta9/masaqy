@@ -1447,6 +1447,168 @@
   transform: none;
 }
 
+.service-request-section {
+  padding-top: 1rem;
+}
+
+.service-request-shell {
+  display: grid;
+  grid-template-columns: minmax(260px, .85fr) minmax(0, 1.4fr);
+  gap: clamp(1.25rem, 3vw, 2rem);
+  align-items: stretch;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  border: 1px solid rgba(var(--primary-rgb), .12);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(78, 168, 222, .18), transparent 30%),
+    linear-gradient(135deg, rgba(255, 255, 255, .96), rgba(248, 250, 252, .9));
+  box-shadow: 0 28px 70px rgba(15, 23, 42, .08);
+}
+
+.service-request-intro {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  padding: clamp(1.35rem, 3vw, 2rem);
+  border-radius: 22px;
+  color: #fff;
+  background:
+    linear-gradient(135deg, rgba(var(--primary-rgb), .96), rgba(18, 34, 70, .94)),
+    radial-gradient(circle at 20% 10%, rgba(255, 255, 255, .18), transparent 34%);
+}
+
+.service-request-intro::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: -52px;
+  bottom: -52px;
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 50%;
+}
+
+.service-request-kicker {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  width: fit-content;
+  margin-bottom: 1.25rem;
+  padding: .45rem .75rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .12);
+  color: rgba(255, 255, 255, .9);
+  font-size: .82rem;
+  font-weight: 800;
+}
+
+.service-request-intro h2 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 .85rem;
+  color: #fff;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.service-request-intro p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: rgba(255, 255, 255, .78);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.service-request-points {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: .75rem;
+  margin-top: 1.75rem;
+}
+
+.service-request-points span {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  color: rgba(255, 255, 255, .88);
+  font-weight: 700;
+  font-size: .92rem;
+}
+
+.service-request-points i {
+  color: var(--accent-color);
+}
+
+.service-request-form {
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.service-request-form .form-label {
+  margin-bottom: .45rem;
+  color: var(--text-dark);
+  font-weight: 800;
+}
+
+.service-request-form .form-control,
+.service-request-form .form-select {
+  min-height: 54px;
+  border: 1px solid rgba(var(--primary-rgb), .12);
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, .82);
+  box-shadow: none;
+}
+
+.service-request-form textarea.form-control {
+  min-height: 132px;
+}
+
+.service-request-form .form-control:focus,
+.service-request-form .form-select:focus {
+  border-color: rgba(var(--primary-rgb), .35);
+  box-shadow: 0 0 0 .2rem rgba(var(--primary-rgb), .08);
+}
+
+.service-request-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: .5rem;
+}
+
+.service-request-footer .form-check-label {
+  color: rgba(var(--reverse-color-black), .62);
+}
+
+.service-request-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .65rem;
+  min-height: 52px;
+  padding: .85rem 1.35rem;
+  border: 0;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: #fff;
+  font-weight: 900;
+  box-shadow: 0 16px 34px rgba(var(--primary-rgb), .18);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.service-request-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 42px rgba(var(--primary-rgb), .24);
+}
+
 @media (max-width: 991.98px) {
   .about-hero {
     min-height: auto;
@@ -1470,6 +1632,10 @@
 
   .about-leadership-visual {
     min-height: auto;
+  }
+
+  .service-request-shell {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1527,5 +1693,24 @@
 
   .about-ai-network {
     height: 72px;
+  }
+
+  .service-request-shell {
+    padding: .75rem;
+    border-radius: 22px;
+  }
+
+  .service-request-intro,
+  .service-request-form {
+    padding: 1.1rem;
+  }
+
+  .service-request-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .service-request-submit {
+    width: 100%;
   }
 }
