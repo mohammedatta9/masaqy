@@ -249,20 +249,6 @@
   z-index: -2;
 }
 
-.work-method-section::after {
-  content: "METHOD";
-  position: absolute;
-  inset-inline-start: 4%;
-  top: 8%;
-  color: rgba(var(--primary-rgb), .06);
-  font-size: clamp(5rem, 14vw, 14rem);
-  font-weight: 900;
-  letter-spacing: .08em;
-  line-height: 1;
-  pointer-events: none;
-  z-index: -1;
-}
-
 .method-shell {
   position: relative;
   padding: clamp(1rem, 2vw, 1.5rem);
@@ -522,10 +508,6 @@
 @media (max-width: 767.98px) {
   .work-method-section {
     padding: 4rem 0;
-  }
-
-  .work-method-section::after {
-    display: none;
   }
 
   .method-shell {
