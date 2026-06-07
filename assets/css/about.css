@@ -314,6 +314,16 @@
   grid-column: 4 / span 2;
 }
 
+@media (min-width: 992px) {
+  #lab-groups .consulting-group-card:nth-child(4) {
+    grid-column: span 4;
+  }
+
+  #lab-groups .consulting-group-card:nth-child(5) {
+    grid-column: span 2;
+  }
+}
+
 .consulting-group-card::before {
   content: "";
   position: absolute;
@@ -402,6 +412,31 @@
   font-size: .92rem;
   font-weight: 650;
   line-height: 1.8;
+}
+
+.consulting-group-content ul {
+  display: grid;
+  gap: .35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.consulting-group-content li {
+  position: relative;
+  padding-inline-start: 1.35rem;
+  color: rgba(17, 24, 39, .72);
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.consulting-group-content li::before {
+  content: "✓";
+  position: absolute;
+  inset-inline-start: 0;
+  color: var(--accent-color);
+  font-weight: 950;
 }
 
 .consulting-group-card .masaqy-service-btn,
