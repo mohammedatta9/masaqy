@@ -316,11 +316,11 @@
 
 @media (min-width: 992px) {
   #lab-groups .consulting-group-card:nth-child(4) {
-    grid-column: span 4;
+    grid-column: span 2;
   }
 
   #lab-groups .consulting-group-card:nth-child(5) {
-    grid-column: span 2;
+    grid-column: span 4;
   }
 }
 
@@ -446,6 +446,49 @@
   gap: .45rem;
   width: fit-content;
   margin-top: auto;
+}
+
+.lab-wide-card-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.lab-wide-card-media {
+  width: 100%;
+  min-height: 220px;
+  margin: 1rem 0 0;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(var(--primary-rgb), .1);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .38), 0 18px 42px rgba(var(--primary-rgb), .12);
+}
+
+.lab-wide-card-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 992px) {
+  #lab-groups .lab-wide-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(190px, .42fr);
+    gap: clamp(1rem, 1.8vw, 1.35rem);
+    align-items: stretch;
+  }
+
+  #lab-groups .lab-wide-card-media {
+    min-height: 100%;
+    margin: 0;
+  }
+
+  #lab-groups .lab-wide-card-media img {
+    height: 100%;
+    min-height: 100%;
+  }
 }
 
 .consulting-method-section {
