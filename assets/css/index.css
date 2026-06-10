@@ -2006,6 +2006,54 @@ background: linear-gradient(135deg, rgba(90, 24, 154, .08), rgba(142, 63, 209, .
   display: flex;
 }
 
+.ai-service-tags-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .75rem;
+  margin-top: clamp(1.5rem, 3vw, 2.4rem);
+  padding-top: clamp(1.25rem, 3vw, 2rem);
+  border-top: 1px solid rgba(var(--primary-rgb), .1);
+}
+
+.ai-service-tags-panel span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: .58rem .95rem;
+  border: 1px solid rgba(var(--primary-rgb), .14);
+  border-radius: 999px;
+  color: #1f2937;
+  background: linear-gradient(135deg, rgba(255, 255, 255, .9), rgba(var(--accent-rgb), .08));
+  box-shadow: 0 12px 28px rgba(var(--primary-rgb), .08);
+  font-size: .88rem;
+  font-weight: 800;
+  line-height: 1.45;
+  text-align: center;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease, color .25s ease;
+}
+
+.ai-service-tags-panel span:hover {
+  transform: translateY(-4px);
+  border-color: rgba(var(--accent-rgb), .34);
+  color: var(--primary-color);
+  box-shadow: 0 16px 34px rgba(var(--primary-rgb), .14);
+}
+
+@media (max-width: 575.98px) {
+  .ai-service-tags-panel {
+    justify-content: flex-start;
+    gap: .55rem;
+  }
+
+  .ai-service-tags-panel span {
+    min-height: 36px;
+    padding: .5rem .75rem;
+    font-size: .78rem;
+  }
+}
+
 .masaqy-service-card {
   position: relative;
   width: 100%;
