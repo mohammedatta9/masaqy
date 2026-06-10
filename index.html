@@ -253,10 +253,11 @@
                       <p>نبني خارطة تحول مؤسسي ذكية تبدأ بالتقييم وتنتهي بالتنفيذ وقياس الأثر.</p>
                     </div>
                     <ul class="service-checks">
-                      <li><i class="bi bi-check2-circle"></i> تقييم جاهزية المؤسسة</li>
-                      <li><i class="bi bi-check2-circle"></i> رفع الكفاءة التشغيلية</li>
-                      <li><i class="bi bi-check2-circle"></i> تحسين جودة القرارات</li>
-                      <li><i class="bi bi-check2-circle"></i> إدارة المخاطر والحوكمة</li>
+                      <li><i class="bi bi-check2-circle"></i> قيادة التحول الذكي</li>
+                      <li><i class="bi bi-check2-circle"></i> الحوكمة والأمان</li>
+                      <li><i class="bi bi-check2-circle"></i> التميز التشغيلي</li>
+                      <li><i class="bi bi-check2-circle"></i> ذكاء القرار</li>
+                      <li><i class="bi bi-check2-circle"></i> إدارة التغيير</li>
                     </ul>
                     <div class="service-tags">
                       <span>تقييم الجاهزية</span>
@@ -292,10 +293,11 @@
                       <p>نطوّر أنظمة وحلول ذكاء اصطناعي مصممة خصيصًا لأهداف مؤسستك.</p>
                     </div>
                     <ul class="service-checks">
-                      <li><i class="bi bi-check2-circle"></i> تطوير حلول مخصصة</li>
-                      <li><i class="bi bi-check2-circle"></i> أتمتة العمليات التشغيلية</li>
-                      <li><i class="bi bi-check2-circle"></i> تحليل البيانات والتنبؤ</li>
-                      <li><i class="bi bi-check2-circle"></i> تكامل الأنظمة والمنصات</li>
+                      <li><i class="bi bi-check2-circle"></i> الأنظمة المؤسسية الذكية</li>
+                      <li><i class="bi bi-check2-circle"></i> الوكلاء والأتمتة الذكية</li>
+                      <li><i class="bi bi-check2-circle"></i> نمو المبيعات بالذكاء الاصطناعي</li>
+                      <li><i class="bi bi-check2-circle"></i> تطوير أنظمة AI مخصصة</li>
+                      <li><i class="bi bi-check2-circle"></i> الذكاء الاصطناعي الصحي</li>
                     </ul>
                     <div class="service-tags">
                       <span>الأنظمة الذكية</span>
@@ -331,10 +333,11 @@
                       <p>نستخدم الذكاء الاصطناعي والبيانات لبناء منظومة نمو تحقق نتائج قابلة للقياس.</p>
                     </div>
                     <ul class="service-checks">
-                      <li><i class="bi bi-check2-circle"></i> زيادة التحويلات والمبيعات</li>
-                      <li><i class="bi bi-check2-circle"></i> تحسين الاستهداف الإعلاني</li>
-                      <li><i class="bi bi-check2-circle"></i> رفع العائد على الاستثمار</li>
-                      <li><i class="bi bi-check2-circle"></i> بناء نمو مستدام</li>
+                      <li><i class="bi bi-check2-circle"></i> استراتيجية التسويق الذكي</li>
+                      <li><i class="bi bi-check2-circle"></i> ذكاء التسويق</li>
+                      <li><i class="bi bi-check2-circle"></i> أتمتة النمو</li>
+                      <li><i class="bi bi-check2-circle"></i> بناء العلامة التجارية</li>
+                      <li><i class="bi bi-check2-circle"></i> أداء الإعلانات الذكي</li>
                     </ul>
                     <div class="service-tags">
                       <span>التسويق بالبيانات</span>
@@ -1362,6 +1365,24 @@
       data-bs-target="#consultationModal" aria-label="فتح بوت الدردشة">
       <i class="bi bi-chat-dots-fill"></i>
     </a>
+   </div>
+
+  <div class="virtual-assistant" id="virtualAssistant" aria-live="polite">
+    <div class="assistant-message" id="assistantMessage">
+      أهلاً بك في مساقي! كيف يمكنني مساعدتك؟
+    </div>
+    <button class="assistant-avatar" id="assistantAvatar" type="button" aria-label="المساعد الافتراضي">
+      <span class="assistant-status" aria-hidden="true"></span>
+      <span class="robot-head" aria-hidden="true">
+        <span class="robot-eye"></span>
+        <span class="robot-eye"></span>
+      </span>
+      <span class="robot-torso" aria-hidden="true">
+        <span class="robot-arm robot-arm-right"></span>
+        <span class="robot-body"></span>
+        <span class="robot-arm robot-arm-left"></span>
+      </span>
+    </button>
   </div>
 
   <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel"
@@ -1472,6 +1493,7 @@
   <script src="assets/bundles/lenis.min.js"></script>
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/index.js"></script>
+  <script src="assets/js/virtual-assistant.js"></script>
 </body>
 
 </html>
