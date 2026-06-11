@@ -124,6 +124,30 @@
   align-items: stretch;
 }
 
+.enterprise-challenges-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.enterprise-challenges-grid .consulting-challenge-card {
+  padding: clamp(1rem, 1.4vw, 1.35rem);
+  border-radius: 22px;
+}
+
+.enterprise-challenges-grid .consulting-challenge-card h2 {
+  font-size: clamp(1rem, 1.15vw, 1.2rem);
+}
+
+.enterprise-challenges-grid .consulting-challenge-card > p,
+.enterprise-challenges-grid .consulting-solution-block p {
+  font-size: .92rem;
+}
+
+@media (max-width: 1199.98px) {
+  .enterprise-challenges-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .consulting-challenge-card {
   position: relative;
   display: flex;
@@ -312,6 +336,90 @@
 
 .consulting-group-card:nth-child(5) {
   grid-column: 4 / span 2;
+}
+
+#enterprise-specialties .consulting-groups-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding-bottom: clamp(2rem, 4vw, 4rem);
+}
+
+#enterprise-specialties .consulting-group-card,
+#enterprise-specialties .consulting-group-card:nth-child(4),
+#enterprise-specialties .consulting-group-card:nth-child(5) {
+  grid-column: auto;
+}
+
+#enterprise-specialties .consulting-group-card {
+  padding: clamp(1rem, 1.35vw, 1.35rem);
+}
+
+#enterprise-specialties .consulting-group-card h3 {
+  font-size: clamp(1rem, 1.15vw, 1.2rem);
+}
+
+#lab-why .masaqy-advantage-card {
+  min-height: auto;
+  height: auto;
+}
+
+#lab-results .masaqy-stat-value {
+  font-size: clamp(1.75rem, 3vw, 2.75rem);
+}
+
+#enterprise-faq .enterprise-faq-accordion {
+  max-width: 920px;
+  margin-inline: auto;
+  display: grid;
+  gap: 1rem;
+}
+
+#enterprise-faq .accordion-item {
+  overflow: hidden;
+  border: 1px solid rgba(var(--primary-rgb), .12);
+  border-radius: 20px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .68)),
+    radial-gradient(circle at 10% 0, rgba(var(--accent-rgb), .1), transparent 38%);
+  box-shadow: 0 16px 44px rgba(var(--primary-rgb), .08);
+}
+
+#enterprise-faq .accordion-button {
+  gap: 1rem;
+  padding: 1.25rem 1.35rem;
+  background: transparent;
+  color: #111827;
+  font-weight: 850;
+  text-align: right;
+  box-shadow: none;
+}
+
+#enterprise-faq .accordion-button:not(.collapsed) {
+  color: var(--primary-color);
+  background: rgba(var(--accent-rgb), .05);
+}
+
+#enterprise-faq .accordion-button::after {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+#enterprise-faq .accordion-body {
+  padding: 0 1.35rem 1.35rem;
+  color: rgba(17, 24, 39, .68);
+  font-size: .98rem;
+  line-height: 1.9;
+}
+
+@media (max-width: 1199.98px) {
+  #enterprise-specialties .consulting-groups-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575.98px) {
+  #enterprise-specialties .consulting-groups-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 992px) {

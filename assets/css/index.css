@@ -15,6 +15,14 @@
   line-height: 1.6;
 }
 
+.index-flow > section {
+  margin-bottom: 0 !important;
+}
+
+.index-flow > section + section {
+  margin-top: 0 !important;
+}
+
 .demos-card a {
   display: block;
   text-decoration: none;
@@ -2706,12 +2714,13 @@ background: linear-gradient(135deg, rgba(90, 24, 154, .08), rgba(142, 63, 209, .
 
 .virtual-assistant {
   position: fixed;
-  right: 0;
+  left: 0;
+  right: auto;
   bottom: clamp(150px, 12vw, 170px);
   z-index: 1045;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   width: 98px;
   gap: 12px;
   direction: rtl;
@@ -2876,7 +2885,8 @@ background: linear-gradient(135deg, rgba(90, 24, 154, .08), rgba(142, 63, 209, .
 
 .assistant-message {
   position: absolute;
-  right: 8px;
+  left: 8px;
+  right: auto;
   bottom: calc(100% + 12px);
   width: min(240px, calc(100vw - 36px));
   padding: 13px 15px;
@@ -2938,7 +2948,8 @@ background: linear-gradient(135deg, rgba(90, 24, 154, .08), rgba(142, 63, 209, .
   }
 
   .virtual-assistant {
-    right: 0;
+    left: 0;
+    right: auto;
     bottom: 138px;
     width: 84px;
   }

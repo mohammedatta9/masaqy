@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    const moveX = Math.max(-22, Math.min(0, distanceX / 20));
+    const moveX = Math.max(0, Math.min(22, distanceX / 20));
     const moveY = Math.max(-12, Math.min(12, distanceY / 42));
 
     avatar.style.setProperty('--assistant-x', `${moveX}px`);
