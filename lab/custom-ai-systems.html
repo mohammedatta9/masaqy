@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="تطوير أنظمة ذكاء اصطناعي مخصصة">
+  <meta name="keyword" content="MASAQY, مساقي, تطوير أنظمة ذكاء اصطناعي مخصصة, Custom AI, Enterprise AI">
+  <title>تطوير أنظمة ذكاء اصطناعي مخصصة | MASAQY</title>
+  <link rel="shortcut icon" href="../assets/images/iconmsaqy.png">
+  <link href="../vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/colors.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <link rel="stylesheet" href="../assets/css/about.css">
+  <style>
+    #custom-solutions .consulting-groups-grid {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    #custom-solutions {
+      padding-block: clamp(3rem, 6vw, 5rem);
+      background:
+        radial-gradient(circle at 12% 18%, rgba(var(--accent-rgb), .14), transparent 30%),
+        radial-gradient(circle at 88% 82%, rgba(var(--primary-rgb), .12), transparent 32%),
+        linear-gradient(135deg, rgba(248, 250, 252, .98), rgba(236, 253, 245, .82));
+      border-block: 1px solid rgba(var(--primary-rgb), .1);
+    }
+
+    #custom-solutions .consulting-group-card,
+    #custom-solutions .consulting-group-card:nth-child(4),
+    #custom-solutions .consulting-group-card:nth-child(5) {
+      grid-column: span 3;
+    }
+
+    #custom-solutions .custom-solution-featured {
+      grid-column: span 4;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(220px, .8fr);
+      align-items: center;
+      gap: clamp(1rem, 2vw, 1.5rem);
+    }
+
+    #custom-solutions .custom-solution-featured + .consulting-group-card {
+      grid-column: span 2;
+    }
+
+    .custom-solution-featured-media {
+      min-height: 230px;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 18px 42px rgba(var(--primary-rgb), .16);
+    }
+
+    .custom-solution-featured-media img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    @media (max-width: 767.98px) {
+      #custom-solutions .consulting-groups-grid {
+        grid-template-columns: 1fr;
+      }
+
+      #custom-solutions .consulting-group-card,
+      #custom-solutions .consulting-group-card:nth-child(4),
+      #custom-solutions .consulting-group-card:nth-child(5),
+      #custom-solutions .custom-solution-featured,
+      #custom-solutions .custom-solution-featured + .consulting-group-card {
+        grid-column: auto;
+      }
+
+      #custom-solutions .custom-solution-featured {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    #service-scope .consulting-groups-grid {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    #service-scope .consulting-group-card,
+    #service-scope .consulting-group-card:nth-child(4),
+    #service-scope .consulting-group-card:nth-child(5) {
+      grid-column: span 3;
+    }
+
+    #service-scope .consulting-group-card:nth-child(n + 5) {
+      grid-column: span 4;
+    }
+
+    @media (max-width: 991.98px) {
+      #service-scope .consulting-group-card,
+      #service-scope .consulting-group-card:nth-child(4),
+      #service-scope .consulting-group-card:nth-child(5),
+      #service-scope .consulting-group-card:nth-child(n + 5) {
+        grid-column: span 6;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      #service-scope .consulting-groups-grid {
+        grid-template-columns: 1fr;
+      }
+
+      #service-scope .consulting-group-card,
+      #service-scope .consulting-group-card:nth-child(4),
+      #service-scope .consulting-group-card:nth-child(5),
+      #service-scope .consulting-group-card:nth-child(n + 5) {
+        grid-column: auto;
+      }
+    }
+
+  </style>
+  <link rel="stylesheet" href="../assets/css/typography.css">
+  <script src="../assets/js/plugins.js"></script>
+</head>
+
+<body data-theme="theme-index" class="info-pages">
+  <div class="hexagon-cursor"></div>
+  <header class="header-creative position-fixed top-0 w-100" style="z-index: 1000;" id="mainNavbar">
+    <div class="header-ambient" aria-hidden="true">
+      <span class="ambient-orb orb-one"></span>
+      <span class="ambient-orb orb-two"></span>
+      <span class="ambient-line"></span>
+    </div>
+    <nav class="navbar navbar-expand-lg" aria-label="القائمة الرئيسية">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="header-shell w-100">
+          <a class="navbar-brand logo-animated site-logo-link" href="../index.html" aria-label="مساقي">
+            <img src="../assets/images/logomasaqy.png" alt="مساقي" class="site-logo-img">
+          </a>
+          <div class="mobile-actions d-flex align-items-center gap-2 d-lg-none">
+            <a class="btn btn-mobile-cta magnetic-btn" href="mailto:info@masaqy.com" title="طلب حل ذكي" aria-label="طلب حل ذكي">
+              <i class="bi bi-chat-dots"></i>
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prenavbar" aria-label="فتح وإغلاق القائمة">
+              <span class="toggler-line"></span>
+              <span class="toggler-line"></span>
+              <span class="toggler-line"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="prenavbar">
+            <ul class="navbar-nav nav-cluster ms-auto align-items-lg-center gap-lg-2 mt-4 mt-lg-0">
+              <li class="nav-item"><a class="nav-link nav-link-modern" href="../index.html"><span class="link-text">الرئيسية</span></a></li>
+              <li class="nav-item"><a class="nav-link nav-link-modern" href="../about.html"><span class="link-text">من نحن</span></a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-link-modern dropdown-toggle" href="../marketing-details.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="link-text">الخدمات</span>
+                  <i class="bi bi-chevron-down ms-1 opacity-75 small"></i>
+                </a>
+                <ul class="dropdown-menu nav-services-dropdown" aria-labelledby="servicesDropdown">
+                  <li><a class="dropdown-item" href="../consulting-details.html">مساقي للاستشارات</a></li>
+                  <li><a class="dropdown-item" href="../lab-details.html">مختبر مساقي</a></li>
+                  <li><a class="dropdown-item" href="../marketing-details.html">مساقي للتسويق</a></li>
+                  <li><a class="dropdown-item" href="../course-details.html">أكاديمية مساقي</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-link-modern dropdown-toggle" href="../index.html#systems" id="systemsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="link-text">الأنظمة</span>
+                  <i class="bi bi-chevron-down ms-1 opacity-75 small"></i>
+                </a>
+                <ul class="dropdown-menu nav-services-dropdown" aria-labelledby="systemsDropdown">
+                  <li><a class="dropdown-item" href="../system-details.html">CRM الذكي</a></li>
+                  <li><a class="dropdown-item" href="../system-details.html">ERP الذكي</a></li>
+                  <li><a class="dropdown-item" href="../system-details.html">Automation Systems</a></li>
+                  <li><a class="dropdown-item" href="../system-details.html">AI Dashboards</a></li>
+                  <li><a class="dropdown-item" href="../system-details.html">AI Decision Systems</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link nav-link-modern" href="../works.html"><span class="link-text">أعمالنا</span></a></li>
+              <li class="nav-item"><a class="nav-link nav-link-modern" href="#"><span class="link-text">English</span></a></li>
+              <li class="nav-item d-none d-lg-block ms-xl-3">
+                <a class="btn btn-cta-glow magnetic-btn" href="mailto:info@masaqy.com" title="احجز اجتماع">
+                  <span class="btn-text">احجز اجتماع</span>
+                  <i class="bi bi-calendar2-check btn-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="scroll-progress-bar"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <script src="../assets/js/site-header.js"></script>
+
+  <main class="index-flow about-page-flow">
+    <section class="flow-hero about-hero consulting-hero" id="lab-hero">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="consulting-hero-content">
+              <span class="about-section-kicker reveal-item">
+                <i class="bi bi-cpu"></i>
+                تطوير انظمة ذكاء اصطناعي مخصصة
+              </span>
+              <h1 class="consulting-hero-title reveal-item">تطوير مخصص للشركات الكبرى</h1>
+              <h2 class="h3 fw-bold text-dark reveal-item">تطوير أنظمة ذكاء اصطناعي مخصصة</h2>
+              <p class="consulting-hero-copy reveal-item">نحول رؤيتك إلى واقع تقني فريد يمنح مؤسستك ميزة تنافسية حقيقية عبر هندسة خوارزميات مصممة خصيصاً لاحتياجاتك المعقدة.</p>
+              <div class="flow-actions consulting-hero-actions reveal-item d-flex flex-wrap gap-3 mb-0">
+                <a href="mailto:info@masaqy.com" class="btn flow-btn-primary"><span>ابدأ مشروعك الآن</span><i class="bi bi-arrow-left"></i></a>
+                <a href="../works.html" class="btn flow-btn-ghost">عرض سابقة الأعمال</a>
+              </div>
+              <div class="d-flex flex-wrap gap-3 mt-4 reveal-item" aria-label="مؤشرات الأداء">
+                <div class="d-flex align-items-center gap-2 pe-3 border-end"><strong class="fs-4 text-dark">12+</strong><span class="small text-muted">قطاع حيوي</span></div>
+                <div class="d-flex align-items-center gap-2 pe-3 border-end"><strong class="fs-4 text-dark">99.9%</strong><span class="small text-muted">دقة التوقعات</span></div>
+                <div class="d-flex align-items-center gap-2"><strong class="fs-4 text-dark">+50</strong><span class="small text-muted">نموذج مخصص</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="consulting-hero-visual reveal-item scroll-scale-in">
+              <div class="consulting-image-card">
+                <img src="../assets/images/masaqy/lab.jpeg" alt="تطوير أنظمة ذكاء اصطناعي مخصصة">
+                <div class="consulting-image-badge"><i class="bi bi-stars"></i><span>Custom Enterprise AI</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-detail-section consulting-challenges-section margin-bottom-xl" id="lab-challenges">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="consulting-section-head reveal-item">
+          <h2>التحديات التي نحلها</h2>
+          <p>الذكاء الاصطناعي الجاهز لا يناسب احتياجات الأعمال الفريدة دائماً</p>
+        </div>
+        <div class="consulting-challenges-grid enterprise-challenges-grid">
+          <article class="consulting-challenge-card reveal-item"><div class="consulting-challenge-head"><span class="consulting-challenge-icon"><i class="bi bi-layers"></i></span></div><h2>الديون التقنية</h2><p>تراكم العوائق التقنية التي تمنع التوسع السريع في تبني التقنيات الحديثة.</p></article>
+          <article class="consulting-challenge-card reveal-item"><div class="consulting-challenge-head"><span class="consulting-challenge-icon"><i class="bi bi-bullseye"></i></span></div><h2>احتياجات متخصصة</h2><p>تطلبات قطاعات مثل الطاقة أو الرعاية الصحية التي تحتاج دقة مطلقة.</p></article>
+          <article class="consulting-challenge-card reveal-item"><div class="consulting-challenge-head"><span class="consulting-challenge-icon"><i class="bi bi-diagram-3"></i></span></div><h2>فجوات الأنظمة</h2><p>صعوبة ربط حلول الذكاء الاصطناعي بالأنظمة القديمة Legacy Systems.</p></article>
+          <article class="consulting-challenge-card reveal-item"><div class="consulting-challenge-head"><span class="consulting-challenge-icon"><i class="bi bi-window-stack"></i></span></div><h2>منطق عمل فريد</h2><p>النماذج العامة تفتقر إلى فهم القواعد التشغيلية الخاصة بمؤسستك.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-detail-section consulting-groups-section margin-bottom-xl" id="custom-solutions">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="consulting-section-head reveal-item">
+          <h2>حلولنا الهندسية المخصصة</h2>
+          <p>نبني تقنيات تمتلكها بالكامل، مصممة لأهدافك</p>
+          <span class="works-showcase-kicker">جميع الحلول</span>
+        </div>
+        <div class="consulting-groups-grid">
+          <article class="consulting-group-card masaqy-service-card reveal-item custom-solution-featured">
+            <div class="custom-solution-featured-content">
+              <div class="consulting-group-top"><span class="consulting-group-icon"><i class="bi bi-bezier2"></i></span></div>
+              <h3>خوارزميات ملكية خاصة</h3>
+              <div class="consulting-group-content">
+                <p>تطوير خوارزميات فريدة تعالج مسائل رياضية أو تشغيلية خاصة بصناعتك وتمنحك حقوق الملكية الفكرية بالكامل.</p>
+                <a href="mailto:info@masaqy.com" class="btn flow-btn-ghost mt-3">
+                  <i class="bi bi-arrow-left"></i>
+                  استكشف العملية
+                </a>
+              </div>
+            </div>
+            <figure class="custom-solution-featured-media mb-0">
+              <img src="../assets/images/masaqy/lab2.jpeg" alt="خوارزميات ملكية خاصة">
+            </figure>
+          </article>
+          <article class="consulting-group-card masaqy-service-card reveal-item"><div class="consulting-group-top"><span class="consulting-group-icon"><i class="bi bi-chat-square-text"></i></span></div><h3>ضبط نماذج اللغات الكبيرة (Fine-tuning)</h3><div class="consulting-group-content"><p>نقوم بتدريب النماذج الرائدة (مثل Llama-3 أو GPT) على بياناتك الخاصة لتتحدث بلغة شركتك وتفهم سياق عملك بدقة 100%.</p><div class="consulting-sub-tags"><span>خصوصية بيانات مطلقة</span><span>استكشف العملية</span><span>فهم عميق للمصطلحات التخصصية</span></div></div></article>
+          <article class="consulting-group-card masaqy-service-card reveal-item"><div class="consulting-group-top"><span class="consulting-group-icon"><i class="bi bi-grid-1x2"></i></span></div><h3>منصات AI مخصصة للأعمال</h3><div class="consulting-group-content"><p>لوحات تحكم ذكية وأدوات داخلية تمكن الموظفين من التفاعل مع قدرات الذكاء الاصطناعي دون تعقيد تقني.</p></div></article>
+          <article class="consulting-group-card masaqy-service-card reveal-item"><div class="consulting-group-top"><span class="consulting-group-icon"><i class="bi bi-hdd-network"></i></span></div><h3>تكامل البنية التحتية العميقة</h3><div class="consulting-group-content"><p>دمج الذكاء الاصطناعي في صلب أنظمة ERP و CRM الموجودة لضمان تدفق بيانات سلس وقرارات لحظية.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-detail-section consulting-groups-section margin-bottom-xl" id="service-scope">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="consulting-section-head reveal-item">
+          <h2>نطاق خدماتنا الشامل</h2>
+        </div>
+        <div class="consulting-groups-grid">
+          <article class="consulting-group-card masaqy-service-card reveal-item"><div class="consulting-group-top"><span class="consulting-group-icon"><i class="bi bi-phone"></i></span></div><h3>AI Apps</h3><div class="consulting-group-content"><p>تطبيقات ذكية متكاملة تعمل على الويب والهواتف الذكية.</p></div></article>
+          <article class="consulting-group-card masaqy-service-card reveal-item"><div class="consulting-group-top"><span class="consulting-group-icon"><i class="bi bi-chat-square-text"></i></span></div><h3>Custom LLMs</h3><div class="consulting-group-content"><p>تطوير نماذج لغوية تلائم الهوية الصوتية لعلامتك التجارية.</p></div></article>
+          <article class="consulting-group-card masaqy-service-card reveal-item"><div class="consulting-group-top"><span class="consulting-group-icon"><i class="bi bi-diagram-3"></i></span></div><div class="consulting-group-content"><p>نحن لا نقدم مجرد كود برمج، بل نبني نظاماً بيئياً متكاملاً يعتمد على الذكاء الاصطناعي.</p><p>من مرحلة الفكرة والبحث العلمي حتى النشر الكامل وإدارة العمليات التقنية (MLOps).</p></div></article>
+          <article class="consulting-group-card masaqy-service-card reveal-item"><div class="consulting-group-top"><span class="consulting-group-icon"><i class="bi bi-compass"></i></span></div><h3>استشارات استراتيجية تقنية</h3></article>
+          <article class="consulting-group-card masaqy-service-card reveal-item"><div class="consulting-group-top"><span class="consulting-group-icon"><i class="bi bi-lightbulb"></i></span></div><h3>AI R&D</h3><div class="consulting-group-content"><p>أبحاث وتطوير مستمرة لمواكبة أحدث الأوراق البحثية.</p></div></article>
+          <article class="consulting-group-card masaqy-service-card reveal-item"><div class="consulting-group-top"><span class="consulting-group-icon"><i class="bi bi-plug"></i></span></div><h3>API Integration</h3><div class="consulting-group-content"><p>ربط النماذج الذكية بأي واجهة برمجة تطبيقات خارجية.</p></div></article>
+          <article class="consulting-group-card masaqy-service-card reveal-item"><div class="consulting-group-top"><span class="consulting-group-icon"><i class="bi bi-code-square"></i></span></div><h3>تطوير كامل (Full-stack AI)</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="masaqy-advantage-section margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated" id="lab-why">
+      <div class="container-lg position-relative">
+        <div class="masaqy-advantage-shell reveal-on-scroll" data-reveal-order="0">
+          <div class="row justify-content-center mb-5"><div class="col-lg-9 text-center"><h2 class="fs-1 fw-bold text-dark mb-3 reveal-on-scroll" data-reveal-order="2">لماذا تختار MASAQY Labs لشريكك التقني؟</h2></div></div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6 reveal-on-scroll" data-reveal-order="4"><article class="masaqy-advantage-card"><h4>قابلية التوسع</h4><p>تصميم أنظمة مرنة تتحمل ملايين الطلبات وتنمو مع نمو حجم مؤسستك.</p></article></div>
+            <div class="col-lg-3 col-md-6 reveal-on-scroll" data-reveal-order="5"><article class="masaqy-advantage-card"><h4>سرعة النشر</h4><p>منهجية Agile تضمن تسليم النماذج الأولية في غضون أسابيع وليس أشهر.</p></article></div>
+            <div class="col-lg-3 col-md-6 reveal-on-scroll" data-reveal-order="6"><article class="masaqy-advantage-card"><h4>خبرة استشارية</h4><p>فريقنا يجمع بين التميز الهندسي والفهم العميق لاستراتيجيات الأعمال الكبرى.</p></article></div>
+            <div class="col-lg-3 col-md-6 reveal-on-scroll" data-reveal-order="7"><article class="masaqy-advantage-card"><h4>سيادة البيانات</h4><p>نماذج يتم استضافتها داخل خوادمك الخاصة مع ضمان عدم مشاركة بياناتك مع أي طرف ثالث.</p></article></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flow-section work-method-section" id="lab-methodology">
+      <div class="container-fluid px-3 px-md-5 position-relative">
+        <div class="flow-intro text-center mb-5 reveal-item scroll-fade-up"><h2 class="display-3 fw-bold text-dark">منهجية العمل: من الرؤية إلى التنفيذ</h2></div>
+        <div class="method-shell reveal-item scroll-zoom-in">
+          <div class="method-flow" aria-label="مراحل منهجية العمل">
+            <div class="method-flow-line" aria-hidden="true"></div>
+            <article class="method-step reveal-item scroll-slide-up" style="--reveal-delay: 0s;"><div class="method-node" aria-hidden="true"><i class="bi bi-search"></i></div><span class="method-number">01</span><h3>الاكتشاف والتحليل</h3><p>دراسة عميقة لتحديات العمل وتحديد الفرص الأكثر تأثيراً.</p></article>
+            <article class="method-step reveal-item scroll-slide-up" style="--reveal-delay: .12s;"><div class="method-node" aria-hidden="true"><i class="bi bi-diagram-3"></i></div><span class="method-number">02</span><h3>هندسة الحل</h3><p>تصميم المعمارية التقنية واختيار النماذج المناسبة.</p></article>
+            <article class="method-step reveal-item scroll-slide-up" style="--reveal-delay: .24s;"><div class="method-node" aria-hidden="true"><i class="bi bi-code-slash"></i></div><span class="method-number">03</span><h3>التطوير والتدريب</h3><p>كتابة الكود، تدريب النماذج على البيانات، والتحسين المستمر.</p></article>
+            <article class="method-step reveal-item scroll-slide-up" style="--reveal-delay: .36s;"><div class="method-node" aria-hidden="true"><i class="bi bi-rocket-takeoff"></i></div><span class="method-number">04</span><h3>التكامل والنشر</h3><p>دمج النظام في بيئة العمل الحقيقية ومراقبة الأداء.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="masaqy-stats-section masaqy-results-section margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated" id="lab-results">
+      <div class="container-lg position-relative">
+        <div class="masaqy-stats-shell reveal-on-scroll" data-reveal-order="0">
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6 reveal-on-scroll" data-reveal-order="4"><article class="masaqy-stat-card"><span class="masaqy-stat-value">10X</span><h3>سرعة اتخاذ القرار</h3><p>تحويل البيانات الخام إلى رؤى استراتيجية في ثوانٍ معدودة.</p></article></div>
+            <div class="col-lg-4 col-md-6 reveal-on-scroll" data-reveal-order="5"><article class="masaqy-stat-card"><span class="masaqy-stat-value">65%</span><h3>خفض في تكاليف الدعم</h3><p>عن طريق نشر مساعدين أذكياء مخصصين لخدمة العملاء والشركاء.</p></article></div>
+            <div class="col-lg-4 col-md-6 reveal-on-scroll" data-reveal-order="6"><article class="masaqy-stat-card"><span class="masaqy-stat-value">40%</span><h3>زيادة في كفاءة العمليات</h3><p>أتمتة المهام المعقدة التي كانت تتطلب تدخلاً بشرياً مطولاً.</p></article></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-detail-section consulting-groups-section margin-bottom-xl" id="testimonial">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="consulting-section-head reveal-item"><h2>ماذا يقول قادة الأعمال؟</h2></div>
+        <article class="consulting-group-card masaqy-service-card reveal-item">
+          <div class="consulting-group-content">
+            <p>"استطاعت مساقي لابتز تطوير نموذج لغوي خاص بمجالنا القانوني تفوق على كل الحلول العالمية الجاهزة من حيث الدقة وفهم المصطلحات المحلية."</p>
+            <h3>د. أحمد الزهراني</h3>
+            <p>الرئيس التنفيذي للتقنية، الشركة الدولية</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="masaqy-partnership-cta margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="masaqy-partnership-card reveal-on-scroll" data-reveal-order="1">
+          <h2 class="masaqy-partnership-title mb-0">هل أنت مستعد لبناء ميزتك التنافسية القادمة؟</h2>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-neo">
+      <div class="footer-neo-background">
+        <span class="footer-neo-orb orb-one"></span>
+        <span class="footer-neo-orb orb-two"></span>
+        <span class="footer-neo-grid"></span>
+      </div>
+      <div class="container-fluid px-3 px-md-5">
+        <div class="footer-neo-shell reveal-item scroll-slide-left">
+          <div class="footer-neo-card masaqy-footer-layout">
+            <div class="row g-4 g-xl-5">
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <a href="../index.html" class="masaqy-footer-brand text-decoration-none d-inline-block" aria-label="مساقي">
+                  <img src="../assets/images/logomasaqy.png" alt="مساقي" class="masaqy-footer-logo">
+                </a>
+                <p class="masaqy-footer-text mt-3 mb-0">MASAQY شركة سعودية متخصصة في تقنيات الذكاء الاصطناعي والتحول المؤسسي الذكي، نبني منظومات أعمال ذكية تساعد المؤسسات على النمو والتوسع بثقة.</p>
+                <span class="masaqy-footer-tagline">Where Intelligence Becomes Business Impact</span>
+                <div class="masaqy-footer-socials" aria-label="روابط التواصل الاجتماعي">
+                  <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" aria-label="X / Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+              <div class="col-xl col-lg-4 col-md-6"><h2 class="masaqy-footer-title h6">الخدمات</h2><ul class="masaqy-footer-links"><li><a href="../consulting-details.html">مساقي للاستشارات</a></li><li><a href="../lab-details.html">مختبر مساقي</a></li><li><a href="../marketing-details.html#marketing-groups">مساقي للتسويق</a></li><li><a href="../course-details.html">أكاديمية مساقي</a></li></ul></div>
+              <div class="col-xl col-lg-4 col-md-6"><h2 class="masaqy-footer-title h6">الأنظمة الذكية</h2><ul class="masaqy-footer-links"><li><a href="../index.html#systems">Smart CRM</a></li><li><a href="../index.html#systems">Smart ERP</a></li><li><a href="../index.html#systems">Automation Systems</a></li><li><a href="../index.html#systems">AI Dashboards</a></li><li><a href="../index.html#systems">AI Decision Systems</a></li></ul></div>
+              <div class="col-xl col-lg-4 col-md-6"><h2 class="masaqy-footer-title h6">روابط سريعة</h2><ul class="masaqy-footer-links"><li><a href="../index.html">الرئيسية</a></li><li><a href="../about.html">من نحن</a></li><li><a href="../marketing-details.html#marketing-groups">الخدمات</a></li><li><a href="../index.html#systems">الأنظمة</a></li><li><a href="../index.html#sectors">القطاعات</a></li><li><a href="mailto:info@masaqy.com">تواصل معنا</a></li></ul></div>
+              <div class="col-xl col-lg-4 col-md-6"><h2 class="masaqy-footer-title h6">تواصل معنا</h2><ul class="masaqy-footer-contact"><li><i class="bi bi-geo-alt"></i><span>Riyadh, Saudi Arabia</span></li><li><i class="bi bi-envelope"></i><a href="mailto:info@masaqy.com">info@masaqy.com</a></li><li><i class="bi bi-globe2"></i><a href="https://www.masaqy.com" target="_blank" rel="noopener">www.masaqy.com</a></li></ul><a href="mailto:info@masaqy.com" class="masaqy-footer-cta"><span>اطلب حلاً ذكياً</span><i class="bi bi-arrow-up-right"></i></a></div>
+            </div>
+            <div class="footer-neo-bottom masaqy-footer-bottom mt-5 pt-4">
+              <div class="footer-neo-meta"><span>© 2026 MASAQY. All Rights Reserved.</span></div>
+              <div class="d-flex align-items-center gap-3"><a href="#" class="footer-neo-top" aria-label="العودة للأعلى"><span>الأعلى</span><i class="bi bi-arrow-up"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="floating-contact-actions" aria-label="خيارات التواصل السريع">
+    <a class="floating-contact-btn floating-contact-btn-whatsapp" href="https://wa.me/?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%20%D9%85%D8%B3%D8%A7%D9%82%D9%8A" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <a class="floating-contact-btn floating-contact-btn-chat" href="mailto:info@masaqy.com" aria-label="فتح بوت الدردشة">
+      <i class="bi bi-chat-dots-fill"></i>
+    </a>
+  </div>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/about.js"></script>
+</body>
+
+</html>

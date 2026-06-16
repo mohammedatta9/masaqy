@@ -1,0 +1,213 @@
+ <section class="masaqy-about-section margin-bottom-xl margin-top-xxl-1 animate-on-load" id="about">
+      <div class="container-lg position-relative about-section-animated">
+        <div class="position-absolute top-0 start-0 translate-middle z-n1 d-none d-lg-block">
+          <div class="bg-primary rounded-circle"
+            style="width: 100px; height: 100px; opacity: 0.1; animation: float 6s ease-in-out infinite;"></div>
+        </div>
+        <div class="position-absolute bottom-0 end-0 z-n1 d-none d-lg-block">
+          <div class="bg-warning rounded-circle"
+            style="width: 150px; height: 150px; opacity: 0.1; animation: float-reverse 8s ease-in-out infinite;"></div>
+        </div>
+        <div class="about-two bg-light-primary px-4 py-lg-5 py-4 position-relative about-card reveal-on-scroll"
+          data-reveal-order="0">
+          <div class="row g-4 g-xl-5 align-items-center">
+            <div class="col-lg-6 order-1 order-lg-1 mt-md-4 about-content-col">
+              <span class="badge bg-gradient px-3 py-2 mb-3 slide-in-top">
+                <i class="bi bi-stars ms-1" aria-hidden="true"></i>
+                لماذا تختارنا
+              </span>
+              <h2 class="text-dark mb-3 slide-in-left"> شريكك في التحول المؤسسي الذكي</h2>
+              <!-- <span class="text-dark opacity-75 d-block slide-in-left delay-1">
+                مساقي شركة سعودية متخصصة في استراتيجيات وتقنيات الذكاء الاصطناعي والتحول المؤسسي الذكي، تعمل من الرياض
+                لخدمة المؤسسات الطموحة في السعودية والخليج.
+              </span> -->
+              <ul class="masaqy-points mt-4 mb-4">
+                <li class="reveal-on-scroll" data-reveal-order="1">
+                  <i class="bi bi-check2" aria-hidden="true"></i>
+                  <span>نبني منظومات أعمال ذكية تعتمد على البيانات والذكاء الاصطناعي.</span>
+                </li>
+                <li class="reveal-on-scroll" data-reveal-order="2">
+                  <i class="bi bi-check2" aria-hidden="true"></i>
+                  <span>نقدم استراتيجيات، حلول تقنية، تسويق مدعوم بالذكاء، وبناء كفاءات معرفية.</span>
+                </li>
+                <li class="reveal-on-scroll" data-reveal-order="3">
+                  <i class="bi bi-check2" aria-hidden="true"></i>
+                  <span>نستهدف المؤسسات التي تبحث عن النمو، الكفاءة، والاستدامة التشغيلية.</span>
+                </li>
+                <li class="reveal-on-scroll" data-reveal-order="4">
+                  <i class="bi bi-check2" aria-hidden="true"></i>
+                  <span>نساعد الشركات على الانتقال من التشغيل التقليدي إلى منظومات ذكية قابلة للتوسع.</span>
+                </li>
+              </ul>
+              <!-- <div class="row row-deck g-3 mb-4 pe-3 mt-4">
+                <div class="col-sm-6">
+                  <div class="card border-0 shadow-sm about-info-card reveal-on-scroll interactive-card"
+                    data-reveal-order="5">
+                    <div class="card-body">
+                      <div class="bg-info bg-opacity-50 text-warning rounded-3 p-2 badge icon-pulse">
+                        <i class="bi bi-cpu text-light fs-5"></i>
+                      </div>
+                      <h3 class="mb-1 mt-3 h5">ماذا نقدم؟</h3>
+                      <span class="card-text small text-dark opacity-75">استراتيجيات AI، حلول تقنية، أنظمة ذكية، وتمكين
+                        معرفي.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card border-0 shadow-sm about-info-card reveal-on-scroll interactive-card"
+                    data-reveal-order="6">
+                    <div class="card-body">
+                      <div class="bg-primary bg-opacity-50 text-success rounded-3 p-2 badge icon-pulse">
+                        <i class="bi bi-eye text-light fs-5"></i>
+                      </div>
+                      <h4 class="mb-1 mt-3 h5">رؤيتنا</h4>
+                      <span class="card-text small text-dark opacity-75">أن نكون الشريك الأول للتحول الذكي في السعودية
+                        والخليج.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card border-0 shadow-sm about-info-card reveal-on-scroll interactive-card"
+                    data-reveal-order="7">
+                    <div class="card-body">
+                      <div class="bg-info bg-opacity-50 text-info rounded-3 p-2 badge icon-pulse">
+                        <i class="bi bi-building text-light fs-5"></i>
+                      </div>
+                      <h5 class="mb-1 mt-3 h5">السوق المستهدف</h5>
+                      <span class="card-text small text-dark opacity-75">المؤسسات الحكومية والخاصة والطموحة للنمو
+                        الرقمي.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card border-0 shadow-sm about-info-card reveal-on-scroll interactive-card"
+                    data-reveal-order="8">
+                    <div class="card-body">
+                      <div class="bg-primary bg-opacity-50 text-primary rounded-3 p-2 badge icon-pulse">
+                        <i class="bi bi-diagram-3 text-light fs-5"></i>
+                      </div>
+                      <h5 class="mb-1 mt-3 h5">التحول الذكي</h5>
+                      <span class="card-text small text-dark opacity-75">إعادة تصميم التفكير، التشغيل، واتخاذ القرار
+                        بالاعتماد على البيانات.</span>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="slide-in-bottom delay-2 mb-md-4">
+                <a href="about.html" class="btn btn-primary px-4 btn-hover-animate" title="اقرأ المزيد عن MASAQY">
+                  اقرأ المزيد
+                  <i class="bi bi-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6 order-2 order-lg-2 about-video-col">
+              <div class="shadow-lg card card-video overflow-hidden about-visual reveal-on-scroll float-video-card"
+                data-reveal-order="9">
+                <img class="background-video object-fit-cover w-100 h-100" src="assets/images/masaqy/hero.jpeg"
+                  alt="MASAQY AI والتحول الذكي في السعودية" aria-describedby="masaqyVideoDesc"
+                  style="border-radius: 24px;">
+                <div class="video-caption-layer position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4"
+                  style="background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, .48)); pointer-events: none;">
+                  <div class="text-white">
+                    <span class="badge bg-light text-dark mb-2">AI Transformation</span>
+                    <h3 class="h5 fw-bold mb-1">MASAQY</h3>
+                    <p class="small mb-0 opacity-75">نبني حلول الذكاء الاصطناعي والتحول الرقمي للمؤسسات.</p>
+                  </div>
+                </div>
+                <p id="masaqyVideoDesc" class="visually-hidden">مساحة فيديو تعريفية عن شركة MASAQY والتحول المؤسسي
+                  الذكي.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- نهايه من نحن -->
+
+    <!-- نهاية منهجية العمل -->
+
+
+
+
+    <section class="masaqy-advantage-section margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated"
+      id="masaqy-advantage">
+      <div class="container-lg position-relative">
+        <div class="masaqy-advantage-shell reveal-on-scroll" data-reveal-order="0">
+          <div class="row justify-content-center mb-5">
+            <div class="col-lg-9 text-center">
+              <span class="text-primary text-uppercase fw-bold ls-2 small mb-2 d-inline-block reveal-on-scroll"
+                data-reveal-order="1">الميزة التنافسية</span>
+              <h2 class="fs-1 fw-bold text-dark mb-0 reveal-on-scroll" data-reveal-order="2">لماذا تختار المؤسسات مساقي؟
+              </h2>
+            </div>
+          </div>
+
+          <div class="masaqy-compare-wrap position-relative">
+            <div class="masaqy-vs-badge" aria-hidden="true">VS</div>
+            <div class="row g-4 align-items-stretch">
+              <div class="col-lg-6 reveal-on-scroll order-lg-2" data-reveal-order="3">
+                <article class="masaqy-compare-card">
+                  <h3>الشركات التقليدية</h3>
+                  <ul class="masaqy-compare-list">
+                    <li><span class="compare-mark is-negative">✗</span> استشارات فقط دون تنفيذ</li>
+                    <li><span class="compare-mark is-negative">✗</span> توصيات نظرية غير مطبقة</li>
+                    <li><span class="compare-mark is-negative">✗</span> مشاريع منفصلة وغير متكاملة</li>
+                    <li><span class="compare-mark is-negative">✗</span> دعم محدود بعد التسليم</li>
+                    <li><span class="compare-mark is-negative">✗</span> تركيز على الأدوات لا النتائج</li>
+                    <li><span class="compare-mark is-negative">✗</span> حلول جاهزة لا تناسب السياق</li>
+                  </ul>
+                </article>
+              </div>
+              <div class="col-lg-6 reveal-on-scroll order-lg-1" data-reveal-order="4">
+                <article class="masaqy-compare-card is-dark">
+                  <h3>مساقي</h3>
+                  <ul class="masaqy-compare-list">
+                    <li><span class="compare-mark is-positive">✓</span> استراتيجية + تنفيذ متكامل</li>
+                    <li><span class="compare-mark is-positive">✓</span> نتائج حقيقية وقابلة للقياس</li>
+                    <li><span class="compare-mark is-positive">✓</span> منظومة متكاملة من البداية للنهاية</li>
+                    <li><span class="compare-mark is-positive">✓</span> شريك طويل الأمد للنمو</li>
+                    <li><span class="compare-mark is-positive">✓</span> مقاييس الأداء في صلب العمل</li>
+                    <li><span class="compare-mark is-positive">✓</span> حلول مخصصة تناسب سياق كل مؤسسة</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mt-5 mb-4">
+            <div class="col-lg-9 text-center">
+              <h3 class="masaqy-advantage-subtitle mb-0 reveal-on-scroll" data-reveal-order="5">حلول مخصصة لكل مؤسسة
+              </h3>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6 reveal-on-scroll" data-reveal-order="6">
+              <article class="masaqy-advantage-card">
+                <h4>حلول مخصصة</h4>
+                <p>نصمم كل حل وفق تحديات واحتياجات مؤسستك تحديدا، لا حلول جاهزة تناسب الجميع.</p>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6 reveal-on-scroll" data-reveal-order="7">
+              <article class="masaqy-advantage-card">
+                <h4>خبرات متعددة التخصصات</h4>
+                <p>فريق متكامل يجمع خبرات الذكاء الاصطناعي والهندسة والتسويق والتغيير المؤسسي.</p>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6 reveal-on-scroll" data-reveal-order="8">
+              <article class="masaqy-advantage-card">
+                <h4>تركيز على النتائج</h4>
+                <p>كل مشروع له مقاييس واضحة للنجاح، ونتابع الأثر ونقيسه طوال مراحل التنفيذ.</p>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6 reveal-on-scroll" data-reveal-order="9">
+              <article class="masaqy-advantage-card">
+                <h4>شريك استراتيجي للنمو</h4>
+                <p>لا نكتفي بتسليم المشروع، بل نبقى شريكا استراتيجيا يدعم نموك على المدى الطويل.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

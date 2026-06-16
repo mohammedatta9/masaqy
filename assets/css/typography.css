@@ -1,0 +1,141 @@
+/* MASAQY shared typography scale */
+body.info-pages {
+  --masaqy-title-size: 40px;
+  --masaqy-subtitle-size: 20px;
+  --masaqy-body-size: 16px;
+  font-size: var(--masaqy-body-size) !important;
+}
+
+body.info-pages h1,
+body.info-pages h2,
+body.info-pages .h1,
+body.info-pages .h2,
+body.info-pages .display-1,
+body.info-pages .display-2,
+body.info-pages .display-3,
+body.info-pages .display-4,
+body.info-pages .display-5,
+body.info-pages .display-6,
+body.info-pages .flow-title,
+body.info-pages .about-hero-heading,
+body.info-pages .about-section-title,
+body.info-pages .about-vision-statement,
+body.info-pages .consulting-hero-title,
+body.info-pages .consulting-section-head h2,
+body.info-pages .works-showcase-title,
+body.info-pages .masaqy-section-title,
+body.info-pages .masaqy-partnership-title,
+body.info-pages .service-request-title,
+body.info-pages .ai-core-center strong {
+  font-size: var(--masaqy-title-size) !important;
+  line-height: 1.25 !important;
+}
+
+body.info-pages h3,
+body.info-pages h4,
+body.info-pages h5,
+body.info-pages h6,
+body.info-pages .h3,
+body.info-pages .h4,
+body.info-pages .h5,
+body.info-pages .h6,
+body.info-pages .flow-subtitle,
+body.info-pages .flow-label,
+body.info-pages .flow-kicker,
+body.info-pages .about-section-kicker,
+body.info-pages .consulting-main-tag,
+body.info-pages .consulting-solution-block > span,
+body.info-pages .works-showcase-kicker,
+body.info-pages .service-request-eyebrow,
+body.info-pages .masaqy-advantage-subtitle,
+body.info-pages .masaqy-footer-title,
+body.info-pages .modal-title {
+  font-size: var(--masaqy-subtitle-size) !important;
+  line-height: 1.45 !important;
+}
+
+body.info-pages p,
+body.info-pages li,
+body.info-pages a,
+body.info-pages span,
+body.info-pages label,
+body.info-pages small,
+body.info-pages strong,
+body.info-pages b,
+body.info-pages input,
+body.info-pages select,
+body.info-pages textarea,
+body.info-pages button,
+body.info-pages .btn,
+body.info-pages .flow-copy,
+body.info-pages .about-hero-copy,
+body.info-pages .about-section-copy,
+body.info-pages .consulting-hero-copy,
+body.info-pages .consulting-challenge-card > p,
+body.info-pages .consulting-solution-block p,
+body.info-pages .consulting-group-content p,
+body.info-pages .masaqy-footer-text {
+  font-size: var(--masaqy-body-size) !important;
+  line-height: 1.75 !important;
+}
+
+body.info-pages h1 span,
+body.info-pages h1 strong,
+body.info-pages h1 b,
+body.info-pages h2 span,
+body.info-pages h2 strong,
+body.info-pages h2 b,
+body.info-pages .flow-title span,
+body.info-pages .flow-title strong,
+body.info-pages .flow-title b,
+body.info-pages .about-hero-heading span,
+body.info-pages .about-hero-heading strong,
+body.info-pages .about-hero-heading b,
+body.info-pages .consulting-hero-title span,
+body.info-pages .consulting-hero-title strong,
+body.info-pages .consulting-hero-title b {
+  font-size: var(--masaqy-title-size) !important;
+  line-height: inherit !important;
+}
+
+body.info-pages h3 span,
+body.info-pages h3 strong,
+body.info-pages h3 b,
+body.info-pages h4 span,
+body.info-pages h4 strong,
+body.info-pages h4 b,
+body.info-pages h5 span,
+body.info-pages h5 strong,
+body.info-pages h5 b,
+body.info-pages h6 span,
+body.info-pages h6 strong,
+body.info-pages h6 b {
+  font-size: var(--masaqy-subtitle-size) !important;
+  line-height: inherit !important;
+}
+
+body.info-pages .floating-contact-btn {
+  font-size: 1.6rem !important;
+}
+
+body.info-pages .masaqy-stat-value {
+  font-size: clamp(2.65rem, 4.4vw, 4.65rem) !important;
+}
+
+body.info-pages .masaqy-results-section .masaqy-stat-value {
+  font-size: clamp(3.75rem, 4.4vw, 6.25rem) !important;
+}
+
+body.info-pages #lab-results .masaqy-stat-value {
+  font-size: clamp(1.95rem, 3.3vw, 3rem) !important;
+}
+
+body.info-pages #lab-results.masaqy-results-section .masaqy-stat-value {
+  font-size: clamp(1.45rem, 2vw, 1.85rem) !important;
+}
+
+@media (max-width: 575.98px) {
+  body.info-pages .floating-contact-btn {
+    font-size: 1.4rem !important;
+  }
+}
