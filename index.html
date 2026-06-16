@@ -497,10 +497,30 @@
                     </div>
 
                     <ul class="service-checks">
-                      <li><i class="bi bi-check2-circle"></i> الأنظمة المؤسسية الذكية</li>
-                      <li><i class="bi bi-check2-circle"></i> الوكلاء والأتمتة الذكية</li>
-                      <li><i class="bi bi-check2-circle"></i> نمو المبيعات بالذكاء الاصطناعي</li>
-                      <li><i class="bi bi-check2-circle"></i> تطوير أنظمة AI مخصصة</li>
+                      <li>
+                        <a href="lab/i-e-systems.html">
+                          <i class="bi bi-check2-circle"></i>
+                          <span>الأنظمة المؤسسية الذكية</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="lab/a&i-automation.html">
+                          <i class="bi bi-check2-circle"></i>
+                          <span>الوكلاء والأتمتة الذكية</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="lab/ai-sales-growth.html">
+                          <i class="bi bi-check2-circle"></i>
+                          <span>نمو المبيعات بالذكاء الاصطناعي</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="lab/custom-ai-systems.html">
+                          <i class="bi bi-check2-circle"></i>
+                          <span>تطوير أنظمة AI مخصصة</span>
+                        </a>
+                      </li>
                       <li><i class="bi bi-check2-circle"></i> الذكاء الاصطناعي الصحي</li>
                     </ul>
 
@@ -1243,29 +1263,6 @@
       </div>
     </div>
   </div>
-  <script>
-    document.querySelectorAll('.masaqy-service-card .card-inner').forEach((card) => {
-      const cardLink = card.querySelector('.masaqy-service-btn[href], a[href]');
-      if (!cardLink) return;
-
-      card.setAttribute('role', 'link');
-      card.setAttribute('tabindex', '0');
-      card.style.cursor = 'pointer';
-
-      card.addEventListener('click', (event) => {
-        if (event.target.closest('a, button')) return;
-        cardLink.click();
-      });
-
-      card.addEventListener('keydown', (event) => {
-        if (event.target.closest('a, button')) return;
-        if (event.key !== 'Enter' && event.key !== ' ') return;
-
-        event.preventDefault();
-        cardLink.click();
-      });
-    });
-  </script>
   <script src="vendor/gsap/3.12.5/gsap.min.js"></script>
   <script src="vendor/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="assets/bundles/lenis.min.js"></script>
