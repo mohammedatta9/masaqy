@@ -114,6 +114,41 @@ body.info-pages h6 b {
   line-height: inherit !important;
 }
 
+body.info-pages .masaqy-testimonials-section .testimonial-author h3 {
+  font-size: 14px !important;
+  line-height: 1.35 !important;
+}
+
+body.info-pages .masaqy-testimonials-section .testimonial-author > div > span {
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+}
+
+body.info-pages .masaqy-why-choose-section .masaqy-why-title {
+  font-size: clamp(1.8rem, 3vw, 2.65rem) !important;
+  line-height: 1.2 !important;
+}
+
+body.info-pages .masaqy-why-choose-section .masaqy-why-text {
+  font-size: .98rem !important;
+  line-height: 1.9 !important;
+}
+
+body.info-pages .masaqy-why-choose-section .masaqy-why-points li {
+  font-size: .9rem !important;
+  line-height: 1.5 !important;
+}
+
+body.info-pages .masaqy-why-choose-section .masaqy-why-metric strong {
+  font-size: .94rem !important;
+  line-height: 1.35 !important;
+}
+
+body.info-pages .masaqy-why-choose-section .masaqy-why-metric span {
+  font-size: .78rem !important;
+  line-height: 1.45 !important;
+}
+
 body.info-pages .floating-contact-btn {
   font-size: 1.6rem !important;
 }

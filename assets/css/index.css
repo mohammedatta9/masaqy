@@ -1574,14 +1574,14 @@
 .testimonial-author h3 {
   margin: 0 0 .15rem;
   color: #111827;
-  font-size: .93rem;
+  font-size: 14px;
   font-weight: 750;
 }
 
 .testimonial-author span {
   display: block;
   color: rgba(17, 24, 39, .58);
-  font-size: .86rem;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -2416,6 +2416,224 @@ background: linear-gradient(135deg, rgba(90, 24, 154, .08), rgba(142, 63, 209, .
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.masaqy-why-choose-section {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding-block: clamp(1.5rem, 4vw, 3rem);
+  background: #fff;
+}
+
+.masaqy-why-choose-section::before {
+  content: "";
+  position: absolute;
+  inset: 10% auto auto 8%;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(var(--accent-rgb), .14), transparent 68%);
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.masaqy-why-choose-shell {
+  padding: clamp(1rem, 2.2vw, 1.6rem);
+}
+
+.masaqy-why-copy {
+  max-width: 620px;
+  margin-inline-start: auto;
+}
+
+.masaqy-why-title {
+  margin: 0 0 .9rem;
+  color: #111827;
+  font-size: clamp(1.8rem, 3vw, 2.65rem);
+  font-weight: 950;
+  line-height: 1.2;
+}
+
+.masaqy-why-text {
+  max-width: 600px;
+  margin: 0 0 1.4rem;
+  color: rgba(17, 24, 39, .62);
+  font-size: .98rem;
+  font-weight: 620;
+  line-height: 1.9;
+}
+
+.masaqy-why-points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .8rem 1.5rem;
+}
+
+.masaqy-why-points ul {
+  display: grid;
+  gap: .8rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.masaqy-why-points li {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  color: #111827;
+  font-size: .9rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.masaqy-why-points i {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 19px;
+  height: 19px;
+  border-radius: 999px;
+  color: #5A189A;
+  background: rgba(90, 24, 154, .08);
+  font-size: .92rem;
+}
+
+.masaqy-why-visual {
+  position: relative;
+  width: min(100%, 520px);
+  margin-inline: auto;
+  padding-bottom: 2.15rem;
+}
+
+.masaqy-why-visual img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9.6;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+  box-shadow: 0 22px 54px rgba(16, 24, 39, .18);
+  filter: saturate(.78) contrast(.98) brightness(.7);
+}
+
+.masaqy-why-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 2.15rem;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 46% 48%, rgba(78, 168, 222, .24), transparent 36%),
+    linear-gradient(135deg, rgba(8, 16, 28, .4), rgba(14, 22, 36, .12));
+  pointer-events: none;
+}
+
+.masaqy-why-radar {
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  width: 46%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, .24);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.masaqy-why-radar::before,
+.masaqy-why-radar::after {
+  content: "";
+  position: absolute;
+  inset: 12%;
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: inherit;
+}
+
+.masaqy-why-radar::after {
+  inset: 28%;
+}
+
+.masaqy-why-metrics {
+  position: absolute;
+  inset-inline: 2rem;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  gap: .75rem;
+}
+
+.masaqy-why-metric {
+  min-width: 150px;
+  padding: .85rem 1rem;
+  border: 1px solid rgba(90, 24, 154, .1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .96);
+  box-shadow: 0 14px 34px rgba(16, 24, 39, .14);
+  text-align: center;
+}
+
+.masaqy-why-metric strong {
+  display: block;
+  color: #5A189A;
+  font-size: .94rem;
+  font-weight: 950;
+  line-height: 1.35;
+}
+
+.masaqy-why-metric span {
+  display: block;
+  margin-top: .15rem;
+  color: rgba(17, 24, 39, .58);
+  font-size: .78rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+@media (max-width: 991.98px) {
+  .masaqy-why-copy {
+    max-width: none;
+    margin-inline-start: 0;
+    text-align: center;
+  }
+
+  .masaqy-why-text {
+    margin-inline: auto;
+  }
+
+  .masaqy-why-points {
+    max-width: 620px;
+    margin-inline: auto;
+    text-align: start;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .masaqy-why-choose-shell {
+    padding-inline: 0;
+  }
+
+  .masaqy-why-points {
+    grid-template-columns: 1fr;
+  }
+
+  .masaqy-why-visual {
+    padding-bottom: 4.35rem;
+  }
+
+  .masaqy-why-visual::before {
+    bottom: 4.35rem;
+  }
+
+  .masaqy-why-metrics {
+    inset-inline: .85rem;
+    flex-wrap: wrap;
+  }
+
+  .masaqy-why-metric {
+    flex: 1 1 135px;
+    min-width: 0;
+  }
 }
 
 .sectors-directory-grid .widgetscard {

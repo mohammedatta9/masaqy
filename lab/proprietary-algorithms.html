@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="خوارزميات ملكية خاصة من MASAQY Labs لتطوير نماذج قرار وتنبؤ وتحسين مصممة خصيصاً لبيانات مؤسستك ومنطق أعمالها">
+  <meta name="keyword" content="MASAQY, مساقي, خوارزميات ملكية خاصة, خوارزميات مخصصة, Custom Algorithms, Proprietary AI">
+  <title>خوارزميات ملكية خاصة | MASAQY</title>
+  <link rel="shortcut icon" href="../assets/images/iconmsaqy.png">
+  <link href="../vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/colors.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <link rel="stylesheet" href="../assets/css/about.css">
+  <style>
+    #lab-challenges {
+      padding-bottom: clamp(4rem, 8vw, 7rem);
+    }
+
+    #lab-challenges .consulting-section-head {
+      max-width: none;
+      margin-inline: auto;
+      text-align: center;
+      justify-items: center;
+    }
+
+    #lab-challenges .consulting-section-head p {
+      color: rgba(17, 24, 39, .76);
+    }
+
+    #lab-challenges .consulting-challenges-grid {
+      align-items: stretch;
+      grid-template-columns: repeat(3, minmax(0, 320px));
+      justify-content: center;
+      margin-inline: auto;
+    }
+
+    #lab-challenges .consulting-challenge-card {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    #lab-challenges .consulting-challenge-head {
+      justify-content: center;
+      width: 100%;
+    }
+
+    #lab-challenges .consulting-challenge-card h2 {
+      font-size: clamp(.95rem, 1vw, 1.08rem) !important;
+      line-height: 1.45 !important;
+    }
+
+    #lab-challenges .consulting-challenge-card > p {
+      margin-bottom: 0;
+      max-width: 24ch;
+    }
+
+    @media (max-width: 991.98px) {
+      #lab-challenges .consulting-challenges-grid {
+        grid-template-columns: repeat(2, minmax(0, 320px));
+      }
+
+      #lab-challenges .consulting-challenge-card:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: min(100%, 320px);
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      #lab-challenges .consulting-challenges-grid {
+        grid-template-columns: minmax(0, 320px);
+      }
+
+      #lab-challenges .consulting-challenge-card:last-child {
+        grid-column: auto;
+      }
+    }
+
+    #custom-solutions {
+      padding-block: clamp(3rem, 6vw, 5rem);
+    }
+
+    #custom-solutions .enterprise-specialties-head {
+      max-width: none;
+      margin-bottom: clamp(1.5rem, 3vw, 2.4rem);
+      text-align: right;
+    }
+
+    #custom-solutions .enterprise-specialties-head h2 {
+      color: #111827;
+      font-size: clamp(2rem, 3.2vw, 3.2rem);
+    }
+
+    #custom-solutions .enterprise-specialties-head p {
+      margin: -.35rem 0 0;
+      color: rgba(17, 24, 39, .62);
+      font-size: 1rem;
+      font-weight: 650;
+    }
+
+    #custom-solutions .enterprise-specialties-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(1rem, 2vw, 1.35rem);
+      padding-bottom: clamp(2rem, 4vw, 4rem);
+    }
+
+    #custom-solutions .enterprise-specialty-card,
+    #custom-solutions .enterprise-specialty-card:nth-child(4),
+    #custom-solutions .enterprise-specialty-card:nth-child(5) {
+      grid-column: auto;
+    }
+
+    #custom-solutions .enterprise-specialty-card {
+      min-height: 210px;
+      padding: clamp(1.25rem, 2.2vw, 1.75rem);
+      border-radius: 12px;
+      text-align: right;
+    }
+
+    #custom-solutions .enterprise-specialty-card::before {
+      content: none;
+    }
+
+    #custom-solutions .enterprise-specialty-card-wide {
+      display: grid;
+      grid-column: span 2;
+      grid-template-columns: minmax(190px, .88fr) minmax(0, 1.12fr);
+      gap: clamp(1.2rem, 2.5vw, 2rem);
+      align-items: center;
+      min-height: 258px;
+      direction: ltr;
+    }
+
+    #custom-solutions .enterprise-specialty-card-blue {
+      grid-column: 1 / span 2;
+      grid-row: 1;
+      background: #dbeafe;
+    }
+
+    #custom-solutions .enterprise-specialties-grid .enterprise-specialty-card-compact:nth-child(2) {
+      grid-column: 3;
+      grid-row: 1;
+    }
+
+    #custom-solutions .enterprise-specialties-grid .enterprise-specialty-card-compact:nth-child(3) {
+      grid-column: 3;
+      grid-row: 2;
+    }
+
+    #custom-solutions .enterprise-specialties-grid .enterprise-specialty-card-dark,
+    #custom-solutions .enterprise-specialties-grid .enterprise-specialty-card-dark:nth-child(4) {
+      grid-column: 1 / span 2;
+      grid-row: 2;
+      background: #223247;
+    }
+
+    #custom-solutions .enterprise-specialty-card-dark .enterprise-specialty-media {
+      grid-column: 2;
+    }
+
+    #custom-solutions .enterprise-specialty-card-dark .enterprise-specialty-copy {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    #custom-solutions .enterprise-specialty-copy {
+      direction: rtl;
+    }
+
+    #custom-solutions .enterprise-specialty-media {
+      overflow: hidden;
+      border-radius: 8px;
+      aspect-ratio: 16 / 9;
+    }
+
+    #custom-solutions .enterprise-specialty-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #custom-solutions .enterprise-specialty-card h3 {
+      margin: 0 0 1rem;
+      color: #111827;
+      line-height: 1.45;
+    }
+
+    #custom-solutions .enterprise-specialty-card p {
+      margin: 0;
+      color: rgba(17, 24, 39, .66);
+      font-weight: 650;
+      line-height: 1.85;
+    }
+
+    #custom-solutions .enterprise-specialty-points {
+      display: grid;
+      gap: .45rem;
+      margin-top: 1.1rem;
+    }
+
+    #custom-solutions .enterprise-specialty-points span {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      color: rgba(17, 24, 39, .72);
+      font-weight: 750;
+    }
+
+    #custom-solutions .enterprise-specialty-points i {
+      color: var(--primary-color);
+      font-size: .95rem;
+    }
+
+    #custom-solutions .enterprise-specialty-icon {
+      display: block;
+      margin-bottom: 1.4rem;
+      color: var(--primary-color);
+      font-size: 2.25rem;
+      line-height: 1;
+    }
+
+    #custom-solutions .enterprise-specialty-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      margin-top: 1.35rem;
+      color: var(--primary-color);
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    #custom-solutions .enterprise-specialty-card-dark h3,
+    #custom-solutions .enterprise-specialty-card-dark p {
+      color: rgba(255, 255, 255, .84);
+    }
+
+    #custom-solutions .enterprise-specialty-card-dark .consulting-sub-tags {
+      margin: 1.35rem 0 0;
+    }
+
+    #custom-solutions .enterprise-specialty-card-dark .consulting-sub-tags span {
+      border-color: rgba(255, 255, 255, .12);
+      color: rgba(255, 255, 255, .78);
+      background: rgba(255, 255, 255, .1);
+    }
+
+    @media (max-width: 991.98px) {
+      #custom-solutions .enterprise-specialties-grid {
+        grid-template-columns: 1fr;
+      }
+
+      #custom-solutions .enterprise-specialty-card-blue,
+      #custom-solutions .enterprise-specialties-grid .enterprise-specialty-card-compact:nth-child(2),
+      #custom-solutions .enterprise-specialties-grid .enterprise-specialty-card-compact:nth-child(3),
+      #custom-solutions .enterprise-specialties-grid .enterprise-specialty-card-dark,
+      #custom-solutions .enterprise-specialties-grid .enterprise-specialty-card-dark:nth-child(4) {
+        grid-column: auto;
+        grid-row: auto;
+      }
+
+      #custom-solutions .enterprise-specialty-card-wide {
+        grid-column: auto;
+        grid-template-columns: 1fr;
+      }
+
+      #custom-solutions .enterprise-specialty-card-dark .enterprise-specialty-media,
+      #custom-solutions .enterprise-specialty-card-dark .enterprise-specialty-copy {
+        grid-column: auto;
+        grid-row: auto;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      #custom-solutions .enterprise-specialty-card {
+        min-height: auto;
+      }
+    }
+
+    #custom-solutions .enterprise-specialties-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      align-items: start;
+      gap: clamp(1.5rem, 5vw, 4rem);
+      margin-bottom: clamp(2rem, 4vw, 3rem);
+      text-align: right;
+    }
+
+    #custom-solutions .solutions-head-title {
+      display: grid;
+      gap: .35rem;
+      justify-items: start;
+    }
+
+    #custom-solutions .solutions-head-title .works-showcase-kicker {
+      margin: 0;
+      color: var(--primary-color);
+      font-size: .88rem;
+      font-weight: 900;
+    }
+
+    #custom-solutions .enterprise-specialties-head h2 {
+      margin: 0;
+      color: #0f172a;
+      font-size: clamp(2rem, 3.4vw, 3rem);
+      line-height: 1.2;
+      font-weight: 950;
+    }
+
+    #custom-solutions .enterprise-specialties-head p {
+      max-width: 360px;
+      margin: .8rem 0 0;
+      color: rgba(15, 23, 42, .62);
+      font-size: 1rem;
+      line-height: 1.9;
+      font-weight: 650;
+      justify-self: end;
+    }
+
+    #custom-solutions .enterprise-specialties-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(1.1rem, 2vw, 1.5rem);
+      padding-bottom: 0;
+    }
+
+    #custom-solutions .enterprise-specialty-card,
+    #custom-solutions .enterprise-specialty-card-wide,
+    #custom-solutions .enterprise-specialty-card-blue,
+    #custom-solutions .enterprise-specialty-card-dark,
+    #custom-solutions .enterprise-specialties-grid .enterprise-specialty-card-compact:nth-child(2),
+    #custom-solutions .enterprise-specialties-grid .enterprise-specialty-card-compact:nth-child(3),
+    #custom-solutions .enterprise-specialties-grid .enterprise-specialty-card-dark:nth-child(4) {
+      display: flex;
+      grid-column: auto;
+      grid-row: auto;
+      min-height: 170px;
+      padding: clamp(1.35rem, 2vw, 1.7rem);
+      border: 1px solid rgba(15, 23, 42, .08);
+      border-radius: 8px;
+      background: #f7f8fd;
+      box-shadow: none;
+      direction: rtl;
+      text-align: right;
+    }
+
+    #custom-solutions .enterprise-specialty-card {
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.2rem;
+    }
+
+    #custom-solutions .enterprise-specialty-media,
+    #custom-solutions .enterprise-specialty-points,
+    #custom-solutions .enterprise-specialty-link,
+    #custom-solutions .consulting-sub-tags {
+      display: none;
+    }
+
+    #custom-solutions .enterprise-specialty-copy {
+      display: contents;
+      direction: rtl;
+    }
+
+    #custom-solutions .enterprise-specialty-icon {
+      display: block;
+      margin: 0 0 auto;
+      color: var(--primary-color);
+      font-size: 2rem;
+      line-height: 1;
+    }
+
+    #custom-solutions .enterprise-specialty-card h3 {
+      margin: 0;
+      color: #17233a;
+      font-size: clamp(1.25rem, 1.6vw, 1.55rem);
+      line-height: 1.35;
+      font-weight: 850;
+    }
+
+    #custom-solutions .enterprise-specialty-card p {
+      margin: -.7rem 0 0;
+      color: rgba(15, 23, 42, .62);
+      font-size: .96rem;
+      line-height: 1.8;
+      font-weight: 600;
+    }
+
+    @media (max-width: 991.98px) {
+      #custom-solutions .enterprise-specialties-head {
+        grid-template-columns: 1fr;
+      }
+
+      #custom-solutions .enterprise-specialties-head p {
+        justify-self: start;
+        max-width: 620px;
+      }
+
+      #custom-solutions .enterprise-specialties-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      #custom-solutions .enterprise-specialties-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    #service-scope {
+      padding-block: clamp(3rem, 6vw, 5rem);
+      background: #eaf1ff;
+      border-block: 1px solid rgba(var(--primary-rgb), .08);
+    }
+
+    #service-scope .service-scope-layout {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(0, 2.08fr);
+      gap: clamp(1rem, 2vw, 1.45rem);
+      align-items: stretch;
+    }
+
+    #service-scope .service-scope-copy {
+      max-width: 860px;
+      margin: 0 auto clamp(2rem, 4vw, 3rem);
+      text-align: center;
+    }
+
+    #service-scope .service-scope-copy h2 {
+      margin: 0;
+      color: #111827;
+      font-size: clamp(2rem, 3.3vw, 3rem);
+      font-weight: 950;
+      line-height: 1.3;
+    }
+
+    #service-scope .service-scope-cards {
+      display: grid;
+      grid-template-columns: subgrid;
+      grid-column: 1 / -1;
+      gap: clamp(1rem, 2vw, 1.45rem);
+    }
+
+    #service-scope .service-scope-card {
+      position: relative;
+      min-height: 238px;
+      padding: clamp(1.35rem, 2.3vw, 2.1rem);
+      border: 0;
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: 0 18px 34px rgba(88, 28, 135, .16);
+      text-align: right;
+      overflow: hidden;
+    }
+
+    #service-scope .service-scope-card-purple {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #fff;
+      background: linear-gradient(145deg, #8b2dc4 0%, #6410a1 100%);
+    }
+
+    #service-scope .service-scope-card-deep {
+      background: linear-gradient(145deg, #5c008e 0%, #7600aa 100%);
+    }
+
+    #service-scope .service-scope-card-label {
+      display: block;
+      color: rgba(255, 255, 255, .78);
+      font-size: .86rem;
+      font-weight: 850;
+    }
+
+    #service-scope .service-scope-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      width: fit-content;
+      margin-top: 1rem;
+      padding: .48rem .75rem;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, .16);
+      color: #fff;
+      font-size: .8rem;
+      font-weight: 900;
+    }
+
+    #service-scope .service-scope-feature {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(180px, .92fr);
+      gap: 0;
+      padding: 0;
+      border: 1px solid rgba(88, 28, 135, .14);
+      box-shadow: none;
+    }
+
+    #service-scope .service-scope-feature-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(1.35rem, 2.4vw, 2.25rem);
+    }
+
+    #service-scope .service-scope-feature-image {
+      min-height: 100%;
+      overflow: hidden;
+    }
+
+    #service-scope .service-scope-feature-image img {
+      width: 100%;
+      height: 100%;
+      min-height: 238px;
+      object-fit: cover;
+      display: block;
+    }
+
+    #service-scope .service-scope-feature .service-scope-card-label {
+      color: #006ca8;
+    }
+
+    #service-scope .service-scope-card h3 {
+      margin: .55rem 0 .8rem;
+      color: inherit;
+      font-size: clamp(1.55rem, 2vw, 2rem) !important;
+      font-weight: 850;
+      line-height: 1.45 !important;
+    }
+
+    #service-scope .service-scope-card p {
+      margin: 0;
+      color: currentColor;
+      opacity: .82;
+      font-size: .96rem !important;
+      font-weight: 650;
+      line-height: 1.7 !important;
+    }
+
+    #service-scope .service-scope-feature h3 {
+      color: #111827;
+    }
+
+    #service-scope .service-scope-feature p {
+      color: rgba(17, 24, 39, .72);
+      opacity: 1;
+    }
+
+    #service-scope .service-scope-result {
+      margin-top: 1.15rem;
+      color: var(--primary-color);
+      font-weight: 950;
+    }
+
+    @media (max-width: 991.98px) {
+      #service-scope .service-scope-layout {
+        grid-template-columns: 1fr;
+      }
+
+      #service-scope .service-scope-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      #service-scope .service-scope-feature {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      #service-scope .service-scope-card,
+      #service-scope .service-scope-feature-image img {
+        min-height: 210px;
+      }
+    }
+
+    #proprietary-comparison {
+      padding-block: clamp(3rem, 6vw, 5rem);
+      background: #eef4ff;
+      border-block: 1px solid rgba(var(--primary-rgb), .08);
+    }
+
+    #proprietary-comparison .proprietary-table-card {
+      overflow: hidden;
+      border: 1px solid rgba(var(--primary-rgb), .14);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 18px 44px rgba(15, 23, 42, .07);
+    }
+
+    #proprietary-comparison table {
+      margin: 0;
+      vertical-align: middle;
+      direction: rtl;
+      text-align: right;
+    }
+
+    #proprietary-comparison th,
+    #proprietary-comparison td {
+      padding: 1.05rem 1.2rem;
+      color: #111827;
+      font-weight: 750;
+      border-color: rgba(var(--primary-rgb), .1);
+      text-align: right !important;
+    }
+
+    #proprietary-comparison thead th {
+      background: rgba(var(--primary-rgb), .08);
+      font-weight: 950;
+    }
+
+    #proprietary-comparison td:last-child {
+      color: var(--primary-color);
+      font-weight: 900;
+    }
+
+    #proprietary-comparison .comparison-check {
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: .45rem;
+      direction: rtl;
+    }
+
+    #proprietary-comparison .comparison-check i {
+      color: var(--primary-color);
+    }
+
+    #proprietary-ownership .ownership-points {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .9rem 1.1rem;
+      margin-top: 1.6rem;
+    }
+
+    #proprietary-ownership .ownership-point {
+      display: flex;
+      align-items: center;
+      gap: .65rem;
+      color: #111827;
+      font-weight: 850;
+    }
+
+    #proprietary-ownership .ownership-point i {
+      display: grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      color: var(--primary-color);
+      background: rgba(var(--primary-rgb), .1);
+      font-size: .9rem;
+    }
+
+    #lab-methodology.proprietary-methodology-section .method-flow {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    #lab-methodology .consulting-method-timeline {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: clamp(.65rem, 1vw, .95rem);
+    }
+
+    #lab-methodology .consulting-method-step {
+      min-height: 230px;
+      padding: .9rem;
+    }
+
+    #lab-methodology .consulting-method-index {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+    }
+
+    #lab-methodology .consulting-method-step h3 {
+      font-size: clamp(.92rem, .95vw, 1.08rem);
+    }
+
+    #lab-methodology .consulting-method-step p {
+      font-size: .84rem;
+    }
+
+    @media (max-width: 991.98px) {
+      #lab-methodology.proprietary-methodology-section .method-flow {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      #lab-methodology .consulting-method-timeline {
+        grid-template-columns: 1fr;
+      }
+
+      #lab-methodology .consulting-method-step {
+        min-height: auto;
+        padding: 1rem;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      #proprietary-ownership .ownership-points,
+      #lab-methodology.proprietary-methodology-section .method-flow {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+  <link rel="stylesheet" href="../assets/css/typography.css">
+  <script src="../assets/js/plugins.js"></script>
+</head>
+
+<body data-theme="theme-index" class="info-pages proprietary-algorithms-page">
+  <div class="hexagon-cursor"></div>
+  <header class="header-creative position-fixed top-0 w-100" style="z-index: 1000;" id="mainNavbar">
+    <div class="header-ambient" aria-hidden="true">
+      <span class="ambient-orb orb-one"></span>
+      <span class="ambient-orb orb-two"></span>
+      <span class="ambient-line"></span>
+    </div>
+    <nav class="navbar navbar-expand-lg" aria-label="القائمة الرئيسية">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="header-shell w-100">
+          <a class="navbar-brand logo-animated site-logo-link" href="../index.html" aria-label="مساقي">
+            <img src="../assets/images/logomasaqy.png" alt="مساقي" class="site-logo-img">
+          </a>
+          <div class="mobile-actions d-flex align-items-center gap-2 d-lg-none">
+            <a class="btn btn-mobile-cta magnetic-btn" href="mailto:info@masaqy.com" title="طلب خوارزمية مخصصة" aria-label="طلب خوارزمية مخصصة">
+              <i class="bi bi-chat-dots"></i>
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prenavbar" aria-label="فتح وإغلاق القائمة">
+              <span class="toggler-line"></span>
+              <span class="toggler-line"></span>
+              <span class="toggler-line"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="prenavbar">
+            <ul class="navbar-nav nav-cluster ms-auto align-items-lg-center gap-lg-2 mt-4 mt-lg-0">
+              <li class="nav-item"><a class="nav-link nav-link-modern" href="../index.html"><span class="link-text">الرئيسية</span></a></li>
+              <li class="nav-item"><a class="nav-link nav-link-modern" href="../about.html"><span class="link-text">من نحن</span></a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-link-modern dropdown-toggle" href="../marketing-details.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="link-text">الخدمات</span>
+                  <i class="bi bi-chevron-down ms-1 opacity-75 small"></i>
+                </a>
+                <ul class="dropdown-menu nav-services-dropdown" aria-labelledby="servicesDropdown">
+                  <li><a class="dropdown-item" href="../consulting-details.html">مساقي للاستشارات</a></li>
+                  <li><a class="dropdown-item" href="../lab-details.html">مختبر مساقي</a></li>
+                  <li><a class="dropdown-item" href="../marketing-details.html">مساقي للتسويق</a></li>
+                  <li><a class="dropdown-item" href="../index.html#services">أكاديمية مساقي</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-link-modern dropdown-toggle" href="../index.html#systems" id="systemsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="link-text">الأنظمة</span>
+                  <i class="bi bi-chevron-down ms-1 opacity-75 small"></i>
+                </a>
+                <ul class="dropdown-menu nav-services-dropdown" aria-labelledby="systemsDropdown">
+                  <li><a class="dropdown-item" href="../system-details.html">CRM الذكي</a></li>
+                  <li><a class="dropdown-item" href="../system-details.html">ERP الذكي</a></li>
+                  <li><a class="dropdown-item" href="../system-details.html">Automation Systems</a></li>
+                  <li><a class="dropdown-item" href="../system-details.html">AI Dashboards</a></li>
+                  <li><a class="dropdown-item" href="../system-details.html">AI Decision Systems</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link nav-link-modern" href="../works.html"><span class="link-text">أعمالنا</span></a></li>
+              <li class="nav-item"><a class="nav-link nav-link-modern" href="#"><span class="link-text">English</span></a></li>
+              <li class="nav-item d-none d-lg-block ms-xl-3">
+                <a class="btn btn-cta-glow magnetic-btn" href="mailto:info@masaqy.com" title="احجز اجتماع">
+                  <span class="btn-text">احجز اجتماع</span>
+                  <i class="bi bi-calendar2-check btn-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="scroll-progress-bar"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <script src="../assets/js/site-header.js"></script>
+
+  <main class="index-flow about-page-flow">
+    <section class="flow-hero about-hero consulting-hero" id="lab-hero">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="consulting-hero-content">
+              <span class="about-section-kicker reveal-item">
+                <i class="bi bi-cpu"></i>
+                خوارزميات ملكية خاصة
+              </span>
+              <h1 class="consulting-hero-title reveal-item">خوارزميات ذكية مصممة خصيصاً لمؤسستك</h1>
+              <p class="consulting-hero-copy reveal-item">نطوّر خوارزميات مملوكة بالكامل لمؤسستك، مبنية على بياناتك ومنطق عملك، لتمنحك قرارات أدق وأداء تشغيلياً لا يمكن للحلول الجاهزة نسخه.</p>
+              <div class="flow-actions consulting-hero-actions reveal-item d-flex flex-wrap gap-3 mb-0">
+                <a href="mailto:info@masaqy.com" class="btn flow-btn-primary"><span>ابدأ بناء خوارزميتك</span><i class="bi bi-arrow-left"></i></a>
+                <a href="#lab-methodology" class="btn flow-btn-ghost">استكشف المنهجية</a>
+              </div>
+              <div class="d-flex flex-wrap gap-3 mt-4 reveal-item" aria-label="مؤشرات الأداء">
+                <div class="d-flex align-items-center gap-2 pe-3 border-end"><strong class="fs-4 text-dark">100%</strong><span class="small text-muted">ملكية فكرية</span></div>
+                <div class="d-flex align-items-center gap-2 pe-3 border-end"><strong class="fs-4 text-dark">+95%</strong><span class="small text-muted">جاهزية تكامل</span></div>
+                <div class="d-flex align-items-center gap-2"><strong class="fs-4 text-dark">24/7</strong><span class="small text-muted">تشغيل ومراقبة</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="consulting-hero-visual reveal-item scroll-scale-in">
+              <div class="consulting-image-card">
+                <img src="../assets/images/masaqy/lab2.jpeg" alt="خوارزميات ملكية خاصة لمؤسسات الأعمال">
+                <div class="consulting-image-badge"><i class="bi bi-stars"></i><span>Proprietary Algorithms</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-detail-section consulting-challenges-section margin-bottom-xl" id="lab-challenges">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="consulting-section-head reveal-item">
+          <h2>لماذا لا تكفي الحلول الجاهزة؟</h2>
+          <p>لأن ميزتك التنافسية موجودة في بياناتك وقواعد قرارك وسياق عملياتك، وهذه العناصر لا تعالجها القوالب العامة بدقة.</p>
+        </div>
+        <div class="consulting-challenges-grid enterprise-challenges-grid">
+          <article class="consulting-challenge-card reveal-item"><div class="consulting-challenge-head"><span class="consulting-challenge-icon"><i class="bi bi-database-lock"></i></span></div><h2>بيانات خاصة ومعقدة</h2><p>بيانات المؤسسة تختلف في مصادرها وجودتها وتحتاج خوارزمية تفهم بنيتها لا قالباً عاماً.</p></article>
+          <article class="consulting-challenge-card reveal-item"><div class="consulting-challenge-head"><span class="consulting-challenge-icon"><i class="bi bi-diagram-3"></i></span></div><h2>منطق قرار فريد</h2><p>لكل مؤسسة قواعد تشغيل ومخاطر واعتمادات لا تظهر للنماذج الجاهزة دون هندسة مخصصة.</p></article>
+          <article class="consulting-challenge-card reveal-item"><div class="consulting-challenge-head"><span class="consulting-challenge-icon"><i class="bi bi-shield-check"></i></span></div><h2>سيادة وخصوصية</h2><p>الخوارزميات المملوكة تضمن التحكم في البيانات والكود ومسارات المعالجة داخل بيئتك.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-detail-section consulting-groups-section margin-bottom-xl" id="custom-solutions">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="consulting-section-head enterprise-specialties-head reveal-item">
+          <div class="solutions-head-title">
+            <span class="works-showcase-kicker">القدرات التقنية</span>
+            <h2>خوارزميات سيادية نصممها لك</h2>
+          </div>
+          <p>نماذج ذكاء اصطناعي سيادية مصممة ومبنية من الصفر لتلبي متطلباتك الدقيقة.</p>
+        </div>
+
+        <div class="consulting-groups-grid enterprise-specialties-grid">
+          <article class="consulting-group-card enterprise-specialty-card reveal-item">
+            <span class="enterprise-specialty-icon"><i class="bi bi-broadcast"></i></span>
+            <div class="enterprise-specialty-copy">
+              <h3>التنبؤ الاستراتيجي</h3>
+              <p>التنبؤ بالطلب وسلوك المستهلك واتجاهات السوق بدقة استثنائية تصل إلى 95%.</p>
+            </div>
+          </article>
+
+          <article class="consulting-group-card enterprise-specialty-card reveal-item">
+            <span class="enterprise-specialty-icon"><i class="bi bi-lightning-charge"></i></span>
+            <div class="enterprise-specialty-copy">
+              <h3>أنظمة التوصية الذكية</h3>
+              <p>محركات توصية ترفع معدلات التحويل عبر تجربة عميل ملائمة وفريدة.</p>
+            </div>
+          </article>
+
+          <article class="consulting-group-card enterprise-specialty-card reveal-item">
+            <span class="enterprise-specialty-icon"><i class="bi bi-diagram-3"></i></span>
+            <div class="enterprise-specialty-copy">
+              <h3>التصنيف والفرز الآلي</h3>
+              <p>معالجة ملايين الوثائق والبيانات عبر التصنيف في ثوان بدقة بشرية.</p>
+            </div>
+          </article>
+
+          <article class="consulting-group-card enterprise-specialty-card reveal-item">
+            <span class="enterprise-specialty-icon"><i class="bi bi-shield-fill"></i></span>
+            <div class="enterprise-specialty-copy">
+              <h3>كشف المخاطر</h3>
+              <p>حماية الأصول والبيانات عبر رصد الأنماط الشاذة والتهديدات الاستباقية.</p>
+            </div>
+          </article>
+
+          <article class="consulting-group-card enterprise-specialty-card reveal-item">
+            <span class="enterprise-specialty-icon"><i class="bi bi-signpost-split"></i></span>
+            <div class="enterprise-specialty-copy">
+              <h3>تحسين العمليات</h3>
+              <p>إدارة سلاسل الإمداد والخدمات اللوجستية بأعلى كفاءة لخفض الهدر التشغيلي.</p>
+            </div>
+          </article>
+
+          <article class="consulting-group-card enterprise-specialty-card reveal-item">
+            <span class="enterprise-specialty-icon"><i class="bi bi-cash-stack"></i></span>
+            <div class="enterprise-specialty-copy">
+              <h3>التسعير الديناميكي</h3>
+              <p>خوارزميات توازن العرض والطلب لتعظيم الربحية وتنافسية الأسعار اللحظية.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-detail-section consulting-groups-section margin-bottom-xl" id="service-scope">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="service-scope-copy reveal-item">
+          <h2>تأثير ملموس في كافة القطاعات</h2>
+        </div>
+
+        <div class="service-scope-layout">
+          <div class="service-scope-cards">
+            <article class="service-scope-card service-scope-card-purple reveal-item">
+              <div>
+                <span class="service-scope-card-label">الرعاية الصحية</span>
+                <h3>التشخيص الاستباقي</h3>
+                <p>تحليل الصور الإشعاعية عبر نماذج دقيقة ومدربة محلياً.</p>
+              </div>
+              <span class="service-scope-pill">Accuracy: 99.2% <i class="bi bi-graph-up-arrow"></i></span>
+            </article>
+
+            <article class="service-scope-card service-scope-card-purple service-scope-card-deep reveal-item">
+              <div>
+                <span class="service-scope-card-label">المالية</span>
+                <h3>الائتمان الذكي</h3>
+                <p>خوارزمية تقيم قرارات ائتمانية فورية بدقة مضاعفة للبنوك الرقمية.</p>
+              </div>
+              <span class="service-scope-pill">ROI: +45% Growth <i class="bi bi-arrow-up-right"></i></span>
+            </article>
+
+            <article class="service-scope-card service-scope-feature reveal-item">
+              <div class="service-scope-feature-copy">
+                <span class="service-scope-card-label">القطاع الحكومي</span>
+                <h3>المدن الذكية والسيادة</h3>
+                <p><strong>التحدي:</strong> إدارة تدفق البيانات المرورية الضخمة.</p>
+                <div class="service-scope-result">النتيجة: تقليل زمن التنقل بنسبة 30%.</div>
+              </div>
+              <div class="service-scope-feature-image">
+                <img src="../assets/images/masaqy/lab.jpeg" alt="المدن الذكية والسيادة">
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-detail-section consulting-groups-section margin-bottom-xl" id="proprietary-comparison">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="consulting-section-head reveal-item">
+          <h2>مسارك مقابل الحلول التقليدية</h2>
+          <p>مقارنة واضحة بين امتلاك خوارزمية مبنية لك وبين الاعتماد على حلول جاهزة محدودة.</p>
+        </div>
+        <div class="proprietary-table-card reveal-item">
+          <div class="table-responsive">
+            <table class="table text-end">
+              <thead>
+                <tr>
+                  <th>المحور</th>
+                  <th>الحلول الجاهزة</th>
+                  <th>خوارزميات MASAQY الخاصة</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>الملكية الفكرية</td>
+                  <td>اشتراك واستخدام محدود</td>
+                  <td><span class="comparison-check"><i class="bi bi-check-circle-fill"></i>ملكية كاملة للكود والمنطق</span></td>
+                </tr>
+                <tr>
+                  <td>التوافق مع بياناتك</td>
+                  <td>يتطلب تعديل عملياتك لتناسب الأداة</td>
+                  <td><span class="comparison-check"><i class="bi bi-check-circle-fill"></i>تصميم حول بياناتك وقواعدك</span></td>
+                </tr>
+                <tr>
+                  <td>قابلية التطوير</td>
+                  <td>محكومة بخريطة منتج طرف ثالث</td>
+                  <td><span class="comparison-check"><i class="bi bi-check-circle-fill"></i>تتوسع حسب أهداف المؤسسة</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="masaqy-advantage-section margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated" id="lab-why">
+      <div class="container-lg position-relative">
+        <div class="masaqy-advantage-shell reveal-on-scroll" data-reveal-order="0">
+          <div class="row justify-content-center mb-5"><div class="col-lg-9 text-center"><h2 class="fs-1 fw-bold text-dark mb-3 reveal-on-scroll" data-reveal-order="2">لماذا تختار MASAQY Labs لشريكك التقني؟</h2></div></div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6 reveal-on-scroll" data-reveal-order="4"><article class="masaqy-advantage-card"><span class="masaqy-advantage-icon"><i class="bi bi-fingerprint"></i></span><h4>بصمة مؤسسية</h4><p>الخوارزمية تتعلم من قواعد عملك ولا تفرض عليك منطقاً خارجياً عاماً.</p></article></div>
+            <div class="col-lg-3 col-md-6 reveal-on-scroll" data-reveal-order="5"><article class="masaqy-advantage-card"><span class="masaqy-advantage-icon"><i class="bi bi-shield-lock"></i></span><h4>سيادة البيانات</h4><p>معالجة آمنة داخل بيئة المؤسسة مع صلاحيات وتشفير وحوكمة واضحة.</p></article></div>
+            <div class="col-lg-3 col-md-6 reveal-on-scroll" data-reveal-order="6"><article class="masaqy-advantage-card"><span class="masaqy-advantage-icon"><i class="bi bi-graph-up-arrow"></i></span><h4>أثر قابل للقياس</h4><p>نربط كل نموذج بمؤشرات أداء واضحة مثل الدقة والوقت والتكلفة.</p></article></div>
+            <div class="col-lg-3 col-md-6 reveal-on-scroll" data-reveal-order="7"><article class="masaqy-advantage-card"><span class="masaqy-advantage-icon"><i class="bi bi-arrows-angle-expand"></i></span><h4>قابلية التوسع</h4><p>تصميم مرن يسمح بإضافة بيانات وقرارات وفرق جديدة دون إعادة البناء من الصفر.</p></article></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-detail-section consulting-method-section margin-bottom-xl" id="lab-methodology">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="consulting-section-head reveal-item">
+          <h2>رحلة التطوير من الفكرة إلى السيادة</h2>
+        </div>
+
+        <div class="consulting-method-timeline">
+          <article class="consulting-method-step reveal-item">
+            <span class="consulting-method-index">01</span>
+            <div>
+              <h3>اكتشاف القرار</h3>
+              <p>تحديد نقطة التأثير</p>
+            </div>
+          </article>
+
+          <article class="consulting-method-step reveal-item">
+            <span class="consulting-method-index">02</span>
+            <div>
+              <h3>تحليل البيانات</h3>
+              <p>فهم المصادر والجودة</p>
+            </div>
+          </article>
+
+          <article class="consulting-method-step reveal-item">
+            <span class="consulting-method-index">03</span>
+            <div>
+              <h3>تصميم الخوارزمية</h3>
+              <p>اختيار المنطق والنموذج</p>
+            </div>
+          </article>
+
+          <article class="consulting-method-step reveal-item">
+            <span class="consulting-method-index">04</span>
+            <div>
+              <h3>التكامل الآمن</h3>
+              <p>ربط الأنظمة والبيانات</p>
+            </div>
+          </article>
+
+          <article class="consulting-method-step reveal-item">
+            <span class="consulting-method-index">05</span>
+            <div>
+              <h3>اختبار وإطلاق</h3>
+              <p>قياس الدقة والاستقرار</p>
+            </div>
+          </article>
+
+          <article class="consulting-method-step reveal-item">
+            <span class="consulting-method-index">06</span>
+            <div>
+              <h3>تحسين مستمر</h3>
+              <p>تطوير الأداء والتوسع</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="masaqy-stats-section masaqy-results-section margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated" id="lab-results">
+      <div class="container-lg position-relative">
+        <div class="masaqy-stats-shell reveal-on-scroll" data-reveal-order="0">
+          <div class="row justify-content-center">
+            <div class="col-lg-9 text-center">
+              <h2 class="fs-1 fw-bold text-dark mb-3 reveal-on-scroll" data-reveal-order="2">أرقام تعيد تشغيل مؤسستك</h2>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6 reveal-on-scroll" data-reveal-order="4"><article class="masaqy-stat-card"><span class="masaqy-stat-value">+95%</span><h3>دقة أعلى في القرار</h3><p>نتائج مبنية على بيانات المؤسسة وسياقها الحقيقي.</p></article></div>
+            <div class="col-lg-3 col-md-6 reveal-on-scroll" data-reveal-order="5"><article class="masaqy-stat-card"><span class="masaqy-stat-value">-40%</span><h3>تقليل الهدر التشغيلي</h3><p>تحسين الموارد والمسارات والتكاليف المتكررة.</p></article></div>
+            <div class="col-lg-3 col-md-6 reveal-on-scroll" data-reveal-order="6"><article class="masaqy-stat-card"><span class="masaqy-stat-value">+60%</span><h3>تسريع التحليل</h3><p>تحويل البيانات إلى توصيات قابلة للتنفيذ بسرعة.</p></article></div>
+            <div class="col-lg-3 col-md-6 reveal-on-scroll" data-reveal-order="7"><article class="masaqy-stat-card"><span class="masaqy-stat-value">24/7</span><h3>مراقبة مستمرة</h3><p>متابعة أداء الخوارزمية وتحسينها مع الوقت.</p></article></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="masaqy-about-section lab-why-about-section margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated" id="proprietary-ownership">
+      <div class="container-lg position-relative about-section-animated">
+        <div class="about-two bg-light-primary px-4 py-lg-5 py-4 position-relative about-card reveal-on-scroll" data-reveal-order="1">
+          <div class="row g-4 g-xl-5 align-items-center">
+            <div class="col-lg-6 order-2 order-lg-1 about-video-col">
+              <div class="shadow-lg card card-video overflow-hidden about-visual reveal-on-scroll float-video-card" data-reveal-order="2">
+                <img class="background-video object-fit-cover w-100 h-100" src="../assets/images/ai-systems/automation-systems.png" alt="أصل رقمي تمتلكه المؤسسة">
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 mt-md-4 about-content-col">
+              <h2 class="text-dark mb-3 slide-in-left">أصل رقمي تمتلكه مؤسستك</h2>
+              <p class="consulting-hero-copy mb-4">الخوارزمية الخاصة ليست أداة مؤقتة، بل أصل تقني يتطور مع بياناتك ويصبح جزءاً من قدرة المؤسسة على المنافسة واتخاذ القرار.</p>
+              <div class="ownership-points">
+                <span class="ownership-point"><i class="bi bi-code-slash"></i>ملكية الكود والمنطق</span>
+                <span class="ownership-point"><i class="bi bi-file-earmark-lock"></i>توثيق هندسي واضح</span>
+                <span class="ownership-point"><i class="bi bi-people"></i>نقل معرفة للفريق</span>
+                <span class="ownership-point"><i class="bi bi-arrow-repeat"></i>قابلية تطوير مستمرة</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="masaqy-advantage-section lab-faq-section margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated" id="enterprise-faq">
+      <div class="container-lg position-relative">
+        <div class="masaqy-advantage-shell reveal-on-scroll" data-reveal-order="0">
+          <div class="row justify-content-center mb-5">
+            <div class="col-lg-9 text-center">
+              <h2 class="fs-1 fw-bold text-dark mb-3 reveal-on-scroll" data-reveal-order="2">الأسئلة الأكثر تكراراً</h2>
+            </div>
+          </div>
+
+          <div class="accordion enterprise-faq-accordion reveal-on-scroll" id="enterpriseFaqAccordion" data-reveal-order="3">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="enterpriseFaqHeadingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#enterpriseFaqOne" aria-expanded="true" aria-controls="enterpriseFaqOne">هل الخوارزمية تكون مملوكة بالكامل لمؤسستنا؟</button>
+              </h3>
+              <div id="enterpriseFaqOne" class="accordion-collapse collapse show" aria-labelledby="enterpriseFaqHeadingOne" data-bs-parent="#enterpriseFaqAccordion">
+                <div class="accordion-body"><p>نعم، يتم تحديد الملكية الفكرية والكود والمنطق وحقوق الاستخدام في العقد، مع تسليم التوثيق اللازم حسب نطاق المشروع.</p></div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="enterpriseFaqHeadingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#enterpriseFaqTwo" aria-expanded="false" aria-controls="enterpriseFaqTwo">هل نحتاج بيانات ضخمة قبل البدء؟</button>
+              </h3>
+              <div id="enterpriseFaqTwo" class="accordion-collapse collapse" aria-labelledby="enterpriseFaqHeadingTwo" data-bs-parent="#enterpriseFaqAccordion">
+                <div class="accordion-body"><p>لا يشترط وجود بيانات ضخمة. نبدأ بتقييم جودة البيانات المتاحة، ثم نحدد ما يمكن بناؤه فوراً وما يحتاج تحسيناً أو ربطاً إضافياً.</p></div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="enterpriseFaqHeadingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#enterpriseFaqThree" aria-expanded="false" aria-controls="enterpriseFaqThree">هل يمكن دمجها مع أنظمتنا الحالية؟</button>
+              </h3>
+              <div id="enterpriseFaqThree" class="accordion-collapse collapse" aria-labelledby="enterpriseFaqHeadingThree" data-bs-parent="#enterpriseFaqAccordion">
+                <div class="accordion-body"><p>نعم، نصمم الخوارزميات لتعمل مع قواعد البيانات وERP وCRM ولوحات البيانات وواجهات API الحالية قدر الإمكان.</p></div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="enterpriseFaqHeadingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#enterpriseFaqFour" aria-expanded="false" aria-controls="enterpriseFaqFour">كيف نضمن أن النتائج قابلة للقياس؟</button>
+              </h3>
+              <div id="enterpriseFaqFour" class="accordion-collapse collapse" aria-labelledby="enterpriseFaqHeadingFour" data-bs-parent="#enterpriseFaqAccordion">
+                <div class="accordion-body"><p>نحدد مؤشرات أداء من بداية المشروع، مثل الدقة، زمن المعالجة، تقليل الهدر، أو رفع التحويل، ثم نربطها بتقارير متابعة واضحة.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="masaqy-partnership-cta margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="masaqy-partnership-card reveal-on-scroll" data-reveal-order="1">
+          <div class="row align-items-center g-4 g-xl-5">
+            <div class="col-lg-7">
+              <span class="masaqy-partnership-badge">
+                <i class="bi bi-stars"></i>
+                ابدأ من ميزة لا يمكن تقليدها
+              </span>
+              <h2 class="masaqy-partnership-title mb-3">ابن خوارزمية لا يمكن شراؤها من السوق.</h2>
+              <h4 class="masaqy-footer-text mt-3 mb-0">نحوّل بيانات مؤسستك ومنطق قراراتها إلى أصل تقني يرفع الدقة، يحمي المعرفة، ويمنحك ميزة تنافسية طويلة المدى.</h4>
+            </div>
+            <div class="col-lg-5">
+              <div class="masaqy-partnership-visual">
+                <div class="flow-actions reveal-item d-flex flex-wrap gap-3 mb-0">
+                  <a href="mailto:info@masaqy.com" class="btn flow-btn-primary">
+                    <i class="bi bi-arrow-left"></i>
+                    <span>ابدأ بناء الخوارزمية</span>
+                  </a>
+                  <a href="../works.html" class="btn flow-btn-ghost">
+                    <i class="bi bi-briefcase"></i>
+                    عرض الأعمال
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-neo">
+      <div class="footer-neo-background">
+        <span class="footer-neo-orb orb-one"></span>
+        <span class="footer-neo-orb orb-two"></span>
+        <span class="footer-neo-grid"></span>
+      </div>
+      <div class="container-fluid px-3 px-md-5">
+        <div class="footer-neo-shell reveal-item scroll-slide-left">
+          <div class="footer-neo-card masaqy-footer-layout">
+            <div class="row g-4 g-xl-5">
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <a href="../index.html" class="masaqy-footer-brand text-decoration-none d-inline-block" aria-label="مساقي">
+                  <img src="../assets/images/logomasaqy.png" alt="مساقي" class="masaqy-footer-logo">
+                </a>
+                <p class="masaqy-footer-text mt-3 mb-0">MASAQY شركة سعودية متخصصة في تقنيات الذكاء الاصطناعي والتحول المؤسسي الذكي، نبني منظومات أعمال ذكية تساعد المؤسسات على النمو والتوسع بثقة.</p>
+                <span class="masaqy-footer-tagline">Where Intelligence Becomes Business Impact</span>
+                <div class="masaqy-footer-socials" aria-label="روابط التواصل الاجتماعي">
+                  <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" aria-label="X / Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+              <div class="col-xl col-lg-4 col-md-6"><h2 class="masaqy-footer-title h6">الخدمات</h2><ul class="masaqy-footer-links"><li><a href="../consulting-details.html">مساقي للاستشارات</a></li><li><a href="../lab-details.html">مختبر مساقي</a></li><li><a href="../marketing-details.html#marketing-groups">مساقي للتسويق</a></li><li><a href="../index.html#services">أكاديمية مساقي</a></li></ul></div>
+              <div class="col-xl col-lg-4 col-md-6"><h2 class="masaqy-footer-title h6">الأنظمة الذكية</h2><ul class="masaqy-footer-links"><li><a href="../index.html#systems">Smart CRM</a></li><li><a href="../index.html#systems">Smart ERP</a></li><li><a href="../index.html#systems">Automation Systems</a></li><li><a href="../index.html#systems">AI Dashboards</a></li><li><a href="../index.html#systems">AI Decision Systems</a></li></ul></div>
+              <div class="col-xl col-lg-4 col-md-6"><h2 class="masaqy-footer-title h6">روابط سريعة</h2><ul class="masaqy-footer-links"><li><a href="../index.html">الرئيسية</a></li><li><a href="../about.html">من نحن</a></li><li><a href="../marketing-details.html#marketing-groups">الخدمات</a></li><li><a href="../index.html#systems">الأنظمة</a></li><li><a href="../index.html#sectors">القطاعات</a></li><li><a href="mailto:info@masaqy.com">تواصل معنا</a></li></ul></div>
+              <div class="col-xl col-lg-4 col-md-6"><h2 class="masaqy-footer-title h6">تواصل معنا</h2><ul class="masaqy-footer-contact"><li><i class="bi bi-geo-alt"></i><span>Riyadh, Saudi Arabia</span></li><li><i class="bi bi-envelope"></i><a href="mailto:info@masaqy.com">info@masaqy.com</a></li><li><i class="bi bi-globe2"></i><a href="https://www.masaqy.com" target="_blank" rel="noopener">www.masaqy.com</a></li></ul><a href="mailto:info@masaqy.com" class="masaqy-footer-cta"><span>اطلب حلاً ذكياً</span><i class="bi bi-arrow-up-right"></i></a></div>
+            </div>
+            <div class="footer-neo-bottom masaqy-footer-bottom mt-5 pt-4">
+              <div class="footer-neo-meta"><span>© 2026 MASAQY. All Rights Reserved.</span></div>
+              <div class="d-flex align-items-center gap-3"><a href="#" class="footer-neo-top" aria-label="العودة للأعلى"><span>الأعلى</span><i class="bi bi-arrow-up"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="floating-contact-actions" aria-label="خيارات التواصل السريع">
+    <a class="floating-contact-btn floating-contact-btn-whatsapp" href="https://wa.me/?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%20%D9%85%D8%B3%D8%A7%D9%82%D9%8A" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <a class="floating-contact-btn floating-contact-btn-chat" href="mailto:info@masaqy.com" aria-label="فتح بوت الدردشة">
+      <i class="bi bi-chat-dots-fill"></i>
+    </a>
+  </div>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/about.js"></script>
+</body>
+
+</html>

@@ -4132,3 +4132,95 @@
     width: 100%;
   }
 }
+
+.llm-page #llm-hero .consulting-hero-content {
+  max-width: 980px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.llm-page #llm-hero .about-section-kicker,
+.llm-page #llm-hero .consulting-hero-copy {
+  margin-inline: auto;
+}
+
+.llm-page #llm-hero .consulting-hero-actions {
+  justify-content: center !important;
+}
+
+.llm-page #llm-hero .lab-hero-stats {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-inline: auto;
+}
+
+.llm-page #llm-hero .lab-hero-stat strong {
+  text-align: center;
+}
+
+.llm-page #llm-challenges .consulting-challenge-card h2 {
+  font-size: clamp(.88rem, .95vw, 1.02rem);
+  line-height: 1.45;
+}
+
+.llm-page #llm-solutions .consulting-group-card,
+.llm-page #llm-solutions .consulting-group-card:nth-child(4),
+.llm-page #llm-solutions .consulting-group-card:nth-child(5) {
+  grid-column: span 2;
+}
+
+.llm-page #llm-methodology .consulting-method-timeline {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: clamp(.65rem, 1vw, .95rem);
+}
+
+.llm-page #llm-methodology .consulting-method-step {
+  min-height: 230px;
+  padding: .9rem;
+}
+
+.llm-page #llm-methodology .consulting-method-index {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+}
+
+.llm-page #llm-methodology .consulting-method-step h3 {
+  font-size: clamp(.92rem, .95vw, 1.08rem);
+}
+
+.llm-page #llm-methodology .consulting-method-step p {
+  font-size: .84rem;
+}
+
+@media (max-width: 1199.98px) and (min-width: 992px) {
+  .llm-page #llm-methodology .consulting-method-timeline {
+    gap: .55rem;
+  }
+
+  .llm-page #llm-methodology .consulting-method-step {
+    padding: .75rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .llm-page #llm-solutions .consulting-group-card,
+  .llm-page #llm-solutions .consulting-group-card:nth-child(4),
+  .llm-page #llm-solutions .consulting-group-card:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .llm-page #llm-methodology .consulting-method-timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .llm-page #llm-methodology .consulting-method-step {
+    min-height: auto;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .llm-page #llm-hero .lab-hero-stats {
+    grid-template-columns: 1fr;
+  }
+}
