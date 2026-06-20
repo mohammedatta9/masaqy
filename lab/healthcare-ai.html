@@ -17,6 +17,215 @@
   <link rel="stylesheet" href="../assets/css/index.css">
   <link rel="stylesheet" href="../assets/css/about.css">
   <link rel="stylesheet" href="../assets/css/typography.css">
+  <style>
+    #growth-solutions .enterprise-specialties-grid {
+      display: grid !important;
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+      gap: 1.25rem !important;
+    }
+
+    #growth-solutions .enterprise-specialty-card:nth-child(1),
+    #growth-solutions .enterprise-specialty-card:nth-child(4) {
+      grid-column: span 2 !important;
+    }
+
+    #growth-solutions .enterprise-specialty-card:nth-child(2),
+    #growth-solutions .enterprise-specialty-card:nth-child(3) {
+      grid-column: span 1 !important;
+    }
+
+    #growth-solutions .enterprise-specialty-card {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 1rem !important;
+      min-height: 100% !important;
+      padding: clamp(1.1rem, 1.6vw, 1.45rem) !important;
+      border: 1px solid rgba(90, 24, 154, .1) !important;
+      border-radius: 8px !important;
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, .94), rgba(255, 255, 255, .78)),
+        radial-gradient(circle at 14% 12%, rgba(78, 168, 222, .12), transparent 34%) !important;
+      box-shadow: 0 22px 62px rgba(90, 24, 154, .09) !important;
+      color: #111827 !important;
+      overflow: hidden !important;
+    }
+
+    #growth-solutions .enterprise-specialty-card:hover {
+      transform: translateY(-6px) !important;
+      border-color: rgba(78, 168, 222, .28) !important;
+      box-shadow: 0 28px 70px rgba(90, 24, 154, .14) !important;
+    }
+
+    #growth-solutions .enterprise-specialty-card-wide {
+      display: grid !important;
+      grid-template-columns: minmax(190px, .9fr) minmax(0, 1.1fr) !important;
+      align-items: stretch !important;
+    }
+
+    #growth-solutions .enterprise-specialty-media {
+      min-height: 220px !important;
+      border-radius: 8px !important;
+      overflow: hidden !important;
+      background: #eef4ff !important;
+    }
+
+    #growth-solutions .enterprise-specialty-media img {
+      display: block !important;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+    }
+
+    #growth-solutions .enterprise-specialty-copy {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      gap: .75rem !important;
+      min-width: 0 !important;
+    }
+
+    #growth-solutions .enterprise-specialty-icon {
+      display: grid !important;
+      place-items: center !important;
+      width: 48px !important;
+      height: 48px !important;
+      border-radius: 16px !important;
+      color: #fff !important;
+      background: linear-gradient(135deg, #5A189A, #4EA8DE) !important;
+      box-shadow: 0 14px 30px rgba(90, 24, 154, .18) !important;
+      font-size: 1.25rem !important;
+    }
+
+    #growth-solutions .enterprise-specialty-card h3 {
+      margin: 0 !important;
+      color: #5A189A !important;
+      font-size: clamp(1rem, 1.2vw, 1.22rem) !important;
+      font-weight: 800 !important;
+      line-height: 1.45 !important;
+    }
+
+    #growth-solutions .enterprise-specialty-card p {
+      margin: 0 !important;
+      color: rgba(17, 24, 39, .64) !important;
+      font-size: .9rem !important;
+      line-height: 1.8 !important;
+    }
+
+    #healthcare-execution .healthcare-execution-grid {
+      display: grid !important;
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      gap: 1.25rem !important;
+      align-items: stretch !important;
+    }
+
+    #healthcare-execution .healthcare-execution-panel {
+      display: flex !important;
+      flex-direction: column !important;
+      min-height: 100% !important;
+      padding: clamp(1.25rem, 2vw, 1.75rem) !important;
+      border: 1px solid rgba(90, 24, 154, .1) !important;
+      border-radius: 8px !important;
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, .96), rgba(255, 255, 255, .82)),
+        radial-gradient(circle at 12% 10%, rgba(78, 168, 222, .12), transparent 34%) !important;
+      box-shadow: 0 22px 62px rgba(90, 24, 154, .09) !important;
+    }
+
+    #healthcare-execution .healthcare-execution-head h2 {
+      margin-bottom: 1rem !important;
+      color: #111827 !important;
+      font-size: clamp(1.25rem, 1.8vw, 1.7rem) !important;
+      font-weight: 850 !important;
+      line-height: 1.45 !important;
+    }
+
+    #healthcare-execution .healthcare-card-stack {
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      gap: 1rem !important;
+      flex: 1 !important;
+    }
+
+    #healthcare-execution .healthcare-stack-card,
+    #healthcare-execution .consulting-method-step.healthcare-stack-card {
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: .85rem !important;
+      min-height: auto !important;
+      padding: 1rem !important;
+      border: 1px solid rgba(90, 24, 154, .1) !important;
+      border-radius: 8px !important;
+      background: rgba(255, 255, 255, .76) !important;
+      box-shadow: 0 12px 28px rgba(90, 24, 154, .07) !important;
+      text-align: right !important;
+    }
+
+    #healthcare-execution .healthcare-stack-card h3,
+    #healthcare-execution .healthcare-stack-card h4 {
+      margin: 0 0 .35rem !important;
+      color: #5A189A !important;
+      font-size: 1rem !important;
+      font-weight: 800 !important;
+      line-height: 1.45 !important;
+    }
+
+    #healthcare-execution .healthcare-stack-card p {
+      margin: 0 !important;
+      color: rgba(17, 24, 39, .64) !important;
+      font-size: .88rem !important;
+      line-height: 1.75 !important;
+    }
+
+    #healthcare-execution .masaqy-advantage-icon,
+    #healthcare-execution .consulting-method-index {
+      display: grid !important;
+      place-items: center !important;
+      flex: 0 0 auto !important;
+      width: 44px !important;
+      height: 44px !important;
+      border-radius: 14px !important;
+      color: #fff !important;
+      background: linear-gradient(135deg, #5A189A, #4EA8DE) !important;
+      box-shadow: 0 12px 26px rgba(90, 24, 154, .16) !important;
+      font-size: 1rem !important;
+      font-weight: 850 !important;
+    }
+
+    @media (max-width: 767.98px) {
+      #growth-solutions .enterprise-specialties-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      #growth-solutions .enterprise-specialty-card,
+      #growth-solutions .enterprise-specialty-card:nth-child(1),
+      #growth-solutions .enterprise-specialty-card:nth-child(2),
+      #growth-solutions .enterprise-specialty-card:nth-child(3),
+      #growth-solutions .enterprise-specialty-card:nth-child(4) {
+        grid-column: 1 / -1 !important;
+      }
+
+      #growth-solutions .enterprise-specialty-card-wide {
+        grid-template-columns: 1fr !important;
+      }
+
+      #growth-solutions .enterprise-specialty-media {
+        min-height: 190px !important;
+      }
+
+      #healthcare-execution .healthcare-execution-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      #healthcare-execution .healthcare-execution-panel {
+        padding: 1rem !important;
+      }
+
+      #healthcare-execution .healthcare-stack-card,
+      #healthcare-execution .consulting-method-step.healthcare-stack-card {
+        padding: .9rem !important;
+      }
+    }
+  </style>
   <script src="../assets/js/plugins.js"></script>
 </head>
 

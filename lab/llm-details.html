@@ -16,6 +16,102 @@
   <link rel="stylesheet" href="../assets/css/rtl.css">
   <link rel="stylesheet" href="../assets/css/index.css">
   <link rel="stylesheet" href="../assets/css/about.css">
+  <style>
+    #llm-hero .about-section-kicker {
+      justify-content: center;
+      margin-inline: auto;
+    }
+
+    #llm-hero .consulting-hero-actions {
+      justify-content: center !important;
+    }
+
+    #llm-hero .lab-hero-stats {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-inline: auto;
+    }
+
+    #llm-hero .lab-hero-stat {
+      text-align: center;
+    }
+
+    #llm-hero .lab-hero-stat strong {
+      text-align: center;
+    }
+
+    #llm-challenges .consulting-challenge-card h2 {
+      font-size: 20px !important;
+      font-weight: 600;
+    }
+
+    #llm-challenges .lab-challenges-grid {
+      margin-bottom: 3rem;
+    }
+
+    #llm-solutions .lab-solutions-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    #llm-solutions .masaqy-service-card,
+    #llm-solutions .masaqy-service-card:nth-child(4),
+    #llm-solutions .masaqy-service-card:nth-child(5) {
+      grid-column: auto !important;
+    }
+
+    #llm-solutions .masaqy-service-card h3 {
+      font-size: 18px !important;
+      font-weight: 600 !important;
+      line-height: 1.45 !important;
+    }
+
+    #llm-methodology .consulting-method-timeline {
+      grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+      gap: .8rem !important;
+    }
+
+    #llm-methodology .consulting-method-timeline::before {
+      content: none !important;
+    }
+
+    #llm-methodology .consulting-method-step {
+      min-height: 220px !important;
+      padding: .9rem !important;
+    }
+
+    #llm-methodology .consulting-method-step h3 {
+      font-size: 16px !important;
+      line-height: 1.45 !important;
+    }
+
+    #llm-methodology .consulting-method-step p {
+      font-size: 14px !important;
+      line-height: 1.6 !important;
+    }
+
+    @media (max-width: 991.98px) {
+      #llm-solutions .lab-solutions-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+
+      #llm-methodology .consulting-method-timeline {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      #llm-hero .lab-hero-stats {
+        grid-template-columns: 1fr;
+      }
+
+      #llm-solutions .lab-solutions-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      #llm-methodology .consulting-method-timeline {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
   <link rel="stylesheet" href="../assets/css/typography.css">
   <script src="../assets/js/plugins.js"></script>
 </head>
@@ -116,7 +212,7 @@
       <div class="container-fluid px-3 px-md-5">
         <div class="row align-items-center justify-content-center g-5">
           <div class="col-lg-10 col-xl-9">
-            <div class="consulting-hero-content">
+            <div class="consulting-hero-content text-center mx-auto">
               <span class="about-section-kicker reveal-item">
                 <i class="bi bi-cpu"></i>
                 مساعدات الذكاء اللغوي
@@ -124,10 +220,10 @@
               <h1 class="consulting-hero-title reveal-item">
                 تطبيقات النماذج اللغوية (LLMs): عقل مؤسستك الرقمي الجديد
               </h1>
-              <p class="consulting-hero-copy reveal-item">
+              <p class="consulting-hero-copy reveal-item mx-auto">
                 نبني تطبيقات ذكية تفهم لغة مؤسستك، وتحوّل مستنداتك وبياناتك إلى إجابات دقيقة وقرارات أسرع وتجربة عمل أكثر كفاءة.
               </p>
-              <div class="flow-actions consulting-hero-actions reveal-item d-flex flex-wrap gap-3 mb-0">
+              <div class="flow-actions consulting-hero-actions reveal-item d-flex flex-wrap justify-content-center gap-3 mb-0">
                 <a href="mailto:info@masaqy.com" class="btn flow-btn-primary">
                   <span>احجز دراسة استراتيجية LLM</span>
                   <i class="bi bi-arrow-left"></i>
@@ -136,7 +232,7 @@
                   استكشف الحلول
                 </a>
               </div>
-              <div class="lab-hero-stats reveal-item" aria-label="إحصائيات تطبيقات النماذج اللغوية">
+              <div class="lab-hero-stats reveal-item justify-content-center" aria-label="إحصائيات تطبيقات النماذج اللغوية">
                 <div class="lab-hero-stat">
                   <strong>ملايين</strong>
                   <span>استفسار وإجابة يومياً</span>

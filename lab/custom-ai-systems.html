@@ -257,6 +257,41 @@
       }
     }
 
+    #lab-methodology .method-shell {
+      max-width: 1080px;
+      margin-inline: auto;
+    }
+
+    #lab-methodology .method-flow {
+      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+      justify-content: center;
+      max-width: 1040px;
+      margin-inline: auto;
+    }
+
+    #lab-methodology .method-flow-line {
+      inset-inline: calc(12.5% + 1rem) !important;
+    }
+
+    @media (max-width: 991.98px) {
+      #lab-methodology .method-flow {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        max-width: 720px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      #lab-methodology .method-flow {
+        grid-template-columns: 1fr !important;
+        max-width: 440px;
+      }
+
+      #lab-methodology .method-flow-line {
+        inset-inline-start: 42px !important;
+        inset-inline-end: auto !important;
+      }
+    }
+
     #service-scope {
       padding-block: clamp(3rem, 6vw, 5rem);
       background: #f5f7fc;
