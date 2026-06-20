@@ -50,8 +50,12 @@ body.info-pages .service-request-eyebrow,
 body.info-pages .masaqy-advantage-subtitle,
 body.info-pages .masaqy-footer-title,
 body.info-pages .modal-title {
-  font-size: var(--masaqy-subtitle-size) !important;
+  font-size: var(--masaqy-subtitle-size);
   line-height: 1.45 !important;
+}
+
+body.info-pages .masaqy-footer-title {
+  font-size: 20px !important;
 }
 
 body.info-pages p,

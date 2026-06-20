@@ -5,18 +5,18 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="تفاصيل مساقي للاستشارات من MASAQY">
-  <meta name="keyword" content="MASAQY, مساقي, مساقي للاستشارات, استشارات ذكاء اصطناعي">
-  <title>مساقي للاستشارات | MASAQY</title>
-  <link rel="shortcut icon" href="assets/images/iconmsaqy.png">
-  <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="vendor/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/colors.css">
-  <link rel="stylesheet" href="assets/css/rtl.css">
-  <link rel="stylesheet" href="assets/css/index.css">
-  <link rel="stylesheet" href="assets/css/about.css">
-  <link rel="stylesheet" href="assets/css/typography.css">
+  <meta name="description" content="استشارات التحول الرقمي وقيادة التحول الذكي من MASAQY">
+  <meta name="keyword" content="MASAQY, مساقي, استشارات التحول الرقمي, قيادة التحول الذكي, الذكاء الاصطناعي">
+  <title>استشارات التحول الرقمي | MASAQY</title>
+  <link rel="shortcut icon" href="../assets/images/iconmsaqy.png">
+  <link href="../vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/colors.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <link rel="stylesheet" href="../assets/css/about.css">
+  <link rel="stylesheet" href="../assets/css/typography.css">
   <style>
     body.consulting-details-page {
       background: #f5f7fc;
@@ -198,13 +198,24 @@
     }
 
     .consulting-details-page .lab-hero-stats {
+      display: grid;
       max-width: none;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 0;
       margin-top: 0;
       border-top: 1px solid rgba(90, 24, 154, .1);
       border-bottom: 0;
       background: rgba(255, 255, 255, .62);
+    }
+
+    .consulting-details-page .consulting-hero-content .lab-hero-stats {
+      max-width: 620px;
+      margin-top: 1rem;
+      border: 1px solid rgba(90, 24, 154, .1);
+      border-radius: 8px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, .74);
+      box-shadow: 0 14px 30px rgba(90, 24, 154, .08);
     }
 
     .consulting-details-page .lab-hero-stat {
@@ -321,8 +332,8 @@
 
     .consulting-details-page #lab-challenges .consulting-challenge-card h2 {
       margin-bottom: .55rem;
-      font-size: clamp(.9rem, 1vw, 1.05rem);
-      font-weight: 900;
+      font-size: 20px !important;
+      font-weight: 900 !important;
     }
 
     .consulting-details-page #lab-challenges .consulting-challenge-card p {
@@ -332,12 +343,16 @@
     }
 
     .consulting-details-page #lab-groups .lab-solutions-grid {
-      grid-template-columns: repeat(6, minmax(0, 1fr));
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1rem;
     }
 
-    .consulting-details-page #lab-groups .lab-solutions-grid .consulting-group-card {
-      min-height: 320px;
+    .consulting-details-page #lab-groups .lab-solutions-grid .consulting-group-card,
+    .consulting-details-page #lab-groups .lab-solutions-grid .consulting-group-card:nth-child(4),
+    .consulting-details-page #lab-groups .lab-solutions-grid .consulting-group-card:nth-child(5) {
+      grid-column: auto;
+      min-height: 210px;
       padding: clamp(1.1rem, 1.5vw, 1.45rem);
       display: flex;
       flex-direction: column;
@@ -414,74 +429,83 @@
     }
 
     .consulting-details-page #lab-methodology {
-      background: linear-gradient(135deg, #5A189A 0%, #7300a8 100%);
-    }
-
-    .consulting-details-page #lab-methodology .container-fluid {
-      max-width: 1080px;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(90, 24, 154, .1), transparent 30%),
+        radial-gradient(circle at 88% 20%, rgba(78, 168, 222, .12), transparent 30%),
+        #fff;
     }
 
     .consulting-details-page #lab-methodology .consulting-section-head {
-      margin-bottom: 1.5rem;
+      margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
     }
 
     .consulting-details-page #lab-methodology .consulting-section-head h2 {
-      color: #fff;
-      font-size: clamp(1.35rem, 2vw, 2rem);
+      color: #111827;
+      font-size: clamp(1.9rem, 3.8vw, 3.4rem);
     }
 
     .consulting-details-page #lab-methodology .consulting-method-timeline {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: clamp(.85rem, 1.6vw, 1.15rem);
     }
 
     .consulting-details-page #lab-methodology .consulting-method-timeline::before {
-      content: none;
+      content: "";
+      position: absolute;
+      inset-inline: 5%;
+      top: 40px;
+      height: 2px;
+      background: linear-gradient(90deg, rgba(90, 24, 154, .08), rgba(78, 168, 222, .32), rgba(142, 63, 209, .16));
+      z-index: 0;
     }
 
     .consulting-details-page #lab-methodology .consulting-method-step {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      align-items: start;
-      min-height: 132px;
-      padding: 1.2rem;
-      border: 1px solid rgba(255, 255, 255, .1);
-      border-radius: 4px;
-      color: #fff;
-      background: rgba(255, 255, 255, .1);
-      box-shadow: none;
-      backdrop-filter: none;
-      -webkit-backdrop-filter: none;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      min-height: 260px;
+      padding: 1rem;
+      border: 1px solid rgba(90, 24, 154, .12);
+      border-radius: 24px;
+      color: inherit;
+      background: rgba(255, 255, 255, .78);
+      box-shadow: 0 20px 56px rgba(90, 24, 154, .08);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
     }
 
     .consulting-details-page #lab-methodology .consulting-method-index {
-      order: 2;
-      width: auto;
-      height: auto;
-      border: 0;
-      border-radius: 0;
-      color: rgba(255, 255, 255, .48);
-      background: transparent;
-      font-size: 1rem;
+      order: initial;
+      width: 58px;
+      height: 58px;
+      border: 5px solid rgba(255, 255, 255, .9);
+      border-radius: 18px;
+      color: #fff;
+      background: linear-gradient(135deg, #5A189A, #4EA8DE);
+      box-shadow: 0 16px 34px rgba(90, 24, 154, .2);
+      font-size: .95rem;
       font-weight: 950;
     }
 
     .consulting-details-page #lab-methodology .consulting-method-step > div {
-      order: 1;
+      order: initial;
       min-width: 0;
     }
 
     .consulting-details-page #lab-methodology .consulting-method-step h3 {
-      margin-bottom: .45rem;
-      color: #fff;
-      font-size: .95rem;
+      margin: 0 0 .55rem;
+      color: #111827;
+      font-size: clamp(1.05rem, 1.35vw, 1.35rem);
+      font-weight: 950;
+      line-height: 1.4;
     }
 
     .consulting-details-page #lab-methodology .consulting-method-step p {
       margin: 0;
-      color: rgba(255, 255, 255, .78);
-      font-size: .78rem;
-      line-height: 1.7;
+      color: rgba(17, 24, 39, .68);
+      font-size: .94rem;
+      font-weight: 650;
+      line-height: 1.8;
     }
 
     .consulting-details-page #consulting-journey .consulting-method-timeline {
@@ -625,9 +649,119 @@
     }
 
     .consulting-details-page #strategic-guide .lab-wide-card-media {
+      position: relative;
       margin: 0;
       border-radius: 18px;
       box-shadow: 0 24px 55px rgba(15, 23, 42, .12);
+      overflow: visible;
+    }
+
+    .consulting-details-page #strategic-guide .lab-wide-card-media .consulting-main-tag {
+      position: absolute;
+      inset-inline-start: clamp(1rem, 2vw, 1.35rem);
+      bottom: 0;
+      z-index: 2;
+      margin: 0;
+      transform: translateY(42%);
+    }
+
+    .consulting-details-page #strategic-guide .strategic-result-note {
+      color: #5A189A;
+    }
+
+    .consulting-details-page #strategic-guide .strategic-result-note strong {
+      color: inherit;
+    }
+
+    .consulting-details-page #why-masaqy {
+      background: #f5f7fc;
+    }
+
+    .consulting-details-page #why-masaqy .container-fluid {
+      padding: clamp(1.4rem, 3vw, 2.35rem);
+      border: 1px solid rgba(90, 24, 154, .08);
+      border-radius: 24px;
+      background: #fff;
+      box-shadow: 0 18px 42px rgba(15, 23, 42, .06);
+    }
+
+    .consulting-details-page #why-masaqy .consulting-section-head {
+      max-width: 720px;
+      margin-inline: 0;
+      margin-bottom: 1.35rem;
+      text-align: right;
+      justify-items: start;
+    }
+
+    .consulting-details-page #why-masaqy .consulting-section-head h2 {
+      max-width: 520px;
+      margin-bottom: .65rem;
+      color: #111827;
+      font-size: clamp(1.75rem, 3vw, 3rem);
+      line-height: 1.12;
+    }
+
+    .consulting-details-page #why-masaqy .consulting-section-head h3 {
+      margin: 0;
+      color: #5A189A;
+      font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+      font-weight: 900;
+      line-height: 1.45;
+    }
+
+    .consulting-details-page #why-masaqy .consulting-section-head p {
+      max-width: 560px;
+      margin: 0;
+    }
+
+    .consulting-details-page #why-masaqy .lab-challenges-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .95rem 1.15rem;
+    }
+
+    .consulting-details-page #why-masaqy .consulting-challenge-card {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      align-items: start;
+      gap: .2rem .65rem;
+      min-height: auto;
+      padding: .95rem;
+      border-radius: 12px !important;
+      background: rgba(248, 250, 252, .82);
+      box-shadow: none;
+      text-align: right;
+    }
+
+    .consulting-details-page #why-masaqy .consulting-challenge-head {
+      grid-row: span 2;
+      margin: 0;
+      justify-content: flex-start;
+    }
+
+    .consulting-details-page #why-masaqy .consulting-challenge-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      color: #5A189A;
+      background: rgba(90, 24, 154, .08);
+      box-shadow: none;
+      font-size: .9rem;
+    }
+
+    .consulting-details-page #why-masaqy .consulting-challenge-card h2 {
+      margin: 0 0 .12rem;
+      color: #111827;
+      font-size: .96rem !important;
+      font-weight: 900 !important;
+      line-height: 1.45;
+    }
+
+    .consulting-details-page #why-masaqy .consulting-challenge-card p {
+      margin: 0;
+      color: rgba(17, 24, 39, .68);
+      font-size: .88rem;
+      line-height: 1.7;
     }
 
     @media (min-width: 992px) {
@@ -701,6 +835,39 @@
 
     .consulting-details-page #consulting-request .consulting-challenge-card {
       padding: 1.35rem;
+    }
+
+    .consulting-details-page .footer-neo,
+    .consulting-details-page .footer-neo p,
+    .consulting-details-page .footer-neo li,
+    .consulting-details-page .footer-neo span {
+      color: rgba(255, 255, 255, .72);
+    }
+
+    .consulting-details-page .footer-neo h2,
+    .consulting-details-page .footer-neo .masaqy-footer-title,
+    .consulting-details-page .footer-neo .masaqy-footer-socials a,
+    .consulting-details-page .footer-neo .masaqy-footer-cta {
+      color: #fff;
+    }
+
+    .consulting-details-page .footer-neo a,
+    .consulting-details-page .footer-neo .masaqy-footer-links a,
+    .consulting-details-page .footer-neo .masaqy-footer-contact a {
+      color: rgba(255, 255, 255, .68);
+    }
+
+    .consulting-details-page .footer-neo a:hover,
+    .consulting-details-page .footer-neo .masaqy-footer-links a:hover,
+    .consulting-details-page .footer-neo .masaqy-footer-contact a:hover,
+    .consulting-details-page .footer-neo .masaqy-footer-cta:hover {
+      color: #fff;
+    }
+
+    .consulting-details-page .footer-neo .masaqy-footer-tagline,
+    .consulting-details-page .footer-neo .masaqy-footer-contact i,
+    .consulting-details-page .footer-neo .masaqy-footer-powered i {
+      color: var(--accent-color);
     }
 
     .consulting-details-page #consulting-request form .row.g-3 {
@@ -791,6 +958,14 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
+      .consulting-details-page #lab-groups .lab-solutions-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .consulting-details-page #why-masaqy .lab-challenges-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
       .consulting-details-page .lab-hero-stats {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
@@ -820,6 +995,14 @@
       }
 
       .consulting-details-page #lab-challenges .lab-challenges-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .consulting-details-page #lab-groups .lab-solutions-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .consulting-details-page #why-masaqy .lab-challenges-grid {
         grid-template-columns: 1fr;
       }
 
@@ -862,7 +1045,7 @@
       }
     }
   </style>
-  <script src="assets/js/plugins.js"></script>
+  <script src="../assets/js/plugins.js"></script>
 </head>
 
 <body data-theme="theme-index" class="info-pages consulting-details-page">
@@ -876,8 +1059,8 @@
     <nav class="navbar navbar-expand-lg" aria-label="القائمة الرئيسية">
       <div class="container-fluid px-3 px-md-5">
         <div class="header-shell w-100">
-          <a class="navbar-brand logo-animated site-logo-link" href="index.html" aria-label="مساقي">
-            <img src="assets/images/logomasaqy.png" alt="مساقي" class="site-logo-img">
+          <a class="navbar-brand logo-animated site-logo-link" href="../index.html" aria-label="مساقي">
+            <img src="../assets/images/logomasaqy.png" alt="مساقي" class="site-logo-img">
           </a>
           <div class="mobile-actions d-flex align-items-center gap-2 d-lg-none">
             <a class="btn btn-mobile-cta magnetic-btn" href="mailto:info@masaqy.com" title="طلب استشارة"
@@ -894,44 +1077,44 @@
           <div class="collapse navbar-collapse" id="prenavbar">
             <ul class="navbar-nav nav-cluster ms-auto align-items-lg-center gap-lg-2 mt-4 mt-lg-0">
               <li class="nav-item">
-                <a class="nav-link nav-link-modern" href="index.html">
+                <a class="nav-link nav-link-modern" href="../index.html">
                   <span class="link-text">الرئيسية</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-modern" href="about.html">
+                <a class="nav-link nav-link-modern" href="../about.html">
                   <span class="link-text">من نحن</span>
                 </a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link nav-link-modern dropdown-toggle" href="marketing-details.html" id="servicesDropdown"
+                <a class="nav-link nav-link-modern dropdown-toggle" href="../marketing-details.html" id="servicesDropdown"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="link-text">الخدمات</span>
                   <i class="bi bi-chevron-down ms-1 opacity-75 small"></i>
                 </a>
                 <ul class="dropdown-menu nav-services-dropdown" aria-labelledby="servicesDropdown">
-                  <li><a class="dropdown-item" href="consulting-details.html">مساقي للاستشارات</a></li>
-                  <li><a class="dropdown-item" href="lab-details.html">مختبر مساقي</a></li>
-                  <li><a class="dropdown-item" href="marketing-details.html">مساقي للتسويق</a></li>
-                  <li><a class="dropdown-item" href="course-details.html">أكاديمية مساقي</a></li>
+                  <li><a class="dropdown-item" href="../consulting-details.html">مساقي للاستشارات</a></li>
+                  <li><a class="dropdown-item" href="../lab-details.html">مختبر مساقي</a></li>
+                  <li><a class="dropdown-item" href="../marketing-details.html">مساقي للتسويق</a></li>
+                  <li><a class="dropdown-item" href="../index.html#services">أكاديمية مساقي</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link nav-link-modern dropdown-toggle" href="index.html#systems" id="systemsDropdown"
+                <a class="nav-link nav-link-modern dropdown-toggle" href="../index.html#systems" id="systemsDropdown"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="link-text">الأنظمة</span>
                   <i class="bi bi-chevron-down ms-1 opacity-75 small"></i>
                 </a>
                 <ul class="dropdown-menu nav-services-dropdown" aria-labelledby="systemsDropdown">
-                  <li><a class="dropdown-item" href="system-details.html">CRM الذكي</a></li>
-                  <li><a class="dropdown-item" href="system-details.html">ERP الذكي</a></li>
-                  <li><a class="dropdown-item" href="system-details.html">Automation Systems</a></li>
-                  <li><a class="dropdown-item" href="system-details.html">AI Dashboards</a></li>
-                  <li><a class="dropdown-item" href="system-details.html">AI Decision Systems</a></li>
+                  <li><a class="dropdown-item" href="../systems.html">CRM الذكي</a></li>
+                  <li><a class="dropdown-item" href="../systems.html">ERP الذكي</a></li>
+                  <li><a class="dropdown-item" href="../systems.html">Automation Systems</a></li>
+                  <li><a class="dropdown-item" href="../systems.html">AI Dashboards</a></li>
+                  <li><a class="dropdown-item" href="../systems.html">AI Decision Systems</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-modern" href="works.html">
+                <a class="nav-link nav-link-modern" href="../works.html">
                   <span class="link-text">أعمالنا</span>
                 </a>
               </li>
@@ -953,220 +1136,219 @@
       </div>
     </nav>
   </header>
-  <script src="assets/js/site-header.js"></script>
+  <script src="../assets/js/site-header.js"></script>
 
   <main class="index-flow about-page-flow">
 
     <section class="flow-hero about-hero consulting-hero" id="lab-hero">
-        <div class="container-fluid px-3 px-md-5">
-          <div class="row align-items-center g-5">
-            <div class="col-lg-6 consulting-hero-content reveal-item">
-              <span class="about-section-kicker">
-                <i class="bi bi-stars"></i>
-                خدماتنا الاستشارية في الذكاء الاصطناعي
-              </span>
-              <h1 class="consulting-hero-title reveal-item">نقود المؤسسات من الفوضى الرقمية إلى مؤسسة ذكية محكومة بالذكاء الاصطناعي</h1>
-              <p class="consulting-hero-copy reveal-item">
-                استراتيجيات الذكاء الاصطناعي، الحوكمة، التحول المؤسسي، اختيار الأنظمة وإدارة التغيير داخل مؤسستك بطريقة عملية قابلة للقياس.
-              </p>
-              <div class="flow-actions d-flex flex-wrap gap-3">
-                <a href="mailto:info@masaqy.com" class="btn flow-btn-primary">
-                  <span>احجز جلسة تشخيصية</span>
-                </a>
-                <a href="#lab-groups" class="btn flow-btn-ghost">
-                  <span>اطلب تقييم الجاهزية للذكاء الاصطناعي</span>
-                </a>
+      <div class="container-fluid px-3 px-md-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 consulting-hero-content reveal-item">
+            <span class="about-section-kicker">
+              <i class="bi bi-stars"></i>
+              استشارات التحول الرقمي
+            </span>
+            <h1 class="consulting-hero-title reveal-item">قيادة التحول الذكي</h1>
+            <p class="consulting-hero-copy reveal-item">
+              نمكّن القيادات التنفيذية من اتخاذ قرارات استباقية مبنية على البيانات والذكاء الاصطناعي لتحقيق النمو المستدام وتعزيز القدرة التنافسية في عالم سريع التغير.
+            </p>
+            <div class="flow-actions d-flex flex-wrap gap-3">
+              <a href="mailto:info@masaqy.com" class="btn flow-btn-primary">
+                <span>احجز جلسة استراتيجية</span>
+              </a>
+              <a href="mailto:info@masaqy.com" class="btn flow-btn-ghost">
+                <span>اطلب الخدمة</span>
+              </a>
+            </div>
+            <div class="lab-hero-stats reveal-item" aria-label="نقاط الثقة">
+              <div class="lab-hero-stat">
+                <a href="#lab-challenges">خبرة مؤسسية</a>
+              </div>
+              <div class="lab-hero-stat">
+                <a href="#lab-results">نتائج قابلة للقياس</a>
+              </div>
+              <div class="lab-hero-stat">
+                <a href="#lab-methodology">استراتيجية واضحة</a>
               </div>
             </div>
-            <div class="col-lg-6 consulting-hero-visual reveal-item">
-              <figure class="consulting-image-card">
-                <img src="assets/images/masaqy/consulting.jpeg" alt="مسار التحول المؤسسي الذكي">
-                <div class="consulting-image-badge">
-                  <i class="bi bi-bullseye"></i>
-                  <span><strong>+50</strong> خارطة تحول ذكية</span>
-                </div>
-              </figure>
-            </div>
           </div>
-
-          <div class="lab-hero-stats reveal-item" aria-label="مسارات الاستشارة">
-            <div class="lab-hero-stat">
-              <a href="#lab-challenges">خبرات متعددة القطاعات</a>
-            </div>
-            <div class="lab-hero-stat">
-              <a href="#lab-methodology">منهجيات مؤسسية</a>
-            </div>
-            <div class="lab-hero-stat">
-              <a href="#lab-groups">حلول قائمة على البيانات</a>
-            </div>
-            <div class="lab-hero-stat">
-              <a href="#consulting-journey">الربط عبر الأنظمة</a>
-            </div>
-            <div class="lab-hero-stat">
-              <a href="#lab-results">تحول قابل للقياس</a>
-            </div>
+          <div class="col-lg-6 consulting-hero-visual reveal-item">
+            <figure class="consulting-image-card">
+              <img src="../assets/images/masaqy/consulting.jpeg" alt="قيادة التحول الذكي">
+              <div class="consulting-image-badge">
+                <i class="bi bi-bullseye"></i>
+                <span><strong>+34%</strong> جاهزية للذكاء الاصطناعي<br>زيادة في دقة التنبؤات التشغيلية لعملائنا في عام 2024</span>
+              </div>
+            </figure>
           </div>
         </div>
-      </section>
+
+      </div>
+    </section>
 
     <section class="work-detail-section consulting-challenges-section margin-bottom-xl" id="lab-challenges">
         <div class="container-fluid px-3 px-md-5">
           <div class="consulting-section-head lab-challenges-head reveal-item">
-            <h2>هل تواجه مؤسستك أحد هذه التحديات؟</h2>
-            <p>نبدأ من التحديات الحقيقية التي تمنع المؤسسة من التحول الذكي ثم نحولها إلى فرص تنفيذية واضحة.</p>
+            <h2>هل تواجه هذه التحديات؟</h2>
           </div>
           <div class="consulting-challenges-grid enterprise-challenges-grid lab-challenges-grid">
             <article class="consulting-challenge-card reveal-item">
               <div class="consulting-challenge-head">
-                <span class="consulting-challenge-icon"><i class="bi bi-compass"></i></span>
+                <span class="consulting-challenge-icon"><i class="bi bi-diagram-3"></i></span>
               </div>
-              <h2>غياب الرؤية</h2>
-              <p>لا توجد استراتيجية واضحة لكيفية استخدام الذكاء الاصطناعي داخل المؤسسة.</p>
+              <h2>مبادرات رقمية متفرقة</h2>
+              <p>تنفيذ مشاريع تقنية دون إطار حوكمة موحد.</p>
             </article>
             <article class="consulting-challenge-card reveal-item">
               <div class="consulting-challenge-head">
-                <span class="consulting-challenge-icon"><i class="bi bi-layers"></i></span>
+                <span class="consulting-challenge-icon"><i class="bi bi-lightbulb"></i></span>
               </div>
-              <h2>أنظمة متفرقة</h2>
-              <p>البيانات والعمليات موزعة بين أدوات ومنصات لا تتكامل مع بعضها.</p>
+              <h2>قرارات تعتمد على الحدس</h2>
+              <p>صعوبة الوصول إلى رؤى دقيقة تدعم اتخاذ القرار.</p>
+            </article>
+            <article class="consulting-challenge-card reveal-item">
+              <div class="consulting-challenge-head">
+                <span class="consulting-challenge-icon"><i class="bi bi-compass"></i></span>
+              </div>
+              <h2>غياب رؤية رقمية واضحة</h2>
+              <p>عدم وجود خارطة طريق تحول متكاملة تربط التقنية بالأهداف الاستراتيجية.</p>
+            </article>
+            <article class="consulting-challenge-card reveal-item">
+              <div class="consulting-challenge-head">
+                <span class="consulting-challenge-icon"><i class="bi bi-kanban"></i></span>
+              </div>
+              <h2>فجوة بين الاستراتيجية والتنفيذ</h2>
+              <p>عدم تحويل الرؤية إلى مشاريع قابلة للتنفيذ والقياس.</p>
             </article>
             <article class="consulting-challenge-card reveal-item">
               <div class="consulting-challenge-head">
                 <span class="consulting-challenge-icon"><i class="bi bi-hourglass-split"></i></span>
               </div>
-              <h2>عمليات يدوية وبطيئة</h2>
-              <p>وقت الفرق يضيع في مهام متكررة يمكن تحسينها أو أتمتتها.</p>
+              <h2>بطء الاستجابة للتغيرات</h2>
+              <p>صعوبة مواكبة المتغيرات التقنية والسوقية.</p>
             </article>
             <article class="consulting-challenge-card reveal-item">
               <div class="consulting-challenge-head">
-                <span class="consulting-challenge-icon"><i class="bi bi-bar-chart-line"></i></span>
+                <span class="consulting-challenge-icon"><i class="bi bi-cpu"></i></span>
               </div>
-              <h2>قرارات غير مبنية على البيانات</h2>
-              <p>القرارات تعتمد على الحدس أكثر من المؤشرات والرؤى القابلة للقياس.</p>
-            </article>
-            <article class="consulting-challenge-card reveal-item">
-              <div class="consulting-challenge-head">
-                <span class="consulting-challenge-icon"><i class="bi bi-people"></i></span>
-              </div>
-              <h2>مقاومة التغيير</h2>
-              <p>الفرق لا تتبنى التقنيات الجديدة بسبب غياب التخطيط والتأهيل.</p>
-            </article>
-            <article class="consulting-challenge-card reveal-item">
-              <div class="consulting-challenge-head">
-                <span class="consulting-challenge-icon"><i class="bi bi-shield-check"></i></span>
-              </div>
-              <h2>ضعف الحوكمة</h2>
-              <p>لا توجد سياسات واضحة لاستخدام البيانات والذكاء الاصطناعي بأمان.</p>
+              <h2>ضعف جاهزية الذكاء الاصطناعي</h2>
+              <p>عدم معرفة مستوى الجاهزية للاستفادة من تقنيات الذكاء الاصطناعي.</p>
             </article>
           </div>
         </div>
       </section>
+
+      <section class="work-detail-section margin-bottom-xl" id="strategic-guide">
+        <div class="container-fluid px-3 px-md-5">
+          <div class="row align-items-center g-4 g-xl-5 reveal-item about-card">
+            <figure class="col-lg-6 order-2 order-lg-2 lab-wide-card-media">
+              <img src="../assets/images/masaqy/consulting.jpeg" alt="قيادة التحول الذكي">
+              <div class="consulting-main-tag">
+                <i class="bi bi-bar-chart-line"></i>
+                <span><strong>+50%</strong> استفادة من البيانات</span>
+              </div>
+            </figure>
+            <div class="col-lg-6 order-1 order-lg-1">
+              <h2>كيف تساعدك قيادة التحول الذكي؟</h2>
+              <p>في MASAQY نساعد المؤسسات على بناء رؤية مستقبلية واضحة للتحول الرقمي والذكاء الاصطناعي، وتحويل المبادرات التقنية إلى نتائج أعمال ملموسة.</p>
+              <ul class="masaqy-points">
+                <li class="reveal-on-scroll" data-reveal-order="1">
+                  <i class="bi bi-check2" aria-hidden="true"></i>
+                  <span>بناء خارطة طريق تنفيذية واضحة.</span>
+                </li>
+                <li class="reveal-on-scroll" data-reveal-order="2">
+                  <i class="bi bi-check2" aria-hidden="true"></i>
+                  <span>مواءمة التحول الرقمي مع الاستراتيجية المؤسسية.</span>
+                </li>
+                <li class="reveal-on-scroll" data-reveal-order="3">
+                  <i class="bi bi-check2" aria-hidden="true"></i>
+                  <span>تصميم نموذج التشغيل المستقبلي.</span>
+                </li>
+                <li class="reveal-on-scroll" data-reveal-order="4">
+                  <i class="bi bi-check2" aria-hidden="true"></i>
+                  <span>تقييم الجاهزية التقنية والتنظيمية.</span>
+                </li>
+                <li class="reveal-on-scroll" data-reveal-order="5">
+                  <i class="bi bi-check2" aria-hidden="true"></i>
+                  <span>تمكين القيادات من اتخاذ قرارات قائمة على البيانات.</span>
+                </li>
+                <li class="reveal-on-scroll" data-reveal-order="6">
+                  <i class="bi bi-check2" aria-hidden="true"></i>
+                  <span>تحديد فرص الذكاء الاصطناعي ذات الأثر الأعلى.</span>
+                </li>
+              </ul>
+              <p class="strategic-result-note"><strong>النتيجة: مؤسسة أكثر مرونة وقدرة على الابتكار والنمو المستدام.</strong></p>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
     <section class="work-detail-section consulting-groups-section margin-bottom-xl" id="lab-groups">
       <div class="container-fluid px-3 px-md-5">
         <div class="consulting-section-head lab-groups-head reveal-item">
-          <h2>خدماتنا الاستشارية</h2>
-          <p>نساعد المؤسسات على بناء استراتيجيات الذكاء الاصطناعي وتحقيق التحول الرقمي الشامل من خلال حلول استشارية متكاملة</p>
+          <h2>ماذا تشمل هذه الخدمة؟</h2>
         </div>
 
         <div class="consulting-groups-grid lab-solutions-grid">
           <article class="consulting-group-card masaqy-service-card reveal-item">
             <div class="consulting-group-top">
+              <span class="consulting-group-icon"><i class="bi bi-map"></i></span>
+            </div>
+            <h3>خارطة الطريق التنفيذية</h3>
+            <div class="consulting-group-content">
+              <p>تحديد المبادرات والأولويات وخطط التنفيذ.</p>
+            </div>
+          </article>
+
+          <article class="consulting-group-card masaqy-service-card reveal-item">
+            <div class="consulting-group-top">
+              <span class="consulting-group-icon"><i class="bi bi-speedometer2"></i></span>
+            </div>
+            <h3>تقييم الجاهزية الرقمية</h3>
+            <div class="consulting-group-content">
+              <p>تحليل القدرات التقنية والتنظيمية الحالية.</p>
+            </div>
+          </article>
+
+          <article class="consulting-group-card masaqy-service-card reveal-item">
+            <div class="consulting-group-top">
               <span class="consulting-group-icon"><i class="bi bi-stars"></i></span>
             </div>
-            <h3>قمة التحول الذكي</h3>
+            <h3>استراتيجية الذكاء الاصطناعي</h3>
             <div class="consulting-group-content">
-              <p>نضمن البيانات من خلال الإدارة الشاملة تهدف إلى إطلاق العنان للفوضى في عصر الذكاء الاصطناعي.</p>
-              <strong>تشمل هذه الخدمة:</strong>
-              <ul class="service-checks">
-                <li><i class="bi bi-check2-circle"></i> استراتيجية الذكاء الاصطناعي</li>
-                <li><i class="bi bi-check2-circle"></i> خارطة الطريق التنفيذية</li>
-                <li><i class="bi bi-check2-circle"></i> نماذج الحوكمة</li>
-                <li><i class="bi bi-check2-circle"></i> أولويات التنفيذ والاستثمار</li>
-                <li><i class="bi bi-check2-circle"></i> التحول الرقمي المؤسسي</li>
-              </ul>
+              <p>صياغة رؤية واستراتيجية متكاملة للاستفادة من الذكاء الاصطناعي.</p>
             </div>
-            <a href="#" class="work-card-link">عرض المزيد <i class="bi bi-arrow-left"></i></a>
-            <a href="mailto:info@masaqy.com" class="btn flow-btn-ghost"><span class="btn-text">اطلب الخدمة</span></a>
           </article>
 
           <article class="consulting-group-card masaqy-service-card reveal-item">
             <div class="consulting-group-top">
               <span class="consulting-group-icon"><i class="bi bi-shield-check"></i></span>
             </div>
-            <h3>الحوكمة والأمان</h3>
+            <h3>حوكمة الذكاء الاصطناعي</h3>
             <div class="consulting-group-content">
-              <p>حماية التحول والمعرفة وضمان الاستقلال في بيئة تقنية مستمرة التغيير.</p>
-              <strong>تشمل هذه الخدمة:</strong>
-              <ul class="service-checks">
-                <li><i class="bi bi-check2-circle"></i> حوكمة الذكاء الاصطناعي</li>
-                <li><i class="bi bi-check2-circle"></i> حوكمة البيانات</li>
-                <li><i class="bi bi-check2-circle"></i> الامتثال التنظيمي</li>
-                <li><i class="bi bi-check2-circle"></i> إدارة المخاطر</li>
-                <li><i class="bi bi-check2-circle"></i> السياسات والإجراءات</li>
-              </ul>
+              <p>بناء الأطر والسياسات المنظمة لاستخدام الذكاء الاصطناعي.</p>
             </div>
-            <a href="#" class="work-card-link">عرض المزيد <i class="bi bi-arrow-left"></i></a>
-            <a href="mailto:info@masaqy.com" class="btn flow-btn-ghost"><span class="btn-text">اطلب الخدمة</span></a>
           </article>
 
           <article class="consulting-group-card masaqy-service-card reveal-item">
             <div class="consulting-group-top">
-              <span class="consulting-group-icon"><i class="bi bi-kanban"></i></span>
+              <span class="consulting-group-icon"><i class="bi bi-building"></i></span>
             </div>
-            <h3>التميز التشغيلي</h3>
+            <h3>التحول الرقمي المؤسسي</h3>
             <div class="consulting-group-content">
-              <p>نعيد تصميم وتحسين العمليات لتحقيق كفاءة أعلى، تقليل الهدر، واتخاذ قرارات تشغيلية.</p>
-              <strong>تشمل هذه الخدمة:</strong>
-              <ul class="service-checks">
-                <li><i class="bi bi-check2-circle"></i> تحليل الأعمال</li>
-                <li><i class="bi bi-check2-circle"></i> تحليل العمليات</li>
-                <li><i class="bi bi-check2-circle"></i> إعادة هندسة العمليات</li>
-                <li><i class="bi bi-check2-circle"></i> تحسين الكفاءة التشغيلية</li>
-                <li><i class="bi bi-check2-circle"></i> فرق التمكين</li>
-              </ul>
+              <p>قيادة برامج التحول على مستوى المؤسسة بالكامل وتحقيق نقلات نوعية.</p>
             </div>
-            <a href="#" class="work-card-link">عرض المزيد <i class="bi bi-arrow-left"></i></a>
-            <a href="mailto:info@masaqy.com" class="btn flow-btn-ghost"><span class="btn-text">اطلب الخدمة</span></a>
           </article>
 
           <article class="consulting-group-card masaqy-service-card reveal-item">
             <div class="consulting-group-top">
               <span class="consulting-group-icon"><i class="bi bi-bezier2"></i></span>
             </div>
-            <h3>إدارة التغيير</h3>
+            <h3>نموذج التشغيل المستقبلي</h3>
             <div class="consulting-group-content">
-              <p>التحول الرقمي يبدأ بتغيير نماذج ومؤسسات قبل إدارة التقنيات. ندعم تغيير حقيقي ومستدام لمواكبة المستقبل.</p>
-              <strong>تشمل هذه الخدمة:</strong>
-              <ul class="service-checks">
-                <li><i class="bi bi-check2-circle"></i> الجاهزية للتغيير</li>
-                <li><i class="bi bi-check2-circle"></i> الاتصال المؤسسي</li>
-                <li><i class="bi bi-check2-circle"></i> التدريب والتطبيق</li>
-                <li><i class="bi bi-check2-circle"></i> إدارة أصحاب المصلحة</li>
-                <li><i class="bi bi-check2-circle"></i> قياس التبني</li>
-              </ul>
+              <p>تصميم الهيكل والعمليات المطلوبة للمستقبل.</p>
             </div>
-            <a href="#" class="work-card-link">عرض المزيد <i class="bi bi-arrow-left"></i></a>
-            <a href="mailto:info@masaqy.com" class="btn flow-btn-ghost"><span class="btn-text">اطلب الخدمة</span></a>
-          </article>
-
-          <article class="consulting-group-card masaqy-service-card reveal-item">
-            <div class="consulting-group-top">
-              <span class="consulting-group-icon"><i class="bi bi-graph-up-arrow"></i></span>
-            </div>
-            <h3>ذكاء القرار</h3>
-            <div class="consulting-group-content">
-              <p>نحول بياناتك الضخمة إلى بصيرة استراتيجية تساعدك على اتخاذ قرارات دقيقة تدعم النمو والمنافسة.</p>
-              <strong>تشمل هذه الخدمة:</strong>
-              <ul class="service-checks">
-                <li><i class="bi bi-check2-circle"></i> ذكاء الأعمال</li>
-                <li><i class="bi bi-check2-circle"></i> لوحات المعلومات التنفيذية</li>
-                <li><i class="bi bi-check2-circle"></i> التحليلات المتقدمة</li>
-                <li><i class="bi bi-check2-circle"></i> التنبؤات الذكية</li>
-                <li><i class="bi bi-check2-circle"></i> مؤشرات الأداء</li>
-              </ul>
-            </div>
-            <a href="#" class="work-card-link">عرض المزيد <i class="bi bi-arrow-left"></i></a>
-            <a href="mailto:info@masaqy.com" class="btn flow-btn-ghost"><span class="btn-text">اطلب الخدمة</span></a>
           </article>
         </div>
       </div>
@@ -1175,181 +1357,171 @@
     <section class="work-detail-section consulting-method-section margin-bottom-xl" id="lab-methodology">
       <div class="container-fluid px-3 px-md-5">
         <div class="consulting-section-head reveal-item">
-          <h2>ماذا سنحل خلال أول 90 يوماً؟</h2>
+          <h2>منهجية العمل</h2>
         </div>
 
         <div class="consulting-method-timeline">
-          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">01</span><div><h3>تشخيص</h3><p>فهم العمليات والبيانات والأنظمة والتحديات التي تؤثر على الأداء.</p></div></article>
-          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">02</span><div><h3>تحديد الفرص</h3><p>اختيار الفرص الأعلى أثراً والأقل مخاطرة وربطها بأهداف المؤسسة.</p></div></article>
-          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">03</span><div><h3>خارطة الطريق</h3><p>تحديد المبادرات والأولويات والجدول الزمني ومؤشرات النجاح.</p></div></article>
-          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">04</span><div><h3>الحوكمة</h3><p>وضع سياسات استخدام البيانات والذكاء الاصطناعي وإدارة المخاطر.</p></div></article>
-          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">05</span><div><h3>التبني</h3><p>تجهيز الفرق والقيادات لتبني التحول بثقافة عمل قابلة للاستمرار.</p></div></article>
-          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">06</span><div><h3>قياس الأثر</h3><p>تحديد مؤشرات الأداء ومتابعة النتائج لضمان وضوح العائد من التحول.</p></div></article>
+          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">01</span><div><h3>التقييم</h3><p>تحليل الوضع الحالي والجاهزية.</p></div></article>
+          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">02</span><div><h3>اكتشاف الفرص</h3><p>تحديد فرص التحسين والابتكار.</p></div></article>
+          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">03</span><div><h3>تصميم الاستراتيجية</h3><p>بناء الرؤية وخارطة الطريق.</p></div></article>
+          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">04</span><div><h3>التنفيذ</h3><p>إطلاق المبادرات ذات الأولوية.</p></div></article>
+          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">05</span><div><h3>قياس الأثر</h3><p>متابعة النتائج وتحسين الأداء.</p></div></article>
         </div>
       </div>
     </section>
-    <section class="work-detail-section consulting-method-section margin-bottom-xl" id="consulting-journey">
-        <div class="container-fluid px-3 px-md-5">
-          <div class="consulting-section-head reveal-item text-center mx-auto">
-            <h2>رحلة التحول المؤسسي</h2>
+    <section class="masaqy-stats-section masaqy-results-section margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated" id="lab-results">
+      <div class="container-lg position-relative">
+        <div class="reveal-on-scroll" data-reveal-order="0">
+          <div class="row justify-content-center mb-5">
+            <div class="col-lg-9 text-center">
+              <h2 class="fs-1 fw-bold text-dark mb-3 reveal-on-scroll" data-reveal-order="2">النتائج المتوقعة</h2>
+            </div>
           </div>
-          <div class="consulting-method-timeline">
-            <article class="consulting-method-step reveal-item">
-              <span class="consulting-method-index">01</span>
-              <h3>فهم الوضع الحالي</h3>
-            </article>
-            <article class="consulting-method-step reveal-item">
-              <span class="consulting-method-index">02</span>
-              <h3>تحديد فرص التحول</h3>
-            </article>
-            <article class="consulting-method-step reveal-item">
-              <span class="consulting-method-index">03</span>
-              <h3>تصميم خارطة الطريق</h3>
-            </article>
-            <article class="consulting-method-step reveal-item">
-              <span class="consulting-method-index">04</span>
-              <h3>تجهيز المؤسسة</h3>
-            </article>
-            <article class="consulting-method-step reveal-item">
-              <span class="consulting-method-index">05</span>
-              <h3>الانتقال إلى التنفيذ</h3>
-            </article>
-            <article class="consulting-method-step reveal-item">
-              <span class="consulting-method-index">06</span>
-              <h3>قياس الأثر والتحسين</h3>
-            </article>
-          </div>
-        </div>
-      </section>
-
-
-    
-      <section class="work-detail-section margin-bottom-xl" id="strategic-guide">
-        <div class="container-fluid px-3 px-md-5">
-          <div class="row align-items-center g-4 g-xl-5 reveal-item about-card">
-            <figure class="col-lg-6 order-2 order-lg-2 lab-wide-card-media">
-              <img src="assets/images/masaqy/consulting.jpeg" alt="خارطة التحول الذكي القابلة للقياس">
-            </figure>
-            <div class="col-lg-6 order-1 order-lg-1">
-              <span class="works-showcase-kicker">لماذا MASAQY</span>
-              <h2>شريكك الاستراتيجي للتحول الذكي وتحقيق النتائج القابلة للقياس</h2>
-              <p>نجمع بين الخبرة الاستشارية، الذكاء الاصطناعي، التحول الرقمي، وتحسين العمليات لمساعدة المؤسسات على بناء قدرات مستدامة وتحقيق أثر حقيقي على الأداء والنمو.</p>
-              <ul class="masaqy-points">
-                <li class="reveal-on-scroll" data-reveal-order="1">
-                  <i class="bi bi-check2" aria-hidden="true"></i>
-                  <span><strong>منهجية واضحة</strong> نحول الاستراتيجيات إلى خطط عمل عملية قابلة للقياس والتنفيذ.</span>
-                </li>
-                <li class="reveal-on-scroll" data-reveal-order="2">
-                  <i class="bi bi-check2" aria-hidden="true"></i>
-                  <span><strong>خبرة مؤسسية متخصصة</strong> نمتلك خبرة في تصميم وتنفيذ مبادرات التحول المؤسسي والذكاء الاصطناعي.</span>
-                </li>
-                <li class="reveal-on-scroll" data-reveal-order="3">
-                  <i class="bi bi-check2" aria-hidden="true"></i>
-                  <span><strong>حوكمة وأمان متقدم</strong> نساعد المؤسسات على بناء أطر حوكمة تدعم الامتثال وإدارة المخاطر.</span>
-                </li>
-                <li class="reveal-on-scroll" data-reveal-order="4">
-                  <i class="bi bi-check2" aria-hidden="true"></i>
-                  <span><strong>تركيز على النتائج</strong> نقيس النجاح من خلال النتائج والأثر الحقيقي على المؤسسة.</span>
-                </li>
-              </ul>
-              <a href="mailto:info@masaqy.com" class="btn flow-btn-primary">احجز جلسة استراتيجية</a>
+          <div class="row g-4 lab-results-row">
+            <div class="col-lg-2 col-md-4 col-sm-6 reveal-on-scroll" data-reveal-order="4">
+              <article class="masaqy-stat-card">
+                <span class="masaqy-stat-value">+35%</span>
+                <h3>تحسين جاهزية الذكاء الاصطناعي</h3>
+              </article>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 reveal-on-scroll" data-reveal-order="5">
+              <article class="masaqy-stat-card">
+                <span class="masaqy-stat-value">90%</span>
+                <h3>وضوح أكبر في أولويات التحول</h3>
+              </article>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 reveal-on-scroll" data-reveal-order="6">
+              <article class="masaqy-stat-card">
+                <span class="masaqy-stat-value">2X</span>
+                <h3>تسريع الابتكار المؤسسي</h3>
+              </article>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 reveal-on-scroll" data-reveal-order="7">
+              <article class="masaqy-stat-card">
+                <span class="masaqy-stat-value">+50%</span>
+                <h3>زيادة الاستفادة من البيانات</h3>
+              </article>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 reveal-on-scroll" data-reveal-order="8">
+              <article class="masaqy-stat-card">
+                <span class="masaqy-stat-value">+30%</span>
+                <h3>تحسين كفاءة اتخاذ القرار</h3>
+              </article>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 reveal-on-scroll" data-reveal-order="9">
+              <article class="masaqy-stat-card">
+                <span class="masaqy-stat-value">+40%</span>
+                <h3>تسريع تنفيذ المبادرات الرقمية</h3>
+              </article>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
+    <section class="work-detail-section consulting-challenges-section margin-bottom-xl" id="why-masaqy">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="consulting-section-head lab-challenges-head reveal-item">
+          <h2>لماذا MASAQY؟</h2>
+          <h3>شريكك في رحلة التحول الذكي</h3>
+          <p>نجمع بين العمق الاستراتيجي والخبرة التقنية المتقدمة لنقدم حلولاً واقعية تضمن نجاح مؤسستك.</p>
+        </div>
+        <div class="consulting-challenges-grid enterprise-challenges-grid lab-challenges-grid">
+          <article class="consulting-challenge-card reveal-item">
+            <div class="consulting-challenge-head">
+              <span class="consulting-challenge-icon"><i class="bi bi-cpu"></i></span>
+            </div>
+            <h2>خبراء AI</h2>
+            <p>متخصصون في الذكاء الاصطناعي والحوكمة.</p>
+          </article>
+          <article class="consulting-challenge-card reveal-item">
+            <div class="consulting-challenge-head">
+              <span class="consulting-challenge-icon"><i class="bi bi-building"></i></span>
+            </div>
+            <h2>خبرة عميقة</h2>
+            <p>في التحول الرقمي المؤسسي.</p>
+          </article>
+          <article class="consulting-challenge-card reveal-item">
+            <div class="consulting-challenge-head">
+              <span class="consulting-challenge-icon"><i class="bi bi-bullseye"></i></span>
+            </div>
+            <h2>تركيز على النتائج</h2>
+            <p>تحقيق الأثر الفعلي الملموس.</p>
+          </article>
+          <article class="consulting-challenge-card reveal-item">
+            <div class="consulting-challenge-head">
+              <span class="consulting-challenge-icon"><i class="bi bi-globe2"></i></span>
+            </div>
+            <h2>منهجيات عالمية</h2>
+            <p>قابلة للتنفيذ على أرض الواقع.</p>
+          </article>
+          <article class="consulting-challenge-card reveal-item">
+            <div class="consulting-challenge-head">
+              <span class="consulting-challenge-icon"><i class="bi bi-mortarboard"></i></span>
+            </div>
+            <h2>نقل المعرفة</h2>
+            <p>بناء القدرات الداخلية لمؤسستك.</p>
+          </article>
+          <article class="consulting-challenge-card reveal-item">
+            <div class="consulting-challenge-head">
+              <span class="consulting-challenge-icon"><i class="bi bi-people"></i></span>
+            </div>
+            <h2>شراكة استراتيجية</h2>
+            <p>علاقات طويلة المدى مبنية على الثقة.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
       <section class="works-showcase-section home-works-section margin-bottom-xl" id="success-stories" aria-labelledby="successStoriesTitle">
         <div class="container-fluid px-3 px-md-5">
           <div class="row justify-content-center mb-5">
             <div class="col-lg-9 text-center">
-              <h2 class="fs-1 fw-bold text-dark mb-3 reveal-on-scroll" id="successStoriesTitle" data-reveal-order="2">قصص النجاح</h2>
+              <h2 class="fs-1 fw-bold text-dark mb-3 reveal-on-scroll" id="successStoriesTitle" data-reveal-order="2">قصة نجاح</h2>
             </div>
           </div>
           <div class="works-grid home-works-grid" aria-live="polite">
             <article class="work-card">
-              <a class="work-card-image" href="works.html" aria-label="اقرأ المزيد عن خارطة تحول ذكي لإدارة تجربة العملاء">
-                <img src="assets/images/ai-systems/crm.png" alt="خارطة تحول ذكي لإدارة تجربة العملاء">
+              <a class="work-card-image" href="../works.html" aria-label="اقرأ المزيد عن جهة حكومية رائدة">
+                <img src="../assets/images/masaqy/consulting.jpeg" alt="جهة حكومية رائدة">
               </a>
               <div class="work-card-content">
-                <span class="work-card-tag">قطاع الخدمات</span>
-                <h3>خارطة تحول ذكي لإدارة تجربة العملاء</h3>
-                <p>بناء خطة تحول تربط بيانات العملاء بالعمليات ومؤشرات الأداء لتحسين جودة القرارات.</p>
-                <a class="work-card-link" href="works.html">اقرأ المزيد <i class="bi bi-arrow-left"></i></a>
+                <span class="work-card-tag">دراسة حالة</span>
+                <h3>جهة حكومية رائدة</h3>
+                <p><strong>التحدي:</strong> تعدد المبادرات الرقمية وغياب رؤية موحدة للتحول، مما أدى لضعف التنسيق وبطء الإنجاز.</p>
+                <p><strong>الحل:</strong> تصميم استراتيجية تحول ذكي وخارطة طريق تنفيذية لمدة ثلاث سنوات تربط كافة المبادرات.</p>
+                <a class="work-card-link" href="../works.html">اقرأ المزيد <i class="bi bi-arrow-left"></i></a>
               </div>
             </article>
 
             <article class="work-card">
-              <a class="work-card-image" href="works.html" aria-label="اقرأ المزيد عن تحسين الكفاءة التشغيلية وتقليل الهدر">
-                <img src="assets/images/ai-systems/automation-systems.png" alt="تحسين الكفاءة التشغيلية وتقليل الهدر">
+              <a class="work-card-image" href="../works.html" aria-label="اقرأ المزيد عن نتائج جهة حكومية رائدة">
+                <img src="../assets/images/ai-systems/ai-dashboards.png" alt="نتائج جهة حكومية رائدة">
               </a>
               <div class="work-card-content">
-                <span class="work-card-tag">العمليات والتشغيل</span>
-                <h3>تحسين الكفاءة التشغيلية وتقليل الهدر</h3>
-                <p>تحليل مسارات العمل وتحديد فرص أتمتة ساعدت الإدارة على تسريع الإجراءات الداخلية.</p>
-                <a class="work-card-link" href="works.html">اقرأ المزيد <i class="bi bi-arrow-left"></i></a>
+                <span class="work-card-tag">النتائج</span>
+                <h3>نتائج التحول</h3>
+                <p>+25 توحيد مبادرات</p>
+                <p>+35% رفع كفاءة القرار</p>
+                <p>+40% تسريع التنفيذ</p>
+                <a class="work-card-link" href="../works.html">اقرأ المزيد <i class="bi bi-arrow-left"></i></a>
               </div>
             </article>
 
             <article class="work-card">
-              <a class="work-card-image" href="works.html" aria-label="اقرأ المزيد عن نموذج حوكمة للذكاء الاصطناعي">
-                <img src="assets/images/masaqy/consulting.jpeg" alt="نموذج حوكمة للذكاء الاصطناعي">
+              <a class="work-card-image" href="../works.html" aria-label="اقرأ المزيد عن تحقيق الاستباقية في تقديم الخدمات">
+                <img src="../assets/images/ai-systems/ai-decision-systems.png" alt="تحقيق الاستباقية في تقديم الخدمات">
               </a>
               <div class="work-card-content">
-                <span class="work-card-tag">البيانات والحوكمة</span>
-                <h3>نموذج حوكمة للذكاء الاصطناعي</h3>
-                <p>تصميم سياسات استخدام واضحة للبيانات والنماذج الذكية داخل بيئة مؤسسية منظمة.</p>
-                <a class="work-card-link" href="works.html">اقرأ المزيد <i class="bi bi-arrow-left"></i></a>
+                <span class="work-card-tag">الأثر</span>
+                <h3>تحقيق الاستباقية</h3>
+                <p>تحقيق الاستباقية في تقديم الخدمات من خلال التحول الذكي.</p>
+                <a class="work-card-link" href="../works.html">اقرأ المزيد <i class="bi bi-arrow-left"></i></a>
               </div>
             </article>
-          </div>
-
-          <div class="home-works-more reveal-item scroll-fade-up">
-            <a href="works.html" class="btn flow-btn-primary">
-              <span>عرض المزيد</span>
-              <i class="bi bi-arrow-left"></i>
-            </a>
           </div>
         </div>
       </section>
-
-      <section class="flow-section contact-cta" id="partners">
-        <div class="container-fluid px-3 px-md-5">
-          <div class="cta-box position-relative overflow-hidden">
-            <div class="row align-items-center position-relative z-index-2">
-              <div class="col-lg-12 text-white">
-                <span class="fw-bold mb-3 display-4 d-block text-center">القطاعات التي نخدمها</span>
-                <p class="text-center text-white opacity-75 mx-auto mb-0" style="max-width: 720px;">خبرة استشارية متخصصة في متطلبات كل قطاع.</p>
-                <div class="icon-directory-grid sectors-directory-grid mt-5" aria-label="القطاعات التي نخدمها">
-                  <a href="#" class="widgetscard">
-                    <i class="bi bi-building"></i>
-                    <span>المؤسسات</span>
-                  </a>
-                  <a href="#" class="widgetscard">
-                    <i class="bi bi-bank"></i>
-                    <span>الجهات الحكومية</span>
-                  </a>
-                  <a href="#" class="widgetscard">
-                    <i class="bi bi-hospital"></i>
-                    <span>الصحة</span>
-                  </a>
-                  <a href="#" class="widgetscard">
-                    <i class="bi bi-cart-check"></i>
-                    <span>التجارة</span>
-                  </a>
-                  <a href="#" class="widgetscard">
-                    <i class="bi bi-briefcase"></i>
-                    <span>الخدمات المهنية</span>
-                  </a>
-                  <a href="#" class="widgetscard">
-                    <i class="bi bi-globe2"></i>
-                    <span>الأسواق الرقمية</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> 
      
       <section id="testimonials">
         <div class="container-fluid px-3 px-md-5">
@@ -1359,21 +1531,21 @@
           <div class="consulting-challenges-grid enterprise-challenges-grid">
             <article class="consulting-challenge-card reveal-item">
               <div class="consulting-main-tag"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-              <h3>وضوح استراتيجي عالي</h3>
-              <p>ساعدنا فريق مساقي على ترتيب الأولويات وتحويل الأفكار التقنية إلى خطة تنفيذ واضحة للإدارة.</p>
-              <div class="testimonial-author"><span>م</span> مدير التحول الرقمي</div>
+              <p>"شريك حقيقي في النجاح. ساعدونا في أتمتة العمليات الروتينية مما وفر لفرقنا مئات الساعات شهرياً."</p>
+              <h3>خالد الدوسري</h3>
+              <div class="testimonial-author"><span>خ.د</span> المدير التنفيذي، مجموعة الأفق</div>
             </article>
             <article class="consulting-challenge-card reveal-item">
               <div class="consulting-main-tag"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-              <h3>نتائج قابلة للقياس</h3>
-              <p>خرجنا بخارطة طريق عملية ومؤشرات أداء ساعدتنا على قياس أثر مبادرات الذكاء الاصطناعي.</p>
-              <div class="testimonial-author"><span>س</span> الرئيس التنفيذي للعمليات</div>
+              <p>"الاحترافية في التعامل والعمق في التحليل هو ما يميز فريق مساقي. بناء أطر الحوكمة لدينا أصبح نموذجاً يحتذى به."</p>
+              <h3>سارة العتيبي</h3>
+              <div class="testimonial-author"><span>س.ع</span> رئيسة قسم التحول، جهة حكومية</div>
             </article>
             <article class="consulting-challenge-card reveal-item">
               <div class="consulting-main-tag"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-              <h3>فهم عميق للأعمال</h3>
-              <p>العمل لم يكن تقنياً فقط، بل بدأ من نموذج العمل والتحديات الفعلية داخل المؤسسة.</p>
-              <div class="testimonial-author"><span>ع</span> قائد الاستراتيجية</div>
+              <p>"لقد ساهمت مساقي في تحويل جذري لعملياتنا التشغيلية. المنهجية كانت واضحة والنتائج تجاوزت توقعاتنا."</p>
+              <h3>أحمد المنصور</h3>
+              <div class="testimonial-author"><span>أ.م</span> مدير العمليات، شركة نماء</div>
             </article>
           </div>
         </div>
@@ -1387,34 +1559,26 @@
           <div class="accordion enterprise-faq-accordion reveal-item" id="consultingFaq">
             <div class="accordion-item">
               <h3 class="accordion-header" id="faqOneHeading">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="false" aria-controls="faqOne">كم يستغرق بناء استراتيجية التحول؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="false" aria-controls="faqOne">كيف تختلف خدمة ذكاء القرار عن تحليل البيانات التقليدي؟</button>
               </h3>
               <div id="faqOne" class="accordion-collapse collapse" aria-labelledby="faqOneHeading" data-bs-parent="#consultingFaq">
-                <div class="accordion-body">عادة تبدأ المرحلة الأولى خلال 90 يوماً لتشخيص الوضع الحالي وبناء خارطة الطريق الأولية.</div>
+                <div class="accordion-body">التحليل التقليدي يخبرك بما حدث (ماضٍ)، بينما ذكاء القرار يربط البيانات بنماذج محاكاة ليخبرك بما سيحدث وكيف ستؤثر قراراتك المختلفة على النتائج المستقبلية.</div>
               </div>
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header" id="faqTwoHeading">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">هل تقدمون استشارات فقط أم تنفيذ أيضاً؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">هل تتطلب الخدمة تغيير الأنظمة الحالية للشركة؟</button>
               </h3>
               <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faqTwoHeading" data-bs-parent="#consultingFaq">
-                <div class="accordion-body">نبدأ بالاستشارة والاستراتيجية، ويمكن بعد اعتماد الخطة الانتقال إلى التنفيذ عبر فرق مختبر مساقي.</div>
+                <div class="accordion-body"></div>
               </div>
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header" id="faqThreeHeading">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">هل تناسب خدماتكم المؤسسات الصغيرة؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">كم تستغرق عملية التنفيذ لرؤية النتائج الأولى؟</button>
               </h3>
               <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="faqThreeHeading" data-bs-parent="#consultingFaq">
-                <div class="accordion-body">نعم، يتم تصميم نطاق العمل وفق حجم المؤسسة ودرجة جاهزيتها وأولوياتها الحالية.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h3 class="accordion-header" id="faqFourHeading">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">كيف يتم قياس نجاح التحول؟</button>
-              </h3>
-              <div id="faqFour" class="accordion-collapse collapse" aria-labelledby="faqFourHeading" data-bs-parent="#consultingFaq">
-                <div class="accordion-body">نربط كل مبادرة بمؤشرات أداء واضحة مثل خفض التكلفة، رفع الإنتاجية، تحسين جودة القرار، وتسريع العمليات.</div>
+                <div class="accordion-body"></div>
               </div>
             </div>
           </div>
@@ -1425,13 +1589,13 @@
         <div class="container-fluid px-3 px-md-5">
           <div class="masaqy-partnership-card reveal-item">
             <h2>ابدأ رحلة التحول الذكي اليوم</h2>
-            <p>سواء كنت في بداية الطريق أو تمتلك مبادرات قائمة، نساعدك على تحويل الذكاء الاصطناعي إلى أثر مؤسسي واضح وقابل للقياس.</p>
+            <p>احصل على رؤية استراتيجية واضحة وخطة تنفيذية عملية تمكن مؤسستك من تحقيق أقصى استفادة من التحول الرقمي والذكاء الاصطناعي.</p>
             <div class="flow-actions d-flex flex-wrap gap-3">
               <a href="mailto:info@masaqy.com" class="btn flow-btn-primary">
-                <span>احجز استشارة مجانية</span><i class="bi bi-calendar2-check"></i>
+                <span>احجز جلسة استراتيجية</span> 
               </a>
               <a href="mailto:info@masaqy.com" class="btn flow-btn-ghost">
-                <span>تواصل معنا</span><i class="bi bi-chat-dots"></i>
+                <span>اطلب الخدمة</span> 
               </a>
             </div>
           </div>
@@ -1448,8 +1612,8 @@
           <div class="footer-neo-card masaqy-footer-layout">
             <div class="row g-4 g-xl-5">
               <div class="col-xl-3 col-lg-4 col-md-6">
-                <a href="index.html" class="masaqy-footer-brand text-decoration-none d-inline-block" aria-label="مساقي">
-                  <img src="assets/images/logomasaqy.png" alt="مساقي" class="masaqy-footer-logo">
+                <a href="../index.html" class="masaqy-footer-brand text-decoration-none d-inline-block" aria-label="مساقي">
+                  <img src="../assets/images/logomasaqy.png" alt="مساقي" class="masaqy-footer-logo">
                 </a>
                 <p class="masaqy-footer-text mt-3 mb-0">MASAQY شركة سعودية متخصصة في تقنيات الذكاء الاصطناعي والتحول المؤسسي الذكي، نبني منظومات أعمال ذكية تساعد المؤسسات على النمو والتوسع بثقة.</p>
                 <span class="masaqy-footer-tagline">Where Intelligence Becomes Business Impact</span>
@@ -1463,30 +1627,30 @@
               <div class="col-xl col-lg-4 col-md-6">
                 <h2 class="masaqy-footer-title h6">الخدمات</h2>
                 <ul class="masaqy-footer-links">
-                  <li><a href="consulting-details.html">مساقي للاستشارات</a></li>
-                  <li><a href="lab-details.html">مختبر مساقي</a></li>
-                  <li><a href="marketing-details.html#marketing-groups">مساقي للتسويق</a></li>
-                  <li><a href="course-details.html">أكاديمية مساقي</a></li>
+                  <li><a href="../consulting-details.html">مساقي للاستشارات</a></li>
+                  <li><a href="../lab-details.html">مختبر مساقي</a></li>
+                  <li><a href="../marketing-details.html#marketing-groups">مساقي للتسويق</a></li>
+                  <li><a href="../index.html#services">أكاديمية مساقي</a></li>
                 </ul>
               </div>
               <div class="col-xl col-lg-4 col-md-6">
                 <h2 class="masaqy-footer-title h6">الأنظمة الذكية</h2>
                 <ul class="masaqy-footer-links">
-                  <li><a href="index.html#systems">Smart CRM</a></li>
-                  <li><a href="index.html#systems">Smart ERP</a></li>
-                  <li><a href="index.html#systems">Automation Systems</a></li>
-                  <li><a href="index.html#systems">AI Dashboards</a></li>
-                  <li><a href="index.html#systems">AI Decision Systems</a></li>
+                  <li><a href="../index.html#systems">Smart CRM</a></li>
+                  <li><a href="../index.html#systems">Smart ERP</a></li>
+                  <li><a href="../index.html#systems">Automation Systems</a></li>
+                  <li><a href="../index.html#systems">AI Dashboards</a></li>
+                  <li><a href="../index.html#systems">AI Decision Systems</a></li>
                 </ul>
               </div>
               <div class="col-xl col-lg-4 col-md-6">
                 <h2 class="masaqy-footer-title h6">روابط سريعة</h2>
                 <ul class="masaqy-footer-links">
-                  <li><a href="index.html">الرئيسية</a></li>
-                  <li><a href="about.html">من نحن</a></li>
-                  <li><a href="marketing-details.html#marketing-groups">الخدمات</a></li>
-                  <li><a href="index.html#systems">الأنظمة</a></li>
-                  <li><a href="index.html#sectors">القطاعات</a></li>
+                  <li><a href="../index.html">الرئيسية</a></li>
+                  <li><a href="../about.html">من نحن</a></li>
+                  <li><a href="../marketing-details.html#marketing-groups">الخدمات</a></li>
+                  <li><a href="../index.html#systems">الأنظمة</a></li>
+                  <li><a href="../index.html#sectors">القطاعات</a></li>
                   <li><a href="mailto:info@masaqy.com">تواصل معنا</a></li>
                 </ul>
               </div>
@@ -1528,7 +1692,7 @@
       <i class="bi bi-chat-dots-fill"></i>
     </a>
   </div>
-  <script src="assets/js/theme.js"></script>
-  <script src="assets/js/about.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/about.js"></script>
 </body>
 </html>

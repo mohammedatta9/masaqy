@@ -270,8 +270,8 @@
 .consulting-challenge-card h2 {
   margin: 0 0 1rem;
   color: #111827;
-  font-size: clamp(1.45rem, 2.4vw, 2.25rem);
-  font-weight: 950;
+   font-size: 20px !important;
+  font-weight: 900 !important;
   line-height: 1.35;
 }
 
@@ -420,175 +420,6 @@
   padding-inline-start: 1.35rem;
 }
 
-#automation-services {
-  overflow: hidden;
-  background: #223247;
-}
-
-#automation-services::before {
-  content: "";
-  position: absolute;
-  inset-inline: 0;
-  top: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(14, 165, 233, .95), transparent);
-}
-
-#automation-services::after {
-  content: "";
-  position: absolute;
-  inset-inline: 0;
-  bottom: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(14, 165, 233, .95), transparent);
-}
-
-#automation-services .automation-services-head {
-  max-width: none;
-  justify-items: center;
-  margin-bottom: clamp(2.5rem, 5vw, 3.75rem);
-  text-align: center;
-}
-
-#automation-services .automation-services-head h2 {
-  margin: 0;
-  color: rgba(255, 255, 255, .9);
-  font-size: clamp(1.85rem, 3vw, 3rem);
-}
-
-#automation-services .automation-services-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1rem, 2vw, 1.35rem);
-}
-
-#automation-services .automation-service-card,
-#automation-services .automation-service-card:first-child,
-#automation-services .automation-service-card:nth-child(n + 2),
-#automation-services .automation-service-card:nth-child(4) {
-  grid-column: auto;
-}
-
-#automation-services .automation-service-card {
-  min-height: 174px;
-  padding: clamp(1.25rem, 2.25vw, 1.75rem);
-  border: 1px solid rgba(255, 255, 255, .1);
-  border-radius: 7px;
-  background: rgba(255, 255, 255, .06);
-  box-shadow: none;
-  text-align: right;
-}
-
-#automation-services .automation-service-card::before {
-  content: none;
-}
-
-#automation-services .automation-service-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(225, 166, 255, .25);
-  box-shadow: none;
-}
-
-#automation-services .automation-service-card-compact {
-  grid-column: span 1;
-}
-
-#automation-services .automation-service-card-wide {
-  grid-column: span 2;
-}
-
-#automation-services .automation-service-card:nth-child(1) {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-#automation-services .automation-service-card:nth-child(2) {
-  grid-column: 2 / span 2;
-  grid-row: 1;
-}
-
-#automation-services .automation-service-card:nth-child(3) {
-  grid-column: 1 / span 2;
-  grid-row: 2;
-}
-
-#automation-services .automation-service-card:nth-child(4) {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-#automation-services .automation-service-card .consulting-group-top {
-  justify-content: flex-start;
-  flex-direction: row;
-  margin-bottom: 1rem;
-}
-
-#automation-services .automation-service-card .consulting-group-icon {
-  order: -1;
-  width: auto;
-  height: auto;
-  border-radius: 0;
-  color: #e9b1ff;
-  background: transparent;
-  box-shadow: none;
-  font-size: 1.55rem;
-}
-
-#automation-services .automation-service-card h3 {
-  margin-bottom: 1.05rem;
-  color: rgba(255, 255, 255, .9);
-  font-size: clamp(1.05rem, 1.35vw, 1.35rem);
-}
-
-#automation-services .automation-service-card .consulting-group-content {
-  margin-bottom: 0;
-}
-
-#automation-services .automation-service-card .consulting-group-content p {
-  color: rgba(255, 255, 255, .62);
-  font-size: .95rem;
-  line-height: 1.85;
-}
-
-#automation-services .automation-service-checks {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: .85rem 1.5rem;
-  margin-top: 1.25rem;
-}
-
-#automation-services .automation-service-checks li {
-  color: rgba(255, 255, 255, .78);
-  font-size: .92rem;
-}
-
-#automation-services .automation-service-checks i {
-  color: #93c5fd;
-}
-
-#automation-services .automation-service-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: .45rem;
-  order: 0;
-  margin-inline-start: 0;
-  padding: .75rem 1rem;
-  border-radius: 6px;
-  color: rgba(255, 255, 255, .88);
-  background: rgba(var(--primary-rgb), .38);
-  font-size: .9rem;
-  font-weight: 850;
-}
-
-#automation-solutions .consulting-group-top .consulting-main-tag,
-#automation-testimonials .consulting-group-top .consulting-main-tag {
-  order: -1;
-}
-
-#automation-solutions .consulting-group-top .consulting-group-icon,
-#automation-testimonials .consulting-group-top .consulting-group-icon {
-  order: 1;
-}
-
 .consulting-section-head {
   display: grid;
   gap: .85rem;
@@ -654,684 +485,95 @@
   font-size: clamp(1rem, 1.15vw, 1.2rem);
 }
 
-#enterprise-specialties .enterprise-specialties-head {
-  max-width: none;
-  margin-bottom: clamp(1.5rem, 3vw, 2.4rem);
-  text-align: right;
-}
-
-#enterprise-specialties .enterprise-specialties-head h2 {
-  color: #111827;
-  font-size: clamp(2rem, 3.2vw, 3.2rem);
-}
-
-#enterprise-specialties .enterprise-specialties-head p {
-  margin: -.35rem 0 0;
-  color: rgba(17, 24, 39, .62);
-  font-size: 1rem;
-  font-weight: 650;
-}
-
-#enterprise-specialties .enterprise-specialties-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1rem, 2vw, 1.35rem);
-  padding-bottom: clamp(2rem, 4vw, 4rem);
-}
-
-#enterprise-specialties .enterprise-specialty-card,
-#enterprise-specialties .enterprise-specialty-card:nth-child(4),
-#enterprise-specialties .enterprise-specialty-card:nth-child(5) {
-  grid-column: auto;
-}
-
-#enterprise-specialties .enterprise-specialty-card {
-  min-height: 210px;
-  padding: clamp(1.25rem, 2.2vw, 1.75rem);
-  border-radius: 12px;
-  text-align: right;
-}
-
-#enterprise-specialties .enterprise-specialty-card::before {
-  content: none;
-}
-
-#enterprise-specialties .enterprise-specialty-card-wide {
-  display: grid;
-  grid-column: span 2;
-  grid-template-columns: minmax(190px, .88fr) minmax(0, 1.12fr);
-  gap: clamp(1.2rem, 2.5vw, 2rem);
-  align-items: center;
-  min-height: 258px;
-  direction: ltr;
-}
-
-#enterprise-specialties .enterprise-specialty-card-blue {
-  grid-column: 1 / span 2;
-  grid-row: 1;
-  background: #dbeafe;
-}
-
-#enterprise-specialties .enterprise-specialties-grid .enterprise-specialty-card-compact:nth-child(2) {
-  grid-column: 3;
-  grid-row: 1;
-}
-
-#enterprise-specialties .enterprise-specialties-grid .enterprise-specialty-card-compact:nth-child(3) {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-#enterprise-specialties .enterprise-specialties-grid .enterprise-specialty-card-dark,
-#enterprise-specialties .enterprise-specialties-grid .enterprise-specialty-card-dark:nth-child(4) {
-  grid-column: 1 / span 2;
-  grid-row: 2;
-  background: #223247;
-}
-
-#enterprise-specialties .enterprise-specialty-card-dark .enterprise-specialty-media {
-  grid-column: 2;
-}
-
-#enterprise-specialties .enterprise-specialty-card-dark .enterprise-specialty-copy {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-#enterprise-specialties .enterprise-specialty-copy {
-  direction: rtl;
-}
-
-#enterprise-specialties .enterprise-specialty-media {
-  overflow: hidden;
-  border-radius: 8px;
-  aspect-ratio: 16 / 9;
-}
-
-#enterprise-specialties .enterprise-specialty-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#enterprise-specialties .enterprise-specialty-card h3 {
-  margin: 0 0 1rem;
-  color: #111827;
-  font-size: clamp(1.18rem, 1.55vw, 1.55rem);
-  line-height: 1.45;
-}
-
-#enterprise-specialties .enterprise-specialty-card p {
-  margin: 0;
-  color: rgba(17, 24, 39, .66);
-  font-size: .98rem;
-  font-weight: 650;
-  line-height: 1.85;
-}
-
-#enterprise-specialties .enterprise-specialty-points {
-  display: grid;
-  gap: .45rem;
-  margin-top: 1.1rem;
-}
-
-#enterprise-specialties .enterprise-specialty-points span {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  color: rgba(17, 24, 39, .72);
-  font-size: .92rem;
-  font-weight: 750;
-}
-
-#enterprise-specialties .enterprise-specialty-points i {
-  color: var(--primary-color);
-  font-size: .95rem;
-}
-
-#enterprise-specialties .enterprise-specialty-icon {
-  display: block;
-  margin-bottom: 1.4rem;
-  color: var(--primary-color);
-  font-size: 2.25rem;
-  line-height: 1;
-}
-
-#enterprise-specialties .enterprise-specialty-link {
-  display: inline-flex;
-  align-items: center;
-  gap: .45rem;
-  margin-top: 1.35rem;
-  color: var(--primary-color);
-  font-size: .98rem;
-  font-weight: 900;
-  text-decoration: none;
-}
-
-#enterprise-specialties .enterprise-specialty-card-dark h3,
-#enterprise-specialties .enterprise-specialty-card-dark p {
-  color: rgba(255, 255, 255, .84);
-}
-
-#enterprise-specialties .enterprise-specialty-card-dark .consulting-sub-tags {
-  margin: 1.35rem 0 0;
-}
-
-#enterprise-specialties .enterprise-specialty-card-dark .consulting-sub-tags span {
-  border-color: rgba(255, 255, 255, .12);
-  color: rgba(255, 255, 255, .78);
-  background: rgba(255, 255, 255, .1);
-}
-
-#growth-solutions .enterprise-specialties-head {
-  max-width: none;
-  margin-bottom: clamp(1.5rem, 3vw, 2.4rem);
-  text-align: right;
-}
-
-#growth-solutions .enterprise-specialties-head h2 {
-  color: #111827;
-  font-size: clamp(2rem, 3.2vw, 3.2rem);
-}
-
-#growth-solutions .enterprise-specialties-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1rem, 2vw, 1.35rem);
-  padding-bottom: clamp(2rem, 4vw, 4rem);
-}
-
-#growth-solutions .enterprise-specialty-card,
-#growth-solutions .enterprise-specialty-card:nth-child(4),
-#growth-solutions .enterprise-specialty-card:nth-child(5) {
-  grid-column: auto;
-}
-
-#growth-solutions .enterprise-specialty-card {
-  min-height: 210px;
-  padding: clamp(1.25rem, 2.2vw, 1.75rem);
-  border-radius: 12px;
-  text-align: right;
-}
-
-#growth-solutions .enterprise-specialty-card::before {
-  content: none;
-}
-
-#growth-solutions .enterprise-specialty-card-wide {
-  display: grid;
-  grid-column: span 2;
-  grid-template-columns: minmax(190px, .88fr) minmax(0, 1.12fr);
-  gap: clamp(1.2rem, 2.5vw, 2rem);
-  align-items: center;
-}
-
-#growth-solutions .enterprise-specialty-card-blue {
-  grid-column: 1 / span 2;
-  grid-row: 1;
-  background: #dbeafe;
-}
-
-#growth-solutions .enterprise-specialties-grid .enterprise-specialty-card-compact:nth-child(2) {
-  grid-column: 3;
-  grid-row: 1;
-}
-
-#growth-solutions .enterprise-specialties-grid .enterprise-specialty-card-compact:nth-child(3) {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-#growth-solutions .enterprise-specialties-grid .enterprise-specialty-card-dark,
-#growth-solutions .enterprise-specialties-grid .enterprise-specialty-card-dark:nth-child(4) {
-  grid-column: 1 / span 2;
-  grid-row: 2;
-  background: #223247;
-}
-
-#growth-solutions .enterprise-specialty-card-dark .enterprise-specialty-media {
-  grid-column: 2;
-}
-
-#growth-solutions .enterprise-specialty-card-dark .enterprise-specialty-copy {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-#growth-solutions .enterprise-specialty-copy {
-  direction: rtl;
-}
-
-#growth-solutions .enterprise-specialty-media {
-  overflow: hidden;
-  border-radius: 8px;
-  aspect-ratio: 16 / 9;
-}
-
-#growth-solutions .enterprise-specialty-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#growth-solutions .enterprise-specialty-card h3 {
-  margin: 0 0 1rem;
-  color: #111827;
-  font-size: clamp(1.18rem, 1.55vw, 1.55rem);
-  line-height: 1.45;
-}
-
-#growth-solutions .enterprise-specialty-card p {
-  margin: 0;
-  color: rgba(17, 24, 39, .66);
-  font-size: .98rem;
-  font-weight: 650;
-  line-height: 1.75;
-}
-
-#growth-solutions .enterprise-specialty-points {
-  display: grid;
-  gap: .45rem;
-  margin-top: 1.1rem;
-}
-
-#growth-solutions .enterprise-specialty-points span {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  color: rgba(17, 24, 39, .72);
-  font-size: .9rem;
-  font-weight: 750;
-}
-
-#growth-solutions .enterprise-specialty-points i {
-  color: var(--primary-color);
-  font-size: .95rem;
-}
-
-#growth-solutions .enterprise-specialty-icon {
-  display: block;
-  margin-bottom: 1.4rem;
-  color: var(--primary-color);
-  font-size: 2.25rem;
-}
-
-#growth-solutions .enterprise-specialty-card-dark h3,
-#growth-solutions .enterprise-specialty-card-dark p {
-  color: rgba(255, 255, 255, .84);
-}
-
-#growth-solutions .enterprise-specialty-card-dark .consulting-sub-tags {
-  margin: 1.35rem 0 0;
-}
-
-#growth-solutions .enterprise-specialty-card-dark .consulting-sub-tags span {
-  border-color: rgba(255, 255, 255, .12);
-  color: rgba(255, 255, 255, .78);
-  background: rgba(255, 255, 255, .1);
-}
-
-#enterprise-outcome .enterprise-outcome-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0;
-  overflow: hidden;
-  border: 1px solid rgba(var(--primary-rgb), .16);
-  border-radius: 14px;
-  background: #fff;
-  box-shadow: 0 22px 62px rgba(var(--primary-rgb), .08);
-}
-
-#enterprise-outcome .enterprise-outcome-card,
-#enterprise-outcome .enterprise-outcome-card:nth-child(4),
-#enterprise-outcome .enterprise-outcome-card:nth-child(5) {
-  grid-column: auto;
-}
-
-#enterprise-outcome .enterprise-outcome-card {
-  justify-content: center;
-  min-height: 258px;
-  padding: clamp(1.5rem, 3vw, 2.55rem);
-  border: 0;
-  border-radius: 0;
-  background: #fff;
-  box-shadow: none;
-  text-align: right;
-}
-
-#enterprise-outcome .enterprise-outcome-card::before {
-  content: none;
-}
-
-#enterprise-outcome .enterprise-outcome-card:hover {
-  transform: none;
-  border-color: transparent;
-  box-shadow: none;
-}
-
-#enterprise-outcome .enterprise-outcome-card-primary {
-  background: var(--primary-color);
-}
-
-#enterprise-outcome .consulting-group-top {
-  justify-content: flex-start;
-  gap: .45rem;
-  margin-bottom: 1.15rem;
-}
-
-#enterprise-outcome .consulting-main-tag {
-  padding: 0;
-  border: 0;
-  background: transparent;
-  color: var(--secondary-color);
-  font-size: .84rem;
-}
-
-#enterprise-outcome .enterprise-outcome-card:nth-child(3) .consulting-main-tag,
-#enterprise-outcome .enterprise-outcome-card:nth-child(3) .consulting-group-icon {
-  color: #dc2626;
-}
-
-#enterprise-outcome .consulting-group-icon {
-  width: auto;
+#lab-why .masaqy-advantage-card {
+  min-height: auto;
   height: auto;
-  border-radius: 0;
-  color: var(--secondary-color);
-  background: transparent;
-  box-shadow: none;
-  font-size: 1.05rem;
-}
-
-#enterprise-outcome .enterprise-outcome-card:first-child .consulting-main-tag,
-#enterprise-outcome .enterprise-outcome-card:first-child .consulting-group-icon {
-  color: #0ea5e9;
-}
-
-#enterprise-outcome .enterprise-outcome-card h3 {
-  margin-bottom: 1rem;
-  color: #111827;
-  font-size: clamp(1.08rem, 1.35vw, 1.38rem);
-  line-height: 1.55;
-}
-
-#enterprise-outcome .consulting-group-content {
-  margin-bottom: 0;
-}
-
-#enterprise-outcome .consulting-group-content div {
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-}
-
-#enterprise-outcome .consulting-group-content p {
-  color: rgba(17, 24, 39, .64);
-  font-size: .98rem;
-  line-height: 1.85;
-}
-
-#enterprise-outcome .enterprise-outcome-card-primary .consulting-main-tag,
-#enterprise-outcome .enterprise-outcome-card-primary .consulting-group-icon,
-#enterprise-outcome .enterprise-outcome-card-primary h3,
-#enterprise-outcome .enterprise-outcome-card-primary .consulting-group-content p {
-  color: #fff;
-}
-
-#enterprise-outcome .enterprise-outcome-card-primary .consulting-group-content p {
-  color: rgba(255, 255, 255, .86);
-}
-
-@media (max-width: 991.98px) {
-  #enterprise-outcome .enterprise-outcome-grid {
-    grid-template-columns: 1fr;
-  }
-
-  #enterprise-outcome .enterprise-outcome-card {
-    min-height: auto;
-  }
-}
-
-#healthcare-impact .enterprise-outcome-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0;
-  overflow: hidden;
-  border: 1px solid rgba(var(--primary-rgb), .16);
-  border-radius: 14px;
-  background: #fff;
-  box-shadow: 0 22px 62px rgba(var(--primary-rgb), .08);
-}
-
-#healthcare-impact .enterprise-outcome-card,
-#healthcare-impact .enterprise-outcome-card:nth-child(4),
-#healthcare-impact .enterprise-outcome-card:nth-child(5) {
-  grid-column: auto;
-}
-
-#healthcare-impact .enterprise-outcome-card {
-  justify-content: center;
-  min-height: 258px;
-  padding: clamp(1.5rem, 3vw, 2.55rem);
-  border: 0;
-  border-radius: 0;
-  background: #fff;
-  box-shadow: none;
-  text-align: right;
-}
-
-#healthcare-impact .enterprise-outcome-card::before {
-  content: none;
-}
-
-#healthcare-impact .enterprise-outcome-card:hover {
-  transform: none;
-  border-color: transparent;
-  box-shadow: none;
-}
-
-#healthcare-impact .enterprise-outcome-card-primary {
-  background: var(--primary-color);
-}
-
-#healthcare-impact .consulting-group-top {
-  justify-content: flex-start;
-  gap: .45rem;
-  margin-bottom: 1.15rem;
-}
-
-#healthcare-impact .consulting-group-icon {
-  width: auto;
-  height: auto;
-  border-radius: 0;
-  color: var(--secondary-color);
-  background: transparent;
-  box-shadow: none;
-  font-size: 1.05rem;
-}
-
-#healthcare-impact .enterprise-outcome-card:first-child .consulting-group-icon {
-  color: #dc2626;
-}
-
-#healthcare-impact .enterprise-outcome-card:nth-child(3) .consulting-group-icon {
-  color: #0ea5e9;
-}
-
-#healthcare-impact .enterprise-outcome-card h3 {
-  display: flex;
-  align-items: center;
-  gap: .65rem;
-  margin-bottom: 1rem;
-  color: #111827;
-  font-size: clamp(1.08rem, 1.35vw, 1.38rem);
-  line-height: 1.55;
-}
-
-#healthcare-impact .enterprise-outcome-card h3 .consulting-group-icon {
-  flex: 0 0 auto;
-  font-size: 1.32rem;
-}
-
-#healthcare-impact .consulting-group-content {
-  margin-bottom: 0;
-}
-
-#healthcare-impact .consulting-group-content div {
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-}
-
-#healthcare-impact .consulting-group-content p,
-#healthcare-impact .service-checks li {
-  color: rgba(17, 24, 39, .64);
-  font-size: .98rem;
-  line-height: 1.85;
-}
-
-#healthcare-impact .service-checks {
-  margin-top: .8rem;
-}
-
-#healthcare-impact .service-checks i {
-  color: currentColor;
-}
-
-#healthcare-impact .enterprise-outcome-card-primary .consulting-group-icon,
-#healthcare-impact .enterprise-outcome-card-primary h3,
-#healthcare-impact .enterprise-outcome-card-primary .consulting-group-content p {
-  color: #fff;
-}
-
-#healthcare-impact .enterprise-outcome-card-primary .consulting-group-content p {
-  color: rgba(255, 255, 255, .86);
-}
-
-@media (max-width: 991.98px) {
-  #healthcare-impact .enterprise-outcome-grid {
-    grid-template-columns: 1fr;
-  }
-
-  #healthcare-impact .enterprise-outcome-card {
-    min-height: auto;
-  }
 }
 
 #lab-hero .consulting-hero-title {
-  font-size: clamp(2.2rem, 3.6vw, 4.55rem);
+  font-size: clamp(2.2rem, 4.6vw, 4.55rem);
 }
 
-#lab-why.lab-why-about-section .about-two {
-  border-radius: 30px;
-  overflow: hidden;
+#lab-why.masaqy-advantage-section {
+  padding: clamp(3.5rem, 7vw, 5.8rem) 0;
+  background: linear-gradient(135deg, #5A189A 0%, #6f07a8 52%, #4d058e 100%);
 }
 
-#lab-why.lab-why-about-section h2 {
-  font-size: clamp(2rem, 3.4vw, 3.35rem);
-  font-weight: 900;
-  line-height: 1.18;
+#lab-why.masaqy-advantage-section::before,
+#lab-why.masaqy-advantage-section::after {
+  content: none;
 }
 
-#lab-why.lab-why-about-section .masaqy-points strong {
-  display: block;
-  margin-bottom: .15rem;
-  color: #111827;
-  font-size: 1.02rem;
-  font-weight: 850;
-}
-
-#lab-why.lab-why-about-section .about-visual.float-video-card,
-#lab-why.lab-why-about-section .about-visual.card-video,
-#lab-why.lab-why-about-section .about-visual .background-video {
-  min-height: 460px;
-}
-
-@media (max-width: 991.98px) {
-  #lab-why.lab-why-about-section .about-visual.float-video-card,
-  #lab-why.lab-why-about-section .about-visual.card-video,
-  #lab-why.lab-why-about-section .about-visual .background-video {
-    min-height: 320px;
-  }
-}
-
-#lab-methodology .flow-intro {
-  margin-bottom: clamp(3rem, 6vw, 4.5rem) !important;
-}
-
-#lab-methodology .flow-intro h2 {
-  margin-bottom: .25rem;
-  font-size: clamp(1.9rem, 3vw, 3rem);
-}
-
-#lab-methodology .flow-intro p {
-  margin-top: 0 !important;
-}
-
-#lab-methodology .method-shell {
+#lab-why .masaqy-advantage-shell {
   padding: 0;
   border: 0;
+  border-radius: 0;
   background: transparent;
   box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
-#lab-methodology .method-flow {
-  padding: 0;
+#lab-why h2 {
+  color: #fff !important;
+  font-size: clamp(1.75rem, 3vw, 2.55rem);
+  line-height: 1.25;
 }
 
-#lab-methodology .method-step {
-  min-height: auto;
-  padding: 0;
+#lab-why .lab-why-row {
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+#lab-why .masaqy-advantage-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 180px;
+  padding: 0 clamp(.7rem, 1.4vw, 1.15rem);
   border: 0;
+  border-radius: 0;
   background: transparent;
   box-shadow: none;
   text-align: center;
 }
 
-#lab-methodology .method-step::before,
-#lab-methodology .method-node::before,
-#lab-methodology .method-node::after {
-  content: none;
-}
-
-#lab-methodology .method-step:hover {
-  transform: none;
+#lab-why .masaqy-advantage-card:hover {
+  transform: translateY(-6px);
   border-color: transparent;
   box-shadow: none;
 }
 
-#lab-methodology .method-node {
+#lab-why .masaqy-advantage-icon {
   width: 54px;
   height: 54px;
-  margin: 0 auto 1rem;
-  border: 2px solid var(--primary-color);
+  margin-bottom: 1.1rem;
   border-radius: 10px;
-  color: var(--primary-color);
-  background: transparent;
-}
-
-#lab-methodology .method-step:nth-of-type(3) .method-node {
   color: #fff;
-  background: var(--primary-color);
+  background: rgba(255, 255, 255, .13);
+  box-shadow: none;
+  font-size: 1.6rem;
 }
 
-#lab-methodology .method-node i {
-  font-size: 1.35rem;
+#lab-why .masaqy-advantage-card h4 {
+  margin-bottom: .6rem;
+  color: #fff;
+  font-size: clamp(1rem, 1.4vw, 1.22rem);
+  font-weight: 850;
 }
 
-#lab-methodology .method-step h3 {
-  margin-bottom: .65rem;
-  font-size: clamp(1rem, 1.25vw, 1.22rem);
-  line-height: 1.45;
-}
-
-#lab-methodology .method-step:nth-of-type(3) h3 {
-  color: var(--primary-color);
-}
-
-#lab-methodology .method-step p {
-  max-width: 190px;
-  margin-inline: auto;
-  color: rgba(17, 24, 39, .6);
+#lab-why .masaqy-advantage-card p {
+  max-width: 245px;
+  color: rgba(255, 255, 255, .78);
   font-size: .9rem;
+  font-weight: 500;
   line-height: 1.75;
+}
+
+@media (max-width: 991.98px) {
+  #lab-why .lab-why-row {
+    flex-wrap: wrap;
+  }
 }
 
 #lab-results .masaqy-stat-value {
@@ -1409,35 +651,12 @@
   margin-bottom: clamp(4rem, 6vw, 6rem) !important;
 }
 
-.sales-growth-page #lab-challenges .consulting-challenge-card {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.sales-growth-page #lab-challenges .consulting-challenge-head {
-  justify-content: center;
-  margin-bottom: .85rem;
-}
-
-.sales-growth-page #lab-challenges .consulting-challenge-card h3 {
-  margin: 0 0 .7rem;
-  color: #111827;
-  font-size: clamp(1rem, 1.15vw, 1.18rem);
-  font-weight: 850;
-  line-height: 1.45;
-}
-
-.sales-growth-page #lab-challenges .consulting-challenge-card > p {
-  margin-inline: auto;
-}
-
 #growth-solutions .consulting-group-card:nth-child(4),
 #growth-solutions .consulting-group-card:nth-child(5) {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-columns: minmax(150px, .72fr) minmax(0, 1fr);
   align-items: center;
-  column-gap: clamp(.65rem, 1.2vw, 1rem);
+  column-gap: clamp(1rem, 2.5vw, 2rem);
   grid-column: span 3;
 }
 
@@ -1464,229 +683,6 @@
 #growth-solutions .consulting-group-card:nth-child(4) .consulting-group-content,
 #growth-solutions .consulting-group-card:nth-child(5) .consulting-group-content {
   margin-bottom: 0;
-}
-
-.sales-growth-page #growth-solutions .consulting-group-card h3 {
-  margin-bottom: .7rem;
-  font-size: clamp(1rem, 1.2vw, 1.2rem);
-  line-height: 1.45;
-}
-
-.sales-growth-page #growth-solutions .works-showcase-kicker {
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-}
-
-.sales-growth-page #growth-solutions .consulting-group-card:not(:nth-child(4)):not(:nth-child(5)) {
-  align-items: center;
-  text-align: center;
-}
-
-.sales-growth-page #growth-solutions .consulting-group-card:not(:nth-child(4)):not(:nth-child(5)) .consulting-group-top {
-  justify-content: center;
-  margin-bottom: .85rem;
-}
-
-.sales-growth-page #lab-why .masaqy-advantage-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 175px;
-  text-align: center;
-}
-
-.sales-growth-page #lab-why .masaqy-advantage-icon {
-  margin: 0 0 .85rem;
-  color: var(--primary-color);
-}
-
-.sales-growth-page #lab-why .masaqy-advantage-card h4 {
-  margin-bottom: 0;
-}
-
-.healthcare-ai-page #growth-solutions .enterprise-specialties-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.healthcare-ai-page #growth-solutions .enterprise-specialty-card,
-.healthcare-ai-page #growth-solutions .enterprise-specialty-card:nth-child(4),
-.healthcare-ai-page #growth-solutions .enterprise-specialty-card:nth-child(5) {
-  grid-column: auto;
-}
-
-.healthcare-ai-page #growth-solutions .enterprise-specialty-card-wide,
-.healthcare-ai-page #growth-solutions .consulting-group-card:nth-child(4) {
-  display: grid;
-  grid-column: span 2;
-  grid-template-columns: minmax(190px, .88fr) minmax(0, 1.12fr);
-  gap: clamp(1.2rem, 2.5vw, 2rem);
-  align-items: center;
-}
-
-.healthcare-ai-page #growth-solutions .enterprise-specialty-card-blue {
-  grid-column: 1 / span 2;
-  grid-row: 1;
-}
-
-.healthcare-ai-page #growth-solutions .enterprise-specialties-grid .enterprise-specialty-card-compact:nth-child(2) {
-  grid-column: 3;
-  grid-row: 1;
-}
-
-.healthcare-ai-page #growth-solutions .enterprise-specialties-grid .enterprise-specialty-card-compact:nth-child(3) {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-.healthcare-ai-page #growth-solutions .enterprise-specialties-grid .enterprise-specialty-card-dark,
-.healthcare-ai-page #growth-solutions .enterprise-specialties-grid .enterprise-specialty-card-dark:nth-child(4),
-.healthcare-ai-page #growth-solutions .consulting-group-card:nth-child(4) {
-  grid-column: 1 / span 2;
-  grid-row: 2;
-}
-
-.healthcare-ai-page #growth-solutions .enterprise-specialty-card-dark .enterprise-specialty-media {
-  grid-column: 2;
-}
-
-.healthcare-ai-page #growth-solutions .enterprise-specialty-card-dark .enterprise-specialty-copy {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.healthcare-ai-page #growth-solutions .consulting-group-card:nth-child(4) h3,
-.healthcare-ai-page #growth-solutions .consulting-group-card:nth-child(4) .enterprise-specialty-copy {
-  grid-column: auto;
-  direction: rtl;
-  text-align: right;
-}
-
-.healthcare-ai-page .healthcare-execution-section {
-  position: relative;
-}
-
-.healthcare-ai-page .healthcare-execution-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: clamp(1.2rem, 3vw, 2.4rem);
-  align-items: start;
-}
-
-.healthcare-ai-page .healthcare-execution-panel {
-  min-height: 100%;
-  padding: clamp(1.2rem, 2.5vw, 2rem);
-  border: 1px solid rgba(var(--primary-rgb), .1);
-  border-radius: 14px;
-  background: #eef4ff;
-}
-
-.healthcare-ai-page .healthcare-method-panel {
-  background: #fff;
-}
-
-.healthcare-ai-page .healthcare-execution-head {
-  margin-bottom: clamp(1rem, 2vw, 1.5rem);
-  text-align: right;
-}
-
-.healthcare-ai-page .healthcare-execution-head h2 {
-  margin: 0;
-  color: #111827;
-  font-size: clamp(1.45rem, 2.2vw, 2.25rem);
-  font-weight: 900;
-  line-height: 1.35;
-}
-
-.healthcare-ai-page .healthcare-card-stack {
-  display: grid;
-  gap: 1rem;
-}
-
-.healthcare-ai-page .healthcare-stack-card {
-  min-height: auto;
-  margin: 0;
-  text-align: right;
-}
-
-.healthcare-ai-page #lab-why .healthcare-stack-card {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  align-items: start;
-  gap: .95rem;
-  padding: clamp(1rem, 2vw, 1.35rem);
-}
-
-.healthcare-ai-page #lab-why .masaqy-advantage-icon {
-  margin: .15rem 0 0;
-}
-
-.healthcare-ai-page #lab-why .healthcare-stack-card h4 {
-  margin: 0 0 .45rem;
-}
-
-.healthcare-ai-page #lab-why .healthcare-stack-card p {
-  margin: 0;
-  color: rgba(17, 24, 39, .68);
-  font-size: .94rem;
-  line-height: 1.75;
-}
-
-.healthcare-ai-page #lab-methodology .consulting-method-timeline {
-  grid-template-columns: 1fr;
-}
-
-.healthcare-ai-page #lab-methodology .consulting-method-step {
-  grid-template-columns: auto minmax(0, 1fr);
-  align-items: start;
-  gap: .95rem;
-  padding: clamp(1rem, 2vw, 1.35rem);
-}
-
-.healthcare-ai-page #lab-methodology .consulting-method-index {
-  margin: 0;
-}
-
-.healthcare-ai-page #lab-methodology .consulting-method-step h3 {
-  margin-bottom: .45rem;
-}
-
-.healthcare-ai-page #lab-methodology .consulting-method-step p {
-  margin: 0;
-}
-
-@media (max-width: 991.98px) {
-  .healthcare-ai-page #growth-solutions .enterprise-specialties-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .healthcare-ai-page #growth-solutions .enterprise-specialty-card-blue,
-  .healthcare-ai-page #growth-solutions .enterprise-specialties-grid .enterprise-specialty-card-compact:nth-child(2),
-  .healthcare-ai-page #growth-solutions .enterprise-specialties-grid .enterprise-specialty-card-compact:nth-child(3),
-  .healthcare-ai-page #growth-solutions .enterprise-specialties-grid .enterprise-specialty-card-dark,
-  .healthcare-ai-page #growth-solutions .enterprise-specialties-grid .enterprise-specialty-card-dark:nth-child(4),
-  .healthcare-ai-page #growth-solutions .consulting-group-card:nth-child(4) {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
-  .healthcare-ai-page #growth-solutions .enterprise-specialty-card-wide,
-  .healthcare-ai-page #growth-solutions .consulting-group-card:nth-child(4) {
-    grid-column: auto;
-    grid-template-columns: 1fr;
-  }
-
-  .healthcare-ai-page #growth-solutions .enterprise-specialty-card-dark .enterprise-specialty-media,
-  .healthcare-ai-page #growth-solutions .enterprise-specialty-card-dark .enterprise-specialty-copy {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
-  .healthcare-ai-page .healthcare-execution-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 #lab-methodology.automation-methodology-section .method-flow {
@@ -1772,70 +768,14 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  #enterprise-specialties .enterprise-specialties-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   #lab-methodology.automation-methodology-section .method-flow {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 991.98px) {
-  #lab-challenges .lab-challenges-grid {
-    grid-template-columns: 1fr;
-  }
-
-  #automation-services .automation-services-grid {
-    grid-template-columns: 1fr;
-  }
-
-  #automation-services .automation-service-card,
-  #automation-services .automation-service-card:nth-child(1),
-  #automation-services .automation-service-card:nth-child(2),
-  #automation-services .automation-service-card:nth-child(3),
-  #automation-services .automation-service-card:nth-child(4) {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
-  #automation-services .automation-service-checks {
-    grid-template-columns: 1fr;
-  }
-
-  #enterprise-specialties .enterprise-specialties-grid {
-    grid-template-columns: 1fr;
-  }
-
-  #enterprise-specialties .enterprise-specialty-card-blue,
-  #enterprise-specialties .enterprise-specialties-grid .enterprise-specialty-card-compact:nth-child(2),
-  #enterprise-specialties .enterprise-specialties-grid .enterprise-specialty-card-compact:nth-child(3),
-  #enterprise-specialties .enterprise-specialties-grid .enterprise-specialty-card-dark,
-  #enterprise-specialties .enterprise-specialties-grid .enterprise-specialty-card-dark:nth-child(4) {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
-  #enterprise-specialties .enterprise-specialty-card-wide {
-    grid-column: auto;
-    grid-template-columns: 1fr;
-  }
-
-  #enterprise-specialties .enterprise-specialty-card-dark .enterprise-specialty-media,
-  #enterprise-specialties .enterprise-specialty-card-dark .enterprise-specialty-copy {
-    grid-column: auto;
-    grid-row: auto;
-  }
-}
-
 @media (max-width: 575.98px) {
-  #lab-challenges .lab-challenges-grid,
   #enterprise-specialties .consulting-groups-grid {
     grid-template-columns: 1fr;
-  }
-
-  #enterprise-specialties .enterprise-specialty-card {
-    min-height: auto;
   }
 
   #lab-methodology.automation-methodology-section .method-flow {
@@ -2198,10 +1138,6 @@
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: clamp(.85rem, 1.6vw, 1.15rem);
-}
-
-.automation-consulting-method .consulting-method-timeline {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .consulting-method-timeline::before {
@@ -4130,97 +3066,5 @@
 
   .service-request-submit {
     width: 100%;
-  }
-}
-
-.llm-page #llm-hero .consulting-hero-content {
-  max-width: 980px;
-  margin-inline: auto;
-  text-align: center;
-}
-
-.llm-page #llm-hero .about-section-kicker,
-.llm-page #llm-hero .consulting-hero-copy {
-  margin-inline: auto;
-}
-
-.llm-page #llm-hero .consulting-hero-actions {
-  justify-content: center !important;
-}
-
-.llm-page #llm-hero .lab-hero-stats {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-inline: auto;
-}
-
-.llm-page #llm-hero .lab-hero-stat strong {
-  text-align: center;
-}
-
-.llm-page #llm-challenges .consulting-challenge-card h2 {
-  font-size: clamp(.88rem, .95vw, 1.02rem);
-  line-height: 1.45;
-}
-
-.llm-page #llm-solutions .consulting-group-card,
-.llm-page #llm-solutions .consulting-group-card:nth-child(4),
-.llm-page #llm-solutions .consulting-group-card:nth-child(5) {
-  grid-column: span 2;
-}
-
-.llm-page #llm-methodology .consulting-method-timeline {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: clamp(.65rem, 1vw, .95rem);
-}
-
-.llm-page #llm-methodology .consulting-method-step {
-  min-height: 230px;
-  padding: .9rem;
-}
-
-.llm-page #llm-methodology .consulting-method-index {
-  width: 52px;
-  height: 52px;
-  border-radius: 16px;
-}
-
-.llm-page #llm-methodology .consulting-method-step h3 {
-  font-size: clamp(.92rem, .95vw, 1.08rem);
-}
-
-.llm-page #llm-methodology .consulting-method-step p {
-  font-size: .84rem;
-}
-
-@media (max-width: 1199.98px) and (min-width: 992px) {
-  .llm-page #llm-methodology .consulting-method-timeline {
-    gap: .55rem;
-  }
-
-  .llm-page #llm-methodology .consulting-method-step {
-    padding: .75rem;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .llm-page #llm-solutions .consulting-group-card,
-  .llm-page #llm-solutions .consulting-group-card:nth-child(4),
-  .llm-page #llm-solutions .consulting-group-card:nth-child(5) {
-    grid-column: auto;
-  }
-
-  .llm-page #llm-methodology .consulting-method-timeline {
-    grid-template-columns: 1fr;
-  }
-
-  .llm-page #llm-methodology .consulting-method-step {
-    min-height: auto;
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .llm-page #llm-hero .lab-hero-stats {
-    grid-template-columns: 1fr;
   }
 }

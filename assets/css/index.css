@@ -2880,7 +2880,7 @@ background: linear-gradient(135deg, rgba(90, 24, 154, .08), rgba(142, 63, 209, .
 .masaqy-footer-title {
   margin-bottom: 1.1rem;
   color: #fff;
-  font-size: 1rem;
+  font-size: 20px !important;
   font-weight: 850;
 }
 

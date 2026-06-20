@@ -4,14 +4,19 @@
 }
 
 .blog-detail-hero {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
+  position: static;
+  width: auto;
+  height: auto;
+  min-height: 0;
+  margin-bottom: 0;
   padding: clamp(6.45rem, 10vw, 8rem) 0 clamp(1rem, 2.6vw, 1.65rem);
-  background: #f5f6f8;
+  overflow: visible;
+  border-radius: 0;
+  background: transparent;
+  z-index: auto;
 }
 
-.blog-detail-hero::before {
+.blog-detail-hero::after {
   content: none;
 }
 
@@ -36,11 +41,6 @@
 .blog-breadcrumb a {
   display: inline-flex;
   align-items: center;
-  min-height: auto;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
   color: var(--primary-color);
   font-weight: 700;
   text-decoration: none;
@@ -54,19 +54,12 @@
 .blog-detail-tag {
   display: inline-flex;
   align-items: center;
-  min-height: 24px;
   padding: .22rem .58rem;
-  border: 0;
   border-radius: 2px;
   background: #e4f3ff;
   color: #2775a6;
   font-size: .66rem;
   font-weight: 800;
-  box-shadow: none;
-}
-
-.blog-detail-tag::before {
-  content: none;
 }
 
 .blog-detail-title {
@@ -82,16 +75,8 @@
 .blog-detail-author {
   display: inline-flex;
   align-items: center;
-  justify-content: flex-start;
   gap: .55rem;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
   color: #77717f;
-  box-shadow: none;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
 }
 
 .blog-detail-author-avatar {
@@ -126,23 +111,16 @@
   width: 38px;
   height: 38px;
   border-radius: 4px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, 0)),
-    #2f333b;
+  background: #2f333b;
   box-shadow: none;
   font-size: .72rem;
 }
 
 .blog-detail-cover {
-  position: relative;
   margin: .95rem 0 0;
   overflow: hidden;
-  max-width: none;
-  border: 0;
   border-radius: 5px;
   aspect-ratio: 16 / 6.45;
-  background: #111827;
-  box-shadow: none;
 }
 
 .blog-detail-cover img {
@@ -150,14 +128,6 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-}
-
-.blog-detail-cover::after {
-  content: none;
-}
-
-.blog-detail-cover::before {
-  content: none;
 }
 
 .blog-detail-body-section {
@@ -482,9 +452,5 @@
   .blog-detail-cover {
     border-radius: 5px;
     aspect-ratio: 16 / 10;
-  }
-
-  .blog-detail-cover::before {
-    content: none;
   }
 }
