@@ -1,13 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="الحوكمة والأمان للمؤسسات الحديثة من MASAQY">
-  <meta name="keyword" content="MASAQY, مساقي, الحوكمة والأمان, الامتثال المؤسسي, إدارة المخاطر, أمن المعلومات">
-  <title> استراتيجية التسويق الذكي  | MASAQY</title>
+  <meta name="description" content="استشارات التحول الرقمي وقيادة التحول الذكي من MASAQY">
+  <meta name="keyword" content="MASAQY, مساقي, استشارات التحول الرقمي, قيادة التحول الذكي, الذكاء الاصطناعي">
+  <title>التسويق الذكي| MASAQY</title>
   <link rel="shortcut icon" href="../assets/images/iconmsaqy.png">
   <link href="../vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="../vendor/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -197,6 +197,61 @@
       line-height: 1;
     }
 
+    .consulting-details-page .smart-marketing-hero {
+      padding-top: clamp(7rem, 10vw, 8rem) !important;
+      padding-bottom: clamp(3rem, 5vw, 4.25rem) !important;
+      background: #f5f6ff;
+      border-bottom: 0;
+    }
+
+    .consulting-details-page .smart-marketing-hero .row {
+      --bs-gutter-x: clamp(2rem, 7vw, 5.5rem);
+      padding-bottom: 0;
+    }
+
+    .consulting-details-page .smart-marketing-hero .consulting-hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .consulting-details-page .smart-marketing-hero .consulting-hero-title {
+      max-width: 560px;
+      margin-bottom: 1.45rem;
+      color: #172033;
+      font-size: clamp(2rem, 3.1vw, 2.85rem);
+      font-weight: 900;
+      line-height: 1.15;
+    }
+
+    .consulting-details-page .smart-marketing-hero .consulting-hero-copy {
+      max-width: 610px;
+      margin-bottom: 1.85rem;
+      color: rgba(23, 32, 51, .6);
+      font-size: .98rem;
+      line-height: 1.9;
+    }
+
+    .consulting-details-page .smart-marketing-hero .consulting-image-card {
+      width: min(100%, 480px);
+      margin-inline: 0 auto;
+      padding: 0;
+      border: 0;
+      border-radius: 6px;
+      background: transparent;
+      box-shadow: 0 18px 34px rgba(23, 32, 51, .18);
+      overflow: hidden;
+    }
+
+    .consulting-details-page .smart-marketing-hero .consulting-image-card::before {
+      content: none;
+    }
+
+    .consulting-details-page .smart-marketing-hero .consulting-image-card img {
+      aspect-ratio: 1.28;
+      border-radius: 6px;
+    }
+
     .consulting-details-page .lab-hero-stats {
       display: grid;
       max-width: none;
@@ -342,204 +397,103 @@
       line-height: 1.75;
     }
 
-    .consulting-details-page #lab-challenges .marketing-challenges-tag {
-      width: fit-content;
-      max-width: 100%;
-      margin: clamp(1.6rem, 3vw, 2.35rem) auto 0;
-      padding: .95rem 1.45rem;
-      border: 1px solid rgba(90, 24, 154, .16);
-      border-radius: 14px;
-      color: #7B1FC2;
-      background: rgba(123, 31, 194, .08);
-      font-size: clamp(.95rem, 1.05vw, 1.08rem);
-      font-weight: 900;
-      line-height: 1.65;
+    .consulting-details-page #lab-challenges .lab-challenges-note {
+      margin: clamp(2rem, 4vw, 3.25rem) auto 0;
+      color: #5A189A;
       text-align: center;
+      font-size: .94rem;
+      font-weight: 900;
+      line-height: 1.8;
     }
 
-    .consulting-details-page #lab-groups .lab-solutions-grid {
+    .consulting-details-page #lab-results .lab-results-row {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1rem;
     }
 
-    .consulting-details-page #lab-groups .lab-groups-head {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 1rem;
+    .consulting-details-page #lab-results .lab-results-row > div {
+      width: auto;
       max-width: none;
+      padding: 0;
+    }
+
+    .consulting-details-page #lab-results .masaqy-stat-card {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      border-radius: 0 !important;
+      background: #fff;
+      box-shadow: none;
       text-align: center;
-      justify-content: center;
     }
 
-    .consulting-details-page #lab-groups .lab-groups-head h2 {
-      margin-bottom: .35rem;
-      color: #111827;
-    }
-
-    .consulting-details-page #lab-groups .lab-groups-head p {
+    .consulting-details-page #lab-results .masaqy-stat-card h3 {
       margin: 0;
-      font-size: .88rem;
+      color: #5A189A;
+      font-size: clamp(.95rem, 1.25vw, 1.08rem);
+      font-weight: 850;
+      line-height: 1.6;
     }
 
-    .consulting-details-page #lab-groups .lab-groups-head .flow-btn-primary {
-      min-width: 180px;
-      justify-content: center;
-      border-radius: 8px !important;
+    .consulting-details-page #lab-groups .lab-solutions-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(1.25rem, 2.5vw, 1.8rem);
+    }
+
+    body.consulting-details-page section#lab-groups .lab-groups-head > h2 {
+      color: #111827 !important;
+      font-size: clamp(1.25rem, 1.8vw, 1.65rem) !important;
+      font-weight: 850 !important;
+      line-height: 1.35 !important;
     }
 
     .consulting-details-page #lab-groups .lab-solutions-grid .consulting-group-card,
-    .consulting-details-page #lab-groups .lab-solutions-grid .consulting-group-card:nth-child(4),
-    .consulting-details-page #lab-groups .lab-solutions-grid .consulting-group-card:nth-child(5) {
+    .consulting-details-page #lab-groups .lab-solutions-grid .consulting-group-card:nth-child(4) {
       grid-column: auto;
-      min-height: 210px;
-      padding: clamp(1.1rem, 1.5vw, 1.45rem);
+      min-height: 225px;
+      padding: clamp(1.45rem, 2.2vw, 2rem);
       display: flex;
       flex-direction: column;
-    }
-
-    .consulting-details-page #lab-groups .lab-solutions-grid .service-contact-card {
-      min-height: 240px;
-      justify-content: center;
-      color: #fff;
-      background: linear-gradient(135deg, #5A189A, #7400A8);
-      border-color: rgba(90, 24, 154, .16);
-    }
-
-    .consulting-details-page #lab-groups .service-badge {
-      display: inline-flex;
-      width: fit-content;
-      padding: .34rem .75rem;
-      border-radius: 999px;
-      color: #2478a8;
-      background: rgba(78, 168, 222, .16);
-      font-size: .72rem;
-      font-weight: 900;
-    }
-
-    .consulting-details-page #lab-groups .service-card-link {
-      display: inline-flex;
-      align-items: center;
-      gap: .4rem;
-      width: fit-content;
-      margin-top: 1rem;
-      color: #5A189A;
-      text-decoration: none;
-      font-size: .86rem;
-      font-weight: 900;
-    }
-
-    .consulting-details-page #lab-groups .service-contact-card .consulting-group-icon {
-      background: transparent;
+      border-radius: 0 !important;
+      background: #fff;
       box-shadow: none;
-      color: #fff;
-      font-size: 1.55rem;
+      text-align: right;
     }
 
-    .consulting-details-page #lab-groups .service-contact-card h3,
-    .consulting-details-page #lab-groups .service-contact-card p,
-    .consulting-details-page #lab-groups .service-contact-card .service-card-link {
-      color: #fff;
-    }
-
-    .consulting-details-page #lab-groups .service-contact-card .service-card-link {
-      padding-top: .85rem;
-      border-top: 1px solid rgba(255, 255, 255, .34);
-    }
-
-    .consulting-details-page #lab-groups .lab-solutions-grid .consulting-group-card h3 {
-      color: #5A189A;
-      font-size: clamp(1rem, 1.18vw, 1.22rem);
-      line-height: 1.45;
-    }
-
-    .consulting-details-page #lab-groups .lab-solutions-grid .service-contact-card h3 {
-      color: #fff;
-    }
-
-    .consulting-details-page #lab-groups .consulting-group-top {
+    .consulting-details-page #lab-groups .lab-solutions-grid .consulting-group-card h3,
+    .consulting-details-page #lab-groups .lab-solutions-grid .consulting-group-card h4 {
+      color: #111827 !important;
       margin-bottom: 1rem;
-    }
-
-    .consulting-details-page #lab-groups .consulting-group-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 16px;
-      background: linear-gradient(135deg, #5A189A, #4EA8DE);
-      box-shadow: 0 14px 30px rgba(90, 24, 154, .18);
-    }
-
-     
-
-    .consulting-details-page #lab-groups .consulting-group-content {
-      flex: 1;
+      font-size: clamp(1.05rem, 1.45vw, 1.35rem) !important;
+      font-weight: 850 !important;
+      line-height: 1.45 !important;
     }
 
     .consulting-details-page #lab-groups .service-checks {
       display: grid;
-      gap: .35rem;
-      margin: .8rem 0 0;
+      gap: .7rem;
+      margin: 0;
       padding: 0;
       list-style: none;
     }
 
     .consulting-details-page #lab-groups .service-checks li {
+      display: flex;
+      align-items: center;
+      gap: .55rem;
       color: rgba(17, 24, 39, .66);
-      font-size: .82rem;
+      font-size: .88rem;
       line-height: 1.65;
     }
 
-    .consulting-details-page #lab-groups .strategy-service-tags {
-      display: grid;
-      gap: .42rem;
-      margin: 1rem 0 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .consulting-details-page #lab-groups .strategy-service-tags li {
-      display: inline-flex;
-      align-items: center;
-      gap: .35rem;
-      width: fit-content;
-      color: #7B1FC2;
-      font-size: .78rem;
-      font-weight: 750;
-      line-height: 1.5;
-    }
-
-    .consulting-details-page #lab-groups .strategy-service-tags i {
-      font-size: .88rem;
-    }
-
-    /* .consulting-details-page #lab-groups .lab-impact-strip {
-      width: fit-content;
-      margin-top: auto;
-      margin-bottom: 1rem;
-      border-radius: 14px;
+    .consulting-details-page #lab-groups .service-checks i {
       color: #5A189A;
-      background:
-        linear-gradient(135deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .68)),
-        radial-gradient(circle at 100% 0, rgba(78, 168, 222, .16), transparent 58%);
-      box-shadow: 0 10px 24px rgba(90, 24, 154, .07);
-    } */
-
-    .consulting-details-page #lab-groups .lab-impact-strip i {
-      background: linear-gradient(135deg, #5A189A, #4EA8DE);
-    }
-
-    .consulting-details-page #lab-groups .lab-solutions-grid .flow-btn-ghost {
-      width: 100%;
-      min-height: 46px;
-      justify-content: center;
-    }
-
-    .consulting-details-page #lab-groups .work-card-link {
-      margin-bottom: .85rem;
-      color: #5A189A;
-      font-size: .82rem;
-      font-weight: 650;
+      font-size: .9rem;
+      line-height: 1;
     }
 
     .consulting-details-page .consulting-method-timeline {
@@ -548,225 +502,83 @@
     }
 
     .consulting-details-page #lab-methodology {
-      background: #f7f8fc;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(90, 24, 154, .1), transparent 30%),
+        radial-gradient(circle at 88% 20%, rgba(78, 168, 222, .12), transparent 30%),
+        #fff;
     }
 
     .consulting-details-page #lab-methodology .consulting-section-head {
-      justify-content: center;
-      margin-bottom: clamp(2rem, 4vw, 3rem);
-      text-align: center;
+      margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
     }
 
     .consulting-details-page #lab-methodology .consulting-section-head h2 {
       color: #111827;
-      font-size: clamp(1.9rem, 3.4vw, 2.8rem);
+      font-size: clamp(1.9rem, 3.8vw, 3.4rem);
     }
 
     .consulting-details-page #lab-methodology .consulting-method-timeline {
       grid-template-columns: repeat(6, minmax(0, 1fr));
-      gap: clamp(.75rem, 1.4vw, 1.1rem);
-      align-items: start;
+      gap: clamp(.85rem, 1.6vw, 1.15rem);
     }
 
     .consulting-details-page #lab-methodology .consulting-method-timeline::before {
       content: "";
       position: absolute;
-      inset-inline: 2.5%;
-      top: 46px;
+      inset-inline: 5%;
+      top: 40px;
       height: 2px;
-      background: rgba(17, 24, 39, .08);
+      background: linear-gradient(90deg, rgba(90, 24, 154, .08), rgba(78, 168, 222, .32), rgba(142, 63, 209, .16));
       z-index: 0;
     }
 
     .consulting-details-page #lab-methodology .consulting-method-step {
       display: grid;
       grid-template-columns: 1fr;
-      justify-items: center;
-      gap: .9rem;
-      min-height: 0;
-      padding: 0;
-      border: 0;
-      border-radius: 0;
+      gap: 1rem;
+      min-height: 260px;
+      padding: 1rem;
+      border: 1px solid rgba(90, 24, 154, .12);
+      border-radius: 24px;
       color: inherit;
-      background: transparent;
-      box-shadow: none;
-      text-align: center;
+      background: rgba(255, 255, 255, .78);
+      box-shadow: 0 20px 56px rgba(90, 24, 154, .08);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
     }
 
     .consulting-details-page #lab-methodology .consulting-method-index {
       order: initial;
-      width: 38px;
-      height: 38px;
-      border: 3px solid #6f00b8;
-      border-radius: 8px;
-      color: #6f00b8;
-      background: #f7f8fc;
-      box-shadow: none;
-      font-size: .74rem;
+      width: 58px;
+      height: 58px;
+      border: 5px solid rgba(255, 255, 255, .9);
+      border-radius: 18px;
+      color: #fff;
+      background: linear-gradient(135deg, #5A189A, #4EA8DE);
+      box-shadow: 0 16px 34px rgba(90, 24, 154, .2);
+      font-size: .95rem;
       font-weight: 950;
-      z-index: 1;
     }
 
     .consulting-details-page #lab-methodology .consulting-method-step > div {
       order: initial;
       min-width: 0;
-      width: 100%;
     }
 
     .consulting-details-page #lab-methodology .consulting-method-step h3 {
-      margin: 0;
+      margin: 0 0 .55rem;
       color: #111827;
-      font-size: clamp(.82rem, 1vw, .98rem);
-      font-weight: 750;
+      font-size: clamp(1.05rem, 1.35vw, 1.35rem);
+      font-weight: 950;
       line-height: 1.4;
     }
 
     .consulting-details-page #lab-methodology .consulting-method-step p {
-      display: none;
-    }
-
-    .consulting-details-page #governance-impact {
-      background: #fff;
-    }
-
-    .consulting-details-page .governance-impact-head {
-      max-width: 760px;
-      margin-inline: auto;
-      margin-bottom: clamp(1.7rem, 3.2vw, 2.4rem);
-      text-align: center;
-    }
-
-    .consulting-details-page .governance-impact-head h2 {
       margin: 0;
-      color: #111827;
-      font-size: clamp(1.65rem, 2.6vw, 2.35rem);
-      font-weight: 950;
-      line-height: 1.25;
-    }
-
-    .consulting-details-page .governance-impact-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      grid-template-areas:
-        "experience efficiency efficiency"
-        "decision decision speed";
-      gap: 1rem;
-    }
-
-    .consulting-details-page .governance-impact-card {
-      min-height: 190px;
-      padding: clamp(1.2rem, 2vw, 1.65rem);
-      border: 1px solid rgba(90, 24, 154, .12);
-      border-radius: 8px;
-      background: #fff;
-      box-shadow: 0 18px 42px rgba(15, 23, 42, .06);
-    }
-
-    .consulting-details-page .governance-impact-card h3 {
-      margin: .55rem 0 .45rem;
-      color: #111827;
-      font-size: clamp(1.05rem, 1.35vw, 1.28rem);
-      font-weight: 900;
-      line-height: 1.45;
-    }
-
-    .consulting-details-page .governance-impact-card p {
-      margin: 0;
-      color: rgba(17, 24, 39, .64);
-      font-size: .88rem;
-      line-height: 1.75;
-    }
-
-    .consulting-details-page .governance-impact-icon {
-      display: inline-grid;
-      place-items: center;
-      width: 38px;
-      height: 38px;
-      border-radius: 10px;
-      color: #6A00A8;
-      background: rgba(106, 0, 168, .08);
-      font-size: 1.2rem;
-    }
-
-    .consulting-details-page .governance-impact-card.experience {
-      grid-area: experience;
-      text-align: center;
-    }
-
-    .consulting-details-page .governance-impact-card.efficiency {
-      grid-area: efficiency;
-      color: #fff;
-      background: linear-gradient(135deg, #6A00A8, #7200A8);
-      border-color: transparent;
-      box-shadow: 0 22px 52px rgba(106, 0, 168, .2);
-    }
-
-    .consulting-details-page .governance-impact-card.efficiency h3,
-    .consulting-details-page .governance-impact-card.efficiency p,
-    .consulting-details-page .governance-impact-card.efficiency .impact-metric strong,
-    .consulting-details-page .governance-impact-card.efficiency .impact-metric span {
-      color: #fff;
-    }
-
-    .consulting-details-page .governance-impact-metrics {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      margin-top: 1.6rem;
-    }
-
-    .consulting-details-page .impact-metric strong {
-      display: block;
-      color: #111827;
-      font-size: clamp(1.55rem, 2.4vw, 2.05rem);
-      font-weight: 950;
-      line-height: 1;
-    }
-
-    .consulting-details-page .impact-metric span {
-      display: block;
-      margin-top: .35rem;
-      color: rgba(17, 24, 39, .62);
-      font-size: .78rem;
-      font-weight: 750;
-    }
-
-    .consulting-details-page .governance-impact-card.decision {
-      grid-area: decision;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background: #5BB7F2;
-      border-color: transparent;
-    }
-
-    .consulting-details-page .governance-impact-card.decision h3,
-    .consulting-details-page .governance-impact-card.decision p {
-      color: #063047;
-    }
-
-    .consulting-details-page .impact-progress {
-      position: relative;
-      height: 6px;
-      margin-top: 1.25rem;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, .35);
-      overflow: hidden;
-    }
-
-    .consulting-details-page .impact-progress span {
-      position: absolute;
-      inset-block: 0;
-      inset-inline-start: 0;
-      width: 68%;
-      border-radius: inherit;
-      background: #006F9F;
-    }
-
-    .consulting-details-page .governance-impact-card.speed {
-      grid-area: speed;
-      background: #f2f3f5;
-      border-color: transparent;
+      color: rgba(17, 24, 39, .68);
+      font-size: .94rem;
+      font-weight: 650;
+      line-height: 1.8;
     }
 
     .consulting-details-page #consulting-journey .consulting-method-timeline {
@@ -856,57 +668,7 @@
     }
 
     .consulting-details-page #strategic-guide .row {
-      padding: clamp(1.4rem, 3vw, 2.35rem);
-      border: 1px solid rgba(90, 24, 154, .08);
-      border-radius: 24px;
-      background: #fff;
-      box-shadow: 0 18px 42px rgba(15, 23, 42, .06);
-    }
-
-    .consulting-details-page #strategic-guide .works-showcase-kicker {
-      margin-bottom: .85rem;
-    }
-
-    .consulting-details-page #strategic-guide h2 {
-      max-width: 520px;
-      margin-bottom: .9rem;
-      font-size: clamp(1.75rem, 3vw, 3rem);
-      line-height: 1.12;
-    }
-
-    .consulting-details-page #strategic-guide p {
-      max-width: 560px;
-      margin-bottom: 1.35rem;
-    }
-
-    .consulting-details-page #strategic-guide .masaqy-points {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: .95rem 1.15rem;
-      margin: 1.35rem 0 1.55rem;
-    }
-
-    .consulting-details-page #strategic-guide .masaqy-points li {
-      gap: .6rem;
-      margin: 0;
-      color: rgba(17, 24, 39, .68);
-      font-size: .88rem;
-      line-height: 1.7;
-    }
-
-    .consulting-details-page #strategic-guide .masaqy-points i {
-      width: 28px;
-      height: 28px;
-      color: #5A189A;
-      background: rgba(90, 24, 154, .08);
-      box-shadow: none;
-    }
-
-    .consulting-details-page #strategic-guide .masaqy-points strong {
-      display: block;
-      margin-bottom: .18rem;
-      color: #111827;
-      font-size: .96rem;
-      font-weight: 900;
+      padding-block: clamp(2rem, 4vw, 3.5rem);
     }
 
     .consulting-details-page #strategic-guide .lab-wide-card-media {
@@ -914,24 +676,54 @@
       margin: 0;
       border-radius: 18px;
       box-shadow: 0 24px 55px rgba(15, 23, 42, .12);
-      overflow: visible;
+      overflow: hidden;
     }
 
-    .consulting-details-page #strategic-guide .lab-wide-card-media .consulting-main-tag {
-      position: absolute;
-      inset-inline-start: clamp(1rem, 2vw, 1.35rem);
-      bottom: 0;
-      z-index: 2;
-      margin: 0;
-      transform: translateY(42%);
+    .consulting-details-page #strategic-guide .lab-wide-card-media img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 11;
+      object-fit: cover;
+      border-radius: 18px;
     }
 
-    .consulting-details-page #strategic-guide .strategic-result-note {
+    .consulting-details-page #strategic-guide h2 {
+      max-width: 520px;
+      margin-bottom: 1rem;
       color: #5A189A;
+      font-size: clamp(1.75rem, 3vw, 3rem);
+      font-weight: 950;
+      line-height: 1.12;
     }
 
-    .consulting-details-page #strategic-guide .strategic-result-note strong {
-      color: inherit;
+    .consulting-details-page #strategic-guide p {
+      max-width: 620px;
+      margin-bottom: 1.7rem;
+      color: rgba(17, 24, 39, .7);
+      line-height: 1.9;
+    }
+
+    .consulting-details-page #strategic-guide .masaqy-points {
+      grid-template-columns: max-content;
+      gap: .75rem;
+      margin: 0;
+    }
+
+    .consulting-details-page #strategic-guide .masaqy-points li {
+      gap: .6rem;
+      margin: 0;
+      color: #172033;
+      font-size: 1.02rem;
+      font-weight: 850;
+      line-height: 1.7;
+    }
+
+    .consulting-details-page #strategic-guide .masaqy-points i {
+      width: 28px;
+      height: 28px;
+      color: #5A189A;
+      background: rgba(90, 24, 154, .14);
+      box-shadow: none;
     }
 
     .consulting-details-page #why-masaqy {
@@ -1025,14 +817,6 @@
       line-height: 1.7;
     }
 
-    @media (min-width: 992px) {
-      .consulting-details-page #strategic-guide .lab-wide-card-media {
-        flex: 0 0 auto;
-        width: 50%;
-      }
-    }
-
-    .consulting-details-page #strategic-guide img,
     .consulting-details-page #consulting-request img {
       border-radius: 18px;
     }
@@ -1157,101 +941,19 @@
       gap: .18rem;
     }
 
-    .consulting-details-page #success-stories .success-story-card {
-      display: grid;
-      grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
-      min-height: 320px;
-      direction: ltr;
-      border: 1px solid rgba(90, 24, 154, .08);
-      border-radius: 0;
-      background: #fff;
-      box-shadow: 0 18px 42px rgba(15, 23, 42, .06);
-      overflow: hidden;
-    }
-
-    .consulting-details-page #success-stories .success-story-media {
-      min-height: 320px;
-      margin: 0;
-      background: #08111f;
-    }
-
-    .consulting-details-page #success-stories .success-story-media img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      min-height: inherit;
-      object-fit: cover;
-    }
-
-    .consulting-details-page #success-stories .success-story-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: clamp(1.5rem, 4vw, 3.25rem);
-      direction: rtl;
-      text-align: right;
-    }
-
-    .consulting-details-page #success-stories .success-story-tag {
-      display: inline-flex;
-      width: fit-content;
-      margin-bottom: 1rem;
-      padding: .35rem .75rem;
-      border-radius: 999px;
-      color: #6A00A8;
-      background: rgba(106, 0, 168, .08);
-      font-size: .72rem;
-      font-weight: 900;
-    }
-
-    .consulting-details-page #success-stories .success-story-content h2 {
-      max-width: 620px;
-      margin-bottom: 1rem;
-      color: #111827;
-      font-size: clamp(1.65rem, 3vw, 2.65rem);
-      font-weight: 950;
-      line-height: 1.35;
-    }
-
-    .consulting-details-page #success-stories .success-story-content p {
-      max-width: 620px;
-      margin-bottom: 1.4rem;
-      color: rgba(17, 24, 39, .66);
-      font-size: .96rem;
-      line-height: 1.9;
-    }
-
-    .consulting-details-page #success-stories .success-story-metrics {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-    }
-
-    .consulting-details-page #success-stories .success-story-metric strong {
-      display: block;
-      color: #5A189A;
-      font-size: clamp(1.45rem, 2.25vw, 2rem);
-      font-weight: 950;
-      line-height: 1;
-    }
-
-    .consulting-details-page #success-stories .success-story-metric span {
-      display: block;
-      margin-top: .35rem;
-      color: rgba(17, 24, 39, .62);
-      font-size: .78rem;
-      font-weight: 750;
+    .consulting-details-page #success-stories .home-works-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     @media (max-width: 991.98px) {
-      .consulting-details-page #success-stories .success-story-card {
-        grid-template-columns: 1fr;
+      .consulting-details-page #success-stories .home-works-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
     @media (max-width: 575.98px) {
-      .consulting-details-page #success-stories .success-story-media {
-        min-height: 230px;
+      .consulting-details-page #success-stories .home-works-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -1272,6 +974,30 @@
 
     .consulting-details-page .masaqy-partnership-card .flow-actions {
       justify-content: center;
+    }
+
+    .consulting-details-page .masaqy-partnership-points {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .9rem 1.45rem;
+      margin: 1.35rem 0 2rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .consulting-details-page .masaqy-partnership-points li {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      color: #fff;
+      font-size: .9rem;
+      font-weight: 750;
+      line-height: 1.5;
+    }
+
+    .consulting-details-page .masaqy-partnership-points i {
+      font-size: .95rem;
     }
 
     .consulting-details-page .masaqy-partnership-card h2,
@@ -1305,15 +1031,11 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .consulting-details-page .governance-impact-grid {
+      .consulting-details-page #why-masaqy .lab-challenges-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-template-areas:
-          "efficiency efficiency"
-          "experience speed"
-          "decision decision";
       }
 
-      .consulting-details-page #why-masaqy .lab-challenges-grid {
+      .consulting-details-page #lab-results .lab-results-row {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
@@ -1353,24 +1075,11 @@
         grid-template-columns: 1fr;
       }
 
-      .consulting-details-page .governance-impact-grid {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-          "efficiency"
-          "experience"
-          "decision"
-          "speed";
-      }
-
-      .consulting-details-page #lab-groups .lab-groups-head {
-        flex-direction: column;
-      }
-
-      .consulting-details-page #lab-groups .lab-groups-head .flow-btn-primary {
-        width: 100% !important;
-      }
-
       .consulting-details-page #why-masaqy .lab-challenges-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .consulting-details-page #lab-results .lab-results-row {
         grid-template-columns: 1fr;
       }
 
@@ -1402,6 +1111,14 @@
         width: auto !important;
         padding: .52rem .52rem;
         font-size: .66rem;
+      }
+
+      .consulting-details-page .smart-marketing-hero {
+        padding-bottom: 2.8rem !important;
+      }
+
+      .consulting-details-page .smart-marketing-hero .consulting-hero-title {
+        font-size: 2rem;
       }
 
       .consulting-details-page #consulting-request form .row.g-3 {
@@ -1508,34 +1225,26 @@
 
   <main class="index-flow about-page-flow">
 
-    <section class="flow-hero about-hero consulting-hero" id="lab-hero">
+    <section class="flow-hero about-hero consulting-hero smart-marketing-hero" id="lab-hero">
       <div class="container-fluid px-3 px-md-5">
         <div class="row align-items-center g-5">
           <div class="col-lg-6 consulting-hero-content reveal-item">
-            <span class="about-section-kicker">
-              <i class="bi bi-diagram-3"></i>
-              من خدمات التسويق المتقدمة
-            </span>
-            <h1 class="consulting-hero-title reveal-item">استراتيجية تسويقية ذكية تقود النمو وتحقق نتائج قابلة للقياس</h1>
+            <h1 class="consulting-hero-title reveal-item">حوّل بيانات التسويق إلى رؤى تساعدك على اتخاذ قرارات أكثر ذكاءً</h1>
             <p class="consulting-hero-copy reveal-item">
-              نساعد الشركات على بناء استراتيجيات تسويق حديثة تربط بين أهدافها التجارية وسلوك العملاء، والبيانات لتحقيق نمو مستدام وعائد استثماري أعلى.
+              نساعد المؤسسات على بناء منظومة قياس وتحليل متقدمة تحول البيانات التسويقية إلى رؤى تنفيذية تدعم اتخاذ القرار وتحسين الأداء وتحقيق نمو مستدام.
             </p>
             <div class="flow-actions d-flex flex-wrap gap-3">
               <a href="mailto:info@masaqy.com" class="btn flow-btn-primary">
-                <span>ابدأ رحلة النمو الآن</span>
+                <span>اطلب الخدمة</span>
               </a>
               <a href="mailto:info@masaqy.com" class="btn flow-btn-ghost">
-                <span>مشاهدة نماذج العمل</span>
+                <span>احجز جلسة استشارية</span>
               </a>
             </div>
           </div>
           <div class="col-lg-6 consulting-hero-visual reveal-item">
             <figure class="consulting-image-card">
-              <img src="../assets/images/masaqy/consulting.jpeg" alt="استراتيجية تسويقية ذكية تقود النمو">
-              <div class="consulting-image-badge">
-                <i class="bi bi-graph-up-arrow"></i>
-                <span><strong>ROAS 4x</strong></span>
-              </div>
+              <img src="../assets/images/marketing/performance-dashboard.png" alt="لوحة بيانات تسويقية تعرض مؤشرات وتحليلات الأداء">
             </figure>
           </div>
         </div>
@@ -1546,77 +1255,70 @@
     <section class="work-detail-section consulting-challenges-section margin-bottom-xl" id="lab-challenges">
         <div class="container-fluid px-3 px-md-5">
           <div class="consulting-section-head lab-challenges-head reveal-item">
-            <h2>هل تواجه هذه التحديات التسويقية؟</h2>
+            <h2>هل تواجه هذه التحديات؟</h2>
           </div>
           <div class="consulting-challenges-grid enterprise-challenges-grid lab-challenges-grid">
             <article class="consulting-challenge-card reveal-item">
               <div class="consulting-challenge-head">
-                <span class="consulting-challenge-icon"><i class="bi bi-map"></i></span>
+                <span class="consulting-challenge-icon"><i class="bi bi-person-x"></i></span>
               </div>
-              <h2>غياب استراتيجية تسويق واضحة</h2>
-              <p>العمل دون خطة يشتت الجهود ويستنزف الموارد التسويقية.</p>
+              <h2>عدم وضوح مصادر العملاء المحتملين</h2>
             </article>
             <article class="consulting-challenge-card reveal-item">
               <div class="consulting-challenge-head">
-                <span class="consulting-challenge-icon"><i class="bi bi-graph-down-arrow"></i></span>
+                <span class="consulting-challenge-icon"><i class="bi bi-graph-up-arrow"></i></span>
               </div>
-              <h2>ضعف العائد على الاستثمار</h2>
-              <p>صرف الميزانيات دون الحصول على نتائج ملموسة تؤثر على الأرباح.</p>
+              <h2>صعوبة قياس العائد على الاستثمار</h2>
             </article>
             <article class="consulting-challenge-card reveal-item">
               <div class="consulting-challenge-head">
-                <span class="consulting-challenge-icon"><i class="bi bi-person-plus"></i></span>
+                <span class="consulting-challenge-icon"><i class="bi bi-ui-checks-grid"></i></span>
               </div>
-              <h2>صعوبة جذب العملاء المؤهلين</h2>
-              <p>الفشل في الوصول إلى الشريحة المستهدفة القادرة على الشراء.</p>
+              <h2>تشتت البيانات بين المنصات المختلفة</h2>
             </article>
             <article class="consulting-challenge-card reveal-item">
               <div class="consulting-challenge-head">
-                <span class="consulting-challenge-icon"><i class="bi bi-link-45deg"></i></span>
+                <span class="consulting-challenge-icon"><i class="bi bi-question-circle"></i></span>
               </div>
-              <h2>حملات تسويقية غير مترابطة</h2>
-              <p>فجوة بين القنوات التسويقية المختلفة تضعف رسالة العلامة التجارية.</p>
+              <h2>قرارات تسويقية تعتمد على التخمين</h2>
             </article>
             <article class="consulting-challenge-card reveal-item">
               <div class="consulting-challenge-head">
-                <span class="consulting-challenge-icon"><i class="bi bi-database"></i></span>
+                <span class="consulting-challenge-icon"><i class="bi bi-grid-3x3-gap"></i></span>
               </div>
-              <h2>ضعف استغلال البيانات</h2>
-              <p>اتخاذ قرارات مبنية على التخمين بدلا من تحليل البيانات التسويقية.</p>
+              <h2>غياب لوحات المعلومات التنفيذية</h2>
             </article>
             <article class="consulting-challenge-card reveal-item">
               <div class="consulting-challenge-head">
-                <span class="consulting-challenge-icon"><i class="bi bi-speedometer2"></i></span>
+                <span class="consulting-challenge-icon"><i class="bi bi-bezier2"></i></span>
               </div>
-              <h2>تباطؤ النمو في السوق</h2>
-              <p>خسارة الحصة السوقية لصالح المنافسين الأكثر ذكاء تسويقيا.</p>
+              <h2>ضعف تتبع رحلة العميل</h2>
             </article>
           </div>
-          <div class="marketing-challenges-tag reveal-item">نحول التحديات التسويقية إلى فرص نمو قابلة للقياس.</div>
+          <p class="lab-challenges-note reveal-item">نحوّل البيانات المتفرقة إلى رؤى واضحة تساعدك على اتخاذ قرارات أكثر دقة وفعالية.</p>
         </div>
       </section>
 
       <section class="work-detail-section margin-bottom-xl" id="strategic-guide">
         <div class="container-fluid px-3 px-md-5">
           <div class="row align-items-center g-4 g-xl-5 reveal-item about-card">
-            <figure class="col-lg-6 order-2 order-lg-2 lab-wide-card-media">
-              <img src="../assets/images/ai-systems/ai-dashboards.png" alt="استراتيجية التسويق الذكي">
+            <div class="col-lg-5 order-1 order-lg-1">
+           
+            <figure class="col-lg-5 order-2 order-lg-2 lab-wide-card-media">
+              <img src="../assets/images/masaqy/consulting.jpeg" alt="ذكاء التسويق وتحليل البيانات">
             </figure>
-            <div class="col-lg-6 order-1 order-lg-1">
-              <h2>ما هي استراتيجية التسويق الذكي؟</h2>
-              <p>نعمل في مساقي على تصميم استراتيجية تسويق متكاملة تعتمد كلياً على البيانات، نحن لا نكتفي بإنشاء حملات، بل نربط بين أهداف الأعمال العميقة، فهم السوق المتغير وتحليل سلوك العملاء لبناء خطة نمو مستدامة وقابلة للتنفيذ على أرض الواقع.</p>
+            </div>
+            <div class="col-lg-7 order-1 order-lg-1">
+              <h2>ما هو ذكاء التسويق؟</h2>
+              <p>ذكاء التسويق هو القدرة على جمع وتحليل وربط البيانات التسويقية من مختلف المصادر لتحويلها إلى معلومات قابلة للتنفيذ تساعد الإدارة والفرق التسويقية على تحسين الأداء واتخاذ قرارات مبنية على البيانات.</p>
               <ul class="masaqy-points">
                 <li class="reveal-on-scroll" data-reveal-order="1">
-                  <i class="bi bi-check-circle" aria-hidden="true"></i>
-                  <span>تحليل شامل للسوق والمنافسين</span>
+                  <i class="bi bi-check2" aria-hidden="true"></i>
+                  <span>تحليل استراتيجي متكامل</span>
                 </li>
                 <li class="reveal-on-scroll" data-reveal-order="2">
-                  <i class="bi bi-check-circle" aria-hidden="true"></i>
-                  <span>تحديد دقيق للجمهور المستهدف</span>
-                </li>
-                <li class="reveal-on-scroll" data-reveal-order="3">
-                  <i class="bi bi-check-circle" aria-hidden="true"></i>
-                  <span>رسم رحلة العميل الرقمية والواقعية</span>
+                  <i class="bi bi-check2" aria-hidden="true"></i>
+                  <span>ربط الأنظمة الرقمية</span>
                 </li>
               </ul>
             </div>
@@ -1627,52 +1329,52 @@
     <section class="work-detail-section consulting-groups-section margin-bottom-xl" id="lab-groups">
       <div class="container-fluid px-3 px-md-5">
         <div class="consulting-section-head lab-groups-head reveal-item">
-          <div>
-            <h2>خدماتنا في الاستراتيجية</h2>
-          </div>
+          <h2>تشمل خدماتنا</h2>
         </div>
 
         <div class="consulting-groups-grid lab-solutions-grid">
           <article class="consulting-group-card masaqy-service-card reveal-item">
-            <div class="consulting-group-top">
-              <span class="consulting-group-icon"><i class="bi bi-diagram-3"></i></span>
-            </div>
-            <h3>التحول الرقمي التسويقي</h3>
-            <div class="consulting-group-content">
-              <p>النضج الرقمي، تجربة العميل (CX)، الأتمتة، والتكامل بين القنوات التقنية والعمليات.</p>
-              <ul class="strategy-service-tags">
-                <li><i class="bi bi-check-circle"></i>Marketing Automation</li>
-                <li><i class="bi bi-check-circle"></i>CX Design</li>
-              </ul>
-            </div>
+            <h3>تحليلات جوجل 4 (GA4)</h3>
+            <ul class="service-checks">
+              <li><i class="bi bi-check-circle"></i><span>إعداد GA4</span></li>
+              <li><i class="bi bi-check-circle"></i><span>تتبع الأحداث والتحويلات</span></li>
+              <li><i class="bi bi-check-circle"></i><span>تحليل سلوك المستخدم</span></li>
+              <li><i class="bi bi-check-circle"></i><span>قياس أداء القنوات التسويقية</span></li>
+              <li><i class="bi bi-check-circle"></i><span>إعداد التنبيهات والتقارير</span></li>
+            </ul>
           </article>
 
           <article class="consulting-group-card masaqy-service-card reveal-item">
-            <div class="consulting-group-top">
-              <span class="consulting-group-icon"><i class="bi bi-stars"></i></span>
-            </div>
-            <h3>استراتيجيات النمو</h3>
-            <div class="consulting-group-content">
-              <p>التوسع، الاستحواذ على العملاء، تحسين التحويل، نمو الإيرادات، ومؤشرات الأداء للنمو.</p>
-              <ul class="strategy-service-tags">
-                <li><i class="bi bi-check-circle"></i>Expansion</li>
-                <li><i class="bi bi-check-circle"></i>KPI Tracking</li>
-              </ul>
-            </div>
+            <h3>مدير الوسوم (Google Tag Manager)</h3>
+            <ul class="service-checks">
+              <li><i class="bi bi-check-circle"></i><span>إدارة الأكواد بدون تدخل برمجي</span></li>
+              <li><i class="bi bi-check-circle"></i><span>إعداد التتبع المتقدم</span></li>
+              <li><i class="bi bi-check-circle"></i><span>تتبع النقرات والنماذج</span></li>
+              <li><i class="bi bi-check-circle"></i><span>تتبع التحويلات</span></li>
+              <li><i class="bi bi-check-circle"></i><span>تحسين جودة البيانات</span></li>
+            </ul>
           </article>
 
           <article class="consulting-group-card masaqy-service-card reveal-item">
-            <div class="consulting-group-top">
-              <span class="consulting-group-icon"><i class="bi bi-compass"></i></span>
-            </div>
-            <h3>استراتيجية التسويق</h3>
-            <div class="consulting-group-content">
-              <p>تحليل السوق، تحليل المنافسين، التجزئة، عرض القيمة، وتصميم الاستراتيجية الطلبية.</p>
-              <ul class="strategy-service-tags">
-                <li><i class="bi bi-check-circle"></i>Market Analysis</li>
-                <li><i class="bi bi-check-circle"></i>Value Prop</li>
-              </ul>
-            </div>
+            <h3>التقارير التحليلية</h3>
+            <ul class="service-checks">
+              <li><i class="bi bi-check-circle"></i><span>تقارير الأداء التسويقي</span></li>
+              <li><i class="bi bi-check-circle"></i><span>تحليل الحملات</span></li>
+              <li><i class="bi bi-check-circle"></i><span>تحليل مصادر الزيارات</span></li>
+              <li><i class="bi bi-check-circle"></i><span>تحليل التحويلات</span></li>
+              <li><i class="bi bi-check-circle"></i><span>تقارير دورية للإدارة</span></li>
+            </ul>
+          </article>
+
+          <article class="consulting-group-card masaqy-service-card reveal-item">
+            <h3>لوحات المعلومات التنفيذية</h3>
+            <ul class="service-checks">
+              <li><i class="bi bi-check-circle"></i><span>Executive Dashboards</span></li>
+              <li><i class="bi bi-check-circle"></i><span>مؤشرات الأداء الرئيسية (KPIs)</span></li>
+              <li><i class="bi bi-check-circle"></i><span>تقارير لحظية</span></li>
+              <li><i class="bi bi-check-circle"></i><span>مراقبة الأداء</span></li>
+              <li><i class="bi bi-check-circle"></i><span>اتخاذ القرار المبني على البيانات</span></li>
+            </ul>
           </article>
         </div>
       </div>
@@ -1681,202 +1383,288 @@
     <section class="work-detail-section consulting-method-section margin-bottom-xl" id="lab-methodology">
       <div class="container-fluid px-3 px-md-5">
         <div class="consulting-section-head reveal-item">
-          <h2>منهجية العمل</h2>
+          <h2>كيف نعمل؟</h2>
         </div>
 
         <div class="consulting-method-timeline">
-          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">1</span><div><h3>تحليل الوضع الحالي</h3></div></article>
-          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">2</span><div><h3>دراسة السوق والعملاء</h3></div></article>
-          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">3</span><div><h3>تصميم الاستراتيجية</h3></div></article>
-          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">4</span><div><h3>تحديد مؤشرات الأداء</h3></div></article>
-          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">5</span><div><h3>خطة التنفيذ</h3></div></article>
-          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">6</span><div><h3>المتابعة والتحسين</h3></div></article>
+          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">01</span><div><h3>تدقيق البيانات الحالية</h3></div></article>
+          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">02</span><div><h3>تحليل البنية التحليلية</h3></div></article>
+          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">03</span><div><h3>إعداد أدوات القياس</h3></div></article>
+          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">04</span><div><h3>ربط مصادر البيانات</h3></div></article>
+          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">05</span><div><h3>بناء التقارير</h3></div></article>
+          <article class="consulting-method-step reveal-item"><span class="consulting-method-index">06</span><div><h3>التحسين المستمر</h3></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="masaqy-stats-section masaqy-results-section margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated" id="lab-results">
+      <div class="container-lg position-relative">
+        <div class="reveal-on-scroll" data-reveal-order="0">
+          <div class="row justify-content-center mb-5">
+            <div class="col-lg-9 text-center">
+              <h2 class="fs-1 fw-bold text-dark mb-3 reveal-on-scroll" data-reveal-order="2">النتائج التي تحققها</h2>
+            </div>
+          </div>
+          <div class="row g-4 lab-results-row">
+            <div class="reveal-on-scroll" data-reveal-order="4">
+              <article class="masaqy-stat-card">
+                <h3>رؤية موحدة للأداء</h3>
+              </article>
+            </div>
+            <div class="reveal-on-scroll" data-reveal-order="5">
+              <article class="masaqy-stat-card">
+                <h3>تحسين دقة اتخاذ القرار</h3>
+              </article>
+            </div>
+            <div class="reveal-on-scroll" data-reveal-order="6">
+              <article class="masaqy-stat-card">
+                <h3>قياس العائد على الاستثمار</h3>
+              </article>
+            </div>
+            <div class="reveal-on-scroll" data-reveal-order="7">
+              <article class="masaqy-stat-card">
+                <h3>تحسين أداء الحملات</h3>
+              </article>
+            </div>
+            <div class="reveal-on-scroll" data-reveal-order="8">
+              <article class="masaqy-stat-card">
+                <h3>فهم أعمق لسلوك العملاء</h3>
+              </article>
+            </div>
+            <div class="reveal-on-scroll" data-reveal-order="9">
+              <article class="masaqy-stat-card">
+                <h3>اكتشاف فرص النمو</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ <section class="works-showcase-section margin-bottom-xl" id="automation-projects"
+      aria-labelledby="automationProjectsTitle">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="works-showcase-head reveal-item scroll-fade-up">
+          <h2 id="automationProjectsTitle">مشاريع نجاح متميزة</h2>
+        </div>
+
+        <div class="works-grid" aria-live="polite">
+          <article class="work-card" data-category="finance">
+            <a class="work-card-image" href="#" aria-label="عرض تفاصيل أتمتة تسوية المعاملات البنكية">
+              <img src="../assets/images/ai-systems/automation-systems.png" alt="أتمتة تسوية المعاملات البنكية">
+            </a>
+            <div class="work-card-content">
+              <span class="work-card-tag">القطاع المالي</span>
+              <h3>أتمتة تسوية المعاملات البنكية</h3>
+              <p>تطوير وكلاء أتمتوا تسوية 100 ألف معاملة يومياً بدقة 100%، مما وفر 400 ساعة عمل أسبوعياً.</p>
+              <a href="#" class="work-card-link">عرض التفاصيل <i class="bi bi-arrow-left"></i></a>
+            </div>
+          </article>
+
+          <article class="work-card" data-category="ecommerce">
+            <a class="work-card-image" href="#" aria-label="عرض تفاصيل نظام دعم العملاء آصف">
+              <img src="../assets/images/ai-systems/crm.png" alt="نظام دعم العملاء آصف">
+            </a>
+            <div class="work-card-content">
+              <span class="work-card-tag">التجارة الإلكترونية</span>
+              <h3>نظام دعم العملاء "آصف"</h3>
+              <p>وكيل ذكاء اصطناعي صوتي يتحدث بالعربية الفصحى والعامية السعودية لإدارة المرتجعات والحجوزات.</p>
+              <a href="#" class="work-card-link">عرض التفاصيل <i class="bi bi-arrow-left"></i></a>
+            </div>
+          </article>
+
+          <article class="work-card" data-category="logistics">
+            <a class="work-card-image" href="#" aria-label="عرض تفاصيل تحسين مسارات الشحن الذكي">
+              <img src="../assets/images/ai-systems/ai-decision-systems.png" alt="تحسين مسارات الشحن الذكي">
+            </a>
+            <div class="work-card-content">
+              <span class="work-card-tag">الخدمات اللوجستية</span>
+              <h3>تحسين مسارات الشحن الذكي</h3>
+              <p>خوارزميات أتمتة خفضت استهلاك الوقود بنسبة 22% عبر التخطيط الاستباقي للوكلاء المستقلين.</p>
+              <a href="#" class="work-card-link">عرض التفاصيل <i class="bi bi-arrow-left"></i></a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="work-detail-section margin-bottom-xl" id="governance-impact">
-      <div class="container-fluid px-3 px-md-5">
-        <div class="governance-impact-head reveal-item">
-          <h2>نتائج ملموسة، لا مجرد تقارير</h2>
-        </div>
-        <div class="governance-impact-grid">
-          <article class="governance-impact-card experience reveal-item">
-            <span class="governance-impact-icon"><i class="bi bi-people"></i></span>
-            <h3>تحسين تجربة العميل</h3>
-            <p>توقع احتياجات العميل قبل حدوثها أدى لزيادة معدل الرضا بنسبة 18% مع عملائنا في قطاع التجزئة.</p>
-          </article>
+    <section class="masaqy-testimonials-section margin-bottom-xl animate-on-load is-animated"
+      id="automation-testimonials">
+      <div class="container-lg position-relative">
+        <div class="masaqy-testimonials-shell reveal-on-scroll" data-reveal-order="0">
+          <div class="row justify-content-center mb-4">
+            <div class="col-lg-9 text-center">
+              <span class="text-primary text-uppercase fw-bold ls-2 small mb-2 d-inline-block reveal-on-scroll"
+                data-reveal-order="1">آراء العملاء</span>
+              <h2 class="fs-1 fw-bold text-dark mb-3 reveal-on-scroll" data-reveal-order="2">ماذا يقول عملاؤنا عن مساقي؟
+              </h2>
+              <p class="text-muted mx-auto reveal-on-scroll" data-reveal-order="3" style="max-width: 720px;">
+                شراكات مبنية على الثقة والنتائج </p>
+            </div>
+          </div>
 
-          <article class="governance-impact-card efficiency reveal-item">
-            <h3>كفاءة تشغيلية غير مسبوقة</h3>
-            <p>ساعدنا قطاع الخدمات اللوجستية على تقليل الهدر بنسبة 22% عبر النمذجة التنبؤية للطلب.</p>
-            <div class="governance-impact-metrics" aria-label="مؤشرات الكفاءة التشغيلية">
-              <span class="impact-metric"><strong>22%</strong><span>تقليل الهدر</span></span>
-              <span class="impact-metric"><strong>15M$</strong><span>توفير سنوي</span></span>
+          <div class="row g-4 masaqy-testimonials-grid">
+            <div class="col-lg-4 col-md-6 reveal-on-scroll" data-reveal-order="4">
+              <article class="masaqy-testimonial-card">
+                <div class="testimonial-stars" aria-label="تقييم خمسة من خمسة">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  ساعدتنا مساقي على بناء تصور واضح للتحول الذكي، وربطت الحلول التقنية بأهداف العمل بطريقة عملية وسريعة
+                  التنفيذ.
+                </p>
+                <div class="testimonial-author">
+                  <span class="testimonial-avatar">م</span>
+                  <div>
+                    <h3>محمد العتيبي</h3>
+                    <span>مدير التحول الرقمي</span>
+                  </div>
+                </div>
+              </article>
             </div>
-          </article>
 
-          <article class="governance-impact-card decision reveal-item">
-            <h3>دقة القرار المالي</h3>
-            <p>دعم القرار الاستثماري عبر تحليلات المخاطر الذكية التي قلصت احتمالية الخسارة بنسبة 30%.</p>
-            <div class="impact-progress" aria-hidden="true"><span></span></div>
-          </article>
+            <div class="col-lg-4 col-md-6 reveal-on-scroll" data-reveal-order="5">
+              <article class="masaqy-testimonial-card featured">
+                <div class="testimonial-stars" aria-label="تقييم خمسة من خمسة">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  التجربة كانت مختلفة؛ الفريق فهم احتياجنا من البداية، وقدم نظاما ذكيا اختصر وقت المتابعة ورفع دقة
+                  التقارير.
+                </p>
+                <div class="testimonial-author">
+                  <span class="testimonial-avatar">س</span>
+                  <div>
+                    <h3>سارة القحطاني</h3>
+                    <span>رئيسة العمليات</span>
+                  </div>
+                </div>
+              </article>
+            </div>
 
-          <article class="governance-impact-card speed reveal-item">
-            <span class="governance-impact-icon"><i class="bi bi-speedometer2"></i></span>
-            <h3>سرعة الاستجابة</h3>
-            <p>تقليل زمن معالجة البيانات من أيام إلى دقائق، مما يسمح باتخاذ قرارات لحظية في الأسواق المتقلبة.</p>
-          </article>
-        </div>
-      </div>
-    </section> 
-
-    <section class="work-detail-section consulting-challenges-section margin-bottom-xl" id="why-masaqy">
-      <div class="container-fluid px-3 px-md-5">
-        <div class="consulting-section-head lab-challenges-head reveal-item">
-          <h2>لماذا MASAQY؟</h2>
-          <h3>شريكك في رحلة التحول الذكي</h3>
-          <p>نجمع بين العمق الاستراتيجي والخبرة التقنية المتقدمة لنقدم حلولاً واقعية تضمن نجاح مؤسستك.</p>
-        </div>
-        <div class="consulting-challenges-grid enterprise-challenges-grid lab-challenges-grid">
-          <article class="consulting-challenge-card reveal-item">
-            <div class="consulting-challenge-head">
-              <span class="consulting-challenge-icon"><i class="bi bi-cpu"></i></span>
+            <div class="col-lg-4 col-md-6 reveal-on-scroll" data-reveal-order="6">
+              <article class="masaqy-testimonial-card">
+                <div class="testimonial-stars" aria-label="تقييم خمسة من خمسة">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  ما يميز مساقي هو التركيز على الأثر، من تحليل البيانات حتى الأتمتة، كل خطوة كانت مرتبطة بمؤشرات أداء
+                  واضحة.
+                </p>
+                <div class="testimonial-author">
+                  <span class="testimonial-avatar">خ</span>
+                  <div>
+                    <h3>خالد الحربي</h3>
+                    <span>مدير تطوير الأعمال</span>
+                  </div>
+                </div>
+              </article>
             </div>
-            <h2>خبراء AI</h2>
-            <p>متخصصون في الذكاء الاصطناعي والحوكمة.</p>
-          </article>
-          <article class="consulting-challenge-card reveal-item">
-            <div class="consulting-challenge-head">
-              <span class="consulting-challenge-icon"><i class="bi bi-building"></i></span>
-            </div>
-            <h2>خبرة عميقة</h2>
-            <p>في التحول الرقمي المؤسسي.</p>
-          </article>
-          <article class="consulting-challenge-card reveal-item">
-            <div class="consulting-challenge-head">
-              <span class="consulting-challenge-icon"><i class="bi bi-bullseye"></i></span>
-            </div>
-            <h2>تركيز على النتائج</h2>
-            <p>تحقيق الأثر الفعلي الملموس.</p>
-          </article>
-          <article class="consulting-challenge-card reveal-item">
-            <div class="consulting-challenge-head">
-              <span class="consulting-challenge-icon"><i class="bi bi-globe2"></i></span>
-            </div>
-            <h2>منهجيات عالمية</h2>
-            <p>قابلة للتنفيذ على أرض الواقع.</p>
-          </article>
-          <article class="consulting-challenge-card reveal-item">
-            <div class="consulting-challenge-head">
-              <span class="consulting-challenge-icon"><i class="bi bi-mortarboard"></i></span>
-            </div>
-            <h2>نقل المعرفة</h2>
-            <p>بناء القدرات الداخلية لمؤسستك.</p>
-          </article>
-          <article class="consulting-challenge-card reveal-item">
-            <div class="consulting-challenge-head">
-              <span class="consulting-challenge-icon"><i class="bi bi-people"></i></span>
-            </div>
-            <h2>شراكة استراتيجية</h2>
-            <p>علاقات طويلة المدى مبنية على الثقة.</p>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
-      <section class="works-showcase-section home-works-section margin-bottom-xl" id="success-stories" aria-labelledby="successStoriesTitle">
-        <div class="container-fluid px-3 px-md-5">
-          <article class="success-story-card reveal-item">
-            <figure class="success-story-media">
-              <img src="../assets/images/hero-saudi-bg.jpeg" alt="مدينة ذكية تمثل قصة نجاح في الحوكمة المؤسسية">
-            </figure>
-            <div class="success-story-content">
-              <span class="success-story-tag">قصة نجاح</span>
-              <h2 id="successStoriesTitle">توحيد 120 سياسة لمؤسسة كبرى</h2>
-              <p>نجحنا في إعادة هيكلة منظومة الحوكمة لجهة حكومية كبرى، حيث تم دمج وتوحيد أكثر من 120 سياسة متضاربة إلى إطار عمل موحد، مما رفع نسبة الامتثال المؤسسي بنسبة 95% خلال السنة الأولى.</p>
-              <div class="success-story-metrics" aria-label="مؤشرات قصة النجاح">
-                <span class="success-story-metric"><strong>120+</strong><span>سياسة موحدة</span></span>
-                <span class="success-story-metric"><strong>95%</strong><span>نسبة الامتثال</span></span>
-              </div>
+    <section class="masaqy-advantage-section margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated"
+      id="enterprise-faq">
+      <div class="container-lg position-relative">
+        <div class="masaqy-advantage-shell reveal-on-scroll" data-reveal-order="0">
+          <div class="row justify-content-center mb-5">
+            <div class="col-lg-9 text-center">
+              <h2 class="fs-1 fw-bold text-dark mb-3 reveal-on-scroll" data-reveal-order="2">الأسئلة الشائعة</h2>
             </div>
-          </article>
-        </div>
-      </section>
-     
-      <section id="testimonials">
-        <div class="container-fluid px-3 px-md-5">
-          <div class="consulting-section-head reveal-item text-center mx-auto">
-            <h2>ماذا يقول عملاؤنا؟</h2>
           </div>
-          <div class="consulting-challenges-grid enterprise-challenges-grid">
-            <article class="consulting-challenge-card reveal-item">
-              <div class="consulting-main-tag"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-              <p>"شريك حقيقي في النجاح. ساعدونا في أتمتة العمليات الروتينية مما وفر لفرقنا مئات الساعات شهرياً."</p>
-              <h3>خالد الدوسري</h3>
-              <div class="testimonial-author"><span>خ.د</span> المدير التنفيذي، مجموعة الأفق</div>
-            </article>
-            <article class="consulting-challenge-card reveal-item">
-              <div class="consulting-main-tag"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-              <p>"الاحترافية في التعامل والعمق في التحليل هو ما يميز فريق مساقي. بناء أطر الحوكمة لدينا أصبح نموذجاً يحتذى به."</p>
-              <h3>سارة العتيبي</h3>
-              <div class="testimonial-author"><span>س.ع</span> رئيسة قسم التحول، جهة حكومية</div>
-            </article>
-            <article class="consulting-challenge-card reveal-item">
-              <div class="consulting-main-tag"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-              <p>"لقد ساهمت مساقي في تحويل جذري لعملياتنا التشغيلية. المنهجية كانت واضحة والنتائج تجاوزت توقعاتنا."</p>
-              <h3>أحمد المنصور</h3>
-              <div class="testimonial-author"><span>أ.م</span> مدير العمليات، شركة نماء</div>
-            </article>
-          </div>
-        </div>
-      </section>
 
-      <section class="masaqy-advantage-section lab-faq-section margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated" id="enterprise-faq">
-        <div class="container-fluid px-3 px-md-5">
-          <div class="consulting-section-head reveal-item text-center mx-auto">
-            <h2>الأسئلة الشائعة</h2>
-          </div>
-          <div class="accordion enterprise-faq-accordion reveal-item" id="consultingFaq">
+          <div class="accordion enterprise-faq-accordion reveal-on-scroll" id="enterpriseFaqAccordion"
+            data-reveal-order="3">
             <div class="accordion-item">
-              <h3 class="accordion-header" id="faqOneHeading">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="false" aria-controls="faqOne">كيف تختلف خدمة ذكاء القرار عن تحليل البيانات التقليدي؟</button>
+              <h3 class="accordion-header" id="enterpriseFaqHeadingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#enterpriseFaqOne" aria-expanded="true" aria-controls="enterpriseFaqOne">ما هو ذكاء التسويق؟</button>
               </h3>
-              <div id="faqOne" class="accordion-collapse collapse" aria-labelledby="faqOneHeading" data-bs-parent="#consultingFaq">
-                <div class="accordion-body">التحليل التقليدي يخبرك بما حدث (ماضٍ)، بينما ذكاء القرار يربط البيانات بنماذج محاكاة ليخبرك بما سيحدث وكيف ستؤثر قراراتك المختلفة على النتائج المستقبلية.</div>
+              <div id="enterpriseFaqOne" class="accordion-collapse collapse show"
+                aria-labelledby="enterpriseFaqHeadingOne" data-bs-parent="#enterpriseFaqAccordion">
+                <div class="accordion-body">
+                  <p>ذكاء التسويق هو عملية جمع وتحليل البيانات التسويقية من مختلف المصادر، مثل الإعلانات، الموقع الإلكتروني، والمبيعات، لتحويلها إلى رؤى استراتيجية تساعد على فهم عملائك وتحسين عائد الاستثمار.</p>
+                </div>
               </div>
             </div>
+
             <div class="accordion-item">
-              <h3 class="accordion-header" id="faqTwoHeading">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">هل تتطلب الخدمة تغيير الأنظمة الحالية للشركة؟</button>
+              <h3 class="accordion-header" id="enterpriseFaqHeadingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#enterpriseFaqTwo" aria-expanded="false" aria-controls="enterpriseFaqTwo">كيف يساعدني GA4 في تحسين الأداء؟</button>
               </h3>
-              <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faqTwoHeading" data-bs-parent="#consultingFaq">
+              <div id="enterpriseFaqTwo" class="accordion-collapse collapse" aria-labelledby="enterpriseFaqHeadingTwo"
+                data-bs-parent="#enterpriseFaqAccordion">
                 <div class="accordion-body"></div>
               </div>
             </div>
+
             <div class="accordion-item">
-              <h3 class="accordion-header" id="faqThreeHeading">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">كم تستغرق عملية التنفيذ لرؤية النتائج الأولى؟</button>
+              <h3 class="accordion-header" id="enterpriseFaqHeadingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#enterpriseFaqThree" aria-expanded="false" aria-controls="enterpriseFaqThree">هل يمكن دمج جميع مصادر البيانات في لوحة معلومات واحدة؟</button>
               </h3>
-              <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="faqThreeHeading" data-bs-parent="#consultingFaq">
+              <div id="enterpriseFaqThree" class="accordion-collapse collapse"
+                aria-labelledby="enterpriseFaqHeadingThree" data-bs-parent="#enterpriseFaqAccordion">
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="enterpriseFaqHeadingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#enterpriseFaqFour" aria-expanded="false" aria-controls="enterpriseFaqFour">كيف يتم قياس العائد على الاستثمار التسويقي؟</button>
+              </h3>
+              <div id="enterpriseFaqFour" class="accordion-collapse collapse" aria-labelledby="enterpriseFaqHeadingFour"
+                data-bs-parent="#enterpriseFaqAccordion">
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="enterpriseFaqHeadingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#enterpriseFaqFive" aria-expanded="false" aria-controls="enterpriseFaqFive">هل تدعمون التجارة الإلكترونية؟</button>
+              </h3>
+              <div id="enterpriseFaqFive" class="accordion-collapse collapse" aria-labelledby="enterpriseFaqHeadingFive"
+                data-bs-parent="#enterpriseFaqAccordion">
                 <div class="accordion-body"></div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       <section class="masaqy-partnership-cta margin-bottom-xl margin-top-xxl-1" id="start-now">
         <div class="container-fluid px-3 px-md-5">
           <div class="masaqy-partnership-card reveal-item">
-            <h2>ابدأ رحلة التحول الذكي اليوم</h2>
-            <p>احصل على رؤية استراتيجية واضحة وخطة تنفيذية عملية تمكن مؤسستك من تحقيق أقصى استفادة من التحول الرقمي والذكاء الاصطناعي.</p>
+            <h2>ابدأ باتخاذ قرارات تسويقية مبنية على البيانات</h2>
+            <p>اكتشف كيف يمكن لتحليلات التسويق ولوحات المعلومات التنفيذية أن تمنحك رؤية أوضح للأداء وتسهم في تحقيق نمو مستدام لمؤسستك.</p>
+            <ul class="masaqy-partnership-points">
+              <li><i class="bi bi-check-circle"></i><span>استشارة أولية مجانية</span></li>
+              <li><i class="bi bi-check-circle"></i><span>خبرة في التحليلات التسويقية</span></li>
+              <li><i class="bi bi-check-circle"></i><span>لوحات معلومات تنفيذية مخصصة</span></li>
+              <li><i class="bi bi-check-circle"></i><span>نتائج قابلة للقياس</span></li>
+            </ul>
             <div class="flow-actions d-flex flex-wrap gap-3">
               <a href="mailto:info@masaqy.com" class="btn flow-btn-primary">
-                <span>احجز جلسة استراتيجية</span> 
+                <span>اطلب خدمة ذكاء التسويق</span> 
               </a>
               <a href="mailto:info@masaqy.com" class="btn flow-btn-ghost">
-                <span>اطلب الخدمة</span> 
+                <span>احجز جلسة استشارية مجانية</span> 
               </a>
             </div>
           </div>
