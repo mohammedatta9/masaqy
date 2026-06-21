@@ -3967,6 +3967,10 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  #consulting-journey .consulting-method-timeline {
+    grid-template-columns: 1fr;
+  }
+
   .marketing-90-roadmap .consulting-method-step,
   .marketing-90-roadmap .consulting-method-step:nth-child(3n),
   .marketing-90-roadmap .consulting-method-step:nth-child(n + 4) {

@@ -495,9 +495,9 @@
     .consulting-details-page #consulting-journey .consulting-method-step {
       display: grid;
       align-content: start;
-      gap: 1rem;
-      min-height: 190px;
-      padding: 1rem;
+      gap: .75rem;
+      min-height: 128px;
+      padding: .95rem;
       border-radius: 8px;
       text-align: right;
     }
@@ -552,7 +552,7 @@
     }
 
     .consulting-details-page #consulting-journey .consulting-method-step {
-      min-height: 190px;
+      min-height: 128px;
       border-radius: 8px;
     }
 
@@ -769,6 +769,11 @@
       color: #fff;
     }
 
+    .consulting-details-page .footer-neo .masaqy-footer-title,
+    .consulting-details-page .footer-neo .masaqy-footer-text {
+      color: #fff;
+    }
+
     @media (max-width: 1199.98px) {
       .consulting-details-page #consulting-journey .consulting-method-timeline,
       .consulting-details-page .consulting-method-timeline {
@@ -813,10 +818,16 @@
       .consulting-details-page .consulting-challenges-grid,
       .consulting-details-page #success-stories .consulting-challenges-grid,
       .consulting-details-page #testimonials .consulting-challenges-grid,
+      .consulting-details-page #lab-groups .lab-solutions-grid,
       .consulting-details-page .consulting-method-timeline,
       .consulting-details-page #consulting-journey .consulting-method-timeline,
       .consulting-details-page .lab-hero-stats {
         grid-template-columns: 1fr;
+      }
+
+      .consulting-details-page #lab-groups .lab-solutions-grid .consulting-group-card {
+        grid-column: 1 / -1;
+        width: 100%;
       }
 
       .consulting-details-page #lab-challenges .lab-challenges-grid {

@@ -1403,7 +1403,13 @@
       }
 
       .consulting-details-page #lab-groups .lab-solutions-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr;
+      }
+
+      .consulting-details-page #lab-groups .lab-solutions-grid .consulting-group-card,
+      .consulting-details-page #lab-groups .lab-solutions-grid .service-wide-card,
+      .consulting-details-page #lab-groups .lab-solutions-grid .service-contact-card {
+        grid-column: 1 / -1;
       }
 
       .consulting-details-page .governance-impact-grid {
