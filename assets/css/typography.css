@@ -1,9 +1,17 @@
 /* MASAQY shared typography scale */
 body.info-pages {
+  --masaqy-page-max-width: 1440px;
   --masaqy-title-size: 40px;
   --masaqy-subtitle-size: 20px;
   --masaqy-body-size: 16px;
   font-size: var(--masaqy-body-size) !important;
+}
+
+body.info-pages main.index-flow > section > .container-fluid,
+body.info-pages main.index-flow > section > .container-lg,
+body.info-pages .footer-neo > .container-fluid {
+  max-width: var(--masaqy-page-max-width);
+  margin-inline: auto;
 }
 
 body.info-pages h1,

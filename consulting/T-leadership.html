@@ -31,7 +31,7 @@
     }
 
     .consulting-details-page .container-fluid {
-      max-width: 1180px;
+      max-width: var(--masaqy-page-max-width, 1440px);
       margin-inline: auto;
     }
 
@@ -90,49 +90,7 @@
 
     .consulting-details-page .consulting-hero .flow-actions {
       justify-content: flex-start;
-      flex-wrap: nowrap !important;
       gap: .65rem !important;
-    }
-
-    .consulting-details-page .consulting-hero .flow-btn-primary,
-    .consulting-details-page .consulting-hero .flow-btn-ghost {
-      flex: 0 1 auto;
-      width: auto !important;
-      min-width: 0;
-      min-height: 38px;
-      padding: .58rem .78rem;
-      font-size: .76rem;
-      line-height: 1.2;
-      white-space: nowrap;
-    }
-
-    .consulting-details-page .flow-btn-primary,
-    .consulting-details-page .flow-btn-ghost {
-      min-height: 44px;
-      padding: .72rem 1.15rem;
-      border-radius: 999px !important;
-      font-size: .86rem;
-      font-weight: 850;
-    }
-
-    .consulting-details-page .flow-btn-primary {
-      background: linear-gradient(135deg, #5A189A, #8E3FD1) !important;
-      border-color: #5A189A !important;
-      box-shadow: 0 12px 28px rgba(90, 24, 154, .22) !important;
-    }
-
-    .consulting-details-page .flow-btn-ghost {
-      color: #5A189A !important;
-      background: #fff !important;
-      border: 1px solid rgba(90, 24, 154, .42) !important;
-      box-shadow: 0 12px 28px rgba(90, 24, 154, .12) !important;
-    }
-
-    .consulting-details-page .flow-btn-ghost:hover {
-      color: #fff !important;
-      background: linear-gradient(135deg, #5A189A, #4EA8DE) !important;
-      border-color: rgba(90, 24, 154, .5) !important;
-      box-shadow: 0 16px 34px rgba(90, 24, 154, .22) !important;
     }
 
     .consulting-details-page .consulting-hero-visual {
@@ -913,7 +871,7 @@
     }
 
     .consulting-details-page #enterprise-faq .container-fluid {
-      max-width: 920px;
+      max-width: var(--masaqy-page-max-width, 1440px);
     }
 
     .consulting-details-page #enterprise-faq .accordion-item {
@@ -921,7 +879,7 @@
     }
 
     .consulting-details-page .masaqy-partnership-card {
-      max-width: 960px;
+      max-width: var(--masaqy-page-max-width, 1440px);
       margin-inline: auto;
       border-radius: 8px;
       text-align: center;
@@ -1019,21 +977,8 @@
         border-top: 0;
       }
 
-      .consulting-details-page .flow-actions,
-      .consulting-details-page .flow-btn-primary,
-      .consulting-details-page .flow-btn-ghost {
+      .consulting-details-page .flow-actions {
         width: 100%;
-      }
-
-      .consulting-details-page .consulting-hero .flow-actions {
-        width: 100%;
-      }
-
-      .consulting-details-page .consulting-hero .flow-btn-primary,
-      .consulting-details-page .consulting-hero .flow-btn-ghost {
-        width: auto !important;
-        padding: .52rem .52rem;
-        font-size: .66rem;
       }
 
       .consulting-details-page #consulting-request form .row.g-3 {

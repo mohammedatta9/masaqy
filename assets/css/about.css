@@ -582,7 +582,7 @@
 
 #lab-results.masaqy-stats-section {
   padding: clamp(3.5rem, 7vw, 5.3rem) 0;
-  background: #dce9ff;
+  background: #f4f6fb;
 }
 
 #lab-results.masaqy-stats-section::before,
@@ -610,20 +610,31 @@
   font-weight: 850 !important;
 }
 
+#lab-results h2::after {
+  content: "";
+  display: block;
+  width: 62px;
+  height: 4px;
+  margin: .75rem auto 0;
+  border-radius: 99px;
+  background: #6a00a8;
+}
+
 #lab-results .masaqy-stat-card {
-  min-height: 90px;
-  padding: 1.15rem .9rem;
+  min-height: 106px;
+  padding: 1.35rem 1rem;
   border: 0;
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 12px 28px rgba(31, 41, 55, .08);
+  border-radius: 14px;
+  background: #edf4ff;
+  box-shadow: none;
   text-align: center;
 }
 
 #lab-results.masaqy-results-section .masaqy-stat-value {
   margin-bottom: .45rem;
-  color: #006ca8;
-  font-size: clamp(1.2rem, 1.7vw, 1.55rem);
+  color: #6a00a8;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-weight: 950;
   line-height: 1.1;
 }
 
@@ -637,6 +648,76 @@
 
 #lab-results .masaqy-stat-card p {
   display: none;
+}
+
+.case-impact-results {
+  padding: clamp(3.5rem, 7vw, 5.3rem) 0;
+  background: #f4f6fb;
+}
+
+.case-impact-results-head {
+  margin-bottom: clamp(1.6rem, 3vw, 2.2rem);
+  text-align: right;
+}
+
+.case-impact-results-head h2 {
+  margin: 0 0 .55rem;
+  color: #1f2937;
+  font-size: clamp(1.8rem, 3vw, 2.55rem);
+  font-weight: 850;
+  line-height: 1.25;
+}
+
+.case-impact-results-head p {
+  margin: 0;
+  color: rgba(31, 41, 55, .68);
+  font-size: .95rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.case-impact-result-card {
+  min-height: 150px;
+  height: 100%;
+  padding: 1.55rem 1rem;
+  border-left: 4px solid #006ca8;
+  background: #fff;
+  text-align: center;
+}
+
+.case-impact-results-row > div:nth-child(odd) .case-impact-result-card {
+  border-left-color: #6a00a8;
+}
+
+.case-impact-result-card span {
+  display: block;
+  margin-bottom: .55rem;
+  color: #006ca8;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-weight: 950;
+  line-height: 1.1;
+  direction: ltr;
+}
+
+.case-impact-results-row > div:nth-child(odd) .case-impact-result-card span {
+  color: #6a00a8;
+}
+
+.case-impact-result-card h3 {
+  margin: 0 0 .35rem;
+  color: #1f2937;
+  font-size: .95rem;
+  font-weight: 850;
+  line-height: 1.45;
+}
+
+.case-impact-result-card p {
+  margin: 0 auto;
+  max-width: 210px;
+  color: rgba(31, 41, 55, .68);
+  font-size: .85rem;
+  font-weight: 700;
+  line-height: 1.65;
 }
 
 .sales-growth-page > section {
@@ -2260,6 +2341,10 @@
   margin-top: 2.5rem;
 }
 
+.case-problem-section .about-capability-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .about-capability-card,
 .about-philosophy-card {
   position: relative;
@@ -2607,6 +2692,91 @@
   line-height: 1.65;
 }
 
+.case-why-section .about-section-title {
+  color: #5A189A;
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+}
+
+.case-why-comparison {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.5rem, 4vw, 3rem);
+  margin-top: 3.25rem;
+}
+
+.case-why-card {
+  min-height: 250px;
+  padding: clamp(1.75rem, 3vw, 2.35rem);
+  border: 1px solid rgba(90, 24, 154, .12);
+  border-radius: 22px;
+  background: #eef2ff;
+  box-shadow: 0 18px 44px rgba(90, 24, 154, .08);
+}
+
+.case-why-card-ai {
+  color: #fff;
+  background: linear-gradient(135deg, #7b2cbf 0%, #38a3e8 100%);
+  box-shadow: 0 24px 58px rgba(90, 24, 154, .24);
+}
+
+.case-why-card h3 {
+  margin: 0 0 1.45rem;
+  color: #55515f;
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  font-weight: 850;
+}
+
+.case-why-card-ai h3 {
+  color: #fff;
+}
+
+.case-why-point {
+  display: flex;
+  align-items: flex-start;
+  gap: .85rem;
+  margin-top: 1.15rem;
+}
+
+.case-why-point i {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  margin-top: .1rem;
+  color: #dc2626;
+  font-size: 1.25rem;
+  font-weight: 900;
+  flex: 0 0 auto;
+}
+
+.case-why-card-ai .case-why-point i {
+  color: #fff;
+}
+
+.case-why-point h4 {
+  margin: 0 0 .25rem;
+  color: #111827;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.45;
+}
+
+.case-why-card-ai .case-why-point h4 {
+  color: #fff;
+}
+
+.case-why-point p {
+  margin: 0;
+  color: rgba(17, 24, 39, .68);
+  font-size: .92rem;
+  font-weight: 650;
+  line-height: 1.7;
+}
+
+.case-why-card-ai .case-why-point p {
+  color: rgba(255, 255, 255, .86);
+}
+
 .about-icon-card {
   min-height: 260px;
   padding: 1.5rem;
@@ -2777,6 +2947,14 @@
   background:
     linear-gradient(135deg, rgba(255, 255, 255, .72), rgba(255, 255, 255, .52)),
     radial-gradient(circle at 80% 20%, rgba(78, 168, 222, .16), transparent 40%);
+}
+
+.about-future-card p {
+  margin: .65rem 0 0;
+  color: rgba(17, 24, 39, .66);
+  font-size: .92rem;
+  font-weight: 700;
+  line-height: 1.7;
 }
 
 @keyframes aboutPulse {
@@ -2972,6 +3150,7 @@
   .about-capability-grid,
   .about-philosophy-grid,
   .about-future-grid,
+  .case-why-comparison,
   .services-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3010,6 +3189,7 @@
   .about-philosophy-grid,
   .about-vision2030-grid,
   .about-future-grid,
+  .case-why-comparison,
   .about-mission-list,
   .services-card-grid,
   .services-check-grid {

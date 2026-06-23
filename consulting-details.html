@@ -31,7 +31,7 @@
     }
 
     .consulting-details-page .container-fluid {
-      max-width: 1180px;
+      max-width: var(--masaqy-page-max-width, 1440px);
       margin-inline: auto;
     }
 
@@ -90,49 +90,7 @@
 
     .consulting-details-page .consulting-hero .flow-actions {
       justify-content: flex-start;
-      flex-wrap: nowrap !important;
       gap: .65rem !important;
-    }
-
-    .consulting-details-page .consulting-hero .flow-btn-primary,
-    .consulting-details-page .consulting-hero .flow-btn-ghost {
-      flex: 0 1 auto;
-      width: auto !important;
-      min-width: 0;
-      min-height: 38px;
-      padding: .58rem .78rem;
-      font-size: .76rem;
-      line-height: 1.2;
-      white-space: nowrap;
-    }
-
-    .consulting-details-page .flow-btn-primary,
-    .consulting-details-page .flow-btn-ghost {
-      min-height: 44px;
-      padding: .72rem 1.15rem;
-      border-radius: 999px !important;
-      font-size: .86rem;
-      font-weight: 850;
-    }
-
-    .consulting-details-page .flow-btn-primary {
-      background: linear-gradient(135deg, #5A189A, #8E3FD1) !important;
-      border-color: #5A189A !important;
-      box-shadow: 0 12px 28px rgba(90, 24, 154, .22) !important;
-    }
-
-    .consulting-details-page .flow-btn-ghost {
-      color: #5A189A !important;
-      background: #fff !important;
-      border: 1px solid rgba(90, 24, 154, .42) !important;
-      box-shadow: 0 12px 28px rgba(90, 24, 154, .12) !important;
-    }
-
-    .consulting-details-page .flow-btn-ghost:hover {
-      color: #fff !important;
-      background: linear-gradient(135deg, #5A189A, #4EA8DE) !important;
-      border-color: rgba(90, 24, 154, .5) !important;
-      box-shadow: 0 16px 34px rgba(90, 24, 154, .22) !important;
     }
 
     .consulting-details-page .consulting-hero-visual {
@@ -243,9 +201,7 @@
       justify-items: center;
     }
 
-    .consulting-details-page .consulting-section-head h2,
-    .consulting-details-page .row h2,
-    .consulting-details-page .masaqy-partnership-card h2 {
+    .consulting-details-page .consulting-section-head h2 {
       color: #111827;
       font-size: clamp(1.45rem, 2.5vw, 2.35rem);
       font-weight: 900;
@@ -418,7 +374,7 @@
     }
 
     .consulting-details-page #lab-methodology .container-fluid {
-      max-width: 1080px;
+      max-width: var(--masaqy-page-max-width, 1440px);
     }
 
     .consulting-details-page #lab-methodology .consulting-section-head {
@@ -746,27 +702,11 @@
     }
 
     .consulting-details-page #enterprise-faq .container-fluid {
-      max-width: 920px;
+      max-width: var(--masaqy-page-max-width, 1440px);
     }
 
     .consulting-details-page #enterprise-faq .accordion-item {
       border-radius: 3px;
-    }
-
-    .consulting-details-page .masaqy-partnership-card {
-      max-width: 960px;
-      margin-inline: auto;
-      border-radius: 8px;
-      text-align: center;
-    }
-
-    .consulting-details-page .masaqy-partnership-card .flow-actions {
-      justify-content: center;
-    }
-
-    .consulting-details-page .masaqy-partnership-card h2,
-    .consulting-details-page .masaqy-partnership-card p {
-      color: #fff;
     }
 
     .consulting-details-page .footer-neo .masaqy-footer-title,
@@ -847,21 +787,8 @@
         border-top: 0;
       }
 
-      .consulting-details-page .flow-actions,
-      .consulting-details-page .flow-btn-primary,
-      .consulting-details-page .flow-btn-ghost {
+      .consulting-details-page .flow-actions {
         width: 100%;
-      }
-
-      .consulting-details-page .consulting-hero .flow-actions {
-        width: 100%;
-      }
-
-      .consulting-details-page .consulting-hero .flow-btn-primary,
-      .consulting-details-page .consulting-hero .flow-btn-ghost {
-        width: auto !important;
-        padding: .52rem .52rem;
-        font-size: .66rem;
       }
 
       .consulting-details-page #consulting-request form .row.g-3 {
@@ -889,11 +816,11 @@
       <div class="container-fluid px-3 px-md-5">
         <div class="header-shell w-100">
           <a class="navbar-brand logo-animated site-logo-link" href="index.html" aria-label="مساقي">
-            <img src="assets/images/logomasaqy.png" alt="مساقي" class="site-logo-img">
+            <img src="assets/images/masaqy-logo-main.png" alt="مساقي" class="site-logo-img">
           </a>
           <div class="mobile-actions d-flex align-items-center gap-2 d-lg-none">
-            <a class="btn btn-mobile-cta magnetic-btn" href="mailto:info@masaqy.com" title="طلب استشارة"
-              aria-label="طلب استشارة">
+            <a class="btn btn-mobile-cta magnetic-btn" href="#consultationModal" title="طلب استشارة"
+              aria-label="طلب استشارة" data-bs-toggle="modal" data-bs-target="#consultationModal">
               <i class="bi bi-chat-dots"></i>
             </a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prenavbar"
@@ -918,18 +845,18 @@
               <li class="nav-item dropdown">
                 <a class="nav-link nav-link-modern dropdown-toggle" href="marketing-details.html" id="servicesDropdown"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="link-text">الخدمات</span>
+                  <span class="link-text">مساقات خدماتنا</span>
                   <i class="bi bi-chevron-down ms-1 opacity-75 small"></i>
                 </a>
                 <ul class="dropdown-menu nav-services-dropdown" aria-labelledby="servicesDropdown">
-                  <li><a class="dropdown-item" href="consulting-details.html">مساقي للاستشارات</a></li>
-                  <li><a class="dropdown-item" href="lab-details.html">مختبر مساقي</a></li>
-                  <li><a class="dropdown-item" href="marketing-details.html">مساقي للتسويق</a></li>
-                  <li><a class="dropdown-item" href="course-details.html">أكاديمية مساقي</a></li>
+                  <li><a class="dropdown-item" href="consulting-details.html"> مساقي كونستلنج  </a></li>
+                  <li><a class="dropdown-item" href="lab-details.html">  مساقي لاب</a></li>
+                  <li><a class="dropdown-item" href="marketing-details.html">مساقي ماركتينق</a></li>
+                  <li><a class="dropdown-item" href="course-details.html">  مساقي أكاديمي</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link nav-link-modern dropdown-toggle" href="index.html#systems" id="systemsDropdown"
+                <a class="nav-link nav-link-modern dropdown-toggle" href="system-details.html" id="systemsDropdown"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="link-text">الأنظمة</span>
                   <i class="bi bi-chevron-down ms-1 opacity-75 small"></i>
@@ -948,12 +875,18 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link nav-link-modern" href="blog.html">
+                  <span class="link-text">المدونة</span>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link nav-link-modern" href="#">
                   <span class="link-text">English</span>
                 </a>
               </li>
               <li class="nav-item d-none d-lg-block ms-xl-3">
-                <a class="btn btn-cta-glow magnetic-btn" href="mailto:info@masaqy.com" title="احجز اجتماع">
+                <a class="btn btn-cta-glow magnetic-btn" href="#consultationModal" title="احجز اجتماع"
+                  data-bs-toggle="modal" data-bs-target="#consultationModal">
                   <span class="btn-text">احجز اجتماع</span>
                   <i class="bi bi-calendar2-check btn-icon"></i>
                 </a>
@@ -967,7 +900,7 @@
   </header>
   <script src="assets/js/site-header.js"></script>
 
-  <main class="index-flow about-page-flow">
+  <main class="index-flow ">
 
     <section class="flow-hero about-hero consulting-hero" id="lab-hero">
         <div class="container-fluid px-3 px-md-5">
@@ -1377,22 +1310,36 @@
         </div>
       </section>
 
-      <section class="masaqy-partnership-cta margin-bottom-xl margin-top-xxl-1" id="start-now">
+      <section class="masaqy-partnership-cta margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated" id="start-now">
         <div class="container-fluid px-3 px-md-5">
-          <div class="masaqy-partnership-card reveal-item">
-            <h2>ابدأ رحلة التحول الذكي اليوم</h2>
-            <p>سواء كنت في بداية الطريق أو تمتلك مبادرات قائمة، نساعدك على تحويل الذكاء الاصطناعي إلى أثر مؤسسي واضح وقابل للقياس.</p>
-            <div class="flow-actions d-flex flex-wrap gap-3">
-              <a href="mailto:info@masaqy.com" class="btn flow-btn-primary">
-                <span>احجز استشارة مجانية</span><i class="bi bi-calendar2-check"></i>
-              </a>
-              <a href="mailto:info@masaqy.com" class="btn flow-btn-ghost">
-                <span>تواصل معنا</span><i class="bi bi-chat-dots"></i>
-              </a>
+          <div class="masaqy-partnership-card reveal-on-scroll" data-reveal-order="1">
+            <div class="row align-items-center g-4 g-xl-5">
+              <div class="col-lg-7">
+                <span class="masaqy-partnership-badge">
+                  <i class="bi bi-stars"></i>
+                  مستقبل الأعمال يبدأ اليوم
+                </span>
+                <h2 class="masaqy-partnership-title mb-3">ابدأ رحلة التحول الذكي اليوم</h2>
+                <h4 class="masaqy-footer-text mt-3 mb-0">سواء كنت في بداية الطريق أو تمتلك مبادرات قائمة، نساعدك على تحويل الذكاء الاصطناعي إلى أثر مؤسسي واضح وقابل للقياس.</h4>
+              </div>
+              <div class="col-lg-5">
+                <div class="masaqy-partnership-visual">
+                  <div class="flow-actions reveal-item d-flex flex-wrap gap-3 mb-0">
+                    <a href="mailto:info@masaqy.com" class="btn flow-btn-primary">
+                      <i class="bi bi-calendar2-check"></i>
+                      <span>احجز استشارة مجانية</span>
+                    </a>
+                    <a href="mailto:info@masaqy.com" class="btn flow-btn-ghost">
+                      <i class="bi bi-chat-dots"></i>
+                      <span>تواصل معنا</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-      </div>
-    </section>
+        </div>
+      </section>
     <footer class="footer-neo">
       <div class="footer-neo-background">
         <span class="footer-neo-orb orb-one"></span>
@@ -1405,7 +1352,7 @@
             <div class="row g-4 g-xl-5">
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <a href="index.html" class="masaqy-footer-brand text-decoration-none d-inline-block" aria-label="مساقي">
-                  <img src="assets/images/logomasaqy.png" alt="مساقي" class="masaqy-footer-logo">
+                  <img src="assets/images/masaqy-logo-main.png" alt="مساقي" class="masaqy-footer-logo">
                 </a>
                 <p class="masaqy-footer-text mt-3 mb-0">MASAQY شركة سعودية متخصصة في تقنيات الذكاء الاصطناعي والتحول المؤسسي الذكي، نبني منظومات أعمال ذكية تساعد المؤسسات على النمو والتوسع بثقة.</p>
                 <span class="masaqy-footer-tagline">Where Intelligence Becomes Business Impact</span>

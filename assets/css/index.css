@@ -3470,3 +3470,7 @@ background: linear-gradient(135deg, rgba(90, 24, 154, .08), rgba(142, 63, 209, .
     font-size: .84rem;
   }
 }
+
+.footer-neo .masaqy-footer-logo {
+  filter: brightness(1.85) contrast(1.12) saturate(1.08);
+}
