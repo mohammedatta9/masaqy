@@ -2636,6 +2636,50 @@ background: linear-gradient(135deg, rgba(90, 24, 154, .08), rgba(142, 63, 209, .
   }
 }
 
+.systems-ready-why-section {
+  background:
+    linear-gradient(180deg, rgba(248, 250, 252, .72), #fff 58%),
+    radial-gradient(circle at 88% 18%, rgba(90, 24, 154, .08), transparent 34%);
+}
+
+.systems-ready-why-section .systems-ready-why-shell {
+  border: 1px solid rgba(17, 24, 39, .06);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .78);
+  box-shadow: 0 24px 70px rgba(16, 24, 39, .07);
+}
+
+.systems-ready-why-section .masaqy-why-text {
+  max-width: 650px;
+}
+
+.systems-ready-why-section .masaqy-why-points li {
+  align-items: flex-start;
+}
+
+.systems-ready-why-section .systems-ready-why-visual img {
+  object-position: center top;
+  background: #0f172a;
+  filter: saturate(.92) contrast(1.02) brightness(.72);
+}
+
+.systems-ready-why-section .systems-ready-why-visual::before {
+  background:
+    radial-gradient(circle at 54% 42%, rgba(90, 24, 154, .28), transparent 34%),
+    linear-gradient(135deg, rgba(8, 16, 28, .46), rgba(14, 22, 36, .08));
+}
+
+.systems-ready-why-section .masaqy-why-metric strong {
+  color: #3c096c;
+}
+
+@media (max-width: 575.98px) {
+  .systems-ready-why-section .systems-ready-why-shell {
+    border-radius: 14px;
+    padding: 1rem;
+  }
+}
+
 .sectors-directory-grid .widgetscard {
   display: flex;
   flex-direction: column;

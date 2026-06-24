@@ -732,6 +732,18 @@
   margin-bottom: clamp(4rem, 6vw, 6rem) !important;
 }
 
+.system-details-page > section {
+  margin-bottom: clamp(4.25rem, 6.5vw, 6.5rem) !important;
+}
+
+.system-details-page > .flow-hero {
+  margin-bottom: clamp(4.75rem, 7vw, 7.5rem) !important;
+}
+
+.system-details-page > .masaqy-partnership-cta {
+  margin-bottom: clamp(4rem, 6vw, 6rem) !important;
+}
+
 #growth-solutions .consulting-group-card:nth-child(4),
 #growth-solutions .consulting-group-card:nth-child(5) {
   display: grid;
@@ -764,6 +776,18 @@
 #growth-solutions .consulting-group-card:nth-child(4) .consulting-group-content,
 #growth-solutions .consulting-group-card:nth-child(5) .consulting-group-content {
   margin-bottom: 0;
+}
+
+@media (max-width: 1199.98px) {
+  #growth-solutions .consulting-groups-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #growth-solutions .consulting-group-card,
+  #growth-solutions .consulting-group-card:nth-child(4),
+  #growth-solutions .consulting-group-card:nth-child(5) {
+    grid-column: 1 / -1;
+  }
 }
 
 #lab-methodology.automation-methodology-section .method-flow {
@@ -1159,6 +1183,14 @@
   font-size: .78rem;
 }
 
+#lab-groups .lab-solutions-grid .work-card-link {
+  margin-top: auto;
+  margin-bottom: .85rem;
+  color: var(--primary-color);
+  font-size: .82rem;
+  font-weight: 650;
+}
+
 #lab-groups .lab-solutions-grid .flow-btn-ghost {
   display: inline-flex;
   align-items: center;
@@ -1196,12 +1228,14 @@
   #lab-groups .lab-solutions-grid .consulting-group-card:nth-child(5) {
     grid-column: auto;
   }
+
 }
 
 @media (max-width: 575.98px) {
   #lab-groups .lab-solutions-grid {
     grid-template-columns: 1fr;
   }
+
 }
 
 .consulting-method-section {
@@ -1315,6 +1349,10 @@
 
   .consulting-groups-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #growth-solutions .consulting-groups-grid {
+    grid-template-columns: 1fr;
   }
 
   .consulting-group-card,
@@ -3155,6 +3193,10 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .case-problem-section .about-capability-grid {
+    grid-template-columns: 1fr;
+  }
+
   .about-split-grid {
     grid-template-columns: 1fr;
   }
@@ -3193,6 +3235,10 @@
   .about-mission-list,
   .services-card-grid,
   .services-check-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-problem-section .about-capability-grid {
     grid-template-columns: 1fr;
   }
 
