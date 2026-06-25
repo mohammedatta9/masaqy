@@ -1,4 +1,4 @@
-.about-page-flow {
+﻿.about-page-flow {
   min-height: 100vh;
 }
 
@@ -153,8 +153,8 @@
   top: 10%;
   width: 280px;
   height: 280px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(var(--secondary-rgb), .16), transparent 68%);
+  border-radius: 50%; 
+  background: radial-gradient(circle, rgba(var(#f7f4ff), .16), transparent 68%) ;
   z-index: -1;
 }
 
@@ -174,9 +174,7 @@
   border-radius: 22px;
 }
 
-.enterprise-challenges-grid .consulting-challenge-card h2 {
-  font-size: clamp(1rem, 1.15vw, 1.2rem);
-}
+.enterprise-challenges-grid .consulting-challenge-card h2 {}
 
 .enterprise-challenges-grid .consulting-challenge-card > p,
 .enterprise-challenges-grid .consulting-solution-block p {
@@ -270,15 +268,12 @@
 .consulting-challenge-card h2 {
   margin: 0 0 1rem;
   color: #111827;
-  font-size: clamp(1.45rem, 2.4vw, 2.25rem);
-  font-weight: 950;
+font-weight: 950;
   line-height: 1.35;
 }
 
 #consulting-overview .consulting-challenge-card h2,
-#lab-challenges .consulting-challenge-card h2 {
-  font-size: 22px;
-}
+#lab-challenges .consulting-challenge-card h2 {}
 
 #lab-challenges .lab-challenges-head {
   max-width: none;
@@ -288,7 +283,6 @@
 
 #lab-challenges .lab-challenges-head h2 {
   color: var(--primary-color);
-  font-size: clamp(1.65rem, 2.8vw, 2.65rem);
 }
 
 #lab-challenges .lab-challenges-grid {
@@ -314,15 +308,24 @@
   font-size: 1.15rem;
 }
 
-#lab-challenges .lab-challenges-grid .consulting-challenge-card h2 {
-  margin-bottom: .55rem;
-  font-size: clamp(1rem, 1.15vw, 1.2rem);
+#lab-challenges .lab-challenges-grid .consulting-challenge-card h3 {
+  margin: 0 0 .55rem;
+  color: #111827;
+  font-size: clamp(1.1rem, 2.8vw, 1.35rem);
+  font-weight: 800;
+  line-height: 1.35;
 }
 
 #lab-challenges .lab-challenges-grid .consulting-challenge-card > p {
   margin-bottom: 0;
   font-size: .92rem;
   line-height: 1.75;
+}
+
+@media (max-width: 767.98px) {
+  #lab-challenges .lab-challenges-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .consulting-challenge-card > p {
@@ -430,8 +433,7 @@
 .consulting-section-head h2 {
   margin: 0;
   color: #111827;
-  font-size: clamp(1.9rem, 3.8vw, 3.4rem);
-  font-weight: 950;
+font-weight: 950;
   line-height: 1.2;
 }
 
@@ -516,8 +518,7 @@
 
 #lab-why h2 {
   color: #fff !important;
-  font-size: clamp(1.75rem, 3vw, 2.55rem);
-  line-height: 1.25;
+line-height: 1.25;
 }
 
 #lab-why .lab-why-row {
@@ -606,8 +607,7 @@
 
 #lab-results h2 {
   color: #1f2937 !important;
-  font-size: clamp(1.8rem, 3vw, 2.55rem);
-  font-weight: 850 !important;
+font-weight: 850 !important;
 }
 
 #lab-results h2::after {
@@ -663,8 +663,7 @@
 .case-impact-results-head h2 {
   margin: 0 0 .55rem;
   color: #1f2937;
-  font-size: clamp(1.8rem, 3vw, 2.55rem);
-  font-weight: 850;
+font-weight: 850;
   line-height: 1.25;
 }
 
@@ -1096,7 +1095,6 @@
 
 #lab-groups .lab-groups-head h2 {
   color: #1f2937;
-  font-size: clamp(1.5rem, 2.4vw, 2.15rem);
 }
 
 #lab-groups .lab-solutions-grid {
@@ -1510,8 +1508,7 @@
 .works-showcase-head h2 {
   margin: 0;
   color: #111827;
-  font-size: clamp(1.8rem, 3.4vw, 3.2rem);
-  font-weight: 950;
+font-weight: 950;
   line-height: 1.2;
 }
 
@@ -1671,8 +1668,9 @@
 .work-detail-section {
   position: relative;
   isolation: isolate;
+  background:  #f7f4ff;
 }
-
+ 
 .work-detail-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) repeat(2, minmax(0, 1fr));
@@ -3082,8 +3080,7 @@
   z-index: 1;
   margin: 0 0 .85rem;
   color: #fff;
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
-  font-weight: 900;
+font-weight: 900;
   line-height: 1.25;
 }
 
@@ -3494,8 +3491,7 @@
 
 #lab-challenges.marketing-challenges-snapshot .lab-challenges-head h2 {
   color: #182133;
-  font-size: clamp(2rem, 3.5vw, 3.05rem);
-  line-height: 1.15;
+line-height: 1.15;
 }
 
 #lab-challenges.marketing-challenges-snapshot .lab-challenges-head p {
@@ -3515,9 +3511,7 @@
   min-height: 188px;
 }
 
-#lab-challenges.marketing-challenges-snapshot .lab-challenges-grid .consulting-challenge-card h2 {
-  font-size: 20px !important;
-}
+#lab-challenges.marketing-challenges-snapshot .lab-challenges-grid .consulting-challenge-card h2 {}
 
 .marketing-services-section {
   padding-block: clamp(3.5rem, 6vw, 5.5rem);
@@ -3538,8 +3532,7 @@
 
 .marketing-services-head h2 {
   color: #182133;
-  font-size: clamp(2rem, 3.2vw, 3rem);
-  line-height: 1.15;
+line-height: 1.15;
 }
 
 .marketing-services-grid {
@@ -3691,7 +3684,6 @@
 
 #marketing-groups .marketing-services-head h2 {
   color: #1f2937;
-  font-size: clamp(1.5rem, 2.4vw, 2.15rem);
 }
 
 #marketing-groups .marketing-services-grid {
@@ -3773,8 +3765,7 @@
   color: rgba(17, 24, 39, .66);
   font-size: .84rem;
   line-height: 1.65;
-}
-
+} 
 #marketing-groups .marketing-service-card .service-checks li::before {
   content: none;
 }
@@ -3896,8 +3887,7 @@
 .marketing-why-content h2 {
   margin-bottom: 1.5rem;
   color: #182133;
-  font-size: clamp(1.8rem, 3vw, 2.7rem);
-  font-weight: 950;
+font-weight: 950;
   line-height: 1.25;
 }
 
@@ -3985,9 +3975,11 @@
   margin-bottom: clamp(2rem, 4vw, 3.5rem);
 }
 
-#partners .container-fluid {
+main.index-flow > section > .container-fluid {
   padding-top: clamp(2rem, 4vw, 3.5rem);
   padding-bottom: clamp(2rem, 4vw, 3.5rem);
+    background: radial-gradient(circle, rgba(var(#f7f4ff), .16), transparent 68%) ;
+
 }
 
 #partners .cta-box {
@@ -4021,8 +4013,7 @@
 .marketing-90-roadmap .marketing-90-roadmap-head h2 {
   margin-bottom: .55rem;
   color: #182133;
-  font-size: clamp(2.25rem, 4vw, 3.4rem);
-  line-height: 1.12;
+line-height: 1.12;
 }
 
 .marketing-90-roadmap .marketing-90-roadmap-head p {

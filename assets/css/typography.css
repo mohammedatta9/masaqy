@@ -186,3 +186,8 @@ body.info-pages #lab-results.masaqy-results-section .masaqy-stat-value {
     font-size: 1.4rem !important;
   }
 }
+
+html body h2:not(#masaqy-h2-size-source):not(.masaqy-footer-title):not(.modal-title):not(.h2-size-exception):not(.ignore-h2-size):not(.footer-heading):not(.modal-heading) {
+  font-size: clamp(28px, 5vw, 40px) !important;
+  line-height: 1.25 !important;
+}

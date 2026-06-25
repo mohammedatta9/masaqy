@@ -1,4 +1,4 @@
-.blog-detail-page {
+﻿.blog-detail-page {
   background: #f5f6f8;
   color: #202027;
 }
@@ -185,8 +185,7 @@
 .blog-article h2 {
   margin: 2rem 0 1rem;
   color: var(--primary-color);
-  font-size: clamp(1.85rem, 3.3vw, 2.65rem);
-  font-weight: 950;
+font-weight: 950;
   line-height: 1.24;
   text-align: center;
 }
@@ -387,8 +386,7 @@
 .blog-recommendations h2 {
   margin: 0;
   color: #202027;
-  font-size: clamp(1.65rem, 3vw, 2.55rem);
-  font-weight: 950;
+font-weight: 950;
 }
 
 .blog-recommendations-head a {

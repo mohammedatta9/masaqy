@@ -1,4 +1,4 @@
-.demos-card-title {
+﻿.demos-card-title {
   margin: 0 0 14px;
   color: #111827;
   font-size: clamp(1.35rem, 2vw, 2rem);
@@ -85,8 +85,7 @@
 .works-showcase-head h2 {
   margin: 0;
   color: #111827;
-  font-size: clamp(1.8rem, 3.4vw, 3.2rem);
-  font-weight: 950;
+font-weight: 950;
   line-height: 1.2;
 }
 

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="تكامل الأنظمة والواجهات البرمجية (API Integration) من مساقي: حلول متقدمة لربط الأنظمة والمنصات والأجهزة عبر APIs موحدة لتحقيق تدفق بيانات سلس وبيئة تقنية متكاملة.">
+  <meta name="keyword" content="MASAQY, مساقي, تكامل الأنظمة, الواجهات البرمجية, API Integration, Cloud Integration, ERP Integration, CRM Integration, IoT Integration, أتمتة البيانات, تكامل المنصات">
+  <title>تكامل الأنظمة والواجهات البرمجية (API Integration)| MASAQY</title>
+  <link rel="shortcut icon" href="../assets/images/iconmsaqy.png">
+  <link href="../vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/colors.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <link rel="stylesheet" href="../assets/css/about.css">
+  <link rel="stylesheet" href="../assets/css/typography.css">
+  <style>
+    .ecommerce-tech-list,
+    .ecommerce-ready-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .75rem;
+      padding: 0;
+      margin: 1.5rem 0 0;
+      list-style: none;
+    }
+
+    .ecommerce-tech-list li,
+    .ecommerce-ready-list li {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: .75rem 1rem;
+      border: 1px solid rgba(var(--primary-rgb), .12);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .84);
+      color: #111827;
+      font-weight: 800;
+      line-height: 1.5;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, .05);
+    }
+
+    .ecommerce-tech-list i,
+    .ecommerce-ready-list i {
+      color: var(--primary-color);
+      flex: 0 0 auto;
+    }
+
+    .ecommerce-wide-card {
+      grid-column: span 2;
+    }
+
+    #lab-challenges .consulting-challenge-head,
+    #engineering-solutions .consulting-group-top {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: .75rem;
+    }
+
+    #lab-challenges .consulting-main-tag,
+    #engineering-solutions .consulting-main-tag {
+      max-width: 100%;
+      white-space: normal;
+      line-height: 1.5;
+    }
+
+    #engineering-solutions .consulting-main-tag {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      color: #111827;
+      font-size: clamp(1.05rem, 1.25vw, 1.25rem);
+      font-weight: 950;
+    }
+
+    #engineering-solutions .consulting-groups-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      align-items: stretch;
+      grid-auto-flow: row;
+    }
+
+    #engineering-solutions .consulting-group-card {
+      grid-column: auto !important;
+      width: 100%;
+      min-width: 0;
+    }
+
+    #ecommerce-stack .consulting-section-head {
+      margin-inline: auto;
+      text-align: center;
+      justify-items: center;
+    }
+
+    #lab-methodology .consulting-section-head {
+      margin-inline: auto;
+      text-align: center;
+      justify-items: center;
+    }
+
+    #lab-methodology .consulting-method-timeline {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      justify-content: center;
+    }
+
+    #lab-methodology .consulting-method-timeline::before {
+      inset-inline: 8%;
+    }
+
+    #lab-methodology .consulting-method-step {
+      justify-items: center;
+      text-align: center;
+    }
+
+    #lab-why .text-muted {
+      color: rgba(255, 255, 255, .9) !important;
+      font-weight: 700;
+    }
+
+    #lab-why .masaqy-advantage-card>i {
+      display: grid;
+      place-items: center;
+      width: 58px;
+      height: 58px;
+      margin-bottom: 1rem;
+      border-radius: 14px;
+      background: #fff;
+      color: #4d058e;
+      font-size: 1.65rem;
+      box-shadow: 0 14px 34px rgba(15, 23, 42, .18);
+    }
+
+    #lab-why .masaqy-advantage-card h3 {
+      margin-bottom: .65rem;
+      color: #fff;
+      font-size: clamp(1.05rem, 1.35vw, 1.24rem);
+      font-weight: 950;
+      line-height: 1.45;
+    }
+
+    #lab-why .masaqy-advantage-card p {
+      color: rgba(255, 255, 255, .84);
+    }
+
+    #lab-challenges,
+    #engineering-solutions,
+    #ecommerce-stack {
+      margin-bottom: clamp(3.5rem, 6vw, 6rem) !important;
+    }
+
+    .robot-section {
+      margin-bottom: clamp(6.5rem, 10vw, 10rem);
+      padding-top: clamp(1.5rem, 3vw, 3rem);
+    }
+
+    .robot-section-head {
+      max-width: 820px;
+      margin: 0 auto clamp(1.6rem, 3vw, 2.5rem);
+      text-align: center;
+    }
+
+    .robot-section-head .consulting-hero-copy {
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .robot-section-head h2 {
+      text-align: center;
+    }
+
+    #robot-challenges {
+      padding-block: clamp(4.5rem, 7vw, 6.5rem);
+    }
+
+    #robot-solutions {
+      padding-block: clamp(4.5rem, 7vw, 6.5rem);
+      background: #f7f4ff;
+      border-block: 1px solid rgba(var(--primary-rgb), .08);
+    }
+
+    .robot-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(1rem, 2vw, 1.35rem);
+    }
+
+    .robot-grid-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .robot-card {
+      height: 100%;
+      padding: clamp(1.15rem, 2vw, 1.55rem);
+      border: 1px solid rgba(var(--primary-rgb), .1);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 14px 34px rgba(15, 23, 42, .06);
+    }
+
+    .robot-card i {
+      display: inline-grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+      color: var(--primary-color);
+      background: rgba(var(--primary-rgb), .1);
+      font-size: 1.35rem;
+    }
+
+    .robot-card h3 {
+      margin-bottom: .65rem;
+      color: #111827;
+      font-size: clamp(1rem, 1.2vw, 1.18rem);
+      font-weight: 950;
+      line-height: 1.45;
+    }
+
+    .robot-card p {
+      margin: 0;
+      color: rgba(17, 24, 39, .66);
+      font-weight: 650;
+      line-height: 1.8;
+    }
+
+    .robot-impact-note {
+      max-width: 820px;
+      margin: clamp(1.5rem, 3vw, 2.25rem) auto 0;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      color: var(--primary-color); 
+      font-weight: 800; 
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    .robot-impact-note h5 {
+      margin: 0;
+      color: inherit;
+      font: inherit;
+      line-height: inherit;
+    }
+
+    .robot-method-list {
+      counter-reset: robot-step;
+    }
+
+    .robot-method-card {
+      position: relative;
+      padding-top: 3.4rem;
+    }
+
+    .robot-method-card::before {
+      counter-increment: robot-step;
+      content: counter(robot-step, decimal-leading-zero);
+      position: absolute;
+      inset-block-start: 1.15rem;
+      inset-inline-start: 1.15rem;
+      color: rgba(var(--primary-rgb), .24);
+      font-size: 1.55rem;
+      font-weight: 950;
+      line-height: 1;
+    }
+
+    .robot-dark-band {
+      padding-block: clamp(5.5rem, 9vw, 8rem);
+      background: #111827;
+    }
+
+    .robot-dark-band .robot-section-head h2,
+    .robot-dark-band .robot-section-head p {
+      color: #fff;
+    }
+
+    .robot-dark-band .robot-card {
+      border-color: rgba(255, 255, 255, .1);
+      background: rgba(255, 255, 255, .06);
+    }
+
+    .robot-dark-band .robot-card h3 {
+      color: #fff;
+    }
+
+    .robot-dark-band .robot-card p {
+      color: rgba(255, 255, 255, .72);
+    }
+
+    @media (max-width: 991.98px) {
+      .ecommerce-wide-card {
+        grid-column: auto;
+      }
+
+      .robot-grid,
+      .robot-grid-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      #engineering-solutions .consulting-groups-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      #lab-methodology .consulting-method-timeline {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      #lab-methodology .consulting-method-timeline::before {
+        display: none;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      #lab-hero .consulting-hero-title {
+        font-size: clamp(2.05rem, 11vw, 3rem);
+        line-height: 1.25;
+      }
+
+      .robot-section {
+        margin-bottom: clamp(4.5rem, 16vw, 6rem);
+        padding-top: clamp(1rem, 5vw, 1.75rem);
+      }
+
+      .ecommerce-tech-list,
+      .ecommerce-ready-list {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .ecommerce-tech-list li,
+      .ecommerce-ready-list li {
+        width: 100%;
+      }
+
+      #engineering-solutions .consulting-groups-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .robot-grid,
+      .robot-grid-4 {
+        grid-template-columns: 1fr;
+      }
+
+      #lab-methodology .consulting-method-timeline {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <script src="../assets/js/plugins.js"></script>
+</head>
+
+<body data-theme="theme-index" class="info-pages">
+  <div class="hexagon-cursor"></div>
+  <header class="header-creative position-fixed top-0 w-100" style="z-index: 1000;" id="mainNavbar">
+    <div class="header-ambient" aria-hidden="true">
+      <span class="ambient-orb orb-one"></span>
+      <span class="ambient-orb orb-two"></span>
+      <span class="ambient-line"></span>
+    </div>
+    <nav class="navbar navbar-expand-lg" aria-label="القائمة الرئيسية">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="header-shell w-100">
+          <a class="navbar-brand logo-animated site-logo-link" href="../index.html" aria-label="مساقي">
+            <img src="../assets/images/masaqy-logo-main.png" alt="مساقي" class="site-logo-img">
+          </a>
+          <div class="mobile-actions d-flex align-items-center gap-2 d-lg-none">
+            <a class="btn btn-mobile-cta magnetic-btn" href="#consultationModal" title="طلب استشارة"
+              aria-label="طلب استشارة" data-bs-toggle="modal" data-bs-target="#consultationModal">
+              <i class="bi bi-chat-dots"></i>
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prenavbar"
+              aria-label="فتح وإغلاق القائمة">
+              <span class="toggler-line"></span>
+              <span class="toggler-line"></span>
+              <span class="toggler-line"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="prenavbar">
+            <ul class="navbar-nav nav-cluster ms-auto align-items-lg-center gap-lg-2 mt-4 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link nav-link-modern" href="../index.html">
+                  <span class="link-text">الرئيسية</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-modern" href="../about.html">
+                  <span class="link-text">من نحن</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-link-modern dropdown-toggle" href="../marketing-details.html" id="servicesDropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="link-text">مساقات خدماتنا</span>
+                  <i class="bi bi-chevron-down ms-1 opacity-75 small"></i>
+                </a>
+                <ul class="dropdown-menu nav-services-dropdown" aria-labelledby="servicesDropdown">
+                  <li><a class="dropdown-item" href="../consulting-details.html"> مساقي كونستلنج  </a></li>
+                  <li><a class="dropdown-item" href="../lab-details.html">  مساقي لاب</a></li>
+                  <li><a class="dropdown-item" href="../marketing-details.html">مساقي ماركتينق</a></li>
+                  <li><a class="dropdown-item" href="../course-details.html">  مساقي أكاديمي</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-link-modern dropdown-toggle" href="../system-details.html" id="systemsDropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="link-text">الأنظمة</span>
+                  <i class="bi bi-chevron-down ms-1 opacity-75 small"></i>
+                </a>
+                <ul class="dropdown-menu nav-services-dropdown" aria-labelledby="systemsDropdown">
+                  <li><a class="dropdown-item" href="../system-details.html">CRM الذكي</a></li>
+                  <li><a class="dropdown-item" href="../system-details.html">ERP الذكي</a></li>
+                  <li><a class="dropdown-item" href="../system-details.html">Automation Systems</a></li>
+                  <li><a class="dropdown-item" href="../system-details.html">AI Dashboards</a></li>
+                  <li><a class="dropdown-item" href="../system-details.html">AI Decision Systems</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-modern" href="../works.html">
+                  <span class="link-text">أعمالنا</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-modern" href="../blog.html">
+                  <span class="link-text">المدونة</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-modern" href="#">
+                  <span class="link-text">English</span>
+                </a>
+              </li>
+              <li class="nav-item d-none d-lg-block ms-xl-3">
+                <a class="btn btn-cta-glow magnetic-btn" href="#consultationModal" title="احجز اجتماع"
+                  data-bs-toggle="modal" data-bs-target="#consultationModal">
+                  <span class="btn-text">احجز اجتماع</span>
+                  <i class="bi bi-calendar2-check btn-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="scroll-progress-bar"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <script src="../assets/js/site-header.js"></script>
+
+    <main class="index-flow about-page-flow">
+    <section class="flow-hero about-hero consulting-hero" id="robot-hero">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="consulting-hero-content">
+              <span class="about-section-kicker reveal-item"><i class="bi bi-hdd-network"></i> تكامل الأنظمة والواجهات البرمجية</span>
+              <h1 class="consulting-hero-title reveal-item">تكامل الأنظمة والواجهات البرمجية</h1>
+              <p class="consulting-hero-copy reveal-item">
+                حلول متقدمة لربط الأنظمة المختلفة والأجهزة والمنصات عبر واجهات برمجية (APIs) موحدة، بهدف تحقيق تدفق بيانات سلس وبيئة تقنية متكاملة وذكية.
+              </p>
+              <p class="consulting-hero-copy reveal-item">
+                نساعد المؤسسات على ربط الأنظمة المتباينة وتحويلها إلى منظومة رقمية واحدة تعمل بكفاءة عالية.
+              </p>
+              <div class="flow-actions consulting-hero-actions reveal-item d-flex flex-wrap gap-3 mb-0">
+                <a href="https://wa.me/966596147285" target="_blank" rel="noopener" class="btn flow-btn-primary">
+                  <span>اطلب الخدمة</span>
+                  <i class="bi bi-arrow-left"></i>
+                </a>
+                <a href="#robot-solutions" class="btn flow-btn-ghost">تحدث مع خبير تكامل الأنظمة</a>
+              </div>
+              <div class="d-flex flex-wrap gap-3 mt-3 reveal-item" aria-label="ماذا نقدم؟">
+                <div class="d-flex align-items-center gap-2 pe-3 border-end"><strong class="fs-4 text-dark"><i class="bi bi-diagram-3"></i></strong><span class="small text-muted">ربط الأنظمة المتباينة عبر APIs</span></div>
+                <div class="d-flex align-items-center gap-2 pe-3 border-end"><strong class="fs-4 text-dark"><i class="bi bi-cloud-arrow-up"></i></strong><span class="small text-muted">ربط الأجهزة المادية بالسحابة</span></div>
+                <div class="d-flex align-items-center gap-2 pe-3 border-end"><strong class="fs-4 text-dark"><i class="bi bi-arrow-repeat"></i></strong><span class="small text-muted">أتمتة تدفق البيانات بين المنصات</span></div>
+                <div class="d-flex align-items-center gap-2"><strong class="fs-4 text-dark"><i class="bi bi-hdd-network"></i></strong><span class="small text-muted">تكامل الأنظمة الداخلية والخارجية</span></div>
+              </div>
+              <div class="robot-impact-note reveal-item"><h5>الأثر: بيئة تقنية متناغمة، تدفق بيانات سلس، ورفع كفاءة التشغيل الرقمي.</h5></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="consulting-hero-visual reveal-item scroll-scale-in">
+              <div class="consulting-image-card">
+                <img src="../assets/images/ai-systems/ai-dashboards.png" alt="حلول تكامل الأنظمة والواجهات البرمجية من مساقي">
+                <div class="consulting-image-badge">
+                  <i class="bi bi-cpu"></i><strong class="fs-4 text-dark">API Integration</strong>
+                  <span class="small text-muted">واجهات موحدة، بيانات مترابطة، وتشغيل رقمي أكثر سرعة ودقة.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-detail-section consulting-challenges-section robot-section" id="robot-challenges">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="robot-section-head reveal-item">
+          <span class="works-showcase-kicker"><i class="bi bi-exclamation-triangle"></i> التحديات في الأنظمة غير المتكاملة</span>
+          <p class="consulting-hero-copy">تعدد الأنظمة بدون ترابط يجعل تبادل البيانات أبطأ، ويرفع احتمالية الأخطاء والتكرار اليدوي.</p>
+        </div>
+        <div class="robot-grid robot-grid-4">
+          <article class="robot-card reveal-item"><i class="bi bi-layers"></i><h3>تعدد الأنظمة بدون ترابط</h3><p>منصات تعمل بشكل منفصل وتمنع تكوين صورة موحدة عن العمليات.</p></article>
+          <article class="robot-card reveal-item"><i class="bi bi-arrow-left-right"></i><h3>صعوبة تبادل البيانات</h3><p>انتقال المعلومات بين المنصات يتم ببطء أو يحتاج إلى تدخل مستمر.</p></article>
+          <article class="robot-card reveal-item"><i class="bi bi-keyboard"></i><h3>إدخال يدوي ومتكرر</h3><p>تكرار نفس البيانات في أكثر من نظام يهدر الوقت ويربك فرق العمل.</p></article>
+          <article class="robot-card reveal-item"><i class="bi bi-bug"></i><h3>أخطاء في نقل المعلومات</h3><p>النقل اليدوي وغير المؤتمت يزيد احتمالية فقدان البيانات أو تضاربها.</p></article>
+          <article class="robot-card reveal-item"><i class="bi bi-speedometer2"></i><h3>ضعف الكفاءة التشغيلية</h3><p>الفرق تقضي وقتاً في تنسيق البيانات بدلاً من تنفيذ الأعمال الأساسية.</p></article>
+          <article class="robot-card reveal-item"><i class="bi bi-clock-history"></i><h3>تأخر معالجة البيانات</h3><p>القرارات تعتمد على بيانات تصل متأخرة أو لا تعكس الوضع الحالي.</p></article>
+        </div>
+        <div class="robot-impact-note reveal-item"><h5>النتيجة: بيئة تقنية غير مترابطة وبطيئة في الأداء.</h5></div>
+      </div>
+    </section>
+
+    <section class="work-detail-section consulting-groups-section robot-section" id="robot-solutions">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="robot-section-head reveal-item">
+          <span class="works-showcase-kicker"><i class="bi bi-tools"></i> حلولنا التطويرية والتقنية</span>
+          <h2 class="fs-1 fw-bold text-dark">حلول تكامل الأنظمة من مساقي</h2>
+          <p class="consulting-hero-copy">نقدم حلول API Integration متقدمة لربط كل مكونات النظام في بيئة واحدة.</p>
+        </div>
+        <div class="robot-grid">
+          <article class="robot-card reveal-item"><i class="bi bi-diagram-3"></i><h3>ربط الأنظمة الداخلية والخارجية</h3><p>توحيد تدفق البيانات بين أنظمة المؤسسة ومنصات الشركاء والعملاء.</p></article>
+          <article class="robot-card reveal-item"><i class="bi bi-code-slash"></i><h3>تطوير APIs مخصصة</h3><p>تصميم واجهات برمجية آمنة تناسب احتياج المؤسسة وطبيعة بياناتها.</p></article>
+          <article class="robot-card reveal-item"><i class="bi bi-arrow-repeat"></i><h3>أتمتة تبادل البيانات</h3><p>نقل البيانات بين المنصات تلقائياً بدون إدخال يدوي أو تكرار تشغيلي.</p></article>
+          <article class="robot-card reveal-item"><i class="bi bi-cloud-check"></i><h3>Cloud Integration</h3><p>ربط الأنظمة بالسحابة لتبادل بيانات لحظي وقابل للتوسع.</p></article>
+          <article class="robot-card reveal-item"><i class="bi bi-building-gear"></i><h3>تكامل ERP وCRM وIoT</h3><p>ربط أنظمة الإدارة والعملاء والأجهزة ضمن منظومة عمل واحدة.</p></article>
+          <article class="robot-card reveal-item"><i class="bi bi-database-check"></i><h3>طبقة بيانات موحدة</h3><p>بناء مصدر بيانات مؤسسي منظم يدعم التقارير والتحليلات والقرارات.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="masaqy-advantage-section robot-section animate-on-load is-animated" id="robot-why">
+      <div class="container-lg position-relative">
+        <div class="masaqy-advantage-shell reveal-on-scroll" data-reveal-order="0">
+          <div class="robot-section-head">
+            <span class="text-primary text-uppercase fw-bold ls-2 small mb-2 d-inline-block">Why MASAQY</span>
+            <h2 class="fs-1 fw-bold text-dark mb-3">لماذا مساقي لتكامل الأنظمة؟</h2>
+          </div>
+          <div class="robot-grid">
+            <article class="robot-card"><i class="bi bi-grid-1x2"></i><h3>خبرة في الأنظمة المترابطة</h3><p>نفهم العلاقات بين العمليات والبيانات والمنصات قبل تصميم التكامل.</p></article>
+            <article class="robot-card"><i class="bi bi-code-slash"></i><h3>APIs مخصصة حسب الحاجة</h3><p>نبني واجهات برمجية تلائم بنية المؤسسة ولا تفرض عليها نمطاً جاهزاً.</p></article>
+            <article class="robot-card"><i class="bi bi-hdd-network"></i><h3>تكامل شامل بين المنصات</h3><p>نربط الأنظمة الداخلية والخارجية والسحابية في تجربة تشغيل موحدة.</p></article>
+            <article class="robot-card"><i class="bi bi-shield-check"></i><h3>أمان عالي في نقل البيانات</h3><p>تصميم يراعي الصلاحيات، التشفير، واستمرارية تدفق البيانات.</p></article>
+            <article class="robot-card"><i class="bi bi-speedometer2"></i><h3>أداء سريع واستقرار</h3><p>حلول مصممة لمعالجة البيانات بكفاءة وتقليل التعطل أو التأخير.</p></article>
+            <article class="robot-card"><i class="bi bi-arrow-up-right-circle"></i><h3>قابلية توسع ودعم مستمر</h3><p>بنية قابلة للنمو مع احتياجات المؤسسة المستقبلية ودعم تقني مستمر.</p></article>
+          </div>
+          <div class="robot-impact-note"><h5>الهدف: بناء بيئة تقنية موحدة ومتكاملة بالكامل.</h5></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="masaqy-stats-section masaqy-results-section robot-section animate-on-load is-animated" id="robot-results">
+      <div class="container-lg position-relative">
+        <div class="robot-section-head">
+          <h2 class="fs-1 fw-bold text-dark">النتائج التي تحققها حلول التكامل</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6"><article class="masaqy-stat-card"><h3>تدفق بيانات سلس</h3><p>انتقال تلقائي للمعلومات بين الأنظمة بدون تعقيد تشغيلي.</p></article></div>
+          <div class="col-lg-4 col-md-6"><article class="masaqy-stat-card"><h3>تقليل الأخطاء اليدوية</h3><p>خفض الاعتماد على الإدخال المتكرر ونقل البيانات يدوياً.</p></article></div>
+          <div class="col-lg-4 col-md-6"><article class="masaqy-stat-card"><h3>تسريع العمليات التشغيلية</h3><p>بيانات جاهزة في وقتها تقلل الانتظار بين الفرق والأنظمة.</p></article></div>
+          <div class="col-lg-4 col-md-6"><article class="masaqy-stat-card"><h3>تحسين الكفاءة التقنية</h3><p>منظومة مترابطة تقلل التشتت وتزيد موثوقية التشغيل الرقمي.</p></article></div>
+          <div class="col-lg-4 col-md-6"><article class="masaqy-stat-card"><h3>رفع جودة اتخاذ القرار</h3><p>بيانات موحدة ودقيقة تمنح الإدارة رؤية أوضح للأداء.</p></article></div>
+          <div class="col-lg-4 col-md-6"><article class="masaqy-stat-card"><h3>تقليل التكاليف التشغيلية</h3><p>أتمتة التكامل تخفض الوقت الضائع وجهود المعالجة المتكررة.</p></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-detail-section robot-section" id="robot-methodology">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="robot-section-head reveal-item">
+          <span class="works-showcase-kicker"><i class="bi bi-diagram-3"></i> منهجية العمل</span>
+          <h2 class="fs-1 fw-bold text-dark">كيف نعمل على مشاريع تكامل الأنظمة؟</h2>
+        </div>
+        <div class="robot-grid robot-grid-4 robot-method-list">
+          <article class="robot-card robot-method-card reveal-item"><h3>تحليل الأنظمة الحالية</h3><p>دراسة جميع الأنظمة والمنصات المستخدمة داخل المؤسسة.</p></article>
+          <article class="robot-card robot-method-card reveal-item"><h3>تحديد نقاط التكامل</h3><p>تحديد أماكن الربط بين الأنظمة المختلفة وتدفق البيانات المطلوب.</p></article>
+          <article class="robot-card robot-method-card reveal-item"><h3>تصميم APIs</h3><p>بناء واجهات برمجية مخصصة لربط الأنظمة بشكل آمن وفعال.</p></article>
+          <article class="robot-card robot-method-card reveal-item"><h3>تطوير التكامل</h3><p>تنفيذ الربط بين الأنظمة وربط تدفق البيانات.</p></article>
+          <article class="robot-card robot-method-card reveal-item"><h3>الاختبار والتحقق</h3><p>اختبار تدفق البيانات والتأكد من دقتها وسرعتها.</p></article>
+          <article class="robot-card robot-method-card reveal-item"><h3>الإطلاق والتشغيل</h3><p>تشغيل التكامل داخل بيئة العمل الفعلية.</p></article>
+          <article class="robot-card robot-method-card reveal-item"><h3>الدعم والتحسين المستمر</h3><p>مراقبة الأداء وتحسين التكامل بشكل مستمر.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="works-showcase-section robot-section" id="robot-works">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="robot-section-head reveal-item">
+          <span class="works-showcase-kicker"><i class="bi bi-briefcase"></i> الأعمال</span>
+          <h2 class="fs-1 fw-bold text-dark">مشاريع تكامل الأنظمة</h2>
+        </div>
+        <div class="works-grid">
+          <article class="work-card"><a class="work-card-image" href="../works.html"><img src="../assets/images/ai-systems/ai-dashboards.png" alt="نظام ربط ERP مع CRM"></a><div class="work-card-content"><span class="work-card-tag">ERP + CRM</span><h3>نظام ربط ERP مع CRM</h3><p>تكامل كامل بين أنظمة الإدارة والعملاء لتوحيد البيانات.</p><a href="../works.html" class="work-card-link">عرض التفاصيل <i class="bi bi-arrow-left"></i></a></div></article>
+          <article class="work-card"><a class="work-card-image" href="../works.html"><img src="../assets/images/ai-systems/automation-systems.png" alt="منصة تكامل بيانات سحابية"></a><div class="work-card-content"><span class="work-card-tag">Cloud Integration</span><h3>منصة تكامل بيانات سحابية</h3><p>ربط الأنظمة المختلفة بالسحابة لتبادل البيانات لحظياً.</p><a href="../works.html" class="work-card-link">عرض التفاصيل <i class="bi bi-arrow-left"></i></a></div></article>
+          <article class="work-card"><a class="work-card-image" href="../works.html"><img src="../assets/images/ai-systems/ai-decision-systems.png" alt="نظام أتمتة تدفق البيانات"></a><div class="work-card-content"><span class="work-card-tag">Data Automation</span><h3>نظام أتمتة تدفق البيانات</h3><p>حل لأتمتة نقل البيانات بين منصات متعددة بدون تدخل يدوي.</p><a href="../works.html" class="work-card-link">عرض المزيد من المشاريع <i class="bi bi-arrow-left"></i></a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-detail-section consulting-groups-section margin-bottom-xl" id="ecommerce-stack">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="consulting-section-head automation-services-head reveal-item">
+          <h2>أنظمة تكامل ذكية مدعومة بالذكاء الاصطناعي</h2>
+          <p class="consulting-hero-copy reveal-item">بيئة رقمية ذكية متكاملة تعتمد على البيانات الفورية وتدعم تحسين أداء الأنظمة المترابطة.</p>
+        </div>
+        <ul class="ecommerce-tech-list reveal-item" aria-label="أنظمة تكامل ذكية مدعومة بالذكاء الاصطناعي">
+          <li><i class="bi bi-check-circle"></i>ربط أنظمة جاهزة عبر APIs ذكية</li>
+          <li><i class="bi bi-check-circle"></i>أتمتة تدفق البيانات بين المنصات</li>
+          <li><i class="bi bi-check-circle"></i>تحليل البيانات المدمجة تلقائياً</li>
+          <li><i class="bi bi-check-circle"></i>اكتشاف الأخطاء في التكامل</li>
+          <li><i class="bi bi-check-circle"></i>تحسين أداء الأنظمة المترابطة</li>
+          <li><i class="bi bi-check-circle"></i>عرض المزيد من الأنظمة</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="masaqy-testimonials-section robot-section animate-on-load is-animated" id="robot-testimonials">
+      <div class="container-lg position-relative">
+        <div class="masaqy-testimonials-shell reveal-on-scroll" data-reveal-order="0">
+          <div class="row justify-content-center mb-4"><div class="col-lg-9 text-center"><span class="text-primary text-uppercase fw-bold ls-2 small mb-2 d-inline-block">آراء العملاء</span><h2 class="fs-1 fw-bold text-dark mb-3">ماذا يقول عملاؤنا</h2></div></div>
+          <div class="row g-4 masaqy-testimonials-grid justify-content-center">
+            <div class="col-lg-4 col-md-6"><article class="masaqy-testimonial-card"><div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><p>"تمكنا من ربط جميع أنظمتنا بسهولة بفضل هذا الحل."</p><div class="testimonial-author"><span class="testimonial-avatar">ت</span><div><h3>مدير تقنية معلومات</h3><span>إدارة تقنية</span></div></div></article></div>
+            <div class="col-lg-4 col-md-6"><article class="masaqy-testimonial-card featured"><div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><p>"تدفق البيانات أصبح أسرع وأكثر دقة بين الأنظمة."</p><div class="testimonial-author"><span class="testimonial-avatar">C</span><div><h3>CTO شركة تقنية</h3><span>الإدارة التقنية</span></div></div></article></div>
+            <div class="col-lg-4 col-md-6"><article class="masaqy-testimonial-card"><div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><p>"حل احترافي ساعدنا على توحيد بيئة العمل بالكامل."</p><div class="testimonial-author"><span class="testimonial-avatar">ع</span><div><h3>مدير عمليات</h3><span>إدارة تشغيلية</span></div></div></article></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="masaqy-advantage-section margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated" id="enterprise-faq">
+      <div class="container-lg position-relative">
+        <div class="masaqy-advantage-shell reveal-on-scroll" data-reveal-order="0">
+          <div class="row justify-content-center mb-5"><div class="col-lg-9 text-center"><h2 class="fs-1 fw-bold text-dark mb-3 reveal-on-scroll" data-reveal-order="2">الأسئلة الشائعة</h2></div></div>
+          <div class="accordion enterprise-faq-accordion reveal-on-scroll" id="enterpriseFaqAccordion" data-reveal-order="3">
+            <div class="accordion-item"><h3 class="accordion-header" id="enterpriseFaqHeadingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#enterpriseFaqOne" aria-expanded="true" aria-controls="enterpriseFaqOne">ما هو تكامل الأنظمة (API Integration)؟</button></h3><div id="enterpriseFaqOne" class="accordion-collapse collapse show" aria-labelledby="enterpriseFaqHeadingOne" data-bs-parent="#enterpriseFaqAccordion"><div class="accordion-body"><p>هو ربط الأنظمة المختلفة لتبادل البيانات بشكل تلقائي وسلس عبر واجهات برمجية.</p></div></div></div>
+            <div class="accordion-item"><h3 class="accordion-header" id="enterpriseFaqHeadingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#enterpriseFaqTwo" aria-expanded="false" aria-controls="enterpriseFaqTwo">هل يمكن ربط أنظمة مختلفة؟</button></h3><div id="enterpriseFaqTwo" class="accordion-collapse collapse" aria-labelledby="enterpriseFaqHeadingTwo" data-bs-parent="#enterpriseFaqAccordion"><div class="accordion-body"><p>نعم، يمكن ربط أي نظام يدعم API أو يوفر نقطة تكامل تقنية قابلة للاستخدام.</p></div></div></div>
+            <div class="accordion-item"><h3 class="accordion-header" id="enterpriseFaqHeadingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#enterpriseFaqThree" aria-expanded="false" aria-controls="enterpriseFaqThree">هل التكامل آمن؟</button></h3><div id="enterpriseFaqThree" class="accordion-collapse collapse" aria-labelledby="enterpriseFaqHeadingThree" data-bs-parent="#enterpriseFaqAccordion"><div class="accordion-body"><p>نعم، يتم استخدام بروتوكولات أمان عالية مع إدارة للصلاحيات وحماية لتدفق البيانات.</p></div></div></div>
+            <div class="accordion-item"><h3 class="accordion-header" id="enterpriseFaqHeadingFour"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#enterpriseFaqFour" aria-expanded="false" aria-controls="enterpriseFaqFour">هل يدعم الأنظمة السحابية؟</button></h3><div id="enterpriseFaqFour" class="accordion-collapse collapse" aria-labelledby="enterpriseFaqHeadingFour" data-bs-parent="#enterpriseFaqAccordion"><div class="accordion-body"><p>نعم، يدعم Cloud Integration بالكامل لربط الأنظمة السحابية والداخلية.</p></div></div></div>
+            <div class="accordion-item"><h3 class="accordion-header" id="enterpriseFaqHeadingFive"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#enterpriseFaqFive" aria-expanded="false" aria-controls="enterpriseFaqFive">هل يمكن تطوير APIs مخصصة؟</button></h3><div id="enterpriseFaqFive" class="accordion-collapse collapse" aria-labelledby="enterpriseFaqHeadingFive" data-bs-parent="#enterpriseFaqAccordion"><div class="accordion-body"><p>نعم، يتم تصميم واجهات برمجية حسب الحاجة وبما يناسب أنظمة المؤسسة وبياناتها.</p></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="masaqy-partnership-cta margin-bottom-xl margin-top-xxl-1 animate-on-load is-animated" id="robot-final-cta">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="masaqy-partnership-card reveal-on-scroll" data-reveal-order="1">
+          <div class="row align-items-center g-4 g-xl-5">
+            <div class="col-lg-7">
+              <span class="masaqy-partnership-badge"><i class="bi bi-hdd-network"></i> تكامل الأنظمة والواجهات البرمجية</span>
+              <h2 class="masaqy-partnership-title mb-3">ابدأ بتوحيد أنظمتك الآن</h2>
+              <h4 class="masaqy-footer-text mt-3 mb-0">حوّل بيئتك التقنية إلى نظام متكامل يربط جميع المنصات ويجعل تدفق البيانات أسرع وأكثر دقة وذكاء.</h4>
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <span class="badge rounded-pill bg-light text-dark px-3 py-2">اطلب خدمة التكامل</span>
+                <span class="badge rounded-pill bg-light text-dark px-3 py-2">تحدث مع خبير APIs</span>
+                <span class="badge rounded-pill bg-light text-dark px-3 py-2">ابدأ مشروعك الآن</span>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="masaqy-partnership-visual">
+                <div class="flow-actions reveal-item d-flex flex-wrap gap-3 mb-0">
+                  <a href="https://wa.me/966596147285" target="_blank" rel="noopener" class="btn flow-btn-primary"><i class="bi bi-arrow-left"></i><span>اطلب الخدمة</span></a>
+                  <a href="mailto:info@masaqy.com" class="btn flow-btn-ghost"><i class="bi bi-briefcase"></i> تواصل معنا</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-neo">
+      <div class="footer-neo-background">
+        <span class="footer-neo-orb orb-one"></span>
+        <span class="footer-neo-orb orb-two"></span>
+        <span class="footer-neo-grid"></span>
+      </div>
+      <div class="container-fluid px-3 px-md-5">
+        <div class="footer-neo-shell reveal-item scroll-slide-left">
+          <div class="footer-neo-card masaqy-footer-layout">
+            <div class="row g-4 g-xl-5">
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <a href="../index.html" class="masaqy-footer-brand text-decoration-none d-inline-block"
+                  aria-label="مساقي">
+                  <img src="../assets/images/masaqy-logo-main.png" alt="مساقي" class="masaqy-footer-logo">
+                </a>
+                <p class="masaqy-footer-text mt-3 mb-0">MASAQY شركة سعودية متخصصة في تقنيات الذكاء الاصطناعي والتحول
+                  المؤسسي الذكي، نبني منظومات أعمال ذكية تساعد المؤسسات على النمو والتوسع بثقة.</p>
+                <span class="masaqy-footer-tagline">Where Intelligence Becomes Business Impact</span>
+                <div class="masaqy-footer-socials" aria-label="روابط التواصل الاجتماعي">
+                  <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" aria-label="X / Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+              <div class="col-xl col-lg-4 col-md-6">
+                <h2 class="masaqy-footer-title h6">الخدمات</h2>
+                <ul class="masaqy-footer-links">
+                  <li><a href="../consulting-details.html">مساقي للاستشارات</a></li>
+                  <li><a href="../lab-details.html">مختبر مساقي</a></li>
+                  <li><a href="../marketing-details.html#marketing-groups">مساقي للتسويق</a></li>
+                  <li><a href="../course-details.html">أكاديمية مساقي</a></li>
+                </ul>
+              </div>
+              <div class="col-xl col-lg-4 col-md-6">
+                <h2 class="masaqy-footer-title h6">الأنظمة الذكية</h2>
+                <ul class="masaqy-footer-links">
+                  <li><a href="../index.html#systems">Smart CRM</a></li>
+                  <li><a href="../index.html#systems">Smart ERP</a></li>
+                  <li><a href="../index.html#systems">Automation Systems</a></li>
+                  <li><a href="../index.html#systems">AI Dashboards</a></li>
+                  <li><a href="../index.html#systems">AI Decision Systems</a></li>
+                </ul>
+              </div>
+              <div class="col-xl col-lg-4 col-md-6">
+                <h2 class="masaqy-footer-title h6">روابط سريعة</h2>
+                <ul class="masaqy-footer-links">
+                  <li><a href="../index.html">الرئيسية</a></li>
+                  <li><a href="../about.html">من نحن</a></li>
+                  <li><a href="../marketing-details.html#marketing-groups">الخدمات</a></li>
+                  <li><a href="../index.html#systems">الأنظمة</a></li>
+                  <li><a href="../index.html#sectors">القطاعات</a></li>
+                  <li><a href="mailto:info@masaqy.com">تواصل معنا</a></li>
+                </ul>
+              </div>
+              <div class="col-xl col-lg-4 col-md-6">
+                <h2 class="masaqy-footer-title h6">تواصل معنا</h2>
+                <ul class="masaqy-footer-contact">
+                  <li><i class="bi bi-geo-alt"></i><span>Riyadh, Saudi Arabia</span></li>
+                  <li><i class="bi bi-envelope"></i><a href="mailto:info@masaqy.com">info@masaqy.com</a></li>
+                  <li><i class="bi bi-globe2"></i><a href="https://www.masaqy.com" target="_blank"
+                      rel="noopener">www.masaqy.com</a></li>
+                </ul>
+                <a href="mailto:info@masaqy.com" class="masaqy-footer-cta">
+                  <span>اطلب حلاً ذكياً</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="footer-neo-bottom masaqy-footer-bottom mt-5 pt-4">
+              <div class="footer-neo-meta">
+                <span>© 2026 MASAQY. All Rights Reserved.</span>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <a href="#" class="footer-neo-top" aria-label="العودة للأعلى">
+                  <span>الأعلى</span>
+                  <i class="bi bi-arrow-up"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="floating-contact-actions" aria-label="خيارات التواصل السريع">
+    <a class="floating-contact-btn floating-contact-btn-whatsapp"
+      href="https://wa.me/?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%20%D9%85%D8%B3%D8%A7%D9%82%D9%8A"
+      target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <a class="floating-contact-btn floating-contact-btn-chat" href="mailto:info@masaqy.com"
+      aria-label="فتح بوت الدردشة">
+      <i class="bi bi-chat-dots-fill"></i>
+    </a>
+  </div>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/about.js"></script>
+</body>
+
+</html>
